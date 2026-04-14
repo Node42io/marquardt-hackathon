@@ -83,10 +83,11 @@ export default function FunctionalPromise() {
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 
+
         <hr />
 
         {/* ── Underlying Mechanism ── */}
-        <h2>Underlying Mechanism</h2>
+        <h2 id="fp-mechanism">Underlying Mechanism</h2>
 
         <p>
           Piezoelectric transducers (Piezo A / Piezo B) in transit-time configuration
@@ -99,7 +100,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── Product Functional Promise ── */}
-        <h2>Product Functional Promise</h2>
+        <h2 id="fp-product-fp">Product Functional Promise</h2>
 
         <table>
           <thead>
@@ -176,7 +177,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── UNSPSC Classification — Item 16/17 ── */}
-        <h2>UNSPSC Classification</h2>
+        <h2 id="fp-unspsc">UNSPSC Classification</h2>
 
         <table>
           <thead>
@@ -263,7 +264,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── Functional Promise Extension — Item 18: no bare "FP" ── */}
-        <h2>Functional Promise Extension (Broader-than-UNSPSC Capabilities)</h2>
+        <h2 id="fp-extension">Functional Promise Extension (Broader-than-UNSPSC Capabilities)</h2>
 
         <table>
           <thead>
@@ -320,7 +321,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── Bill of Materials / Value Network Position ── */}
-        <h2>Bill of Materials (BOM) Position in the Product Hierarchy</h2>
+        <h2 id="fp-bom">Bill of Materials (BOM) Position in the Product Hierarchy</h2>
         <p style={{ color: "var(--text-gray)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>
           Level notation: L4 = major subsystem · L3 = module · L2 = assembly · L1 = part. The sensor sits at L5 — an individual component within a subsystem.
         </p>
@@ -364,7 +365,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── Required Complements ── */}
-        <h2>Required Complements</h2>
+        <h2 id="fp-complements">Required Complements</h2>
 
         <table>
           <thead>
@@ -394,7 +395,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── How This Feeds Downstream ── */}
-        <h2>How This Feeds Downstream Analysis</h2>
+        <h2 id="fp-downstream">How This Feeds Downstream Analysis</h2>
 
         <table>
           <thead>
@@ -435,7 +436,7 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── QA Checklist — simplified (no PASS badges per Item 21 analogy) ── */}
-        <h2>Quality Checklist</h2>
+        <h2 id="fp-quality">Quality Checklist</h2>
 
         <table>
           <thead>
@@ -468,7 +469,9 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* Sources — Item 4/17/39 */}
-        <SourceList sourceIds={SECTION_SOURCES} title="Sources — 02 Functional Promise" />
+        <div id="fp-sources">
+          <SourceList sourceIds={SECTION_SOURCES} title="Sources — 02 Functional Promise" />
+        </div>
       </div>
     </section>
   );

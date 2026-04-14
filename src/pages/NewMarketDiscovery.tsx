@@ -89,7 +89,7 @@ export default function NewMarketDiscovery() {
     <>
       {/* ── Page Header ─────────────────────────────────────────────── */}
       <PageHeader
-        kicker="Step 02a + 02b / Product-to-Industry Cross-Classification & Architecture Distance / New Markets for an Existing Product"
+        kicker="Step 02a + 02b / UNSPSC-to-NAICS Cross-Classification & Architecture Distance / New Markets for an Existing Product"
         title="New Market Discovery"
         description="Candidate markets discovered, scored by architecture distance, and ranked by 6-factor composite scoring for the Marquardt Ultrasonic Flow Sensor."
       />
@@ -110,7 +110,7 @@ export default function NewMarketDiscovery() {
           </p>
           <p className="answer">
             What you learn here: which NAICS industry adjacencies scored
-            best, why they scored the way they did across customer outcome opportunity,
+            best, why they scored the way they did across ODI opportunity (unmet customer needs),
             feature fit, constraint compatibility, job coverage, value-network
             position, and incumbent vulnerability — and what specific
             go-to-market moves are recommended for each.
@@ -141,7 +141,7 @@ export default function NewMarketDiscovery() {
         <SectionAnchor
           id="discovery-process"
           title="Discovery Process — Phase 02a"
-          kicker="Product-to-Industry Cross-Classification"
+          kicker="UNSPSC-to-NAICS Cross-Classification"
         />
         <div className="md">
           <h3>Search Configuration</h3>

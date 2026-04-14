@@ -60,7 +60,7 @@ export default function ProductDecomposition() {
       </div>
 
       <div className="md">
-        <h1 className="section-title">01 Product Decomposition</h1>
+        <h1 className="section-title">01 Product Profile</h1>
 
         {/* Item 40: Executive Summary */}
         <ExecutiveSummary kicker="01 / Executive Summary" title="What you are reading">
@@ -84,10 +84,11 @@ export default function ProductDecomposition() {
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 
+
         <hr />
 
         {/* ── Product Breakdown ── */}
-        <h2>What the Sensor Does — Three Levels</h2>
+        <h2 id="prod-three-levels">What the Sensor Does — Three Levels</h2>
 
         <table>
           <thead>
@@ -122,7 +123,7 @@ export default function ProductDecomposition() {
         </table>
 
         {/* ── Technology Classification ── */}
-        <h2>Technology Classification</h2>
+        <h2 id="prod-tech-class">Technology Classification</h2>
 
         <table>
           <thead>
@@ -161,7 +162,7 @@ export default function ProductDecomposition() {
         </table>
 
         {/* ── Functional Promise ── */}
-        <h2>Functional Promise</h2>
+        <h2 id="prod-fp">Functional Promise</h2>
 
         <table>
           <thead>
@@ -218,7 +219,7 @@ export default function ProductDecomposition() {
         </table>
 
         {/* ── Commodity-Level Functional Promise ── */}
-        <h2>Commodity-Level Functional Promise</h2>
+        <h2 id="prod-commodity-fp">Commodity-Level Functional Promise</h2>
 
         <blockquote>
           <p>
@@ -240,7 +241,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── Features ── */}
-        <h2>Features</h2>
+        <h2 id="prod-features">Features</h2>
 
         <h3>Technology-Level Features (apply to all ultrasonic transit-time flowmeters)</h3>
 
@@ -293,7 +294,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── Specifications ── */}
-        <h2>Specifications</h2>
+        <h2 id="prod-specs">Specifications</h2>
 
         <table>
           <thead>
@@ -325,7 +326,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── Constraints summary ── */}
-        <h2>Key Product Constraints</h2>
+        <h2 id="prod-constraints">Key Product Constraints</h2>
 
         <table>
           <thead>
@@ -364,7 +365,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── UNSPSC Classification ── */}
-        <h2>UNSPSC Classification</h2>
+        <h2 id="prod-unspsc">UNSPSC Classification</h2>
 
         <table>
           <thead>
@@ -425,7 +426,7 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* ── Validation Notes ── */}
-        <h2>Validation Notes</h2>
+        <h2 id="prod-validation">Validation Notes</h2>
 
         <p>
           The decomposition was cross-referenced against published research on ultrasonic
@@ -470,7 +471,9 @@ export default function ProductDecomposition() {
         <hr />
 
         {/* Sources list — Item 4/15/39 */}
-        <SourceList sourceIds={SECTION_SOURCES} title="Sources — 01 Product Decomposition" />
+        <div id="prod-sources">
+          <SourceList sourceIds={SECTION_SOURCES} title="Sources — 01 Product Decomposition" />
+        </div>
       </div>
     </section>
   );

@@ -178,10 +178,11 @@ export default function Constraints() {
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
         </blockquote>
 
+
         <hr />
 
         {/* ── Constraint Summary Table ── */}
-        <h2>Constraint Summary</h2>
+        <h2 id="con-summary">Constraint Summary</h2>
 
         <table>
           <thead>
@@ -225,7 +226,7 @@ export default function Constraints() {
         <hr />
 
         {/* ── Detailed Constraints by Type ── */}
-        <h2>Detailed Constraints</h2>
+        <h2 id="con-detailed">Detailed Constraints</h2>
 
         {GROUP_ORDER.filter((type) => grouped[type]).map((type) => {
           const group = grouped[type];
@@ -233,6 +234,7 @@ export default function Constraints() {
             <div key={type}>
               {/* Item 24: Group headings are also clear */}
               <h3
+                id={`con-${type}`}
                 style={{
                   textTransform: "capitalize",
                   fontSize: "0.95rem",
@@ -256,7 +258,7 @@ export default function Constraints() {
         <hr />
 
         {/* ── Coverage Table ── */}
-        <h2>Constraint Type Coverage</h2>
+        <h2 id="con-coverage">Constraint Type Coverage</h2>
 
         <table>
           <thead>
@@ -293,7 +295,7 @@ export default function Constraints() {
         <hr />
 
         {/* ── Absolute vs Conditional Interpretation ── */}
-        <h2>Absolute vs Conditional — What It Means</h2>
+        <h2 id="con-absolute">Absolute vs Conditional — What It Means</h2>
 
         <table>
           <thead>
@@ -326,7 +328,7 @@ export default function Constraints() {
         <hr />
 
         {/* ── Downstream Use ── */}
-        <h2>How Constraints Feed Downstream Analysis</h2>
+        <h2 id="con-downstream">How Constraints Feed Downstream Analysis</h2>
 
         <ul>
           <li>
@@ -348,7 +350,9 @@ export default function Constraints() {
         <hr />
 
         {/* Item 21: Replace PASS section with SourceList */}
-        <SourceList sourceIds={SECTION_SOURCES} title="Sources — 03 Constraints" />
+        <div id="con-sources">
+          <SourceList sourceIds={SECTION_SOURCES} title="Sources — 03 Constraints" />
+        </div>
       </div>
     </section>
   );
