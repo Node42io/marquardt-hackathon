@@ -76,18 +76,21 @@ export function groupUnitsByL6(
   }
 
   for (const unit of units) {
-    // Parse section number from unit ID: "L5.6.3" → 6
+    // Parse section from unit ID: "L5.6.3" → "6", "L5.H1.1" → "H1"
     const parts = unit.id.split(".");
-    const sectionNum = parts[1] ? parseInt(parts[1], 10) : 0;
-    const l6Id = `L6.${sectionNum}`;
+    const section = parts[1] ?? "";
+    const l6Id = `L6.${section}`;
     const bucket = map.get(l6Id);
     if (bucket) {
       bucket.push(unit);
     } else {
-      // Fallback — try to find by ordinal index
-      const fallbackKey = systems[sectionNum - 1]?.id;
-      if (fallbackKey && map.has(fallbackKey)) {
-        map.get(fallbackKey)!.push(unit);
+      // Fallback — try numeric ordinal index (for purely numeric IDs)
+      const sectionNum = parseInt(section, 10);
+      if (!isNaN(sectionNum)) {
+        const fallbackKey = systems[sectionNum - 1]?.id;
+        if (fallbackKey && map.has(fallbackKey)) {
+          map.get(fallbackKey)!.push(unit);
+        }
       }
     }
   }

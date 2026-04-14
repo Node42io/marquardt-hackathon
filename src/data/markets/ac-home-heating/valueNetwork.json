@@ -12,12 +12,12 @@
     "Commercial Refrigeration Equipment",
     "Industrial Refrigeration Equipment"
   ],
-  "hierarchy": "",
+  "hierarchy": "L7 → L6 (core + horizontal) → L5 (equipment positions)",
   "architectureDistance": 0,
   "marketSize": "",
   "l6Systems": [
     {
-      "id": "L6a",
+      "id": "L6.1",
       "name": "Sheet Metal Fabrication",
       "type": "Core",
       "jobFamily": "Cut, form, punch, and bend sheet metal into enclosure and structural components",
@@ -26,7 +26,7 @@
       "l5Units": []
     },
     {
-      "id": "L6b",
+      "id": "L6.2",
       "name": "Heat Exchanger Fabrication",
       "type": "Core",
       "jobFamily": "Manufacture coils, condensers, and evaporator assemblies by bending tubing and attaching fins",
@@ -35,7 +35,7 @@
       "l5Units": []
     },
     {
-      "id": "L6c",
+      "id": "L6.3",
       "name": "Refrigerant Circuit Assembly",
       "type": "Core",
       "jobFamily": "Braze/weld tubing connections, mount compressor, expansion device, and reversing valve into integrated refrigerant circuit",
@@ -44,7 +44,7 @@
       "l5Units": []
     },
     {
-      "id": "L6d",
+      "id": "L6.4",
       "name": "Combustion Assembly",
       "type": "Core",
       "jobFamily": "Assemble burner, heat exchanger, gas valve, ignition, and flue components into heating module",
@@ -53,7 +53,7 @@
       "l5Units": []
     },
     {
-      "id": "L6e",
+      "id": "L6.5",
       "name": "Electrical & Controls Integration",
       "type": "Core",
       "jobFamily": "Wire motors, contactors, sensors, control boards, and communication interfaces into the unit",
@@ -62,7 +62,7 @@
       "l5Units": []
     },
     {
-      "id": "L6f",
+      "id": "L6.6",
       "name": "Hydronic Circuit Assembly",
       "type": "Core",
       "jobFamily": "Assemble water-side piping, circulation pumps, flow sensors, and hydraulic components for water-based heat exchange",
@@ -71,7 +71,7 @@
       "l5Units": []
     },
     {
-      "id": "L6g",
+      "id": "L6.7",
       "name": "System Evacuation & Refrigerant Charging",
       "type": "Core",
       "jobFamily": "Evacuate system to vacuum, leak-test, charge with specified refrigerant mass",
@@ -80,7 +80,7 @@
       "l5Units": []
     },
     {
-      "id": "L6h",
+      "id": "L6.8",
       "name": "Final Assembly & Enclosure",
       "type": "Core",
       "jobFamily": "Mount all sub-assemblies into cabinet, attach panels, insulation, labels, and shipping hardware",
@@ -89,7 +89,7 @@
       "l5Units": []
     },
     {
-      "id": "L6i",
+      "id": "L6.9",
       "name": "Performance Testing & Certification",
       "type": "Core",
       "jobFamily": "Run functional test, verify capacity/efficiency against AHRI/UL/CE standards, pass or reject",
@@ -98,53 +98,302 @@
       "l5Units": []
     },
     {
-      "id": "L6(H1)",
+      "id": "L6.H1",
       "name": "Quality Assurance",
       "type": "Horizontal",
-      "jobFamily": "Verify dimensional integrity, material compliance, and process adherence at each gate",
+      "jobFamily": "Verify dimensional integrity, material compliance, and process adherence at each gate (horizontal)",
       "scope": "All core steps",
       "category": "horizontal",
       "l5Units": []
     },
     {
-      "id": "L6(H2)",
+      "id": "L6.H2",
       "name": "Maintenance & Engineering",
       "type": "Horizontal",
-      "jobFamily": "Maintain production equipment uptime, tooling calibration, and process engineering",
+      "jobFamily": "Maintain production equipment uptime, tooling calibration, and process engineering (horizontal)",
       "scope": "All core steps",
       "category": "horizontal",
       "l5Units": []
     },
     {
-      "id": "L6(H3)",
+      "id": "L6.H3",
       "name": "HSE & Environmental Compliance",
       "type": "Horizontal",
-      "jobFamily": "Manage refrigerant handling (EPA Section 608), brazing fume extraction, noise, and worker safety",
+      "jobFamily": "Manage refrigerant handling (EPA Section 608), brazing fume extraction, noise, and worker safety (horizontal)",
       "scope": "All core steps",
       "category": "horizontal",
       "l5Units": []
     },
     {
-      "id": "L6(H4)",
+      "id": "L6.H4",
       "name": "Utilities & Facility Management",
       "type": "Horizontal",
-      "jobFamily": "Supply compressed air, nitrogen, electrical power, HVAC, and water to production floor",
+      "jobFamily": "Supply compressed air, nitrogen, electrical power, HVAC, and water to production floor (horizontal)",
       "scope": "All core steps",
       "category": "horizontal",
       "l5Units": []
     },
     {
-      "id": "L6(H5)",
+      "id": "L6.H5",
       "name": "IT / Operations Technology",
       "type": "Horizontal",
-      "jobFamily": "Manage MES, ERP, CNC program distribution, test data acquisition, and traceability",
+      "jobFamily": "Manage MES, ERP, CNC program distribution, test data acquisition, and traceability (horizontal)",
       "scope": "All core steps",
       "category": "horizontal",
       "l5Units": []
     }
   ],
-  "vnUnits": [],
-  "marquardtPosition": "",
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "CNC Punch Press",
+      "functionalJob": "Automated sheet metal punching and forming machine",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Press Brake",
+      "functionalJob": "Sheet metal bending and forming machine",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Powder Coating Line",
+      "functionalJob": "Surface finishing and corrosion protection system",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Tube Bender",
+      "functionalJob": "Bend copper/aluminum tubing into coil patterns",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Fin Press",
+      "functionalJob": "Stamp and form aluminum fins for coil assembly",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Coil Expansion Press",
+      "functionalJob": "Mechanically expand tubes into fin collars for thermal contact",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.4",
+      "name": "Brazing Station",
+      "functionalJob": "Join tubing and headers via brazing",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Compressor",
+      "functionalJob": "Compress refrigerant vapor to raise pressure and temperature",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Expansion Device",
+      "functionalJob": "Meter refrigerant flow and reduce pressure before evaporator",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Reversing Valve",
+      "functionalJob": "Switch refrigerant flow between heating and cooling modes",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.4",
+      "name": "Refrigerant Piping",
+      "functionalJob": "Connect refrigerant circuit components with brazed tubing",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Gas Burner",
+      "functionalJob": "Combust fuel to generate heat for warm air furnace",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Combustion Heat Exchanger",
+      "functionalJob": "Transfer combustion heat to airflow stream",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Gas Valve",
+      "functionalJob": "Regulate fuel flow to burner assembly",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.4",
+      "name": "Ignition Module",
+      "functionalJob": "Ignite fuel-air mixture in combustion chamber",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Control Board",
+      "functionalJob": "Manage unit operation logic, sequencing, and diagnostics",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Variable Frequency Drive",
+      "functionalJob": "Modulate compressor and fan motor speed for efficiency",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Fan / Blower Motor",
+      "functionalJob": "Drive airflow across coils or through ductwork",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.4",
+      "name": "Sensor Suite",
+      "functionalJob": "Measure temperature, pressure, flow, and refrigerant state",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Circulation Pump",
+      "functionalJob": "Drive water/glycol through heat exchanger circuit",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Plate Heat Exchanger",
+      "functionalJob": "Transfer thermal energy between refrigerant and water circuits",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Flow Sensor",
+      "functionalJob": "Measure water-side volumetric flow rate for system control and protection. MARQUARDT PRIMARY — ultrasonic transit-time sensor (Marquardt) leads at 35% share; competing: turbine/impeller (30%), vortex (15%), differential pressure (10%), paddle/float switch (10%).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.4",
+      "name": "Hydraulic Valve Assembly",
+      "functionalJob": "Control water routing, bypass, and safety in hydronic circuit",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Vacuum Pump Station",
+      "functionalJob": "Evacuate refrigerant system to remove moisture and non-condensables",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Leak Detection Station",
+      "functionalJob": "Verify system integrity before refrigerant charging",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.3",
+      "name": "Refrigerant Charging Station",
+      "functionalJob": "Dispense precise refrigerant mass into sealed system",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Cabinet Assembly Fixtures",
+      "functionalJob": "Position and fasten enclosure panels around sub-assemblies",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Insulation Application",
+      "functionalJob": "Apply thermal and acoustic insulation to equipment cabinet",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.1",
+      "name": "Psychrometric Test Chamber",
+      "functionalJob": "Simulate operating conditions to verify capacity and efficiency",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.2",
+      "name": "Electrical Safety Test Station",
+      "functionalJob": "Hi-pot, ground continuity, and insulation resistance testing",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.3",
+      "name": "Run-Test Station",
+      "functionalJob": "Functional verification of startup, operation, and shutdown",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "The Marquardt Ultrasonic Flow Sensor occupies the Flow Sensor (L5) position within L6.6 — Hydronic Circuit Assembly. This L6 node is activated only by OT-2 (water-source heat pumps) and OT-5 (water-cooled chillers). Competing technologies at this position: turbine/impeller (30%), vortex (15%), differential pressure (10%), paddle/float switch (10%). A secondary position exists at L6.5 — Electrical & Controls Integration, Sensor Suite sub-position (20% flow-sensor share).",
   "strategicPosition": null,
   "sources": [
     {
