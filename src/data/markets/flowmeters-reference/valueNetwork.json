@@ -1,0 +1,439 @@
+{
+  "naicsCode": "41112501",
+  "marketName": "Flowmeters (home industry reference)",
+  "slug": "flowmeters-reference",
+  "coreJobStatement": "Design, manufacture, calibrate, and deliver instruments that measure, display, and control industrial process variables to enable safe, efficient, and compliant operation of process plants",
+  "outputTypes": [
+    "Flow instruments (ultrasonic, electromagnetic, Coriolis, vortex, turbine, differential-pressure, thermal mass)",
+    "Pressure instruments",
+    "Temperature instruments",
+    "Level instruments",
+    "Analytical instruments (pH, conductivity, dissolved oxygen)",
+    "Control & recording instruments"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — what process steps and equipment compose the instrument manufacturing chain",
+  "architectureDistance": 0,
+  "marketSize": "~$8.5–9.1B globally (flow meters, 2024–2025); ~$0.8–1.3B ultrasonic flowmeter segment; transit-time = 80–85% of ultrasonic [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Product Design & Engineering",
+      "type": "Core",
+      "jobFamily": "Define measurement principle, mechanical form, electronics architecture, and firmware for target process variable",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Sensor & Transducer Fabrication",
+      "type": "Core",
+      "jobFamily": "Manufacture the primary sensing element that converts a physical variable into an electrical signal",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Electronics Manufacturing",
+      "type": "Core",
+      "jobFamily": "Fabricate, populate, and test printed circuit boards with signal conditioning, digitisation, and communication firmware",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Flow Body & Housing Fabrication",
+      "type": "Core",
+      "jobFamily": "Machine, cast, or mold the wetted and structural housings that contain sensor and electronics",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Assembly & Integration",
+      "type": "Core",
+      "jobFamily": "Combine sensor, electronics, and housing into a finished instrument; seal, wire, and verify",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Calibration & Testing",
+      "type": "Core",
+      "jobFamily": "Calibrate each instrument against a traceable reference and verify performance across environmental and endurance envelopes",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Packaging & Dispatch",
+      "type": "Core",
+      "jobFamily": "Inspect, document, pack, and ship finished instruments to OEMs, distributors, or end-users",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Quality Management & Metrology (H)",
+      "type": "Horizontal",
+      "jobFamily": "Maintain measurement traceability, ISO 9001 / ISO 17025 compliance, and process control across all core steps",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Supply Chain & Procurement (H)",
+      "type": "Horizontal",
+      "jobFamily": "Source raw materials, electronic components, piezo ceramics, metals, polymers, and manage vendor qualification",
+      "l5Units": []
+    },
+    {
+      "id": "L6.10",
+      "name": "Regulatory & Certification (H)",
+      "type": "Horizontal",
+      "jobFamily": "Obtain and maintain CE/UL, ATEX/IECEx, MID billing, food-contact, and drinking-water certifications",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Mechanical Design (CAD/CAE)",
+      "functionalJob": "3D solid modeling and finite-element analysis of flow bodies, housings, and sensor mounting structures. Determines pressure rating, flow path geometry, and material selection.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Electronics Design (EDA)",
+      "functionalJob": "Schematic capture, PCB layout, and circuit simulation for signal conditioning, ADC, microcontroller, and communication interfaces (UART, LIN, 4–20 mA, HART).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Firmware & Signal Processing",
+      "functionalJob": "Embedded firmware development for transit-time measurement, temperature compensation, anomaly detection, and communication protocol stacks.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Piezoelectric Transducer Manufacturing",
+      "functionalJob": "Fabrication of piezoelectric ceramic elements (PZT) for ultrasonic flow sensors. Two matched transducers per sensor body. Critical parameters: resonant frequency matching (±0.5%), acoustic impedance, and aging stability. PI Ceramic and CeramTec are major piezo suppliers; some OEMs fabricate in-house. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Electromagnetic Coil Assembly",
+      "functionalJob": "Winding of excitation and pickup coils for electromagnetic (mag) flowmeters. Coil geometry and insulation quality determine field uniformity and signal-to-noise ratio.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Coriolis Tube Fabrication",
+      "functionalJob": "Precision bending and welding of thin-walled stainless steel tubes (316L) for Coriolis mass flowmeters. Tube geometry (U-tube, straight, dual) determines sensitivity and zero stability.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "PCB Fabrication & Assembly",
+      "functionalJob": "Surface-mount technology (SMT) production line. Multi-layer PCBs (4–6 layers typical for flowmeter electronics) with mixed analog/digital layout.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Firmware Flashing & Configuration",
+      "functionalJob": "Programming microcontroller flash memory with production firmware, calibration constants, and customer-specific configuration (pipe diameter, fluid type, communication protocol).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Power Supply & Signal Conditioning",
+      "functionalJob": "Assembly of power management (DC-DC converters, LDOs) and analog front-end modules (charge amplifiers, instrumentation amplifiers, ADC drivers).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Metal Flow Body Machining",
+      "functionalJob": "CNC machining of stainless steel (316L), brass, or Hastelloy flow bodies for industrial and sanitary applications. Process connections (flanged, threaded, tri-clamp) machined to standard dimensions.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Polymer Housing Injection Molding",
+      "functionalJob": "Injection molding of thermoplastic housings (PPS, PA66-GF, PBT) for cost-optimised OEM sensors. Marquardt uses polymer housing for DN12–DN25 variants. [SRC: 01_product_decomposition]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Seal & Gasket Manufacturing",
+      "functionalJob": "Fabrication of elastomeric O-rings, gaskets, and face seals that maintain pressure integrity and media containment. Material selection (EPDM, FKM, FFKM, silicone) matches media compatibility and temperature range.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Sensor-to-Body Integration",
+      "functionalJob": "Bonding or pressing piezoelectric transducers into the flow body; verifying acoustic coupling and signal quality. For ultrasonic sensors, transducer-to-fluid acoustic path integrity determines measurement accuracy.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Electronics-to-Housing Integration",
+      "functionalJob": "Mounting the populated PCB into the electronics housing; connecting sensor leads, power, and communication wiring; potting or conformal coating for environmental protection.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Final Assembly & Marking",
+      "functionalJob": "Mechanical fastening of flow body to electronics housing; product labelling with serial number, calibration data, and regulatory markings.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Wet Calibration Rig",
+      "functionalJob": "Flow calibration against a gravimetric or volumetric reference standard traceable to national metrology institutes (PTB, NIST). Typically 5–10 flow points across the operating range per sensor. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Environmental & Endurance Testing",
+      "functionalJob": "Verification of performance across temperature, pressure, humidity, and mechanical stress envelopes. Ensures sensor meets datasheet specifications under worst-case operating conditions.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Electrical Safety & EMC Testing",
+      "functionalJob": "Hi-pot insulation testing, EMC pre-compliance, and functional verification under electromagnetic interference conditions.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Final Inspection & Documentation",
+      "functionalJob": "Generation of calibration certificates, test reports, and traceability records. Each instrument receives a unique serial number linked to its calibration data.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Protective Packaging",
+      "functionalJob": "Custom packaging protecting instruments during transport. Anti-static packaging for electronics; foam inserts for fragile sensor elements.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.3",
+      "name": "Warehousing & Logistics",
+      "functionalJob": "Finished goods storage, order picking, and carrier management for global distribution.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Metrology Laboratory",
+      "functionalJob": "Reference-grade measurement equipment traceable to national standards (PTB, NIST, NPL). Provides calibration references for production rigs and resolves measurement disputes.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Quality Management System",
+      "functionalJob": "Document control, non-conformance tracking, and corrective/preventive action (CAPA) processes. Drives yield improvement and supplier quality management.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.3",
+      "name": "Incoming Inspection",
+      "functionalJob": "Verification of incoming raw materials and purchased components against specifications before release to production.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.1",
+      "name": "Raw Material Procurement",
+      "functionalJob": "Sourcing of metals, polymers, ceramics, and electronic components. Piezoelectric ceramic supply chain is concentrated (PI Ceramic, CeramTec, TDK/Epcos dominate PZT supply). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.2",
+      "name": "Vendor Management",
+      "functionalJob": "Qualification, audit, and performance monitoring of critical suppliers. Dual-sourcing strategy for supply chain resilience.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.3",
+      "name": "Inventory Management",
+      "functionalJob": "Storage and replenishment of raw materials and work-in-progress. MRP-driven planning with kanban for high-volume production lines.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.1",
+      "name": "Product Certification",
+      "functionalJob": "Obtaining and maintaining mandatory and voluntary product marks that enable market access.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.2",
+      "name": "Material & Safety Compliance",
+      "functionalJob": "Ensuring wetted materials meet regulatory requirements for specific end-use environments (food contact, drinking water, pharmaceutical).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.3",
+      "name": "Export & Trade Compliance",
+      "functionalJob": "Managing export controls, customs documentation, and country-of-origin requirements for global distribution.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt holds KTW/WRAS.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 334513 — US Census Bureau",
+      "url": "https://data.census.gov/profile/334513",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S01"
+    },
+    {
+      "id": "S02",
+      "label": "NAICS Code 334513 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/334513/",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Flow Meter Market Size — Fortune Business Insights",
+      "url": "https://www.fortunebusinessinsights.com/industry-reports/flow-meter-market-101140",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Flow Meters Market Size & Growth — Mordor Intelligence",
+      "url": "https://www.mordorintelligence.com/industry-reports/flow-meters-market",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Flow Meters Market Size & Share — Straits Research",
+      "url": "https://straitsresearch.com/report/flow-meters-market",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Ultrasonic Flowmeters Market — Future Market Insights",
+      "url": "https://www.futuremarketinsights.com/reports/ultrasonic-flowmeters-market",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Ultrasonic Flow Meter Market — MarketsandMarkets",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/ultrasonic-flow-meter-market-168677264.html",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Top 10 Flowmeter Manufacturer Brands — GAIMC",
+      "url": "https://www.gaimc.com/Newsinfo/top-10-flowmeter-manufacturer-brands-comparison",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Flow Meter Market — Grand View Research",
+      "url": "https://www.grandviewresearch.com/industry-analysis/flow-meters-market",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Intelligent Flow Meter Market — Global Growth Insights",
+      "url": "https://www.globalgrowthinsights.com/market-reports/intelligent-flow-meter-market-100221",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Ultrasonic Flow Meter Calibration Process — Nagman",
+      "url": "https://www.nagman-calibration.com/ultrasonic-flow-meter-calibration-process-explained/",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Ultrasonic Flow Meters — ASGMT Technical Paper",
+      "url": "https://asgmt.com/wp-content/uploads/2018/10/066.pdf",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Value Added Piezo Assemblies — PI Ceramic",
+      "url": "https://www.pi-usa.us/en/products/piezo-actuators-stacks-benders-tubes/piezo-value-added-assemblies",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S13"
+    },
+    {
+      "id": "S14",
+      "label": "FRED: NAICS 334513 Industrial Output — Federal Reserve",
+      "url": "https://fred.stlouisfed.org/series/IPUEN334513T300000000",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S14"
+    },
+    {
+      "id": "S15",
+      "label": "01_product_decomposition.md — technology class, specifications, constraints, UNSPSC classification",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S15"
+    },
+    {
+      "id": "S16",
+      "label": "02_functional_promise.md — commodity FP, FP extensions, complements, BOM position",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S16"
+    },
+    {
+      "id": "S17",
+      "label": "05_market_discovery.md — 16 target markets, architecture distance scoring",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S17"
+    },
+    {
+      "id": "S18",
+      "label": "--",
+      "prefixedId": "VN-FLOWMETERS-REFERENCE-S18"
+    }
+  ]
+}

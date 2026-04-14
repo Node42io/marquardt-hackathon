@@ -1,0 +1,21 @@
+{
+  "slug": "ac-home-heating",
+  "name": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "naicsCode": "333415",
+  "isReference": false,
+  "rank": 6,
+  "scores": {
+    "odi": 4.93,
+    "featureFit": 5,
+    "constraintCompatibility": 10,
+    "jobCoverage": 5,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 5.4,
+    "composite": 5.91
+  },
+  "recommendation": "investigate",
+  "rationale": "Home market. Perfect constraint score (10.00) since the sensor was designed for this envelope, but the lowest new-ODI (4.93) because most needs are already satisfied by installed flow sensors (including Marquardt's own). Expansion potential is depth (new OEM accounts, higher DN range), not market discovery.",
+  "entryStrategy": "1) Defend and expand existing OEM accounts. 2) Upsell integrated-T variant for thermal-energy labelling. 3) Close SIKA VVX displacement gaps in tier-2 accounts. 4) Reuse existing channels. 5) Track as baseline reference.",
+  "estimatedTimeToEntry": "0-6 months (active)",
+  "estimatedInvestment": "<$150K (incremental)"
+}

@@ -1,0 +1,202 @@
+{
+  "productName": "Marquardt Ultrasonic Flow Sensor",
+  "vendorName": "Marquardt GmbH",
+  "technologyClass": "Ultrasonic transit-time flow measurement",
+  "unspscCode": "41111926",
+  "unspscTitle": "Liquid flow sensors",
+  "customProductGroup": "Ultrasonic flow & thermal energy sensor",
+  "commodityFunctionalPromise": "Non-invasive, zero-pressure-drop, zero-maintenance continuous volumetric flow + integrated temperature measurement for water-based hydronic media (DN15-DN25, <=90C, 1-10 bar).",
+  "totalMarketsEvaluated": 8,
+  "marketsEliminatedByConstraints": 0,
+  "weights": {
+    "odi_opportunity": 0.25,
+    "feature_fit": 0.15,
+    "constraint_compatibility": 0.15,
+    "job_coverage": 0.15,
+    "vn_hierarchy": 0.1,
+    "incumbent_vulnerability": 0.2
+  },
+  "rankedMarkets": [
+    {
+      "rank": 1,
+      "slug": "finfish-farming",
+      "marketName": "Finfish Farming and Fish Hatcheries",
+      "naicsCode": "112511",
+      "scores": {
+        "odi": 6.07,
+        "featureFit": 5.89,
+        "constraintCompatibility": 9,
+        "jobCoverage": 6.25,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 8.4,
+        "composite": 6.97
+      },
+      "recommendation": "investigate",
+      "rationale": "Top-ranked on incumbent vulnerability (8.40) because ~80% of RAS installations operate with no real-time flow visibility, and ODI (6.07) reflects life-safety opportunities (Opp=18 for flow-failure detection, Opp=15-18 per-tank visibility). Two low-cost mitigable constraints only.",
+      "entryStrategy": "1) Target 2-3 flagship land-based RAS operators (Atlantic Sapphire, Salmon Evolution, AquaMaof installs). 2) Prove <60s flow-failure detection under 2% bubble load. 3) Publish RAS case study. 4) Partner with RAS integrators (Billund, Krueger Kaldnes, AKVA). 5) Scale via OEM integration.",
+      "estimatedTimeToEntry": "9-15 months",
+      "estimatedInvestment": "$250K-600K"
+    },
+    {
+      "rank": 2,
+      "slug": "hvac-contractors",
+      "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+      "naicsCode": "238220",
+      "scores": {
+        "odi": 5.29,
+        "featureFit": 5.39,
+        "constraintCompatibility": 9.5,
+        "jobCoverage": 6.25,
+        "vnHierarchy": 10,
+        "incumbentVulnerability": 5.6,
+        "composite": 6.61
+      },
+      "recommendation": "investigate",
+      "rationale": "Strongest VN position (10.00) as the contractor is a direct buyer with short sales cycle. Low constraint risk (9.50). Incumbent vulnerability modest (5.60) since portable clamp-on meters are complementary rather than directly competitive; Marquardt creates a permanent-inline category adjacent to spot-check tools.",
+      "entryStrategy": "1) Target 5-10 DACH TGA service firms in hydronic commissioning. 2) Prove <2s flow-response latency on zone-valve adjustment. 3) Bundle as permanent inline add-on to EcoDesign commissioning kits. 4) Channel via wholesale (GC, Richter+Frenzel) and certified-contractor networks. 5) Cross-sell to smart-HVAC IoT platforms.",
+      "estimatedTimeToEntry": "6-12 months",
+      "estimatedInvestment": "$150K-400K"
+    },
+    {
+      "rank": 3,
+      "slug": "district-energy",
+      "marketName": "Steam and Air-Conditioning Supply",
+      "naicsCode": "221330",
+      "scores": {
+        "odi": 5.71,
+        "featureFit": 5.44,
+        "constraintCompatibility": 8.5,
+        "jobCoverage": 5,
+        "vnHierarchy": 9.5,
+        "incumbentVulnerability": 5.4,
+        "composite": 6.3
+      },
+      "recommendation": "investigate",
+      "rationale": "VN hierarchy 9.50 (utility is direct asset buyer) combined with highest ODI of the hydronic group (5.71) on billing accuracy (Opp=15) and zero drift (Opp=15). EU EED regulatory tailwind and multi-jet impeller replacement cycles (5-6 years) create a clear TCO displacement case; EN 1434/MID certification is the gating barrier for the billing segment.",
+      "entryStrategy": "1) Target Danish/German district operators (Kamstrup, Danfoss substation OEMs, Fernwarme Wien) for pilot. 2) Prove zero-drift thermal-energy accuracy in a 12-month control-loop trial. 3) Submit EN 1434/MID module-B+D certification in parallel. 4) Pitch multi-jet retrofit TCO once certified. 5) Scale via substation-package OEM channel.",
+      "estimatedTimeToEntry": "12-24 months (control); 18-30 months (billing)",
+      "estimatedInvestment": "$600K-1.5M"
+    },
+    {
+      "rank": 4,
+      "slug": "heating-equipment",
+      "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+      "naicsCode": "333414",
+      "scores": {
+        "odi": 5.33,
+        "featureFit": 5.84,
+        "constraintCompatibility": 9.5,
+        "jobCoverage": 5,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 4.9,
+        "composite": 5.96
+      },
+      "recommendation": "investigate",
+      "rationale": "Best fit score of the new markets (5.84) because boiler OEMs already integrate flow sensors; architectural distance=2 makes this the closest adjacency. Incumbent vulnerability only 4.90 since Vortex (SIKA) is entrenched and near-zero-pressure-drop, so differentiation relies on integrated-T and EcoDesign labelling rather than pressure-drop displacement.",
+      "entryStrategy": "1) Target tier-2 European condensing-boiler OEMs (Vaillant sub-brands, BDR Thermea marques, Bosch Junkers private-label). 2) Prove parity with SIKA VVX on pressure-drop and accuracy at equal unit cost. 3) Lead with integrated-T + EcoDesign data-out. 4) Complete 6-12 month supply qualification. 5) Scale via existing Marquardt OEM relationships.",
+      "estimatedTimeToEntry": "12-18 months",
+      "estimatedInvestment": "$400K-900K"
+    },
+    {
+      "rank": 5,
+      "slug": "commercial-service-machinery",
+      "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+      "naicsCode": "333318",
+      "scores": {
+        "odi": 5.49,
+        "featureFit": 3.78,
+        "constraintCompatibility": 7.5,
+        "jobCoverage": 3.75,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 8.6,
+        "composite": 5.95
+      },
+      "recommendation": "investigate",
+      "rationale": "Highest incumbent vulnerability (8.60) because turbine and paddle-wheel sensors clog in detergent/lint environments and 20% of machines ship with no measurement at all; fragmentation bonus +2.0. Offset by the weakest fit score (3.78) due to cost-sensitive OEM segment and 4 mitigable constraints, including deferred NSF 61 certification.",
+      "entryStrategy": "1) Target commercial-laundry OEMs (Alliance, Electrolux Professional, Miele Professional) on supply-side warm-wash circuits. 2) Prove zero-clog MTBF over 12 months vs. paddle-wheel baseline. 3) Expand to car-wash OEMs (Istobal, WashTec). 4) Pursue NSF 61 cert. for ice/beverage wave 2. 5) Position as WaterSense/IoT differentiator.",
+      "estimatedTimeToEntry": "9-15 months",
+      "estimatedInvestment": "$300K-800K"
+    },
+    {
+      "rank": 6,
+      "slug": "ac-home-heating",
+      "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+      "naicsCode": "333415",
+      "scores": {
+        "odi": 4.93,
+        "featureFit": 5,
+        "constraintCompatibility": 10,
+        "jobCoverage": 5,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 5.4,
+        "composite": 5.91
+      },
+      "recommendation": "investigate",
+      "rationale": "Home market. Perfect constraint score (10.00) since the sensor was designed for this envelope, but the lowest new-ODI (4.93) because most needs are already satisfied by installed flow sensors (including Marquardt's own). Expansion potential is depth (new OEM accounts, higher DN range), not market discovery.",
+      "entryStrategy": "1) Defend and expand existing OEM accounts. 2) Upsell integrated-T variant for thermal-energy labelling. 3) Close SIKA VVX displacement gaps in tier-2 accounts. 4) Reuse existing channels. 5) Track as baseline reference.",
+      "estimatedTimeToEntry": "0-6 months (active)",
+      "estimatedInvestment": "<$150K (incremental)"
+    },
+    {
+      "rank": 7,
+      "slug": "flowmeters-reference",
+      "marketName": "Flowmeters (home industry reference)",
+      "naicsCode": "41112501",
+      "scores": {
+        "odi": 4.65,
+        "featureFit": 5.56,
+        "constraintCompatibility": 10,
+        "jobCoverage": 3.75,
+        "vnHierarchy": 4,
+        "incumbentVulnerability": 5.2,
+        "composite": 5.5
+      },
+      "recommendation": "investigate",
+      "rationale": "Not a market-entry candidate; this NAICS is the product's own industry classification. Deep-component VN (4.00) and low new-ODI (4.65) are expected. Retained for traceability only.",
+      "entryStrategy": "Reference only - exclude from go-to-market allocation.",
+      "estimatedTimeToEntry": "N/A",
+      "estimatedInvestment": "N/A"
+    },
+    {
+      "rank": 8,
+      "slug": "breweries",
+      "marketName": "Breweries",
+      "naicsCode": "312120",
+      "scores": {
+        "odi": 5.34,
+        "featureFit": 4.93,
+        "constraintCompatibility": 8,
+        "jobCoverage": 3.75,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 4.5,
+        "composite": 5.34
+      },
+      "recommendation": "investigate",
+      "rationale": "Weakest composite: low fit (4.93) and lowest incumbent vulnerability (4.50) since cheap turbine sensors in glycol service are accepted and budgeted as consumables. CIP position requires food-contact cert. (medium, 6-12 months), pushing addressable entry to glycol-only loops.",
+      "entryStrategy": "1) Target mid-size craft/regional breweries (50k-500k hl/yr) with multi-fermenter glycol loops. 2) Prove zero-maintenance vs. turbine over 18-month trial. 3) Enter glycol-only; defer CIP until FDA 21 CFR 177 cert. funded. 4) Channel via brewery-equipment integrators (GEA, Ziemann, Krones). 5) Scale via retrofit kits.",
+      "estimatedTimeToEntry": "12-24 months",
+      "estimatedInvestment": "$300K-700K"
+    },
+    {
+      "rank": 9,
+      "slug": "data-processing-hosting",
+      "marketName": "Data Processing, Hosting, and Related Services",
+      "naicsCode": "518210",
+      "scores": {
+        "odi": 4.99,
+        "featureFit": 5.73,
+        "constraintCompatibility": 7.5,
+        "jobCoverage": 7.5,
+        "vnHierarchy": 6,
+        "incumbentVulnerability": 5,
+        "composite": 5.96
+      },
+      "recommendation": "investigate",
+      "rationale": "Solid composite (5.96) driven by strong job coverage (7.5 — 6 of 8 Ulwick steps sensor-relevant) and moderate feature fit (5.73, led by Digital Anomaly Detection at 7.56 and No Moving Parts at 6.78). ODI score (4.99) is mid-tier: safety-critical needs score high (Opp=14-15 for empty-pipe, leak-signature, GPU-threshold) but 34 total needs diluted by several adequately-served integration and specification needs. Constraint score (7.5) is penalised by the life-endurance ceiling — 3,000 m³ rating exhausted in 8-12 weeks at 24×7 CDU duty, the dominant commercial barrier. Incumbent (E+H Promag H, 35% share) is strong on accuracy and protocol coverage; Marquardt's differentiation is integrated temperature, compact plug-in form factor, and digital anomaly diagnostics unavailable from mag-meters.",
+      "entryStrategy": "1) Target AI/HPC colocation operators deploying DLC (Equinix, CyrusOne, QTS Realty) and CDU OEMs (Vertiv, Stulz, Rittal). 2) Prove <2s empty-pipe / air-lock detection before GPU power-on. 3) Integrate flow+temp telemetry into DCIM (Sunbird, Nlyte) via UART→MQTT bridge. 4) Publish PUE/WUE case study with hyperscaler anchor customer. 5) Scale via CDU-OEM supply-chain partnerships.",
+      "estimatedTimeToEntry": "12-24 months",
+      "estimatedInvestment": "$400K-900K"
+    }
+  ],
+  "executiveSummary": "Eight candidate markets survived constraint knockout; all fall in the investigate band (5.0-7.5 composite), none clear the 7.5 pursue threshold. Three markets anchor the near-term portfolio: Finfish Farming / RAS (6.97) - whitespace with life-critical ODI and fragmented incumbents; HVAC Contractors (6.61) - customer-facing channel with short sales cycle; District Energy / Steam & AC Supply (6.30) - EU EED regulatory tailwind and multi-jet retrofit opportunity. Core risk is uniformly moderate feature fit (avg 5.14/10) - differentiation depends on the integrated-temperature attractive feature and incumbent weakness exploitation. Next step: customer-discovery sprints in the top-3 markets plus fast-track EN 1434 / MID certification to unlock the District Energy billing segment."
+}

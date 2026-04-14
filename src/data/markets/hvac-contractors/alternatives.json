@@ -1,0 +1,32 @@
+{
+  "naicsCode": "238220",
+  "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+  "slug": "hvac-contractors",
+  "alternatives": [
+    {
+      "name": "Portable Ultrasonic Clamp-On Meter",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Hydronic Manometer / dP Meter via Balancing Valve",
+      "unspsc": "41112504",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Permanent Inline Ultrasonic Sensor (Marquardt)",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Manual Pressure-Drop Estimation",
+      "unspsc": "—",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Do nothing / Accept risk (Status Quo)",
+      "unspsc": "—",
+      "tradeoffs": ""
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "coreJobStatement": "Manufacture climate control and thermal management equipment that conditions, heats, cools, or refrigerates enclosed spaces and stored goods to specified temperature and humidity setpoints",
+  "productJobStatement": "",
+  "anchorLevel": "L5",
+  "lPath": "",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Residential comfort conditioning",
+      "qualifier": "",
+      "characteristics": "Single-family/multi-family heating + cooling",
+      "isTargetable": true,
+      "targetabilityReason": "heat pump vs furnace+AC vs boiler",
+      "circumstance": "Single-family/multi-family heating + cooling",
+      "alternativesDiffer": "Yes — heat pump vs furnace+AC vs boiler"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Commercial building comfort",
+      "qualifier": "",
+      "characteristics": "Office/retail/hospitality HVAC",
+      "isTargetable": true,
+      "targetabilityReason": "RTU vs chiller+AHU vs VRF",
+      "circumstance": "Office/retail/hospitality HVAC",
+      "alternativesDiffer": "Yes — RTU vs chiller+AHU vs VRF"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Industrial process cooling",
+      "qualifier": "",
+      "characteristics": "Manufacturing process thermal regulation",
+      "isTargetable": true,
+      "targetabilityReason": "chiller vs cooling tower vs direct refrigeration",
+      "circumstance": "Manufacturing process thermal regulation",
+      "alternativesDiffer": "Yes — chiller vs cooling tower vs direct refrigeration"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Cold chain / food preservation",
+      "qualifier": "",
+      "characteristics": "Perishable goods storage and transport",
+      "isTargetable": true,
+      "targetabilityReason": "walk-in vs reach-in vs blast freezer",
+      "circumstance": "Perishable goods storage and transport",
+      "alternativesDiffer": "Yes — walk-in vs reach-in vs blast freezer"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Pharmaceutical / cleanroom",
+      "qualifier": "",
+      "characteristics": "Precision temperature + humidity control",
+      "isTargetable": true,
+      "targetabilityReason": "chiller+AHU vs CRAC vs DX units",
+      "circumstance": "Precision temperature + humidity control",
+      "alternativesDiffer": "Yes — chiller+AHU vs CRAC vs DX units"
+    },
+    {
+      "segmentNumber": 6,
+      "name": "Data center thermal management",
+      "qualifier": "",
+      "characteristics": "IT equipment heat rejection",
+      "isTargetable": true,
+      "targetabilityReason": "air-cooled vs liquid-cooled vs evaporative",
+      "circumstance": "IT equipment heat rejection",
+      "alternativesDiffer": "Yes — air-cooled vs liquid-cooled vs evaporative"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Turbine / impeller sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Vortex sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Differential pressure sensor",
+      "unspsc": "41112409",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Paddle / float switch (binary)",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Determine flow measurement specifications, pipe size, media type, operating range",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor must match system hydraulic design",
+      "rawStatement": "Determine flow measurement specifications, pipe size, media type, operating range",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor must match system hydraulic design"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Install sensor, configure fluid type, set communication protocol, commission",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Critical product interaction at OEM assembly + field",
+      "rawStatement": "Install sensor, configure fluid type, set communication protocol, commission",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Critical product interaction at OEM assembly + field"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify signal quality, zero-flow baseline, communication handshake",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Must confirm measurement validity before compressor enable",
+      "rawStatement": "Verify signal quality, zero-flow baseline, communication handshake",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Must confirm measurement validity before compressor enable"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Measure volumetric flow rate and temperature during system operation",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core value-creating function",
+      "rawStatement": "Measure volumetric flow rate and temperature during system operation",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Core value-creating function"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Track measurement quality, detect drift, flag anomalies",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Ongoing measurement integrity over equipment lifetime",
+      "rawStatement": "Track measurement quality, detect drift, flag anomalies",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Ongoing measurement integrity over equipment lifetime"
+    },
+    {
+      "stepNumber": 7,
+      "verb": "Modify",
+      "description": "Recalibrate, reconfigure for media changes, compensate for drift",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Maintaining accuracy over service life",
+      "rawStatement": "Recalibrate, reconfigure for media changes, compensate for drift",
+      "jobStep": "MODIFY",
+      "relevant": true,
+      "rationale": "Maintaining accuracy over service life"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "OEM System Controller (control board)",
+      "pyramidLevels": "ALL"
+    },
+    {
+      "role": "Job Overseer",
+      "who": "HVAC OEM System Engineer",
+      "pyramidLevels": "own"
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Assembly technician, commissioning tech, service tech",
+      "pyramidLevels": "own"
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "OEM Procurement Manager",
+      "pyramidLevels": "Acq"
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Building occupant (indirect)",
+      "pyramidLevels": "—"
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications — Pumps & Systems",
+      "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Flow Meter FAQ: Common Problems & Solutions — GAIMC",
+      "url": "https://www.gaimc.com/Newsinfo/flow-meter-faq-common-problems-solutions",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Troubleshooting Flow Meters — KLEEV USA",
+      "url": "https://www.kleevusa.com/troubleshooting-flow-meters-common-issues-and-effective-solutions/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Flow Meter Calibration Best Practices — SIMCO",
+      "url": "https://www.simco.com/blog/flow-meter-calibration/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Flow Meter Calibration — Micronics",
+      "url": "https://micronicsflowmeters.com/flow-meter-calibration/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "HVAC Ultrasonic Flow Sensor Guide — Tameson",
+      "url": "https://tameson.com/pages/hvac-flow-sensor",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "What is a Flow Meter? — Belimo",
+      "url": "https://www.belimo.com/us/en_US/blog/what-is-a-flow-meter",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Heat Pump Short Cycling: Causes, Costs & Cures — MyDadCanDoThat",
+      "url": "https://mydadcandothat.com/blog/heat-pump-short-cycling-causes-cures/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "HVAC Short-Cycling: 10 Causes — John Henry",
+      "url": "https://www.jhlincoln.com/hvac-short-cycling-10-causes-and-how-to-prevent-it/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Ecodesign and Energy Labelling: Revised Rules for Heaters — EC Energy",
+      "url": "https://energy.ec.europa.eu/news/ecodesign-and-energy-labelling-commission-consults-revised-rules-space-and-water-heaters-2025-12-01_en",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Ecodesign and Energy Labelling — Eurovent",
+      "url": "https://www.eurovent.eu/issues/ecodesignandenergylabelling/",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S11"
+    },
+    {
+      "id": "S12",
+      "label": "EHPA Position Paper on EcoDesign Lots 1–2",
+      "url": "https://www.ehpa.org/wp-content/uploads/2023/07/20230623_EHPA-written-comments-on-Lots-1-2.pdf",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S12"
+    },
+    {
+      "id": "S13",
+      "label": "--",
+      "prefixedId": "JTBD-AC-HOME-HEATING-S13"
+    }
+  ]
+}

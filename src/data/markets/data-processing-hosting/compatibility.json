@@ -1,0 +1,159 @@
+{
+  "naicsCode": "518210",
+  "marketName": "Data Processing, Hosting, and Related Services",
+  "slug": "data-processing-hosting",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Aqueous Media Requirement",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "CDU secondary loop uses water or PG/EG25 glycol blend — aqueous media with <=50% glycol fits the sensor envelope directly.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Facility CHW 14-27 degC; Rubin-class secondary TCS supply 20-45 degC. Maximum ~45 degC is half the 90 degC limit.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble / Void Fraction Limit",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Closed, de-aerated CDU loop with expansion reservoir holds void fraction well below 2%.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "CDU loops run steady-state. Integrated NTC compensation delivers ~0.2% accuracy — adequate for thermal-duty and PUE telemetry.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Wetted Material Chemical Compatibility",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "HVAC-grade treated water plus PG/EG glycol and standard corrosion inhibitor are compatible with polymer housing and KTW/WRAS seals.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition Required",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "CDU secondary is a closed pressurized loop — always full by design.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Rack secondary loops flow 5-30 l/min, above the DN20 lower detection limit of 4.2 l/min.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "CDU secondary loops operate at 2-6 bar, well within the 10 bar rating.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "CDU skids are compact and often have elbows near sensor ports. A flow conditioner or validated short-run calibration addresses it at low cost.",
+      "mitigation": "Publish CDU-specific installation guide specifying upstream straight-run length; Offer a bolt-on flow-conditioner insert (honeycomb or perforated plate); Factory-calibrate an accuracy curve for 3 x DN upstream to support compact skid layouts",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Life Endurance Ceiling",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "At 20-30 l/min continuous 24/7, 3,000 m3 endurance equates to ~69-104 days. Data-center duty cycle burns out the current sensor in weeks to months — the dominant commercial/engineering question for this market.",
+      "mitigation": "Develop an industrial-duty DN20 variant with reinforced transducer bonding targeting >=30,000 m3 throughput; Alternatively, reposition the current sensor as a scheduled-replacement consumable aligned with annual CDU service intervals; Ship DCIM firmware that tracks cumulative throughput and fires a proactive replacement alert before drift",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "No Explosive Atmosphere Certification",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Data halls are not classified hazardous areas. ATEX/IECEx not required.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Ambient Temperature Range",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "White-space ambient is 18-27 degC (ASHRAE A1/A2). Electronics and RAST 2.5 connector operate well within range.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 0,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — spec envelope (DN20, 4.2–46.6 l/min, 0–6 bar, +2 to 90 °C, 3,000 m³ endurance)",
+      "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "03_constraints.md — 12 constraints with thresholds and absolute/mitigable classification",
+      "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "VN_data_processing_hosting.md — CDU/RDHx anchor, secondary-loop conditions (20–45 °C, 2–6 bar, 5–30 l/min, water/PG25)",
+      "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Tom's Hardware, Network World — 2025–26 liquid-cooling trend and Rubin-class supply temperatures",
+      "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S04"
+    }
+  ]
+}

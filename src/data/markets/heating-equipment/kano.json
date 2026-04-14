@@ -1,0 +1,286 @@
+{
+  "naicsCode": "333414",
+  "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "slug": "heating-equipment",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 6,
+        "cost": 5,
+        "safety": 7,
+        "reliability": 8,
+        "skill": 4,
+        "stress": 5,
+        "pain": 6,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 5.67
+      },
+      "rationale": "`must_be`. This IS the commodity FP (\"quantify volumetric or mass flow rate of fluids traversing a conduit\"). Every alternative in this market — turbine, vortex, DP estimation — provides some form of flow measurement. Primary drivers: Reliability (8) — solid-state transit-time principle delivers consistent readings without mechanical degradation, directly addressing N01 (flow deviation >±3%, Opp=13) and N24 (field failure <0.1% in 15-yr life, Opp=13); Safety (7) — rapid flow-change detection enables boiler dry-fire prevention and low-water safety cutoffs per N04 (flow stoppage >2s, Opp=13). [SRC: 01_product_decomposition, JTBD N01/N04/N24]"
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 8,
+        "safety": 4,
+        "reliability": 6,
+        "skill": 6,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 6,
+        "overall": 6
+      },
+      "rationale": "`attractive`. Most flowmeters in the heating OEM market do NOT include temperature measurement; separate NTC/PT1000 probes are standard in boiler designs. Combined flow + temperature from a single sensor body enables onboard thermal energy calculation (Q = flow × ΔT × Cp) — a critical OEM differentiator for EU EcoDesign energy labeling. Primary drivers: Cost (8) — eliminates separate temperature probe, wiring, and controller input, directly addressing N19 (single-point flow + temp, Opp=12); Confidence (7) — matched flow/temp from the same point reduces thermal energy calculation noise per N22 (Opp=12) and enables documented measured efficiency per N25 (Opp=13). [SRC: 02_functional_promise differentiator #4, JTBD N19/N22/N25]"
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 6,
+        "safety": 3,
+        "reliability": 5,
+        "skill": 3,
+        "stress": 3,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 3.78
+      },
+      "rationale": "`one_dimensional`. Less pressure drop is proportionally better for hydronic system design — every mbar counts in circulator pump sizing. Heating OEMs optimize system hydraulic resistance carefully. Primary drivers: Cost (6) — reduces circulator pump sizing burden and eliminates head-loss penalty in system design; Reliability (5) — no flow obstruction means no sensor-as-clogging-point. Scores kept moderate because while valuable, zero pressure drop alone does not transform the product category. [SRC: 01_product_decomposition differentiator #2]"
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 3,
+        "cost": 7,
+        "safety": 5,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 6,
+        "pain": 8,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 6
+      },
+      "rationale": "`attractive`. The incumbent alternative (impeller/turbine, 55-65% market share) suffers from magnetite fouling, bearing wear, and calibration drift — the top three pain points in this market per the JTBD analysis. Zero mechanical wear is a genuine delighter for OEM engineering managers who budget for turbine warranty claims. Primary drivers: Reliability (9) — eliminates the dominant failure mechanisms: magnetite rotor seizure per N10 (Opp=13) and calibration drift from blade erosion per N12 (Opp=13); Pain (8) — eliminates annual maintenance for cleaning/inspection per N11 (Opp=11), and removes the 3-5 year replacement schedule in hard-water circuits. [SRC: 01_product_decomposition differentiator #1, JTBD N10/N11/N12/N24]"
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 4,
+        "cost": 5,
+        "safety": 6,
+        "reliability": 4,
+        "skill": 3,
+        "stress": 4,
+        "pain": 3,
+        "confidence": 0,
+        "delight": 4,
+        "overall": 4.22
+      },
+      "rationale": "`attractive`. Not expected from standard heating equipment flow sensors. Detects backflow conditions caused by check-valve failure or reversed pump wiring during commissioning — useful as a diagnostic but not a primary value driver in this OEM market. Primary drivers: Safety (6) — detects reversed circulation that could cause thermal stratification or boiler short-cycling; Cost (5) — eliminates need for separate backflow detection hardware. Lower overall fit because backflow is an infrequent failure mode in well-designed hydronic systems. [SRC: 01_product_decomposition differentiator #5, JTBD N18]"
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 5,
+        "safety": 8,
+        "reliability": 7,
+        "skill": 6,
+        "stress": 7,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 6,
+        "overall": 6.33
+      },
+      "rationale": "`attractive`. Bubble detection, empty-pipe detection, and glycol presence monitoring are diagnostics that no incumbent turbine or vortex sensor provides. For heating equipment OEMs, this creates a sensor that actively participates in system health monitoring. Primary drivers: Safety (8) — empty-pipe detection prevents boiler dry-fire, the most critical safety interlock per N04 (Opp=13); Confidence (8) — real-time diagnostic flags (air, empty pipe, glycol shift) directly address N07 (undetected air >2% vol, Opp=13) and N14c (distinguish zero-flow from signal loss, Opp=13); Stress (7) — automated anomaly detection reduces OEM warranty engineering anxiety and installer troubleshooting burden. [SRC: 01_product_decomposition, JTBD N04/N07/N14c/N27]"
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 4,
+        "safety": 4,
+        "reliability": 8,
+        "skill": 5,
+        "stress": 5,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 4.78
+      },
+      "rationale": "`one_dimensional`. More accurate compensation = proportionally better readings across the operating envelope. Linear relationship. In hydronic heating, temperature swings during cold starts (15°C to 75°C) are routine and directly degrade uncompensated flow measurement. Primary drivers: Reliability (8) — reduces temperature-induced measurement error from ~1.5% to ~0.2% via NTC compensation, directly addressing N03 (degradation at ΔT >20°C, Opp=12) and N09 (glycol >50% failure, Opp=12); Confidence (7) — auto-compensated readings enable accurate thermal energy calculation across the full operating envelope per N22 (Opp=12). [SRC: 01_product_decomposition, JTBD N03/N09/N22]\n\n### 09b — Validation\n\n| # | Check | Result |\n|---|---|---|\n| 1 | Kano cross-market consistency | PASS — must_be only for core measurement (commodity FP baseline); 4 features classified attractive (all genuinely unexpected vs turbine incumbent at 55-65% share); 2 one_dimensional (linear performance scaling) |\n| 2 | Safety >= 7 but Confidence <= 3 | PASS — no violation. Max safety = 8 (Digital Anomaly Detection), corresponding confidence = 8 |\n| 3 | Skill >= 7 but Stress <= 3 | PASS — no violation. Max skill = 6, corresponding stress >= 5 |\n| 4 | overall_fit arithmetic | PASS — all 7 values recomputed: (sum of 9 scores) / 9, rounded to 2 decimal places |\n| 5 | No feature scores 10 on all dimensions | PASS — max single score = 9 (No Moving Parts → Reliability) |\n| 6 | Feature names comply with 1.pdf rules | PASS — spec-visible noun phrases, 2-6 words, no brand names, no outcome claims |\n| 7 | Indifferent features score 1-3 on all dimensions | N/A — no indifferent features in this market |\n\n---"
+    },
+    {
+      "featureName": "#",
+      "kanoClassification": "Check",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "1",
+      "kanoClassification": "Kano cross-market consistency",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "2",
+      "kanoClassification": "Safety >= 7 but Confidence <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "3",
+      "kanoClassification": "Skill >= 7 but Stress <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "4",
+      "kanoClassification": "overall_fit arithmetic",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "5",
+      "kanoClassification": "No feature scores 10 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "6",
+      "kanoClassification": "Feature names comply with 1.pdf rules",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "7",
+      "kanoClassification": "Indifferent features score 1-3 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.45,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications, UNSPSC classification",
+      "prefixedId": "FIT-HEATING-EQUIPMENT-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, FP extension, complements",
+      "prefixedId": "FIT-HEATING-EQUIPMENT-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 05_market_discovery] — NAICS 333414 candidate details, architecture distance scoring (distance=2)",
+      "prefixedId": "FIT-HEATING-EQUIPMENT-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] — 33 error statements (N01-N28), job map, 5 alternatives, 7 segments, OEM overseer needs",
+      "prefixedId": "FIT-HEATING-EQUIPMENT-S04"
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "naicsCode": "41112501",
+  "marketName": "Flowmeters (home industry reference)",
+  "slug": "flowmeters-reference",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 5,
+        "cost": 5,
+        "safety": 7,
+        "reliability": 8,
+        "skill": 4,
+        "stress": 5,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 5.44
+      },
+      "rationale": "`must_be`. This IS the commodity FP (\"quantify the volumetric or mass flow rate of fluids traversing a closed conduit\"). Every alternative — electromagnetic, Coriolis, turbine, vortex, DP — provides flow measurement. Absence is disqualifying. Primary drivers: Reliability (8) — solid-state transit-time delivers consistent readings without mechanical degradation, addressing E1 (flow accuracy ±2%, Opp=13) and E24 (unplanned replacement from mechanical wear, Opp=12); Safety (7) — rapid flow measurement enables safety interlocks for pipe-empty and dry-run detection per E11 (Opp=14) and reverse-flow events per E5 (Opp=11). [SRC: 01_product_decomposition, JTBD E1/E5/E11/E24]"
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 7,
+        "safety": 4,
+        "reliability": 6,
+        "skill": 5,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 5.67
+      },
+      "rationale": "`attractive`. Most flowmeters across the commodity class (electromagnetic, Coriolis, turbine, vortex, DP) do NOT include integrated temperature measurement — separate probes are standard practice. Combined flow + temperature from a single inline device enables thermal energy calculation (Q = flow × ΔT × Cp) without additional sensors, wiring, or controller inputs. Primary drivers: Cost (7) — eliminates separate temperature probe and installation, directly addressing E6 (simultaneous flow + temp ±0.5°C, Opp=11); Pain (7) — removes coordination of two separate measurement devices at each measurement point; Confidence (7) — matched flow/temp from the same location improves energy calculation accuracy. Attractive because most buyers do not expect a flowmeter to include temperature and are genuinely delighted when it does. [SRC: 02_functional_promise differentiator #4, JTBD E6]"
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 6,
+        "safety": 3,
+        "reliability": 5,
+        "skill": 3,
+        "stress": 3,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 3.78
+      },
+      "rationale": "`one_dimensional`. Less pressure drop is proportionally better for system hydraulic design across all segments. Ultrasonic and electromagnetic share this advantage; turbine, vortex, and DP meters create 50–500 mbar obstruction. Primary drivers: Cost (6) — reduces pump sizing burden and operating energy cost, addressing E7 (pressure drop <50 mbar, Opp=7); Reliability (5) — no flow obstruction means no sensor-as-clogging-point. Scores moderate because while valued, zero pressure drop does not transform the product category — instrumentation engineers expect at least one technology class to offer it. [SRC: 01_product_decomposition differentiator #2, JTBD E7]"
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 7,
+        "safety": 5,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 4,
+        "overall": 5.67
+      },
+      "rationale": "`one_dimensional`. Solid-state vs. mechanical is a well-understood trade-off in the instrumentation industry. Process engineers know that ultrasonic and electromagnetic sensors have no moving parts; turbine and vortex sensors do. The relationship is linear: fewer mechanical wear points = longer life = less maintenance. Not a surprise (would be `attractive` only in markets unfamiliar with the technology). Primary drivers: Reliability (9) — eliminates bearing wear, rotor fouling, and mechanical seal degradation, directly addressing E24 (unplanned replacement from mechanical wear, Opp=12) and E23 (annual maintenance cost, Opp=12); Pain (7) — removes bearing replacement schedules and periodic disassembly for inspection. [SRC: 01_product_decomposition differentiator #1, JTBD E23/E24]"
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 4,
+        "cost": 5,
+        "safety": 6,
+        "reliability": 5,
+        "skill": 3,
+        "stress": 4,
+        "pain": 3,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 4.22
+      },
+      "rationale": "`one_dimensional`. Inherent to transit-time ultrasonic — the sign of the transit-time difference inverts with flow reversal. Also achievable with electromagnetic meters. A known, valued capability in the instrumentation industry. More measurement capability is linearly better. Primary drivers: Safety (6) — detects backflow events that cause contamination or energy waste, addressing E5 (reverse-flow >0.5 l/min in <2s, Opp=11); Confidence (5) — provides flow direction information for system diagnostics. [SRC: 01_product_decomposition differentiator #5, JTBD E5]"
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 5,
+        "safety": 8,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 7,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 6,
+        "overall": 6.22
+      },
+      "rationale": "`attractive`. While premium industrial instruments (Endress+Hauser Heartbeat, Emerson Smart Meter Verification) offer self-diagnostics, the majority of commodity flowmeters provide only raw flow data. Embedded analytics detecting air bubbles, empty-pipe conditions, and glycol concentration changes from the sensor itself are genuinely surprising across most segments — particularly where turbine, vortex, or DP sensors are the norm. Primary drivers: Safety (8) — empty-pipe detection prevents pump damage and thermal runaway, directly addressing E11 (pipe-empty detection speed, Opp=14, the highest-opportunity need in this market); Confidence (8) — real-time diagnostic flags enable operators to distinguish genuine process deviations from sensor artifacts per E10 (Opp=10) and detect transducer fouling per E12 (Opp=11); Stress (7) — automated anomaly detection reduces operator cognitive load during multi-point monitoring. [SRC: 01_product_decomposition, JTBD E10/E11/E12]"
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 3,
+        "cost": 4,
+        "safety": 4,
+        "reliability": 8,
+        "skill": 5,
+        "stress": 4,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 2,
+        "overall": 4.56
+      },
+      "rationale": "`must_be`. Every professional-grade flowmeter includes temperature, pressure, and viscosity compensation. Uncompensated measurement would be unusable in any serious process application. Absence is disqualifying. Primary drivers: Reliability (8) — reduces temperature-induced measurement error from ~1.5% to ~0.2% via NTC compensation, directly addressing E4 (accuracy during >20°C transients, Opp=10) and contributing to E1 (overall accuracy ±2%, Opp=13); Confidence (7) — auto-compensated readings across the operating envelope maintain measurement trust per E9 (calibration drift, Opp=13). [SRC: 01_product_decomposition, JTBD E1/E4/E9]\n\n### 09b — Validation\n\n| # | Check | Result |\n|---|---|---|\n| 1 | Kano cross-market consistency | PASS — must_be for core measurement (commodity FP) and compensation (table-stakes); one_dimensional for well-known technology advantages (zero DP, no moving parts, bidirectional); attractive only for genuinely beyond-commodity capabilities (integrated temp, anomaly detection) |\n| 2 | Safety >= 7 but Confidence <= 3 | PASS — no violation. Max safety = 8 (Digital Anomaly Detection), corresponding confidence = 8 |\n| 3 | Skill >= 7 but Stress <= 3 | PASS — no violation. Max skill = 5 |\n| 4 | overall_fit arithmetic | PASS — all 7 values recomputed: (sum of 9 scores) / 9, rounded to 2 decimal places |\n| 5 | No feature scores 10 on all dimensions | PASS — max single score = 9 (No Moving Parts → Reliability) |\n| 6 | Feature names comply with 1.pdf rules | PASS — spec-visible noun phrases, 2–6 words, no brand names, no outcome claims |\n| 7 | Indifferent features score 1-3 on all dimensions | N/A — no indifferent features in this market |\n\n---"
+    },
+    {
+      "featureName": "#",
+      "kanoClassification": "Check",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "1",
+      "kanoClassification": "Kano cross-market consistency",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "2",
+      "kanoClassification": "Safety >= 7 but Confidence <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "3",
+      "kanoClassification": "Skill >= 7 but Stress <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "4",
+      "kanoClassification": "overall_fit arithmetic",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "5",
+      "kanoClassification": "No feature scores 10 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "6",
+      "kanoClassification": "Feature names comply with 1.pdf rules",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "7",
+      "kanoClassification": "Indifferent features score 1-3 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.37,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md",
+      "url": "01_product_decomposition.md",
+      "prefixedId": "FIT-FLOWMETERS-REFERENCE-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md",
+      "url": "02_functional_promise.md",
+      "prefixedId": "FIT-FLOWMETERS-REFERENCE-S02"
+    },
+    {
+      "id": "S03",
+      "label": "03_constraints.md",
+      "url": "03_constraints.md",
+      "prefixedId": "FIT-FLOWMETERS-REFERENCE-S03"
+    },
+    {
+      "id": "S04",
+      "label": "05_market_discovery.md",
+      "url": "05_market_discovery.md",
+      "prefixedId": "FIT-FLOWMETERS-REFERENCE-S04"
+    },
+    {
+      "id": "S05",
+      "label": "JTBD_flowmeters_src_01_product_decomposition_.md",
+      "url": "JTBD_flowmeters_src_01_product_decomposition_.md",
+      "prefixedId": "FIT-FLOWMETERS-REFERENCE-S05"
+    }
+  ]
+}

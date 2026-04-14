@@ -1,0 +1,283 @@
+{
+  "naicsCode": "333318",
+  "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+  "slug": "commercial-service-machinery",
+  "coreJobStatement": "Manufacture and deploy water-using commercial machinery that cleans, treats, purifies, or dispenses aqueous fluids for commercial and institutional operations [SRC: VN_other_commercial_and_service_industry_ma]",
+  "productJobStatement": "",
+  "anchorLevel": "L4 (component/subsystem)",
+  "lPath": "L7 Commercial Water-Using Machinery Ecosystem > L6.2 Fluid Circuit & Distribution > L5.2.4 Flow Sensing & Measurement > L4.2.4.1 Ultrasonic Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "High-volume vended laundry",
+      "qualifier": "",
+      "characteristics": "Self-service laundromat; 10+ machines running 8–14 cycles/day; pay-per-use billing requires per-cycle water metering; harshest consumer abuse; highest downtime cost",
+      "isTargetable": true,
+      "targetabilityReason": "pay-per-use billing demands metered consumption; no operator present to detect faults",
+      "circumstance": "Self-service laundromat; 10+ machines running 8–14 cycles/day; pay-per-use billing requires per-cycle water metering; harshest consumer abuse; highest downtime cost",
+      "alternativesDiffer": "Yes — pay-per-use billing demands metered consumption; no operator present to detect faults"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "On-premises institutional laundry",
+      "qualifier": "",
+      "characteristics": "Hotel, hospital, prison, nursing home; captive use; regulatory hygiene standards (HLAC, TRSA); water audit and sustainability reporting required; dedicated operator on shift",
+      "isTargetable": true,
+      "targetabilityReason": "compliance documentation and water-use benchmarking (10–15 L/kg target) drive sensor accuracy requirements [SRC: web_search — Girbau, Ecolab]",
+      "circumstance": "Hotel, hospital, prison, nursing home; captive use; regulatory hygiene standards (HLAC, TRSA); water audit and sustainability reporting required; dedicated operator on shift",
+      "alternativesDiffer": "Yes — compliance documentation and water-use benchmarking (10–15 L/kg target) drive sensor accuracy requirements [SRC: web_search — Girbau, Ecolab]"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Express tunnel car wash",
+      "qualifier": "",
+      "characteristics": "100–400 vehicles/day; water recycling mandatory in many jurisdictions; speed critical (3–5 min/vehicle); continuous high-volume operation; 50–80% water reclaim typical [SRC: web_search — NCS, EPA WaterSense]",
+      "isTargetable": true,
+      "targetabilityReason": "recycled water quality variability (TDS, turbidity) stresses sensor robustness",
+      "circumstance": "100–400 vehicles/day; water recycling mandatory in many jurisdictions; speed critical (3–5 min/vehicle); continuous high-volume operation; 50–80% water reclaim typical [SRC: web_search — NCS, EPA WaterSense]",
+      "alternativesDiffer": "Yes — recycled water quality variability (TDS, turbidity) stresses sensor robustness"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "In-bay / self-service car wash",
+      "qualifier": "",
+      "characteristics": "Customer-operated or automatic single-bay; moderate volume; payment-metered; often unmanned; lower water volume per wash (15–19 gal with reclaim) [SRC: web_search — EPA]",
+      "isTargetable": true,
+      "targetabilityReason": "unmanned operation demands autonomous fault detection",
+      "circumstance": "Customer-operated or automatic single-bay; moderate volume; payment-metered; often unmanned; lower water volume per wash (15–19 gal with reclaim) [SRC: web_search — EPA]",
+      "alternativesDiffer": "Yes — unmanned operation demands autonomous fault detection"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Commercial water purification",
+      "qualifier": "",
+      "characteristics": "Restaurant, office, healthcare; food safety compliance (NSF 61); potable water quality; lower flow rates (1–10 l/min); filter saturation and membrane fouling detection critical",
+      "isTargetable": true,
+      "targetabilityReason": "purity requirements and NSF/FDA compliance change alternative selection",
+      "circumstance": "Restaurant, office, healthcare; food safety compliance (NSF 61); potable water quality; lower flow rates (1–10 l/min); filter saturation and membrane fouling detection critical",
+      "alternativesDiffer": "Yes — purity requirements and NSF/FDA compliance change alternative selection"
+    },
+    {
+      "segmentNumber": 6,
+      "name": "Commercial ice & beverage dispensing",
+      "qualifier": "",
+      "characteristics": "Food service; hygiene-critical; water consumption tracking for cost control; seasonal demand variation; small pipe diameters (DN12–DN15)",
+      "isTargetable": true,
+      "targetabilityReason": "small bore and intermittent flow challenge sensor low-end range",
+      "circumstance": "Food service; hygiene-critical; water consumption tracking for cost control; seasonal demand variation; small pipe diameters (DN12–DN15)",
+      "alternativesDiffer": "Yes — small bore and intermittent flow challenge sensor low-end range"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Turbine / Paddle-Wheel Flow Sensor (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving rotor clogs from lint, detergent residue, and mineral scale in commercial wash water; bearing wear causes calibration drift ±5%/year; requires periodic manual cleaning; $5–15 unit cost but 1–3 year effective life in harsh media [SRC: web_search — KEYENCE, ICON Process Controls]"
+    },
+    {
+      "name": "Ultrasonic Flow Sensor (transit-time)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment by volume (detergent foam, recycled water aeration); requires pipe-full condition; higher unit cost vs turbine (3–5x at OEM volume); requires fluid-type configuration at commissioning [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Electromagnetic Flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Highest accuracy (±0.5%) but 5–10x cost vs turbine; requires power supply (no battery mode); larger installation footprint; conductive fluid required (water qualifies); over-specified for most commercial equipment applications [SRC: web_search — Lanry Instruments]"
+    },
+    {
+      "name": "Solenoid-Valve Volumetric Dosing (timed fill)",
+      "unspsc": "—",
+      "tradeoffs": "Zero sensor hardware cost; accuracy only ±10–20%; degrades with supply pressure variation; cannot detect leaks, blockages, or anomalies; no consumption data for billing or reporting; budget fallback in price-sensitive equipment [SRC: VN_other_commercial_and_service_industry_ma]"
+    },
+    {
+      "name": "Do nothing / no measurement [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero P1 lifecycle burden; water consumption unknown; cannot support pay-per-use billing; cannot meet WaterSense/Energy Star water efficiency reporting; faults and leaks undetectable; water waste invisible"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required flow rate range, pipe diameter, media compatibility (water + detergent + recycled water), temperature envelope, and communication protocol for the machine's fluid circuit",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor specifications must match the machine's diverse operating conditions across output types",
+      "rawStatement": "Define the required flow rate range, pipe diameter, media compatibility (water + detergent + recycled water), temperature envelope, and communication protocol for the machine's fluid circuit",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor specifications must match the machine's diverse operating conditions across output types"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "the optimal insertion point in the machine's internal piping where flow profile is developed and space constraints of the machine enclosure are met",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Commercial machines have compact enclosures; sensor body size and straight-pipe requirements directly affect packaging feasibility",
+      "rawStatement": "Locate the optimal insertion point in the machine's internal piping where flow profile is developed and space constraints of the machine enclosure are met",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Commercial machines have compact enclosures; sensor body size and straight-pipe requirements directly affect packaging feasibility"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "the pipe section, electrical connections (UART/LIN/frequency), and controller interface for sensor integration on the OEM assembly line",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Mechanical and electrical integration into high-volume OEM production is core to product adoption",
+      "rawStatement": "Prepare the pipe section, electrical connections (UART/LIN/frequency), and controller interface for sensor integration on the OEM assembly line",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Mechanical and electrical integration into high-volume OEM production is core to product adoption"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "sensor readiness at end-of-line: verify pipe-full condition, absence of air pockets, correct wiring, and communication handshake with machine controller",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-shipment quality validation is critical — field failures in vended/unmanned equipment are costly",
+      "rawStatement": "Confirm sensor readiness at end-of-line: verify pipe-full condition, absence of air pockets, correct wiring, and communication handshake with machine controller",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-shipment quality validation is critical — field failures in vended/unmanned equipment are costly"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "continuous flow measurement, providing real-time volumetric flow rate, consumption totals, temperature, and diagnostic flags to the machine controller",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "This IS the core value-creating action of the product",
+      "rawStatement": "Execute continuous flow measurement, providing real-time volumetric flow rate, consumption totals, temperature, and diagnostic flags to the machine controller",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "This IS the core value-creating action of the product"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "measurement quality indicators: signal strength, air bubble events, empty-pipe alarms, flow anomalies indicating leaks or blockages",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Ongoing measurement integrity enables IoT water monitoring, predictive maintenance, and leak detection",
+      "rawStatement": "Monitor measurement quality indicators: signal strength, air bubble events, empty-pipe alarms, flow anomalies indicating leaks or blockages",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Ongoing measurement integrity enables IoT water monitoring, predictive maintenance, and leak detection"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Overseer",
+      "who": "OEM product engineering manager — accountable for machine performance, water efficiency, and certification",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Laundromat owner, hotel facility manager, car wash operator — receives water-use data and operational reliability",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "OEM procurement manager — selects and sources sensor components for production",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Influencer",
+      "who": "Water utility auditor, EPA/WaterSense certifier, franchise compliance officer",
+      "pyramidLevels": ""
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Water Flow Meter 2025: Top Models & How to Choose — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/water-flow-meter-2025-top-models-how-to-choose/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Sources of Trouble for Flow Meters — KEYENCE",
+      "url": "https://www.keyence.com/ss/products/process/flowknowledge/sources/trouble_01.jsp",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Turbine vs Paddle Wheel Flow Meters — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/turbine-vs-paddle-wheel-flow-meters-whats-the-difference/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Comparing Turbine and Ultrasonic Flow Meters — Lanry Instruments",
+      "url": "https://www.lanry-instruments.com/support/comparing-turbine-and-ultrasonic-flow-meters-a-complete-overview/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "WaterSense at Work Section 5.4: Vehicle Washes — EPA",
+      "url": "https://www.epa.gov/system/files/documents/2023-11/ws-commercial-bmp-watersenseatwork_section5.4_vehiclewashes.pdf",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S05"
+    },
+    {
+      "id": "S06",
+      "label": "WaterSense at Work Section 3.5: Laundry Equipment — EPA",
+      "url": "https://www.epa.gov/system/files/documents/2023-06/ws-commercial-watersense-at-work_Section_3.5_Laundry_Equipment.pdf",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Car Wash Water Recycling System — NCS National Carwash Solutions",
+      "url": "https://ncswash.com/what-is-a-car-wash-water-recycling-system/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Pros and Cons of Recycling Car Wash Water — Sensorex",
+      "url": "https://sensorex.com/pros-cons-recycling-car-wash-water/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Speed Queen Technology Offerings — Alliance Laundry Systems",
+      "url": "https://alliancelaundry.com/news/speed-queens-game-changing-technology-offerings-will-change-the-way-multi-housing-residents-do-laundry/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Maximizing Water Savings in Professional Laundry — Girbau",
+      "url": "https://www.girbau.com/blog/maximizing-water-savings-in-the-professional-laundry-sector/",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Water & Energy Reduction at a European Commercial Laundry — Ecolab",
+      "url": "https://en-uk.ecolab.com/articles/2024/07/water-and-energy-reduction-at-a-european-commercial-laundry",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Water Conservation Strategies for Industrial Laundry Plants 2026 — Softrol",
+      "url": "https://softrol.com/feeds/blog/water-conservation-industrial-laundry",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S13"
+    },
+    {
+      "id": "S14",
+      "label": "VN_other_commercial_and_service_industry_ma.md (upstream input)",
+      "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S14"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "naicsCode": "333414",
+  "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "slug": "heating-equipment",
+  "alternatives": [
+    {
+      "name": "Impeller / Turbine Flow Sensor (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts subject to magnetite fouling, bearing wear, and particulate jamming; paramagnetic MnO₂ attracted to magnetized rotor; calibration drift from blade erosion; 3–5 year service life in hard-water areas [SRC: web_search — HeatingHelp, BoilerMag]"
+    },
+    {
+      "name": "Ultrasonic Flow Sensor (transit-time)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment; requires pipe-full condition; higher unit cost vs turbine; signal loss in partially filled pipes [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Vortex Flow Sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "Introduces pressure drop (bluff body obstructs flow); limited accuracy at low flow rates below Reynolds threshold; vibration-sensitive [SRC: VN_heating_equipment]"
+    },
+    {
+      "name": "Differential Pressure Estimation (from pump curve)",
+      "unspsc": "—",
+      "tradeoffs": "Zero hardware cost; accuracy ±15–20%; no direct measurement; depends on pump curve validity; cannot detect anomalies [SRC: VN_heating_equipment]"
+    },
+    {
+      "name": "Do nothing / accept risk [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero lifecycle burden; thermal output unverified; no fault detection; cannot comply with EU EcoDesign measured-efficiency requirements; energy waste undetectable"
+    }
+  ]
+}

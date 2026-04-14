@@ -1,0 +1,32 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "alternatives": [
+    {
+      "name": "Mechanical Impeller / Turbine Meter (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts subject to magnetite fouling and bearing wear; accuracy degrades from Class 2 to Class 3 within 3–5 years in hard-water networks; mandatory 5–6 year metrological re-verification cycle; pressure drop across impeller; low-flow dead band where rotor stalls [SRC: web_search — Kamstrup, KROHNE]"
+    },
+    {
+      "name": "Ultrasonic Transit-Time Flow Sensor (growing)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment; requires pipe-full condition; higher unit cost vs mechanical (1.5–2.5x); signal loss during transient air pockets; requires acoustic coupling verification at commissioning [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Electromagnetic Flow Meter (premium)",
+      "unspsc": "41112501",
+      "tradeoffs": "3–5x cost of ultrasonic; requires minimum electrical conductivity (~5 μS/cm); heavier and larger footprint; higher power consumption; typically reserved for large commercial/industrial substations (DN50+) [SRC: VN_steam_and_air_conditioning_supply]"
+    },
+    {
+      "name": "Coriolis Flow Meter (custody transfer)",
+      "unspsc": "41112501",
+      "tradeoffs": "10–20x cost of ultrasonic; heavy (vibrating tubes); large footprint; overkill accuracy for building-level billing; used only in high-value custody transfer points at plant level [SRC: web_search]"
+    },
+    {
+      "name": "Do nothing / estimated allocation [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero lifecycle burden; thermal energy allocated by heated floor area or fixed percentage; cross-subsidisation between buildings; non-compliant with EU EED individual metering mandate; no fault detection; no incentive for energy saving"
+    }
+  ]
+}

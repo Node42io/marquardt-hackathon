@@ -1,0 +1,21 @@
+{
+  "slug": "hvac-contractors",
+  "name": "Plumbing, Heating and Air-Conditioning Contractors",
+  "naicsCode": "238220",
+  "isReference": false,
+  "rank": 2,
+  "scores": {
+    "odi": 5.29,
+    "featureFit": 5.39,
+    "constraintCompatibility": 9.5,
+    "jobCoverage": 6.25,
+    "vnHierarchy": 10,
+    "incumbentVulnerability": 5.6,
+    "composite": 6.61
+  },
+  "recommendation": "investigate",
+  "rationale": "Strongest VN position (10.00) as the contractor is a direct buyer with short sales cycle. Low constraint risk (9.50). Incumbent vulnerability modest (5.60) since portable clamp-on meters are complementary rather than directly competitive; Marquardt creates a permanent-inline category adjacent to spot-check tools.",
+  "entryStrategy": "1) Target 5-10 DACH TGA service firms in hydronic commissioning. 2) Prove <2s flow-response latency on zone-valve adjustment. 3) Bundle as permanent inline add-on to EcoDesign commissioning kits. 4) Channel via wholesale (GC, Richter+Frenzel) and certified-contractor networks. 5) Cross-sell to smart-HVAC IoT platforms.",
+  "estimatedTimeToEntry": "6-12 months",
+  "estimatedInvestment": "$150K-400K"
+}

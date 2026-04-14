@@ -1,0 +1,234 @@
+{
+  "naicsCode": "41112501",
+  "marketName": "Flowmeters (home industry reference)",
+  "slug": "flowmeters-reference",
+  "coreJobStatement": "Design, manufacture, calibrate, and deliver instruments that measure, display, and control industrial process variables to enable safe, efficient, and compliant operation of process plants [SRC: VN_flowmeters]",
+  "productJobStatement": "Help Process-Fluid Loop to quantify volumetric flow rate and medium temperature at a single inline measurement point in closed-pipe liquid circuits",
+  "anchorLevel": "L4 (component/subsystem — sensor within parent fluid loop)",
+  "lPath": "",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Continuous thermal management",
+      "qualifier": "",
+      "characteristics": "Closed-loop heating/cooling circuits where flow × ΔT = energy (kW)",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Closed-loop heating/cooling circuits where flow × ΔT = energy (kW)",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Batch process metering",
+      "qualifier": "",
+      "characteristics": "Recipe-driven dosing/blending where flow accuracy = product quality",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Recipe-driven dosing/blending where flow accuracy = product quality",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 3,
+      "name": "CIP/SIP validation",
+      "qualifier": "",
+      "characteristics": "Cleaning circuits where flow proves adequate coverage for hygiene compliance",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Cleaning circuits where flow proves adequate coverage for hygiene compliance",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Safety-critical interlock",
+      "qualifier": "",
+      "characteristics": "Flow as safety input: low-water cutoff, cooling failure, overtemperature protection",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Flow as safety input: low-water cutoff, cooling failure, overtemperature protection",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Fiscal/billing metering",
+      "qualifier": "",
+      "characteristics": "Flow measurement as basis for commercial transactions",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Flow measurement as basis for commercial transactions",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 6,
+      "name": "Water infrastructure monitoring",
+      "qualifier": "",
+      "characteristics": "Distribution networks: leak detection, pressure zone management, demand forecasting",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Distribution networks: leak detection, pressure zone management, demand forecasting",
+      "alternativesDiffer": ""
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time inline flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Requires acoustic coupling; air bubbles >2% vol degrade accuracy; needs 5–10× DN straight pipe run; pipe must be fully filled; accuracy depends on correct fluid-type configuration at commissioning [SRC: 01_product_decomposition, web_search]"
+    },
+    {
+      "name": "Electromagnetic (mag) flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Requires conductive fluid >5 μS/cm (excludes deionized water, glycol); higher power (5–20 W vs <1 W); 2–3× unit cost at DN15–DN25; no temperature co-measurement; larger installation footprint [SRC: web_search]"
+    },
+    {
+      "name": "Coriolis mass flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "5–10× unit cost ($200–500 vs $20–60 OEM); significant weight (5–50 kg vs 0.3 kg); inherent pressure drop from bent tube geometry; provides mass flow + density but overkill for volumetric water circuits [SRC: web_search]"
+    },
+    {
+      "name": "Turbine / impeller flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Lowest unit cost ($5–20 OEM); moving parts degrade with glycol/particulates; bearing wear limits life to 2–3 years; creates pressure drop; glycol-intolerant; no bidirectional detection [SRC: web_search]"
+    },
+    {
+      "name": "No measurement / pump-curve inference",
+      "unspsc": "— (Status Quo)",
+      "tradeoffs": "Zero hardware cost; zero installation effort; accuracy ±10–20% at best; no fault detection; no trend data; no regulatory compliance capability [ASM]"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Specify flow range, pipe diameter, medium type, accuracy class, and communication protocol for the measurement point",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor variant selection directly depends on these parameters [SRC: 01_product_decomposition]",
+      "rawStatement": "Specify flow range, pipe diameter, medium type, accuracy class, and communication protocol for the measurement point",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor variant selection directly depends on these parameters [SRC: 01_product_decomposition]"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "Identify installation point with adequate straight pipe run and access for wiring",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Installation constraints (straight run, pipe-full) affect measurement accuracy [SRC: 01_product_decomposition]",
+      "rawStatement": "Identify installation point with adequate straight pipe run and access for wiring",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Installation constraints (straight run, pipe-full) affect measurement accuracy [SRC: 01_product_decomposition]"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Install sensor inline, connect piping/power/communications, configure fluid type",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Commissioning determines measurement accuracy; fluid-type configuration is required [SRC: 01_product_decomposition]",
+      "rawStatement": "Install sensor inline, connect piping/power/communications, configure fluid type",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Commissioning determines measurement accuracy; fluid-type configuration is required [SRC: 01_product_decomposition]"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify signal quality, zero-flow baseline, and diagnostic status before process startup",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-startup verification catches latent installation faults",
+      "rawStatement": "Verify signal quality, zero-flow baseline, and diagnostic status before process startup",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-startup verification catches latent installation faults"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Continuously measure volumetric flow rate and medium temperature; transmit readings to controller",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core value-creating function of the sensor [SRC: 02_functional_promise]",
+      "rawStatement": "Continuously measure volumetric flow rate and medium temperature; transmit readings to controller",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Core value-creating function of the sensor [SRC: 02_functional_promise]"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "Check measurement stability, detect drift, verify diagnostic health during operation",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Long-term accuracy depends on ongoing monitoring; drift is progressive and hard to detect [SRC: web_search]",
+      "rawStatement": "Check measurement stability, detect drift, verify diagnostic health during operation",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Long-term accuracy depends on ongoing monitoring; drift is progressive and hard to detect [SRC: web_search]"
+    }
+  ],
+  "stakeholders": [],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Flowmeter Drift Causes and Management — Turbines Inc.",
+      "url": "https://www.turbinesincorporated.com/news-resources/what-causes-flow-meter-drift-over-time-and-how-to-manage-it/",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Ultrasonic Flow Meter Calibration and Maintenance — Pokcenser",
+      "url": "https://pokcensertech.com/ultrasonic-flow-meter-calibration-and-maintenance-excellence-guide/",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Common Flowmeter Errors — Processing Magazine",
+      "url": "https://www.processingmagazine.com/process-control-automation/instrumentation/flow-measurement/article/55351639/common-flowmeter-errors-and-how-to-avoid-them",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Flow Meter Error — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flow_meter_error",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Ultrasonic Transit Time Technology — ONICON",
+      "url": "https://www.onicon.com/education-series/ultrasonic-transit-time-technology-explained-doc-0004240",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S05"
+    },
+    {
+      "id": "S06",
+      "label": "VN_flowmeters_src_01_product_decomposition_.md",
+      "url": "VN_flowmeters_src_01_product_decomposition_.md",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S06"
+    },
+    {
+      "id": "S07",
+      "label": "01_product_decomposition.md",
+      "url": "01_product_decomposition.md",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S07"
+    },
+    {
+      "id": "S08",
+      "label": "02_functional_promise.md",
+      "url": "02_functional_promise.md",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S08"
+    },
+    {
+      "id": "S09",
+      "label": "05_market_discovery.md",
+      "url": "05_market_discovery.md",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S10"
+    },
+    {
+      "id": "S11",
+      "label": "--",
+      "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S11"
+    }
+  ]
+}

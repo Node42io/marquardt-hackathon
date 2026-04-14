@@ -1,0 +1,286 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 5,
+        "cost": 4,
+        "safety": 7,
+        "reliability": 0,
+        "skill": 3,
+        "stress": 5,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 2,
+        "overall": 5
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 6,
+        "cost": 7,
+        "safety": 3,
+        "reliability": 0,
+        "skill": 5,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 5.67
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 2,
+        "cost": 7,
+        "safety": 2,
+        "reliability": 0,
+        "skill": 2,
+        "stress": 2,
+        "pain": 3,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 2.89
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 3,
+        "cost": 8,
+        "safety": 3,
+        "reliability": 0,
+        "skill": 6,
+        "stress": 6,
+        "pain": 8,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 6
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 4,
+        "cost": 5,
+        "safety": 7,
+        "reliability": 0,
+        "skill": 4,
+        "stress": 5,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 4,
+        "overall": 5
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 7,
+        "cost": 6,
+        "safety": 8,
+        "reliability": 0,
+        "skill": 5,
+        "stress": 7,
+        "pain": 6,
+        "confidence": 0,
+        "delight": 6,
+        "overall": 6.67
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 4,
+        "safety": 3,
+        "reliability": 0,
+        "skill": 5,
+        "stress": 4,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 3,
+        "overall": 4.56
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "#",
+      "kanoClassification": "Check",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "1",
+      "kanoClassification": "Kano cross-market consistency",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "2",
+      "kanoClassification": "safety ≥ 7 but confidence ≤ 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "3",
+      "kanoClassification": "skill ≥ 7 but stress ≤ 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "4",
+      "kanoClassification": "overall_fit arithmetic",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "5",
+      "kanoClassification": "No feature scores 10 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "6",
+      "kanoClassification": "Feature names comply with 2–6 word noun phrases",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "7",
+      "kanoClassification": "Measurement accuracy feature scores 1 on Reliability",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.39,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: 01_product_decomposition] — Technology-scope features, vendor-scope features, constraints, UNSPSC classification",
+      "prefixedId": "FIT-AC-HOME-HEATING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: 02_functional_promise] — Commodity FP, product FP, FP extension, complements",
+      "prefixedId": "FIT-AC-HOME-HEATING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 05_market_discovery] — NAICS 333415 excluded as home market; architecture distance scoring criteria",
+      "prefixedId": "FIT-AC-HOME-HEATING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] — 27 error statements, alternatives, scenarios, job map",
+      "prefixedId": "FIT-AC-HOME-HEATING-S04"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "naicsCode": "238220",
+  "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+  "slug": "hvac-contractors",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 5,
+        "cost": 5,
+        "safety": 3,
+        "reliability": 8,
+        "skill": 4,
+        "stress": 5,
+        "pain": 6,
+        "confidence": 0,
+        "delight": 2,
+        "overall": 5.11
+      },
+      "rationale": "`must_be`. This IS the commodity FP (\"quantify volumetric flow rate\"). Every alternative provides some form of flow measurement. Primary drivers: Reliability (8) — solid-state principle delivers consistent readings per need #7 (repeatability drift <1%, Opp=11); Confidence (8) — direct measurement vs estimation-based alternatives addresses need #25 (commissioning sign-off anxiety). [SRC: 01_product_decomposition, JTBD #6 Opp=13, #7 Opp=11]"
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 7,
+        "cost": 6,
+        "safety": 2,
+        "reliability": 5,
+        "skill": 6,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 6,
+        "overall": 5.67
+      },
+      "rationale": "`attractive`. Current alternatives (clamp-on meters, dP manometers) do NOT include temperature measurement; separate probes are standard. Combined flow+temp in one sensor body enables thermal energy calculation (kW = flow x delta-T x Cp) without additional hardware. Primary drivers: Time (7) — eliminates separate probe installation per need #8 (zones verified per hour, Opp=11); Pain (7) — removes manual temperature recording; Confidence (7) — temperature-compensated flow readings are inherently more trustworthy. [SRC: 02_functional_promise differentiator #4, JTBD #18 Opp=14]"
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 5,
+        "safety": 2,
+        "reliability": 6,
+        "skill": 3,
+        "stress": 2,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 2,
+        "overall": 3.44
+      },
+      "rationale": "`one_dimensional`. Less pressure drop is proportionally better for hydronic system design — every mbar must be accounted for in pump sizing. Linear relationship. Primary drivers: Reliability (6) — no flow obstruction eliminates sensor-as-blockage-point; Cost (5) — avoids pump oversizing for head-loss compensation. [SRC: 01_product_decomposition differentiator #2]"
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 6,
+        "cost": 7,
+        "safety": 3,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 6,
+        "pain": 7,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 6.11
+      },
+      "rationale": "`attractive`. HVAC contractors currently deal with impeller sensor failures and maintenance schedules. A permanently installed sensor with zero mechanical wear is genuinely delightful for a service industry accustomed to bearing replacements. Primary drivers: Reliability (9) — eliminates the dominant failure mechanism in mechanical flowmeters (bearing wear, particle jamming), directly addressing need #11 (detect post-commissioning degradation, Opp=16); Cost (7) — reduces 10-year TCO per need #21 (Opp=12). [SRC: 01_product_decomposition differentiator #1, JTBD #11 Opp=16, #14 Opp=12]"
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 4,
+        "safety": 6,
+        "reliability": 5,
+        "skill": 4,
+        "stress": 5,
+        "pain": 4,
+        "confidence": 0,
+        "delight": 4,
+        "overall": 4.78
+      },
+      "rationale": "`attractive`. Current alternatives (clamp-on, dP manometer) cannot detect flow direction. Backflow detection without additional hardware provides commissioning diagnostic value. Primary drivers: Safety (6) — detects pump malfunction or check-valve failure preventing system damage; Confidence (6) — directional certainty that estimation methods cannot provide. [SRC: 01_product_decomposition differentiator #5, JTBD #10 Opp=11]"
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 4,
+        "safety": 5,
+        "reliability": 7,
+        "skill": 6,
+        "stress": 7,
+        "pain": 6,
+        "confidence": 0,
+        "delight": 5,
+        "overall": 5.78
+      },
+      "rationale": "`attractive`. Bubble detection, empty-pipe detection, and glycol presence detection are diagnostics no current HVAC commissioning alternative provides. Primary drivers: Stress (7) — removes operator anxiety about hidden system problems; Reliability (7) — continuous health monitoring addresses need #11 (Opp=16) for post-commissioning degradation detection; Confidence (7) — automatic diagnostic flags vs subjective assessment. [SRC: 01_product_decomposition feature, JTBD #12 Opp=11]"
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 3,
+        "safety": 2,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 4,
+        "pain": 5,
+        "confidence": 0,
+        "delight": 2,
+        "overall": 4.22
+      },
+      "rationale": "`one_dimensional`. Better compensation = more accurate readings across the operating envelope. Linear relationship. Primary drivers: Reliability (7) — reduces temperature-induced error from ~1.5% to ~0.2% via NTC compensation, addressing need #13 (temperature transient robustness, Opp=9); Confidence (7) — auto-compensated readings are trustworthy across heating/cooling mode changeover. [SRC: 01_product_decomposition, JTBD #13 Opp=9]\n\n### 09b — Validation\n\n| # | Check | Result |\n|---|---|---|\n| 1 | Kano cross-market consistency | PASS — must_be only for core measurement function (commodity FP baseline); 4 features classified attractive (all genuinely unexpected in HVAC commissioning); 2 one_dimensional (linear performance scaling) |\n| 2 | Safety >= 7 but Confidence <= 3 | PASS — no violation. Max safety = 6 (Bidirectional), corresponding confidence = 6 |\n| 3 | Skill >= 7 but Stress <= 3 | PASS — no violation. Max skill = 6 (Anomaly Detection, Temperature Sensing), corresponding stress >= 5 |\n| 4 | overall_fit arithmetic | PASS — all 7 values recomputed: (sum of 9 scores) / 9, rounded to 2 decimal places |\n| 5 | No feature scores 10 on all dimensions | PASS — max single score = 9 (No Moving Parts → Reliability) |\n| 6 | Feature names comply with 1.pdf rules | PASS — spec-visible noun phrases, 2-6 words, no brand names, no outcome claims |\n| 7 | Indifferent features score 1-3 on all dimensions | N/A — no indifferent features in this market |\n\n---"
+    },
+    {
+      "featureName": "#",
+      "kanoClassification": "Check",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "1",
+      "kanoClassification": "Kano cross-market consistency",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "2",
+      "kanoClassification": "Safety >= 7 but Confidence <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "3",
+      "kanoClassification": "Skill >= 7 but Stress <= 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "4",
+      "kanoClassification": "overall_fit arithmetic",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "5",
+      "kanoClassification": "No feature scores 10 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "6",
+      "kanoClassification": "Feature names comply with 1.pdf rules",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "7",
+      "kanoClassification": "Indifferent features score 1-3 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.34,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications, UNSPSC classification",
+      "prefixedId": "FIT-HVAC-CONTRACTORS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, FP extension, complements",
+      "prefixedId": "FIT-HVAC-CONTRACTORS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 05_market_discovery] — NAICS 238220 candidate details, architecture distance scoring",
+      "prefixedId": "FIT-HVAC-CONTRACTORS-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] — 25 error statements, job map, alternatives, segments, regulatory drivers",
+      "prefixedId": "FIT-HVAC-CONTRACTORS-S04"
+    }
+  ]
+}

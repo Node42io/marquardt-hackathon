@@ -1,0 +1,514 @@
+{
+  "naicsCode": "112511",
+  "marketName": "Finfish Farming and Fish Hatcheries",
+  "slug": "finfish-farming",
+  "coreJobStatement": "Cultivate finfish from egg or fingerling to market-size harvest in a controlled aquatic environment",
+  "outputTypes": [
+    "Coldwater RAS (salmon, trout, char)",
+    "Warmwater RAS (tilapia, barramundi, perch, sturgeon)",
+    "Hatchery / Fingerling",
+    "Flow-Through / Raceway",
+    "Pond / Earthen"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — what process steps and equipment compose the finfish production chain",
+  "architectureDistance": 4,
+  "marketSize": "~$5.2B globally (integrated RAS, 2024); projected $13B by 2034 at 9.6% CAGR; ~$472M filtration equipment [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Water Intake & Conditioning",
+      "type": "Core",
+      "jobFamily": "Source, condition, and deliver water at required quality for rearing",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Mechanical Filtration",
+      "type": "Core",
+      "jobFamily": "Remove particulate solids (feces, uneaten feed) from rearing water",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Biological Filtration",
+      "type": "Core",
+      "jobFamily": "Convert toxic ammonia and nitrite to less-toxic nitrate via nitrifying bacteria",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Gas Management",
+      "type": "Core",
+      "jobFamily": "Strip CO2, inject dissolved oxygen to maintain respirable water",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Disinfection",
+      "type": "Core",
+      "jobFamily": "Kill pathogens (bacteria, viruses, parasites) in recirculating water",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Temperature Control",
+      "type": "Core",
+      "jobFamily": "Maintain species-specific water temperature for optimal growth",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Fish Rearing",
+      "type": "Core",
+      "jobFamily": "House fish from fingerling to harvest weight in controlled tanks",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Feed Delivery",
+      "type": "Core",
+      "jobFamily": "Distribute formulated feed to fish at optimized rates and schedules",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Harvest & Grading",
+      "type": "Core",
+      "jobFamily": "Remove market-size fish from rearing units, sort by size and quality",
+      "l5Units": []
+    },
+    {
+      "id": "L6.10",
+      "name": "Water Quality Monitoring & Control (H)",
+      "type": "Horizontal",
+      "jobFamily": "Continuously sense DO, pH, ammonia, temperature, flow across all steps. MARQUARDT PRIMARY POSITION.",
+      "l5Units": []
+    },
+    {
+      "id": "L6.11",
+      "name": "Biosecurity & Fish Health (H)",
+      "type": "Horizontal",
+      "jobFamily": "Quarantine, vaccinate, and monitor disease across all rearing units",
+      "l5Units": []
+    },
+    {
+      "id": "L6.12",
+      "name": "Waste & Effluent Management (H)",
+      "type": "Horizontal",
+      "jobFamily": "Treat and discharge or reuse waste streams from filtration and harvest",
+      "l5Units": []
+    },
+    {
+      "id": "L6.13",
+      "name": "Facility Utilities & Power (H)",
+      "type": "Horizontal",
+      "jobFamily": "Provide electrical power, emergency backup, compressed air, and building services",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Source Water Pump Station",
+      "functionalJob": "Lifts and delivers raw water from well, municipal supply, or surface source to the conditioning stage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Pre-Filtration",
+      "functionalJob": "Removes suspended sediment and large particulates before water enters the rearing loop.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Water Chemistry Adjustment",
+      "functionalJob": "Conditions intake water to species-specific requirements for pH, alkalinity, and hardness.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Drum Filter",
+      "functionalJob": "Dominant mechanical filtration technology in commercial RAS. Rotating drum screen with pressurized spray backwash. Screen mesh 40–100 μm. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Radial Flow Settler",
+      "functionalJob": "Gravity-based particle separation for heavier settleable solids. Often used as primary removal ahead of drum filter.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Protein Skimmer / Foam Fractionator",
+      "functionalJob": "Removes dissolved organic compounds and fine suspended particles via foam flotation. Critical for marine and high-density freshwater systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Moving Bed Biofilm Reactor (MBBR)",
+      "functionalJob": "Dominant biofilter type in modern RAS. Neutrally buoyant plastic media (Kaldnes K1, BioElements) suspended by aeration. Specific surface area 500–800 m²/m³. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Trickling Tower / Biotower",
+      "functionalJob": "Passive-aeration biofilter. Water trickles over structured media while air flows counter-current. Also serves as CO2 stripper. Common in smaller RAS. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Fluidized Sand Biofilter",
+      "functionalJob": "High-efficiency biofilter using fine sand (0.2–0.5 mm) as media. Superior nitrification rate per volume but higher energy cost.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Oxygen Supply",
+      "functionalJob": "Pure oxygen delivery to the facility. On-site generation (PSA/VPSA) for large farms; liquid oxygen (LOX) for smaller or backup.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Oxygen Injection",
+      "functionalJob": "Dissolves pure oxygen into rearing water at high transfer efficiency.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "CO2 Stripper / Degasser",
+      "functionalJob": "Removes dissolved carbon dioxide from recirculating water. Often combined with trickling tower biofilter.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "UV Sterilizer",
+      "functionalJob": "UV-C irradiation destroying bacteria, viruses, and parasites. Sized by UV dose (40–100 mJ/cm² depending on target pathogen). Standard in nearly all RAS.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Ozone Treatment",
+      "functionalJob": "Ozone (O3) injection for advanced disinfection and micro-flocculation. Requires careful dosing — excess ozone is toxic to fish. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Heat Exchanger",
+      "functionalJob": "Transfers thermal energy between rearing water and the heating/cooling source without mixing fluids. Plate or shell-and-tube designs.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Chiller / Heat Pump",
+      "functionalJob": "Active cooling for coldwater species or tropical facility climate control. Scroll or screw compressor with R-410A or R-134a refrigerant.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Heating System",
+      "functionalJob": "Heats water for warmwater species or maintains hatchery spawning temperature. Boiler, electric heater, or heat pump in reverse mode.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Grow-Out Tank",
+      "functionalJob": "Primary rearing vessel for market-size production. Circular tanks (6–15 m diameter) in RAS; rectangular raceways in flow-through systems. Stocking density 40–100 kg/m³ for RAS salmonids.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Fry / Fingerling Tank",
+      "functionalJob": "Smaller nursery tanks for juvenile stages (1–50 g). Require gentler water currents and finer mesh screens to prevent escape.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.3",
+      "name": "Tank Hydrodynamics",
+      "functionalJob": "Systems creating self-cleaning water flow patterns that sweep solids to center drain while distributing oxygen uniformly.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Automatic Feeder",
+      "functionalJob": "Delivers pelletized feed to tanks on programmable schedules. Pneumatic, belt, or screw feeder types.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Feed Storage & Handling",
+      "functionalJob": "Bulk storage and distribution of formulated feed from delivery to feeder hopper.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.3",
+      "name": "Feed Monitoring",
+      "functionalJob": "Detects uneaten feed and optimizes feeding regime for feed conversion efficiency.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.1",
+      "name": "Grading Machine",
+      "functionalJob": "Sorts fish by size for uniform batches (market requirement) and splits undersize fish back to grow-out.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.2",
+      "name": "Fish Pump / Transfer",
+      "functionalJob": "Moves live fish from rearing tanks to grading or slaughter with minimal stress and scale damage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.3",
+      "name": "Stunning & Slaughter",
+      "functionalJob": "Humane killing per animal welfare standards (electrical, percussive, or CO2 stunning followed by bleeding).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.1",
+      "name": "Flow Measurement",
+      "functionalJob": "Measures water circulation rate in main loop, individual tank supply, and treatment stages. Flow failure alarm is the most critical safety trigger in RAS.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.2",
+      "name": "Dissolved Gas Sensing",
+      "functionalJob": "Monitors dissolved oxygen (most critical parameter), CO2, and total dissolved gas pressure.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.3",
+      "name": "Chemical Parameter Sensing",
+      "functionalJob": "Monitors ammonia, pH, nitrite, and turbidity — the core water chemistry parameters for fish health.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.10.4",
+      "name": "Central SCADA / Control",
+      "functionalJob": "Aggregates all sensor data, runs control algorithms, and generates alarms for out-of-range conditions.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.11.1",
+      "name": "Quarantine System",
+      "functionalJob": "Isolated water circuit for incoming fish, preventing pathogen introduction to main production.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.11.2",
+      "name": "Vaccination & Treatment",
+      "functionalJob": "Preventive and therapeutic interventions for disease control.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.11.3",
+      "name": "Fish Surveillance",
+      "functionalJob": "Continuous monitoring of fish behavior, mortality, and health indicators for early disease detection.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.12.1",
+      "name": "Sludge Handling",
+      "functionalJob": "Collects, concentrates, and removes solid waste from drum filter backwash and settler drains.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.12.2",
+      "name": "Effluent Treatment",
+      "functionalJob": "Treats liquid discharge to meet environmental permit requirements before release.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.12.3",
+      "name": "Nutrient Recovery",
+      "functionalJob": "Converts waste nutrients into value-added by-products (fertilizer, compost, aquaponics crops).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.13.1",
+      "name": "Emergency Power",
+      "functionalJob": "Backup electrical supply ensuring water circulation and oxygenation continue during grid failure.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.13.2",
+      "name": "Compressed Air / Blower System",
+      "functionalJob": "Provides air for aeration, MBBR agitation, pneumatic valve actuation, and ozone generation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.13.3",
+      "name": "Building Services",
+      "functionalJob": "Facility-level infrastructure supporting the production environment.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "MARQUARDT PRIMARY POSITION.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Recirculating Aquaculture System — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Recirculating_aquaculture_system",
+      "prefixedId": "VN-FINFISH-FARMING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Recirculating Aquaculture Systems — AgMRC",
+      "url": "https://www.agmrc.org/commodities-products/aquaculture/recirculating-aquaculture-systems",
+      "prefixedId": "VN-FINFISH-FARMING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "RAS Equipment Categories — CEAUnion",
+      "url": "https://ceaunion.com/aquaculture-ras-systems",
+      "prefixedId": "VN-FINFISH-FARMING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Complete RAS Skid Filtration — MAT-KULING",
+      "url": "https://matkuling.com/equipment/recirculating-aquaculture-skid-filtration/",
+      "prefixedId": "VN-FINFISH-FARMING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "RAS Drum Filter Market — MarketIntelo",
+      "url": "https://marketintelo.com/report/aquaculture-drum-filters-market",
+      "prefixedId": "VN-FINFISH-FARMING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Aquaculture Filtration Equipment Market — Valuates Reports",
+      "url": "https://reports.valuates.com/market-reports/QYRE-Auto-13K16612/global-aquaculture-filtration-equipment",
+      "prefixedId": "VN-FINFISH-FARMING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Integrated RAS Market Report — TBRC",
+      "url": "https://www.thebusinessresearchcompany.com/report/integrated-recirculating-aquaculture-system-ras-global-market-report",
+      "prefixedId": "VN-FINFISH-FARMING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "RAS Aquaculture Systems Trends 2025 — Accio",
+      "url": "https://www.accio.com/business/ras-aquaculture-systems-trends",
+      "prefixedId": "VN-FINFISH-FARMING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture — Gentos",
+      "url": "https://www.pflowmeters.com/info/how-ultrasonic-flow-meters-are-transforming-aq-101928732.html",
+      "prefixedId": "VN-FINFISH-FARMING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Aquaculture Sensors for Fish Hatcheries — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/aquaculture-sensors-reliable-monitoring-for-fish-hatcheries-and-commercial-aquatic-operations/",
+      "prefixedId": "VN-FINFISH-FARMING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Aquaculture Fin Fish Species — AgMRC",
+      "url": "https://www.agmrc.org/commodities-products/aquaculture/aquaculture-fin-fish-species",
+      "prefixedId": "VN-FINFISH-FARMING-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Global Finfish Production Review — Global Seafood Alliance",
+      "url": "https://www.globalseafood.org/advocate/global-finfish-production-review-forecast-nearly-doubled-decade/",
+      "prefixedId": "VN-FINFISH-FARMING-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "VN-FINFISH-FARMING-S13"
+    },
+    {
+      "id": "S14",
+      "label": "05_market_discovery.md — Architecture distance scoring for NAICS 112511",
+      "prefixedId": "VN-FINFISH-FARMING-S14"
+    },
+    {
+      "id": "S15",
+      "label": "--",
+      "prefixedId": "VN-FINFISH-FARMING-S15"
+    }
+  ]
+}

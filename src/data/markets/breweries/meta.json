@@ -1,0 +1,21 @@
+{
+  "slug": "breweries",
+  "name": "Breweries",
+  "naicsCode": "312120",
+  "isReference": false,
+  "rank": 8,
+  "scores": {
+    "odi": 5.34,
+    "featureFit": 4.93,
+    "constraintCompatibility": 8,
+    "jobCoverage": 3.75,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 4.5,
+    "composite": 5.34
+  },
+  "recommendation": "investigate",
+  "rationale": "Weakest composite: low fit (4.93) and lowest incumbent vulnerability (4.50) since cheap turbine sensors in glycol service are accepted and budgeted as consumables. CIP position requires food-contact cert. (medium, 6-12 months), pushing addressable entry to glycol-only loops.",
+  "entryStrategy": "1) Target mid-size craft/regional breweries (50k-500k hl/yr) with multi-fermenter glycol loops. 2) Prove zero-maintenance vs. turbine over 18-month trial. 3) Enter glycol-only; defer CIP until FDA 21 CFR 177 cert. funded. 4) Channel via brewery-equipment integrators (GEA, Ziemann, Krones). 5) Scale via retrofit kits.",
+  "estimatedTimeToEntry": "12-24 months",
+  "estimatedInvestment": "$300K-700K"
+}

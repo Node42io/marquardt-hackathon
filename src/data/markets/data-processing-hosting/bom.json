@@ -1,0 +1,11 @@
+{
+  "slug": "data-processing-hosting",
+  "marketName": "Data Processing, Hosting, and Related Services",
+  "naicsCode": "518210",
+  "confidence": "low",
+  "dataPending": true,
+  "sensorNote": "BOM markdown not yet generated. Data center liquid cooling (direct liquid cooling, immersion cooling) uses DN20 for server rack CDU coolant loop monitoring. Sensor fits in the coolant distribution unit (CDU) as process equipment, not product BOM.",
+  "outputTypes": [],
+  "marquardtAnchorIds": [],
+  "l4Subsystems": []
+}

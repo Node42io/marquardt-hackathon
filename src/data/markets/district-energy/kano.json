@@ -1,0 +1,274 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 5,
+        "cost": 7,
+        "safety": 4,
+        "reliability": 8,
+        "skill": 4,
+        "stress": 5,
+        "pain": 6,
+        "confidence": 7,
+        "delight": 3,
+        "overall": 5.44
+      },
+      "rationale": "(must_be, 5.44): Core commodity function — every flowmeter quantifies flow rate. Expected in district energy metering. Primary drivers: Reliability (8) — no mechanical wear means stable long-term accuracy per EN 1434; Cost (7) — eliminates revenue leakage from calibration drift. Grounded in N01 (flow accuracy ±2%, imp=10) and N25 (field failure rate <0.1%, imp=9). [SRC: JTBD_steam]"
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 6,
+        "cost": 8,
+        "safety": 3,
+        "reliability": 7,
+        "skill": 6,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 7,
+        "delight": 5,
+        "overall": 6
+      },
+      "rationale": "(attractive, 6.00): Traditional district energy substations use separate flow sensor + temperature probes. Combined flow+temp in a single body is a genuine delighter — eliminates a component, reduces wiring, and ensures co-located measurement. Directly addresses N22 (single-point flow + temperature, opp=12). Primary drivers: Cost (8) — eliminates separate temp probe; Reliability (7) — one fewer failure point; Pain (7) — removes installation labor for second sensor. [SRC: JTBD_steam, 01_product_decomposition]"
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 2,
+        "cost": 5,
+        "safety": 2,
+        "reliability": 4,
+        "skill": 3,
+        "stress": 2,
+        "pain": 3,
+        "confidence": 3,
+        "delight": 2,
+        "overall": 2.89
+      },
+      "rationale": "(one_dimensional, 2.89): Unobstructed bore avoids head-loss penalty. In district substations, the heat exchanger and control valve dominate pressure drop — the meter's contribution is marginal. One_dimensional rather than indifferent because hydraulic designers do value zero head-loss, but the magnitude of contribution is small. Primary driver: Cost (5) — marginal pump energy savings. [SRC: 01_product_decomposition]"
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 4,
+        "cost": 9,
+        "safety": 4,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 7,
+        "pain": 8,
+        "confidence": 8,
+        "delight": 4,
+        "overall": 6.44
+      },
+      "rationale": "(one_dimensional, 6.44): Strongest differentiator vs the incumbent mechanical impeller meter (40-50% market share). Eliminates magnetite seizure (N11, opp=15), calibration drift from bearing wear (N13, opp=15), and mandatory 5-6 year fleet replacement cycles (N12, opp=13). Primary drivers: Cost (9) — eliminates fleet-wide replacement cycle; Reliability (9) — eliminates all mechanical failure modes; Pain (8) — removes the entire maintenance scheduling burden across hundreds of substations; Confidence (8) — stable calibration over 15+ years builds billing trust. [SRC: JTBD_steam]"
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 3,
+        "cost": 6,
+        "safety": 4,
+        "reliability": 5,
+        "skill": 5,
+        "stress": 5,
+        "pain": 5,
+        "confidence": 6,
+        "delight": 6,
+        "overall": 5
+      },
+      "rationale": "(attractive, 5.00): Inherent to transit-time principle. Critical for 4th/5th generation low-temperature prosumer networks where buildings inject excess heat back into the grid. Mechanical impeller meters cannot detect reverse flow. Genuine delighter for network operators transitioning to bidirectional operation. Primary drivers: Cost (6) — eliminates need for separate check valves or reverse-flow sensors; Delight (6) — \"the meter handles bidirectional billing automatically\" is genuinely surprising to legacy operators; Confidence (6) — accurate net-energy billing in prosumer networks. [SRC: JTBD_steam segment 6: 4th/5th gen low-temperature network]"
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 7,
+        "safety": 7,
+        "reliability": 6,
+        "skill": 6,
+        "stress": 7,
+        "pain": 6,
+        "confidence": 8,
+        "delight": 6,
+        "overall": 6.44
+      },
+      "rationale": "(attractive, 6.44): Detects bubbles, empty pipes, glycol presence. Traditional meters have zero diagnostic capability — air entrainment silently biases billing for months (N07, opp=15). Distinguishing genuine zero-flow from transient signal anomalies prevents both false alarms and missed real failures (N17, opp=13). Primary drivers: Confidence (8) — operators know when measurement is valid vs compromised; Safety (7) — empty-pipe alarm and flow-stoppage discrimination; Cost (7) — prevents silent billing errors from undetected air. [SRC: JTBD_steam]"
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 2,
+        "cost": 5,
+        "safety": 3,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 4,
+        "pain": 4,
+        "confidence": 6,
+        "delight": 2,
+        "overall": 4.22
+      },
+      "rationale": "(must_be, 4.22): District heating supply temperatures swing 50-120°C seasonally (N03, opp=14). Speed of sound in water changes ~2.4 m/s per °C. Without compensation, error reaches ~1.5%. Must_be because any flow sensor deployed in a temperature-varying environment MUST compensate — absence would be disqualifying. Primary driver: Reliability (7) — reduces temperature-induced error from ~1.5% to ~0.2%. [SRC: 01_product_decomposition, JTBD_steam]\n\n### 09b — Validation Summary\n\n| Check | Result |\n|---|---|\n| Kano cross-market consistency | N/A — single market |\n| safety >= 7 AND confidence <= 3 | PASS — no violations |\n| skill >= 7 AND stress <= 3 | PASS — no violations |\n| overall_fit arithmetic | PASS — all recomputed |\n| No feature scores 10 on all dimensions | PASS |\n| Feature names comply with 1.pdf rules | PASS — spec-visible noun phrases, no brands, no outcome claims |\n\n---"
+    },
+    {
+      "featureName": "Check",
+      "kanoClassification": "Result",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Kano cross-market consistency",
+      "kanoClassification": "N/A — single market",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "safety >= 7 AND confidence <= 3",
+      "kanoClassification": "PASS — no violations",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "skill >= 7 AND stress <= 3",
+      "kanoClassification": "PASS — no violations",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "overall_fit arithmetic",
+      "kanoClassification": "PASS — all recomputed",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "No feature scores 10 on all dimensions",
+      "kanoClassification": "PASS",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Feature names comply with 1.pdf rules",
+      "kanoClassification": "PASS — spec-visible noun phrases, no brands, no outcome claims",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.6,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Features, constraints, specifications, UNSPSC classification",
+      "prefixedId": "FIT-DISTRICT-ENERGY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — Commodity FP, FP extension, required complements",
+      "prefixedId": "FIT-DISTRICT-ENERGY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md — NAICS 221330 candidate detail, architecture distance scoring",
+      "prefixedId": "FIT-DISTRICT-ENERGY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "JTBD_steam_and_air_conditioning_supply.md — CFJ, job map, alternatives, error statements (N01-N29)",
+      "prefixedId": "FIT-DISTRICT-ENERGY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "FIT-DISTRICT-ENERGY-S05"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "flowmeters-reference",
+  "marketName": "Instruments for Measuring Industrial Process Variables",
+  "naicsCode": "334513",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "The Marquardt DN20 sensor IS the product being decomposed here. NAICS 334513 is where the sensor itself is manufactured. This BOM shows what is inside the sensor — its own L4 subsystems.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Inline Transit-Time Ultrasonic Flow Sensor (DN20)", "hydronic": true, "sensorFit": "primary", "notes": "The Marquardt product itself — full decomposition L4→L0." }
+  ],
+  "marquardtAnchorIds": ["L4.1", "L4.2", "L4.3", "L4.4"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Acoustic Sensing Subsystem",
+      "costSharePct": 30,
+      "keyDesignChoice": "Piezoelectric element type",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "PZT-5A/5H polycrystalline ceramic", "sharePct": 65, "trend": "stable" },
+        { "name": "PZT-4/PZT-8 hard PZT", "sharePct": 10, "trend": "stable" },
+        { "name": "PMN-PT single crystal", "sharePct": 10, "trend": "growing" },
+        { "name": "BNT-based lead-free ceramic", "sharePct": 5, "trend": "growing" },
+        { "name": "AlN thin-film PMUT (MEMS)", "sharePct": 5, "trend": "growing" },
+        { "name": "PZN-PT / LiNbO₃ single crystal", "sharePct": 5, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.1.1", "name": "Piezoelectric Transducer Assembly (A-path × B-path)", "isMarquardtAnchor": true, "sensorNote": "Marquardt uses matched PZT pair — alternating transmit/receive transit-time", "alternatives": [
+          { "name": "PZT-5A/5H polycrystalline ceramic (Marquardt current)", "sharePct": 65, "trend": "stable", "isMarquardt": true },
+          { "name": "PZT-4/PZT-8 hard PZT", "sharePct": 10, "trend": "stable" },
+          { "name": "PMN-PT single crystal", "sharePct": 10, "trend": "growing" },
+          { "name": "BNT-based lead-free ceramic", "sharePct": 5, "trend": "growing" },
+          { "name": "AlN thin-film PMUT (MEMS)", "sharePct": 5, "trend": "growing" },
+          { "name": "PZN-PT / LiNbO₃ single crystal", "sharePct": 5, "trend": "stable" }
+        ]},
+        { "id": "L3.1.2", "name": "Acoustic Coupling Wedge", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "PEEK polymer (high-temp, chemical resistant)", "sharePct": 45, "trend": "growing" },
+          { "name": "Rexolite (cross-linked polystyrene)", "sharePct": 35, "trend": "stable" },
+          { "name": "Acetal (Delrin)", "sharePct": 20, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Signal Processing & Electronics Subsystem",
+      "costSharePct": 35,
+      "keyDesignChoice": "MCU / ASIC platform",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Integrated USS-MCU (TI MSP430FR6043 class)", "sharePct": 50, "trend": "growing" },
+        { "name": "Discrete analog front-end + separate MCU", "sharePct": 30, "trend": "declining" },
+        { "name": "Dedicated custom ASIC", "sharePct": 20, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.2.1", "name": "Ultrasonic Measurement PCB (AFE + MCU)", "isMarquardtAnchor": true, "sensorNote": "Marquardt proprietary PCB: ToF measurement, anomaly detection (bubbles, empty-pipe, glycol), bidirectional", "alternatives": [
+          { "name": "Integrated USS-MCU (TI MSP430FR6043 reference class)", "sharePct": 50, "trend": "growing" },
+          { "name": "Discrete analog front-end + separate MCU", "sharePct": 30, "trend": "declining" },
+          { "name": "Dedicated custom ASIC", "sharePct": 20, "trend": "stable" }
+        ]},
+        { "id": "L3.2.3", "name": "Output & Communication Interface", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Pulse output (frequency, 1-pulse/litre)", "sharePct": 40, "trend": "stable" },
+          { "name": "UART / LIN bus (automotive-grade)", "sharePct": 30, "trend": "growing" },
+          { "name": "M-Bus / Modbus RS-485", "sharePct": 20, "trend": "stable" },
+          { "name": "IO-Link", "sharePct": 10, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.3",
+      "name": "Hydraulic Body Subsystem",
+      "costSharePct": 25,
+      "keyDesignChoice": "Metering spool material",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Stainless steel 316L (machined spool)", "sharePct": 60, "trend": "stable" },
+        { "name": "PPS / PVDF polymer injection-moulded", "sharePct": 25, "trend": "growing" },
+        { "name": "Brass (traditional threaded body)", "sharePct": 15, "trend": "declining" }
+      ],
+      "modules": [
+        { "id": "L3.3.1", "name": "Wetted Flow Spool (DN20 bore)", "isMarquardtAnchor": true, "sensorNote": "Marquardt uses PPS/PVDF — KTW/WRAS drinking water approved; DN20 standard, DN12/14/25 variants", "alternatives": [
+          { "name": "Stainless steel 316L machined spool", "sharePct": 60, "trend": "stable" },
+          { "name": "PPS / PVDF polymer (Marquardt, KTW/WRAS-approved)", "sharePct": 25, "trend": "growing", "isMarquardt": true },
+          { "name": "Brass body (traditional)", "sharePct": 15, "trend": "declining" }
+        ]},
+        { "id": "L3.3.2", "name": "Process Connection Assembly", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Threaded (Rp¾\" / G¾\" per DIN EN ISO 228)", "sharePct": 55, "trend": "stable" },
+          { "name": "RAST 2.5 plug-in / quick-connect (OEM)", "sharePct": 30, "trend": "growing" },
+          { "name": "Compression fitting", "sharePct": 15, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.4",
+      "name": "Enclosure & Sealing Subsystem",
+      "costSharePct": 10,
+      "keyDesignChoice": "Housing material & IP rating",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "PA66-GF30 (glass-filled nylon) overmoulded", "sharePct": 55, "trend": "stable" },
+        { "name": "ABS snap-fit cover", "sharePct": 25, "trend": "stable" },
+        { "name": "Die-cast aluminium housing", "sharePct": 20, "trend": "declining" }
+      ],
+      "modules": [
+        { "id": "L3.4.2", "name": "Transducer O-Rings (wetted seals)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "EPDM (water service, ≤70°C)", "sharePct": 40, "trend": "stable" },
+          { "name": "FKM / Viton (glycol + high-temp ≤90°C)", "sharePct": 35, "trend": "growing" },
+          { "name": "NBR (standard water/oil, ≤80°C)", "sharePct": 20, "trend": "declining" },
+          { "name": "FFKM (high-purity / aggressive media)", "sharePct": 5, "trend": "stable" }
+        ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "data-processing-hosting",
+  "name": "Data Processing, Hosting, and Related Services",
+  "naicsCode": "518210",
+  "isReference": false,
+  "rank": 9,
+  "scores": {
+    "odi": 4.99,
+    "featureFit": 5.73,
+    "constraintCompatibility": 7.5,
+    "jobCoverage": 7.5,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 5,
+    "composite": 5.96
+  },
+  "recommendation": "investigate",
+  "rationale": "Solid composite (5.96) driven by strong job coverage (7.5 — 6 of 8 Ulwick steps sensor-relevant) and moderate feature fit (5.73, led by Digital Anomaly Detection at 7.56 and No Moving Parts at 6.78). ODI score (4.99) is mid-tier: safety-critical needs score high (Opp=14-15 for empty-pipe, leak-signature, GPU-threshold) but 34 total needs diluted by several adequately-served integration and specification needs. Constraint score (7.5) is penalised by the life-endurance ceiling — 3,000 m³ rating exhausted in 8-12 weeks at 24×7 CDU duty, the dominant commercial barrier. Incumbent (E+H Promag H, 35% share) is strong on accuracy and protocol coverage; Marquardt's differentiation is integrated temperature, compact plug-in form factor, and digital anomaly diagnostics unavailable from mag-meters.",
+  "entryStrategy": "1) Target AI/HPC colocation operators deploying DLC (Equinix, CyrusOne, QTS Realty) and CDU OEMs (Vertiv, Stulz, Rittal). 2) Prove <2s empty-pipe / air-lock detection before GPU power-on. 3) Integrate flow+temp telemetry into DCIM (Sunbird, Nlyte) via UART→MQTT bridge. 4) Publish PUE/WUE case study with hyperscaler anchor customer. 5) Scale via CDU-OEM supply-chain partnerships.",
+  "estimatedTimeToEntry": "12-24 months",
+  "estimatedInvestment": "$400K-900K"
+}

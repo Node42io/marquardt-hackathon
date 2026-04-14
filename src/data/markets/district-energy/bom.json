@@ -1,0 +1,11 @@
+{
+  "slug": "district-energy",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "naicsCode": "221330",
+  "confidence": "low",
+  "dataPending": true,
+  "sensorNote": "BOM markdown not yet generated. District energy systems use larger pipe diameters — DN25 variant most relevant for main distribution loop measurements; DN20 for building substations.",
+  "outputTypes": [],
+  "marquardtAnchorIds": [],
+  "l4Subsystems": []
+}

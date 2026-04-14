@@ -1,0 +1,276 @@
+{
+  "naicsCode": "518210",
+  "marketName": "Data Processing, Hosting, and Related Services",
+  "slug": "data-processing-hosting",
+  "coreJobStatement": "Host, operate, and deliver customer computing and data workloads on demand with continuous uptime, predictable performance, and contracted SLA compliance",
+  "productJobStatement": "",
+  "anchorLevel": "L4",
+  "lPath": "",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Enterprise colo tenant",
+      "qualifier": "",
+      "characteristics": "Rents rack space + power, owns IT",
+      "isTargetable": true,
+      "targetabilityReason": "colo vs on-prem vs cloud",
+      "circumstance": "Rents rack space + power, owns IT",
+      "alternativesDiffer": "Yes — colo vs on-prem vs cloud"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Hyperscale operator",
+      "qualifier": "",
+      "characteristics": "Owns full stack, chases PUE/WUE at scale",
+      "isTargetable": true,
+      "targetabilityReason": "air vs liquid vs immersion",
+      "circumstance": "Owns full stack, chases PUE/WUE at scale",
+      "alternativesDiffer": "Yes — air vs liquid vs immersion"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "AI / HPC operator",
+      "qualifier": "",
+      "characteristics": "GPU racks >50 kW, liquid cooling mandatory",
+      "isTargetable": true,
+      "targetabilityReason": "DLC vs rear-door vs immersion",
+      "circumstance": "GPU racks >50 kW, liquid cooling mandatory",
+      "alternativesDiffer": "Yes — DLC vs rear-door vs immersion"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Regulated workloads (fin/health/gov)",
+      "qualifier": "",
+      "characteristics": "Tier III/IV uptime + compliance",
+      "isTargetable": true,
+      "targetabilityReason": "on-prem vs sovereign cloud",
+      "circumstance": "Tier III/IV uptime + compliance",
+      "alternativesDiffer": "Yes — on-prem vs sovereign cloud"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Edge / regional hosting",
+      "qualifier": "",
+      "characteristics": "Latency-sensitive, small footprint",
+      "isTargetable": true,
+      "targetabilityReason": "micro-DC vs telco colo",
+      "circumstance": "Latency-sensitive, small footprint",
+      "alternativesDiffer": "Yes — micro-DC vs telco colo"
+    },
+    {
+      "segmentNumber": 6,
+      "name": "Sustainability-driven buyer",
+      "qualifier": "",
+      "characteristics": "PUE/WUE/carbon contracted",
+      "isTargetable": true,
+      "targetabilityReason": "evap vs dry vs liquid",
+      "circumstance": "PUE/WUE/carbon contracted",
+      "alternativesDiffer": "Yes — evap vs dry vs liquid"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Electromagnetic (magnetic) flow meter",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Turbine / impeller",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Vortex sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Thermal-dispersion / paddle switch (binary)",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "Match DN, media, flow/temp ranges to CDU spec",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Match DN, media, flow/temp ranges to CDU spec",
+      "rawStatement": "",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Match DN, media, flow/temp ranges to CDU spec"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "OEM assembly + site commissioning",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "OEM assembly + site commissioning",
+      "rawStatement": "",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "OEM assembly + site commissioning"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Prove-flow gate before IT load energize",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Prove-flow gate before IT load energize",
+      "rawStatement": "",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Prove-flow gate before IT load energize"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Continuous flow + temp for thermal duty",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Continuous flow + temp for thermal duty",
+      "rawStatement": "",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Continuous flow + temp for thermal duty"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "24×7 drift, anomaly, leak-signature detection",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "24×7 drift, anomaly, leak-signature detection",
+      "rawStatement": "",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "24×7 drift, anomaly, leak-signature detection"
+    },
+    {
+      "stepNumber": 7,
+      "verb": "Modify",
+      "description": "Glycol top-up, firmware update, recalibration",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Glycol top-up, firmware update, recalibration",
+      "rawStatement": "",
+      "jobStep": "MODIFY",
+      "relevant": true,
+      "rationale": "Glycol top-up, firmware update, recalibration"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "CDU Controller (closed-loop control)",
+      "pyramidLevels": "ALL"
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Data Center Operations / DCIM Engineer",
+      "pyramidLevels": "own"
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "CDU OEM (Vertiv/nVent/Motivair), commissioning tech, service tech",
+      "pyramidLevels": "own"
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "CDU OEM Procurement (immediate) / DC capex lead (ultimate)",
+      "pyramidLevels": "Acq"
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Tenant / hyperscaler workload (SLA recipient)",
+      "pyramidLevels": "—"
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "CDUs: The Brains of Direct Liquid Cooling — DCNN Magazine",
+      "url": "https://dcnnmagazine.com/infrastructure/liquid-cooling/cdus-the-brains-of-direct-liquid-cooling/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Coolant Distribution Units — Vertiv",
+      "url": "https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/understanding-coolant-distribution-units-cdus-for-liquid-cooling/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Ultimate Guide to CDUs — JetCool",
+      "url": "https://jetcool.com/post/the-ultimate-guide-to-coolant-distribution-units-cdus-for-ai-and-hpc-jetcools-smartsense-cdu-completes-in-rack-liquid-cooling-solution/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Monitoring Coolant Flow in High-Density DCs — IoThrifty",
+      "url": "https://www.iothrifty.com/blogs/news/monitoring-coolant-flow-in-high-density-liquid-cooled-data-centers",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Data Center Leak Detection — IoThrifty",
+      "url": "https://www.iothrifty.com/blogs/news/data-center-leak-detection-and-monitoring-for-liquid-cooled-systems",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Chilldyne Liquid Cooling FAQ",
+      "url": "https://chilldyne.com/wp-content/uploads/2025/03/Chilldyne-FAQ-X.4.pdf",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "NVIDIA Liquid Cooling Analysis: Blackwell to Rubin — Global Semi Research",
+      "url": "https://globalsemiresearch.substack.com/p/nvidia-liquid-cooling-analysis-from",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "NVIDIA GB200 NVL72",
+      "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "ASHRAE TC 9.9 Data Center Thermal Guide 2026 — envigilance.com",
+      "url": "https://envigilance.com/compliance/ashrae-tc-9-9/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Direct-to-Chip Cooling Flow Meters — Mass Flow Online",
+      "url": "https://www.massflow-online.com/markets_applications/magnetic-flow-meters-for-direct-to-chip-cooling-in-high-performance-ai-servers/",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "VN_data_processing_hosting.md (internal)",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S11"
+    },
+    {
+      "id": "S12",
+      "label": "01_product_decomposition.md (internal)",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S12"
+    },
+    {
+      "id": "S13",
+      "label": "02_functional_promise.md (internal)",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S13"
+    },
+    {
+      "id": "S14",
+      "label": "--",
+      "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S14"
+    }
+  ]
+}

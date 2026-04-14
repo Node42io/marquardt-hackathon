@@ -1,0 +1,138 @@
+{
+  "naicsCode": "41112501",
+  "marketName": "Flowmeters (home industry reference)",
+  "slug": "flowmeters-reference",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Aqueous Media Requirement",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Home market uses water and water-glycol as calibration and test media. Product targets water-based applications by design.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration circuits 5-50 degC. Environmental testing cycles to 90 degC max — matching rated limit. No routine process exceeds 90 degC.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble / Void Fraction Limit",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration rigs use de-aerated water at <0.1% air content. Closed-loop pressurized systems.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration at controlled, stable temperatures. NTC compensation to ~0.2%. No extreme transients in manufacturing test environments.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Wetted Material Chemical Compatibility",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Clean water or water-glycol test media. Polymer housing and KTW/WRAS seals fully compatible.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition Required",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration rigs and test loops are closed-pipe, fully filled, pressurized systems. Standard requirement for valid calibration.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration rigs cover the full specified flow range with variable-speed pumps. Low-flow characterization is part of the process.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration loops at 1-6 bar. Pressure endurance testing at rated 10 bar. Test infrastructure matches product envelope.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Calibration rigs are purpose-built with adequate straight-run sections. Standard rig design consideration, not a market constraint.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Life Endurance Ceiling",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Sensor is the manufactured product, not a consumed component. Life endurance is validated as a specification, not consumed during production.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "No Explosive Atmosphere Certification",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Instrument manufacturing facilities are not classified as explosive atmospheres. No ATEX Zone 0/1/2 applies to production floors or calibration labs.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Ambient Temperature Range",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Indoor, climate-controlled manufacturing and testing at 18-28 degC ambient. RAST 2.5 connector designed for this environment.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 0,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

@@ -1,0 +1,688 @@
+{
+  "naicsCode": "112511",
+  "marketName": "Finfish Farming and Fish Hatcheries",
+  "slug": "finfish-farming",
+  "summary": {
+    "totalNeeds": 30,
+    "underservedCount": 0,
+    "overservedCount": 0,
+    "avgOpportunityScore": 0
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "1",
+      "statement": "Minimize the likelihood of undetected flow cessation in a rearing tank supply line persisting longer than 60 seconds before alarm activation",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 2,
+      "needId": "5",
+      "statement": "Minimize the time to detect a circulation pump degradation event that reduces tank water exchange rate by >20% before dissolved oxygen drops below 6 mg/L",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 3,
+      "needId": "21",
+      "statement": "Minimize the likelihood of a total stock loss event (>10% biomass mortality) caused by undetected water circulation failure in any single rearing unit",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 4,
+      "needId": "24",
+      "statement": "Minimize the likelihood of discovering a mass mortality event caused by overnight flow failure that was not detected by the monitoring system",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 5,
+      "needId": "14",
+      "statement": "Minimize the likelihood of accepting a false-normal flow reading after system maintenance that masks a partially closed valve or misrouted pipe",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": null,
+      "needId": "Score Range",
+      "statement": "Count",
+      "importance": null,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "> 15",
+      "statement": "7",
+      "importance": 23.3,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "12–15",
+      "statement": "10",
+      "importance": 33.3,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "10–12",
+      "statement": "3",
+      "importance": 10,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "< 10",
+      "statement": "10",
+      "importance": 33.3,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of undetected flow cessation in a rearing tank supply line persisting longer than 60 seconds before alarm activation",
+      "jobStep": "EXECUTE",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW (dominant) + manual (15–25%) provide near-zero real-time per-tank cessation alarm; PW requires SCADA integration most mid-scale farms lack",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of undetected calibration drift exceeding ±1% of reading over a 12-month continuous operation period in biofilm-prone water",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW drifts 2–5% in biofilm water (dominant); mag stable but minority share",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize variation in flow measurement accuracy caused by seasonal water temperature fluctuations between 2°C and 30°C across species programs",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Both PW and mag measurement principles are temperature-insensitive for flow reading",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to measure flow rate across the full operating range (2–60 L/min per tank feed) without sensor reconfiguration between tank sizes",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "Mag excellent turndown (100:1); PW limited at low flow — mixed",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to detect a circulation pump degradation event that reduces tank water exchange rate by >20% before dissolved oxygen drops below 6 mg/L",
+      "jobStep": "MONITOR",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent trends pump degradation; manual checks only",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected pipe blockage events (biofilm growth, scale accumulation) that restrict flow by >15% in treatment loops",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW detects gross blockage but not subtle 15% restriction; biofilm on PW itself confounds reading",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine flow anomalies (pump cavitation, valve failure) from sensor measurement artifacts with >95% classification accuracy",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent provides anomaly classification; PW has zero diagnostics; mag has no classification logic",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of false flow-normal readings during air-lock events in recirculation piping that mask actual flow cessation",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW stalls obviously during complete air-lock; partial air-lock masking remains a concern across technologies",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Production manager / facility owner"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to determine the correct flow rate setpoint within ±10% of actual biological oxygen demand for each species, stocking density, and growth stage",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Knowledge/engineering need; sensor-independent",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Farm owner / equipment procurement manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the effort required to calculate per-tank flow requirements when stocking density changes during grow-out cycles",
+      "jobStep": "DEFINE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Knowledge need; sensor-independent",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager",
+        "Farm owner / equipment procurement manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to install and commission a flow sensor on an existing RAS pipe loop without draining the circuit or interrupting fish production",
+      "jobStep": "PREPARE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "All inline sensors require circuit drain for installation",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of systematic measurement error >1% caused by incorrect medium configuration at commissioning for recirculated water with varying dissolved solids",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 6,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW (dominant) needs zero fluid configuration — zero config error risk; mag needs minimal config",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to verify sensor accuracy on-site within 10 minutes before stocking fish into a newly prepared tank",
+      "jobStep": "CONFIRM",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW has no self-diagnostics; pre-stocking verification mostly skipped in practice",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of accepting a false-normal flow reading after system maintenance that masks a partially closed valve or misrouted pipe",
+      "jobStep": "CONFIRM",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent has post-maintenance verification logic; unaddressed across all technologies",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to isolate flow anomaly root cause (sensor fault vs pump failure vs valve position vs pipe blockage) within 3 minutes during an active alarm",
+      "jobStep": "MODIFY",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent provides diagnostic data for root cause isolation",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the operator expertise required to interpret flow alarm data and determine the correct corrective action during a night shift with minimal staffing",
+      "jobStep": "MODIFY",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: no diagnostics; mag: complex outputs requiring training",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the sensor service life achievable without scheduled maintenance interventions in biofilm-prone recirculated water (target: >5 years with zero clogging events)",
+      "jobStep": "MAINTENANCE",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW clogs every 2–6 weeks (catastrophic); dominant incumbent is worst-case for this need",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total installed cost per water flow measurement point including sensor, wiring, and integration with existing PLC/SCADA (target: <$400)",
+      "jobStep": "ACQUISITION",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW at $20–80 well under $400 target; mag at $500–2,000 exceeds it",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of sensor-induced flow path contamination or turbulence that affects dissolved oxygen transfer downstream of the measurement point",
+      "jobStep": "USAGE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: some debris risk from bearing lubricant; mag: clean — mixed",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the permanent pressure drop across the measurement point that increases circulation pump energy consumption in an energy-intensive RAS facility",
+      "jobStep": "USAGE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW and mag both have minimal pressure drop",
+      "needsRationale": false,
+      "primaryStakeholder": "RAS operations technician / farm manager",
+      "stakeholderIds": [
+        "RAS operations technician / farm manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of a total stock loss event (>10% biomass mortality) caused by undetected water circulation failure in any single rearing unit",
+      "jobStep": "",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Dominant incumbents (PW + manual = 60–80%) provide inadequate protection against complete stock loss",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to maintain water exchange rate within ±10% of setpoint across all rearing tanks simultaneously during peak biomass loading",
+      "jobStep": "",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW too imprecise for per-tank balancing; mag accurate but expensive per-point",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to present quantitative water circulation performance data to facility investors, insurers, and certification auditors as evidence of operational control",
+      "jobStep": "",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: basic pulse only; mag: good data but too expensive for full deployment",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of discovering a mass mortality event caused by overnight flow failure that was not detected by the monitoring system",
+      "jobStep": "",
+      "importance": 10,
+      "satisfaction": 2,
+      "opportunity": 18,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW + manual have no reliable overnight alarming at per-tank level",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the anxiety associated with leaving a high-value RAS facility ($500K+ biomass at risk) unattended during off-hours by providing reliable remote flow-failure alerts",
+      "jobStep": "",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Emotional need; PW lacks reliable remote alerting capability",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of systematic measurement overestimation caused by air entrainment exceeding 2% by volume in recirculation piping during oxygenation injection or post-maintenance air purging",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the duration of total measurement blackout during pipe partially-filled states that occur during RAS circuit re-filling, pump restart sequences, or gravity-drain maintenance events",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement accuracy degradation caused by turbulent flow profiles from elbows, valves, and tee fittings within 5–10 pipe diameters upstream of the sensor in compact RAS pipe layouts",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the residual flow measurement error during rapid water temperature changes exceeding 5°C/hour that outpace the speed-of-sound compensation algorithm response rate",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 7,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the probability of undetected flow reduction events where actual flow rate drops below the sensor minimum detection threshold in small-diameter nursery and fry-rearing feed lines",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 6,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician / system integrator",
+      "stakeholderIds": [
+        "Maintenance technician / system integrator"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 30,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "JTBD_finfish_farming_and_fish_hatcheries.md (25 error statements, incumbent anchors, alternatives, ODI pre-scores)",
+      "prefixedId": "ODI-FINFISH-FARMING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "FIT_finfish_farming_and_fish_hatcheries.md (5 product-related needs from Step 10, 7 tech feature-market fit scores from Step 09)",
+      "prefixedId": "ODI-FINFISH-FARMING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "VN_finfish_farming_and_fish_hatcheries.md (incumbent technology profiles, market context)",
+      "prefixedId": "ODI-FINFISH-FARMING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "01_product_decomposition.md (constraints generating product-related needs)",
+      "prefixedId": "ODI-FINFISH-FARMING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "02_functional_promise.md (commodity FP baseline)",
+      "prefixedId": "ODI-FINFISH-FARMING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "05_market_discovery.md (NAICS 112511 — market context, alternatives)",
+      "prefixedId": "ODI-FINFISH-FARMING-S06"
+    }
+  ]
+}

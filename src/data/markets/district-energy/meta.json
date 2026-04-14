@@ -1,0 +1,21 @@
+{
+  "slug": "district-energy",
+  "name": "Steam and Air-Conditioning Supply",
+  "naicsCode": "221330",
+  "isReference": false,
+  "rank": 3,
+  "scores": {
+    "odi": 5.71,
+    "featureFit": 5.44,
+    "constraintCompatibility": 8.5,
+    "jobCoverage": 5,
+    "vnHierarchy": 9.5,
+    "incumbentVulnerability": 5.4,
+    "composite": 6.3
+  },
+  "recommendation": "investigate",
+  "rationale": "VN hierarchy 9.50 (utility is direct asset buyer) combined with highest ODI of the hydronic group (5.71) on billing accuracy (Opp=15) and zero drift (Opp=15). EU EED regulatory tailwind and multi-jet impeller replacement cycles (5-6 years) create a clear TCO displacement case; EN 1434/MID certification is the gating barrier for the billing segment.",
+  "entryStrategy": "1) Target Danish/German district operators (Kamstrup, Danfoss substation OEMs, Fernwarme Wien) for pilot. 2) Prove zero-drift thermal-energy accuracy in a 12-month control-loop trial. 3) Submit EN 1434/MID module-B+D certification in parallel. 4) Pitch multi-jet retrofit TCO once certified. 5) Scale via substation-package OEM channel.",
+  "estimatedTimeToEntry": "12-24 months (control); 18-30 months (billing)",
+  "estimatedInvestment": "$600K-1.5M"
+}

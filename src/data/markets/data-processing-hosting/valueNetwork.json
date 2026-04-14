@@ -1,0 +1,163 @@
+{
+  "naicsCode": "518210",
+  "marketName": "Data Processing, Hosting, and Related Services",
+  "slug": "data-processing-hosting",
+  "coreJobStatement": "Host, operate, and deliver customer computing and data workloads on demand with continuous uptime, predictable performance, and contracted SLA compliance",
+  "outputTypes": [
+    "Colocation hosting, hyperscale cloud, AI/GPU compute-as-a-service"
+  ],
+  "hierarchy": "",
+  "architectureDistance": 4,
+  "marketSize": "",
+  "l6Systems": [
+    {
+      "id": "L6a",
+      "name": "Facility Provisioning",
+      "type": "Core",
+      "jobFamily": "Provision conditioned white space, fiber entry, and grid power capacity",
+      "scope": "Colo, Hyperscale, HPC/AI",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6b",
+      "name": "Power Delivery",
+      "type": "Core",
+      "jobFamily": "Convert utility feed to stable, redundant IT-grade DC/AC at the rack",
+      "scope": "Colo, Hyperscale, HPC/AI",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6c",
+      "name": "Thermal Management",
+      "type": "Core",
+      "jobFamily": "Reject IT heat load from silicon to ambient within temperature envelope",
+      "scope": "Colo, Hyperscale, HPC/AI (primary)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6d",
+      "name": "IT Load Hosting",
+      "type": "Core",
+      "jobFamily": "Rack, cable, commission, and power on customer compute, storage, network gear",
+      "scope": "Colo, Hyperscale, HPC/AI",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6e",
+      "name": "Compute, Storage & Network Operations",
+      "type": "Core",
+      "jobFamily": "Execute customer workloads, serve traffic, persist data",
+      "scope": "Colo (partial), Hyperscale, HPC/AI",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6f (H)",
+      "name": "Facilities Maintenance & Engineering",
+      "type": "Horizontal",
+      "jobFamily": "Keep all mechanical/electrical plant operational",
+      "scope": "",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6g (H)",
+      "name": "Energy & Sustainability Management",
+      "type": "Horizontal",
+      "jobFamily": "Monitor, report, and optimize PUE, WUE, carbon",
+      "scope": "",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6h (H)",
+      "name": "Security (Physical & Cyber)",
+      "type": "Horizontal",
+      "jobFamily": "Access control, surveillance, SOC, compliance",
+      "scope": "",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6i (H)",
+      "name": "SLA / Availability Assurance",
+      "type": "Horizontal",
+      "jobFamily": "Tier-level uptime monitoring, incident response",
+      "scope": "",
+      "category": "horizontal",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [],
+  "marquardtPosition": "Marquardt anchor",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Data Center Cooling State of Play 2025 — Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise-thermal-density-demands-skyrocket-in-ai-data-centers-and-tsmc-leads-with-direct-to-silicon-solutions",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Why AI rack densities make liquid cooling nonnegotiable — Network World",
+      "url": "https://www.networkworld.com/article/4149069/why-ai-rack-densities-make-liquid-cooling-nonnegotiable.html",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Coolant Distribution Units for Data Center Cooling — nVent",
+      "url": "https://www.nvent.com/en-us/data-solutions/coolant-distribution-unit",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Deploying CDUs in Data Centers — Vertiv",
+      "url": "https://www.vertiv.com/en-us/about/news-and-insights/articles/blog-posts/deploying-liquid-cooling-in-data-centers-installing-and-managing-coolant-distribution-units-cdus/",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Engineering Liquid Cooling: Direct-to-Chip & Cold Plate — XD Thermal",
+      "url": "https://www.xdthermal.com/engineering-liquid-cooling-a-guide-to-direct-to-chip-cold-plate-operations-in-data-centers/",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Rethinking Data Center Cooling for AI — Schneider Electric blog",
+      "url": "https://blog.se.com/datacenter/2026/01/16/rethinking-data-center-cooling-ai-direct-to-chip-liquid-cooling/",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Direct-to-Chip Cooling Flow Meters — Mass Flow Online",
+      "url": "https://www.massflow-online.com/markets_applications/magnetic-flow-meters-for-direct-to-chip-cooling-in-high-performance-ai-servers/",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Data Center Liquid Cooling — IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/data-center-liquid-cooling",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "01_product_decomposition.md (internal)",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "02_functional_promise.md (internal)",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "05_market_discovery.md (internal) — Rank 6 Data Centers, Distance 4",
+      "prefixedId": "VN-DATA-PROCESSING-HOSTING-S11"
+    }
+  ]
+}

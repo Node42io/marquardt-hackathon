@@ -1,0 +1,32 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Turbine / impeller sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Vortex sensor",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Differential pressure sensor",
+      "unspsc": "41112409",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Paddle / float switch (binary)",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    }
+  ]
+}

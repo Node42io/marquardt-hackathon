@@ -1,0 +1,342 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "coreJobStatement": "Generate, distribute, and meter thermal energy (heating and cooling) from centralised plants to multiple buildings via closed-pipe networks",
+  "outputTypes": [
+    "District hot-water heating",
+    "District steam heating",
+    "District chilled-water cooling",
+    "Combined heating & cooling (4-pipe)",
+    "Campus/industrial thermal utility"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — what process steps, equipment, and subsystems compose district energy generation, distribution, and consumption metering",
+  "architectureDistance": 3,
+  "marketSize": "~$187–214B globally (district heating, 2024); heat meter market projected to reach $3.24B by 2035; EU EED mandates individual metering at every building connection [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Thermal Energy Generation",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Distribution Network",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Building Substation & Energy Transfer",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Metering & Billing",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Network Control & Optimisation",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Maintenance, Safety & Compliance",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "CHP Plant (Combined Heat and Power)",
+      "functionalJob": "Gas turbine or reciprocating engine generating electricity with waste heat captured for district heating. Dominant generation source in European networks. Electrical efficiency 35–45%; total efficiency 80–90%. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Hot-Water Boiler Plant",
+      "functionalJob": "Large-scale hot-water boilers (gas, oil, biomass, electric) for peak-load and backup generation. Typical supply temperatures 80–120 °C (3rd generation) or 50–70 °C (4th generation low-temperature networks). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Large-Scale Heat Pump",
+      "functionalJob": "Electric heat pump extracting thermal energy from ambient sources (seawater, wastewater, ground) for low-temperature district heating. Growing rapidly in Scandinavian networks. COP 3–5 typical. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Chiller Plant (District Cooling)",
+      "functionalJob": "Centralised electric or absorption chillers producing chilled water (5–7 °C supply) for district cooling networks. Electric chillers hold ~47% market share in district cooling. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.5",
+      "name": "Thermal Energy Storage (TES)",
+      "functionalJob": "Centralised storage buffering generation/demand mismatch. Hot-water tanks (2,000–50,000 m3) for heating; ice or chilled-water tanks for cooling. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.6",
+      "name": "Waste Heat Recovery",
+      "functionalJob": "Captures industrial waste heat (data centres, wastewater treatment, industrial processes) for injection into district heating network. Zero-fuel marginal cost. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Pre-Insulated Pipe Network",
+      "functionalJob": "Bonded pre-insulated pipe (steel carrier pipe + PU foam insulation + PE jacket) buried underground. Supply and return pipes run in parallel. Key manufacturers: Logstor, Isoplus, Brugg, Permapipe. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Network Pumping Station",
+      "functionalJob": "Centralised and distributed pumps maintaining hydraulic pressure and flow across the network. Variable-speed drives dominate modern networks for energy-efficient flow control.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Network Expansion & Pressure Management",
+      "functionalJob": "Compensates for thermal expansion of carrier pipes and maintains system pressure within design limits.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.4",
+      "name": "Network Valves & Fittings",
+      "functionalJob": "Branch isolation, sectionalising, and flow regulation across the distribution network.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Heat Exchanger (Substation)",
+      "functionalJob": "Plate heat exchanger hydraulically separating primary (network) from secondary (building) circuits. Prevents pressure and water-quality cross-contamination. Brazed or gasketed plate design; 50–2,000 kW typical per building. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Substation Control Valve Assembly",
+      "functionalJob": "Motorised control valve regulating primary-side flow to maintain secondary supply temperature setpoint. The control valve is the primary actuator; the flow sensor provides feedback for the energy calculation. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Substation Flow & Temperature Measurement",
+      "functionalJob": "Instruments measuring volumetric flow rate and supply/return temperatures on both primary and secondary sides. The flow signal and paired temperature signals feed the energy calculation unit for billing-grade thermal energy measurement. This is the primary integration point for Marquardt's ultrasonic flow sensor in district energy. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.4",
+      "name": "Secondary-Side Distribution",
+      "functionalJob": "Building-internal hydronic distribution fed by the substation's secondary circuit.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Heat Meter / Thermal Energy Meter",
+      "functionalJob": "MID-certified instrument integrating flow × density × Cp × delta-T over time to calculate delivered kWh or MWh. Ultrasonic meters dominate new installations. Kamstrup MULTICAL, Danfoss SonoMeter, Siemens UH50 are market leaders. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Cooling Meter",
+      "functionalJob": "Similar to heat meter but measuring extracted cooling energy. Reverse delta-T calculation (return warmer than supply). Growing with district cooling adoption.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Meter Data Communication",
+      "functionalJob": "Remote reading, data collection, and billing system integration. AMR (automatic meter reading) and AMI (advanced metering infrastructure) enable real-time consumption visibility.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "SCADA & Network Monitoring",
+      "functionalJob": "Centralised supervisory control and data acquisition system monitoring plant, network, and substations.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Hydraulic Balancing & Optimisation",
+      "functionalJob": "Algorithms and actuators maintaining balanced flow distribution across the network to minimise pump energy and ensure adequate supply to all buildings.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Leak Detection & Pipe Integrity",
+      "functionalJob": "Monitoring buried pipe network for insulation degradation and carrier pipe leaks.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Water Treatment & Corrosion Protection",
+      "functionalJob": "Maintaining water chemistry in the closed network to prevent corrosion, scaling, and biological growth.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Regulatory Compliance & Safety",
+      "functionalJob": "Pressure equipment directive, building safety codes, environmental permits, and metering calibration.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt sits here.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "District Heating — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/District_heating",
+      "prefixedId": "VN-DISTRICT-ENERGY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "District Cooling — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/District_cooling",
+      "prefixedId": "VN-DISTRICT-ENERGY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "District Heating Substation — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/District_heating_substation",
+      "prefixedId": "VN-DISTRICT-ENERGY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Heat Meter — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Heat_meter",
+      "prefixedId": "VN-DISTRICT-ENERGY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "NAICS 221330 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/221330/steam-and-air-conditioning-supply/",
+      "prefixedId": "VN-DISTRICT-ENERGY-S05"
+    },
+    {
+      "id": "S06",
+      "label": "District Heating Market — GlobeNewsWire / The Insight Partners",
+      "url": "https://www.globenewswire.com/news-release/2025/05/08/3077412/0/en/District-Heating-Market-Size-Projected-to-Surge-298-73-Billion-Growth-by-2031-With-CAGR-of-4-6-The-Insight-Partners.html",
+      "prefixedId": "VN-DISTRICT-ENERGY-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Heat Meter Market — SNS Insider",
+      "url": "https://www.globenewswire.com/news-release/2026/03/27/3263591/0/en/Heat-Meter-Market-Size-to-Surpass-USD-3-24-Billion-by-2035-Research-by-SNS-Insider.html",
+      "prefixedId": "VN-DISTRICT-ENERGY-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Ultrasonic Flow Measurement in District Heating — KROHNE",
+      "url": "https://www.krohne.com/en-us/applications/ultrasonic-flow-measurement-district-heating-network",
+      "prefixedId": "VN-DISTRICT-ENERGY-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Heat Metering at Transfer Station — KROHNE",
+      "url": "https://www.krohne.com/en-us/applications/heat-metering-at-transfer-station-of-district-heating-pipeline",
+      "prefixedId": "VN-DISTRICT-ENERGY-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Ultrasonic Heat and Cool Meters — Danfoss",
+      "url": "https://www.danfoss.com/en/products/dhs/energy-metering/energy-metering/",
+      "prefixedId": "VN-DISTRICT-ENERGY-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Smart Heat Metering Solutions — Landis+Gyr",
+      "url": "https://eu.landisgyr.com/smart-heat-metering-solutions",
+      "prefixedId": "VN-DISTRICT-ENERGY-S11"
+    },
+    {
+      "id": "S12",
+      "label": "District Energy Efficiency Through Flow Metering — Baker Hughes",
+      "url": "https://dam.bakerhughes.com/m/110b7c0f5c53abf5/original/District-Energy-Efficiency-through-Flow-Metering-Whitepaper.pdf",
+      "prefixedId": "VN-DISTRICT-ENERGY-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Pre-Insulated Pipes — DBDH",
+      "url": "https://dbdh.org/all-about-district-energy/technology/supply-network/pre-insulated-pipes/",
+      "prefixedId": "VN-DISTRICT-ENERGY-S13"
+    },
+    {
+      "id": "S14",
+      "label": "Fifth-Generation District Heating and Cooling Substations — NREL",
+      "url": "https://docs.nrel.gov/docs/fy20osti/78014.pdf",
+      "prefixedId": "VN-DISTRICT-ENERGY-S14"
+    },
+    {
+      "id": "S15",
+      "label": "District Cooling Market — GM Insights",
+      "url": "https://www.gminsights.com/industry-analysis/district-cooling-market",
+      "prefixedId": "VN-DISTRICT-ENERGY-S15"
+    },
+    {
+      "id": "S16",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "VN-DISTRICT-ENERGY-S16"
+    },
+    {
+      "id": "S17",
+      "label": "Marquardt/HS Albstadt-Sigmaringen Project Briefing (19.02.2026)",
+      "prefixedId": "VN-DISTRICT-ENERGY-S17"
+    }
+  ]
+}

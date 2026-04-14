@@ -1,0 +1,130 @@
+{
+  "slug": "heating-equipment",
+  "marketName": "Heating Equipment (except Warm Air Furnaces) Manufacturing",
+  "naicsCode": "333414",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "Marquardt DN20 is a BOM constituent at L4.3 Hydraulic Distribution → L3.7 Flow & Thermal Sensing Module → L2.6 Flow Meter Assembly. Primary use: burner interlock protection against dry-fire.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Gas Condensing Boiler", "hydronic": true, "sensorFit": "primary", "notes": "Flow sensor confirms minimum loop flow for burner interlock — HX destruction risk on dry-fire." },
+    { "id": "OT-2", "name": "Gas Non-Condensing Boiler", "hydronic": true, "sensorFit": "primary", "notes": "Same flow interlock role." },
+    { "id": "OT-3", "name": "Oil-Fired Boiler", "hydronic": true, "sensorFit": "primary", "notes": "Same flow interlock role." },
+    { "id": "OT-4", "name": "Electric Hydronic Boiler", "hydronic": true, "sensorFit": "primary", "notes": "Same flow interlock role." },
+    { "id": "OT-5", "name": "Hydronic Baseboard Heater", "hydronic": false, "sensorFit": "none", "notes": "Terminal device; no flow measurement needed." },
+    { "id": "OT-6", "name": "Radiant Floor Heating System", "hydronic": true, "sensorFit": "secondary", "notes": "Verify minimum loop flow for manifold zones (energy metering)." },
+    { "id": "OT-7", "name": "Pool / Spa Heater", "hydronic": true, "sensorFit": "secondary", "notes": "Measure pool water flow for safety and energy billing." },
+    { "id": "OT-8", "name": "Solar Water Heating System", "hydronic": true, "sensorFit": "secondary", "notes": "HX loop flow measurement for solar thermal efficiency." }
+  ],
+  "marquardtAnchorIds": ["L4.3", "L3.7", "L2.6"],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Heat Generation",
+      "costSharePct": 38,
+      "keyDesignChoice": "Burner principle",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Premix modulating (metal-fibre)", "sharePct": 65, "trend": "growing" },
+        { "name": "Atmospheric inshot / upshot", "sharePct": 28, "trend": "declining" },
+        { "name": "Surface combustion (infrared radiant)", "sharePct": 5, "trend": "stable" },
+        { "name": "Fully pre-aerated injection (Inox-Rad)", "sharePct": 2, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.1", "name": "Burner Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Premix modulating flat/cylindrical metal-fibre", "sharePct": 65, "trend": "growing" },
+          { "name": "Atmospheric inshot / upshot", "sharePct": 28, "trend": "declining" },
+          { "name": "Surface combustion (infrared radiant)", "sharePct": 5, "trend": "stable" },
+          { "name": "Fully pre-aerated injection", "sharePct": 2, "trend": "growing" }
+        ]},
+        { "id": "L3.2", "name": "Fuel / Energy Input", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Natural gas / propane (OT-1/2)", "sharePct": 72, "trend": "stable" },
+          { "name": "No. 2 fuel oil (OT-3)", "sharePct": 18, "trend": "declining" },
+          { "name": "Grid electricity (OT-4)", "sharePct": 10, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Primary Heat Transfer",
+      "costSharePct": 28,
+      "keyDesignChoice": "HX material and geometry",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Stainless steel condensing HX (304/316L)", "sharePct": 55, "trend": "growing" },
+        { "name": "Cast iron sectional (non-condensing)", "sharePct": 25, "trend": "declining" },
+        { "name": "Copper tube HX (pool heater)", "sharePct": 12, "trend": "stable" },
+        { "name": "Evacuated tube / flat plate (solar)", "sharePct": 8, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.4", "name": "HX Core Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Stainless condensing HX (304/316L stainless)", "sharePct": 55, "trend": "growing" },
+          { "name": "Cast iron sectional", "sharePct": 25, "trend": "declining" },
+          { "name": "Cupro-nickel tube HX (pool)", "sharePct": 12, "trend": "stable" },
+          { "name": "Flat-plate solar collector", "sharePct": 8, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.3",
+      "name": "Hydraulic Distribution",
+      "costSharePct": 18,
+      "keyDesignChoice": "Flow measurement technology",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Copper piping", "sharePct": 55, "trend": "stable" },
+        { "name": "Stainless steel piping", "sharePct": 30, "trend": "growing" },
+        { "name": "Cross-linked polyethylene (PEX)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.5", "name": "Circulation Pump Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "High-efficiency wet-rotor ECM pump (A-class)", "sharePct": 65, "trend": "growing" },
+          { "name": "Standard wet-rotor pump", "sharePct": 25, "trend": "declining" },
+          { "name": "In-line dry-rotor pump", "sharePct": 10, "trend": "stable" }
+        ]},
+        { "id": "L3.7", "name": "Flow & Thermal Sensing Module", "isMarquardtAnchor": true, "sensorNote": "Marquardt DN20 target position — burner interlock + energy measurement", "alternatives": [
+          { "name": "Mechanical impeller / paddlewheel", "sharePct": 40, "trend": "declining" },
+          { "name": "Ultrasonic transit-time (Marquardt DN20)", "sharePct": 30, "trend": "growing", "isMarquardt": true },
+          { "name": "Electromagnetic (magmeter)", "sharePct": 15, "trend": "stable" },
+          { "name": "Differential pressure (dP cell)", "sharePct": 8, "trend": "stable" },
+          { "name": "Thermal mass flow sensor", "sharePct": 5, "trend": "stable" },
+          { "name": "Vortex flowmeter", "sharePct": 2, "trend": "stable" }
+        ]},
+        { "id": "L3.8", "name": "Expansion & Safety Valves", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Spring-loaded pressure relief valve (PRV)", "sharePct": 70, "trend": "stable" },
+          { "name": "Automatic air vent + expansion vessel", "sharePct": 30, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.4",
+      "name": "Heat Emission",
+      "costSharePct": 8,
+      "keyDesignChoice": "Terminal device type",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Fin-tube baseboard convector (OT-5)", "sharePct": 55, "trend": "declining" },
+        { "name": "In-slab radiant PEX tubing (OT-6)", "sharePct": 35, "trend": "growing" },
+        { "name": "Fan-coil unit", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.5",
+      "name": "Control & Interface",
+      "costSharePct": 7,
+      "keyDesignChoice": "Controller platform",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Proprietary boiler controller (MCU)", "sharePct": 60, "trend": "stable" },
+        { "name": "OpenTherm modulating thermostat interface", "sharePct": 25, "trend": "growing" },
+        { "name": "Third-party BMS integration (BACnet/Modbus)", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

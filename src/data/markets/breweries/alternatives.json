@@ -1,0 +1,32 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "±1–3% accuracy (vs ±0.5% mag); degrades with air bubbles >2% vol; requires straight pipe run 5–10×DN; needs fluid-type configuration at commissioning [SRC: web_search]"
+    },
+    {
+      "name": "Electromagnetic (mag) flowmeter",
+      "unspsc": "41112502",
+      "tradeoffs": "3–5× cost ($800–2,000 vs $150–400); requires conductive liquid; larger footprint; higher power consumption (10–20 W vs <0.1 W); overkill accuracy for glycol monitoring [SRC: web_search]"
+    },
+    {
+      "name": "Paddle-wheel / turbine flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts wear in glycol service (bearing degradation in 6–18 months); particle jamming; contamination risk from internals; requires periodic replacement; ±2–5% accuracy drift over life [SRC: web_search]"
+    },
+    {
+      "name": "Differential-pressure measurement (orifice/venturi)",
+      "unspsc": "41113201",
+      "tradeoffs": "Permanent pressure drop (wastes pump energy); fouling of sensing ports in glycol; limited turndown ratio (3:1 vs 10:1+ for ultrasonic); requires differential pressure transmitter [SRC: web_search]"
+    },
+    {
+      "name": "Do nothing / manual inspection [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero measurement cost — but no flow visibility, no automated fault detection, manual temperature checks only; temperature excursion discovered only after batch damage"
+    }
+  ]
+}

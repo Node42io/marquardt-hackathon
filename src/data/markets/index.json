@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "finfish-farming",
+    "name": "Finfish Farming and Fish Hatcheries",
+    "naics": "112511",
+    "isReference": false,
+    "sourceFile": "finfish_farming_and_fish_hatcheries"
+  },
+  {
+    "slug": "hvac-contractors",
+    "name": "Plumbing, Heating and Air-Conditioning Contractors",
+    "naics": "238220",
+    "isReference": false,
+    "sourceFile": "plumbing_heating_and_air_conditioning_co"
+  },
+  {
+    "slug": "district-energy",
+    "name": "Steam and Air-Conditioning Supply",
+    "naics": "221330",
+    "isReference": false,
+    "sourceFile": "steam_and_air_conditioning_supply"
+  },
+  {
+    "slug": "heating-equipment",
+    "name": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+    "naics": "333414",
+    "isReference": false,
+    "sourceFile": "heating_equipment_except_warm_air_furnac"
+  },
+  {
+    "slug": "commercial-service-machinery",
+    "name": "Other Commercial and Service Industry Machinery Manufacturing",
+    "naics": "333318",
+    "isReference": false,
+    "sourceFile": "other_commercial_and_service_industry_ma"
+  },
+  {
+    "slug": "ac-home-heating",
+    "name": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+    "naics": "333415",
+    "isReference": false,
+    "sourceFile": "air_conditioning_and_warm_air_heating_eq"
+  },
+  {
+    "slug": "flowmeters-reference",
+    "name": "Flowmeters (home industry reference)",
+    "naics": "41112501",
+    "isReference": true,
+    "sourceFile": "flowmeters_src_01_product_decomposition_"
+  },
+  {
+    "slug": "breweries",
+    "name": "Breweries",
+    "naics": "312120",
+    "isReference": false,
+    "sourceFile": "breweries"
+  },
+  {
+    "slug": "data-processing-hosting",
+    "name": "Data Processing, Hosting, and Related Services",
+    "naics": "518210",
+    "isReference": false,
+    "sourceFile": "data_processing_hosting"
+  }
+]

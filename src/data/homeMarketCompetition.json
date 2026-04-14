@@ -1,0 +1,383 @@
+{
+  "marketName": "HVAC OEM Flow Measurement (Heat Pumps & Heating Appliances)",
+  "naicsCode": "333415",
+  "naicsTitle": "Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing",
+  "functionalNeed": "Quantify the volumetric or mass flow rate of fluids traversing a closed conduit [SRC: 02_functional_promise — commodity FP]",
+  "switchingCost": "moderate",
+  "switchingCostFactors": {
+    "Mechanical Integration": "Moderate — different sensor technologies have different bore geometries, flange/thread interfaces, and dimensional envelopes. Changing from vortex to ultrasonic requires new flow body dimensions but the same pipe connection standards (DN15–DN25 threaded or push-fit).",
+    "Electrical Integration": "Low–Moderate — signal interfaces are standardized (pulse, analogue 0–10V, UART). Controller firmware needs re-parameterization for the new sensor's output characteristics.",
+    "Qualification & Certification": "Moderate — heat pump OEMs must re-qualify the sensor in their test protocols; KTW/WRAS drinking water approvals must transfer to the new component; type-testing under EN 1434 if used as heat meter input.",
+    "Supply Chain": "Moderate — single-source risk is typical for OEM sensor slots; switching to a new supplier requires commercial negotiation, qualification samples, and production line adaptation.",
+    "Overall": "moderate — no fundamental system architecture change is required, but the combination of mechanical re-design, qualification effort, and supply chain transition creates a 6–12 month switching cycle typical for automotive/HVAC OEM component changes."
+  },
+  "incumbents": [
+    {
+      "technologyName": "Vortex Flow Measurement",
+      "mechanism": "Fluid flows past a bluff body inside the pipe bore; counter-rotating vortices detach alternately from the bluff body edges forming a Karman vortex street; a fully encapsulated piezoceramic sensor detects vortex shedding frequency, which is linearly proportional to volumetric flow velocity",
+      "marketShareEstimate": "dominant",
+      "keyVendors": [
+        "SIKA",
+        "Huba Control"
+      ],
+      "strengths": [
+        "No moving parts — same reliability advantage as ultrasonic",
+        "Detects gas bubbles in heating circuit (dual safety function)",
+        "Low maintenance, long service life",
+        "DN15-DN40 coverage with plastic housing variants",
+        "Established OEM relationships with major heat pump manufacturers (Daikin, Mitsubishi, Samsung)"
+      ],
+      "weaknesses": [
+        "Bluff body creates moderate pressure drop (higher than ultrasonic zero-drop)",
+        "Accuracy degrades at very low flow rates where vortex generation becomes unstable",
+        "Requires minimum Reynolds number for stable vortex shedding",
+        "Bluff body obstruction can accumulate debris in contaminated circuits"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S01", "HOME-S02", "HOME-S03", "HOME-S04", "HOME-S05"],
+      "switchingCostLevel": "moderate",
+      "switchingCostLabel": "Moderate",
+      "switchingCostNarrative": "Vortex to ultrasonic is the primary competitive displacement path. Both technologies share identical pipe connection standards (DN15–DN25 threaded or push-fit) and signal interfaces (pulse, 0–10V), but the bluff-body bore geometry differs from the straight ultrasonic bore, requiring a mechanical re-design of the flow body mounting point. OEM qualification cycles add 6–12 months. Established supply-chain relationships with SIKA and Huba Control create commercial inertia. Overall switching effort is moderate — technically straightforward but commercially and qualification-wise significant."
+    },
+    {
+      "technologyName": "Impeller / Turbine Flow Measurement",
+      "mechanism": "Fluid impinges on a multi-blade impeller rotating at a speed proportional to flow velocity; a magnetic pickup or Hall-effect sensor converts impeller rotation into an electrical pulse train whose frequency corresponds to volumetric flow rate",
+      "marketShareEstimate": "significant",
+      "keyVendors": [
+        "SIKA",
+        "Badger Meter",
+        "GF Piping Systems"
+      ],
+      "strengths": [
+        "Lowest unit cost of all dedicated sensor technologies",
+        "Proven over decades in heating appliances",
+        "Large turndown ratio (~30:1)",
+        "Simple signal conditioning (frequency pulse)",
+        "Drinking water approvals available (KTW/WRAS)"
+      ],
+      "weaknesses": [
+        "Moving parts — bearing wear, impeller degradation, seal failure",
+        "Ferrous particles accumulate on magnetic pickup, impeding or stopping impeller",
+        "Accuracy drifts as bearings wear over service life",
+        "Susceptible to blockage from sediment or limescale",
+        "Creates pressure drop from impeller drag"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S06", "HOME-S07", "HOME-S08"],
+      "switchingCostLevel": "low",
+      "switchingCostLabel": "Low-Moderate",
+      "switchingCostNarrative": "Impeller and ultrasonic sensors share similar compact form factors and pulse-output signal interfaces, making electrical integration straightforward. The main switching driver is reliability: impeller bearings wear and accuracy drifts over service life, giving OEMs a functional motivation to switch to no-moving-parts ultrasonic. Mechanical fit requires re-qualification of the new sensor bore geometry. KTW/WRAS drinking water approvals must be re-confirmed for the replacement. Overall switching cost is lower than vortex due to the inherent weakness of the moving-parts design creating upgrade pressure."
+    },
+    {
+      "technologyName": "Electromagnetic Flow Measurement",
+      "mechanism": "Faraday's law of electromagnetic induction: a magnetic field is generated across the pipe bore; conductive fluid flowing through the field induces a voltage between flush-mounted electrodes proportional to mean fluid velocity across the entire cross-section",
+      "marketShareEstimate": "niche",
+      "keyVendors": [
+        "Endress+Hauser",
+        "Siemens",
+        "ABB",
+        "Krohne"
+      ],
+      "strengths": [
+        "No moving parts, zero pressure drop (unobstructed bore)",
+        "Highest accuracy class (±0.2-0.5%)",
+        "Immune to viscosity, density, and temperature changes",
+        "Full cross-section average velocity measurement",
+        "Bidirectional, self-diagnostics"
+      ],
+      "weaknesses": [
+        "Requires minimum fluid conductivity (~5 uS/cm)",
+        "5-10x higher unit cost than vortex or turbine for equivalent pipe size",
+        "Physically larger — full-bore flanged design standard",
+        "Overkill for residential HVAC accuracy requirements",
+        "Higher power consumption than low-power OEM alternatives"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S09", "HOME-S10"],
+      "switchingCostLevel": "high",
+      "switchingCostLabel": "High",
+      "switchingCostNarrative": "Electromagnetic flow sensors use full-bore flanged designs that are physically larger and dimensionally incompatible with the compact threaded/push-fit connections used by ultrasonic OEM sensors. The 5-10x unit cost premium makes cost-neutral substitution impossible without a redesign of the BOM cost structure. Conductivity requirements (~5 µS/cm) add a fluid-compatibility constraint not present in ultrasonic. Switching from mag-flow to ultrasonic in OEM applications is rare and represents a fundamental instrument class change, not a drop-in replacement. Switching cost is high."
+    },
+    {
+      "technologyName": "Differential Pressure Flow Measurement",
+      "mechanism": "Fluid is forced through a constriction (orifice plate, venturi tube, or flow nozzle); the pressure drop across the constriction is measured by a differential pressure sensor; flow rate is proportional to the square root of the differential pressure via Bernoulli's principle",
+      "marketShareEstimate": "niche",
+      "keyVendors": [
+        "Honeywell",
+        "Emerson",
+        "ABB",
+        "Yokogawa"
+      ],
+      "strengths": [
+        "No electronics in the flow path",
+        "Well-understood physics with long industrial track record",
+        "Very low component cost for primary element (orifice plate)",
+        "Can be used in harsh conditions"
+      ],
+      "weaknesses": [
+        "Creates permanent pressure loss — measurement requires energy extraction",
+        "Limited turndown ratio (~4:1)",
+        "Square-root relationship reduces resolution at low flows",
+        "Orifice edges erode over time causing accuracy drift",
+        "Requires separate DP transmitter adding cost and complexity"
+      ],
+      "confidence": 0.6,
+      "shareSourceIds": ["HOME-S17", "HOME-S18"],
+      "switchingCostLevel": "low",
+      "switchingCostLabel": "Low",
+      "switchingCostNarrative": "Differential pressure measurement via orifice/venturi requires a separate DP transmitter, adding BOM complexity not present in a dedicated ultrasonic sensor. Because DP flow is already an indirect measurement requiring a secondary instrument, switching to a self-contained ultrasonic sensor is often a simplification rather than a complication. The main cost is re-qualification of the flow measurement sub-system and updating controller firmware to handle the new direct pulse/analogue output. Switching cost is low — the DP approach is already acknowledged as a workaround in compact HVAC systems."
+    },
+    {
+      "technologyName": "Pump-Integrated Flow Estimation",
+      "mechanism": "Circulation pump electronics use electrical power consumption, motor speed, and pump head differential pressure to calculate estimated volume flow from the known pump characteristic curve (Q-H curve); no dedicated flow sensor installed",
+      "marketShareEstimate": "significant",
+      "keyVendors": [
+        "Grundfos",
+        "Wilo"
+      ],
+      "strengths": [
+        "Zero additional hardware cost — firmware feature of existing pump",
+        "No additional pipe penetration or installation labor",
+        "Integrated into pump communication bus",
+        "Acceptable for rough flow balancing and diagnostics"
+      ],
+      "weaknesses": [
+        "Explicitly disqualified by EU Ecodesign regulation for heat quantity metering",
+        "Accuracy ±10-20% (vs ±1-3% for dedicated sensors)",
+        "Drifts as pump impeller wears and system resistance changes",
+        "Cannot detect backflow",
+        "Not a metrological instrument"
+      ],
+      "confidence": 0.7,
+      "shareSourceIds": ["HOME-S11", "HOME-S12", "HOME-S13"],
+      "switchingCostLevel": "very-low",
+      "switchingCostLabel": "Very Low (regulatory driven)",
+      "switchingCostNarrative": "Pump-integrated flow estimation is being displaced by EU Ecodesign regulation (explicitly disqualified for heat quantity metering), meaning OEMs are already under regulatory pressure to switch to dedicated sensors. Adding an ultrasonic flow sensor requires a new pipe penetration and BOM line item, but this is a known design change OEMs are executing regardless of sensor brand. The switching cost for Marquardt is very low — OEMs are motivated to switch, not resistant, and the only friction is the mechanical integration and certification of the chosen dedicated sensor technology."
+    },
+    {
+      "technologyName": "Balance Valve Commissioning Method",
+      "mechanism": "Flow determined by measuring pressure differential across a calibrated manual balancing valve with known Kv characteristic; portable electronic commissioning instrument connected to measurement ports; flow calculated from delta-P and Kv at current valve position",
+      "marketShareEstimate": "emerging",
+      "keyVendors": [
+        "Danfoss",
+        "IMI Hydronic Engineering",
+        "Caleffi"
+      ],
+      "strengths": [
+        "Dual-purpose component (flow balance + measurement)",
+        "No permanent sensor electronics",
+        "Well-established commissioning practice in commercial HVAC",
+        "Enables system-wide hydronic balancing"
+      ],
+      "weaknesses": [
+        "Spot-check measurement only — no continuous monitoring",
+        "Requires trained HVAC technician with portable instrument",
+        "No data output to heat pump controller or BMS",
+        "Cannot satisfy EN 1434 heat meter requirements",
+        "Being displaced by integrated sensor solutions"
+      ],
+      "confidence": 0.6,
+      "shareSourceIds": ["HOME-S14", "HOME-S15", "HOME-S16"],
+      "switchingCostLevel": "low",
+      "switchingCostLabel": "Low",
+      "switchingCostNarrative": "Balance valve commissioning methods provide only spot-check measurement and cannot satisfy EN 1434 heat meter requirements, meaning they serve a different functional need than continuous-monitoring ultrasonic sensors. The switching path is not direct substitution but rather addition of a dedicated sensor alongside or replacing the commissioning valve practice. Installers trained in balance valve methods require education on ultrasonic sensor integration, but this is a skill gap, not a technical barrier. Switching cost is low — the regulatory and functional limitations of the balance valve approach create organic switching motivation."
+    }
+  ],
+  "positioningTable": [
+    {
+      "technology": "Vortex (SIKA, Huba)",
+      "share": "dominant",
+      "pressureDrop": "moderate",
+      "movingParts": "No",
+      "accuracy": "±2–3%",
+      "unitCost": "€€",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "Yes"
+    },
+    {
+      "technology": "Impeller/Turbine",
+      "share": "significant",
+      "pressureDrop": "moderate",
+      "movingParts": "Yes",
+      "accuracy": "±2–5%",
+      "unitCost": "€",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "Yes (if calibrated)"
+    },
+    {
+      "technology": "Electromagnetic",
+      "share": "niche",
+      "pressureDrop": "zero",
+      "movingParts": "No",
+      "accuracy": "±0.2–0.5%",
+      "unitCost": "€€€€",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "Yes"
+    },
+    {
+      "technology": "Differential Pressure",
+      "share": "niche",
+      "pressureDrop": "high",
+      "movingParts": "No",
+      "accuracy": "±2–5%",
+      "unitCost": "€€",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "Limited turndown"
+    },
+    {
+      "technology": "Pump-Integrated Est.",
+      "share": "significant",
+      "pressureDrop": "zero (inherent)",
+      "movingParts": "No",
+      "accuracy": "±10–20%",
+      "unitCost": "free",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "No (EU disqualified)"
+    },
+    {
+      "technology": "Balance Valve Manual",
+      "share": "emerging",
+      "pressureDrop": "moderate",
+      "movingParts": "No",
+      "accuracy": "±5–10%",
+      "unitCost": "€€ (valve)",
+      "continuousOutput": "No",
+      "heatMeterReady": "No"
+    },
+    {
+      "technology": "Ultrasonic (Marquardt)",
+      "share": "subject",
+      "pressureDrop": "zero",
+      "movingParts": "No",
+      "accuracy": "±1–3%",
+      "unitCost": "€€",
+      "continuousOutput": "Yes",
+      "heatMeterReady": "Yes"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "SIKA Vortex Flow Sensors for Heat Pumps",
+      "url": "https://www.sika.net/en/solutions/heat-pumps/",
+      "prefixedId": "HOME-S01"
+    },
+    {
+      "id": "S02",
+      "label": "SIKA HVAC Sensors Brochure",
+      "url": "https://www.sika.net/fileadmin/products/corporate/brochures/Brochure_HVAC_Sensors_EN.pdf",
+      "prefixedId": "HOME-S02"
+    },
+    {
+      "id": "S03",
+      "label": "SIKA VVX Series Datasheet",
+      "url": "https://www.sika.net/en/series/vortex-flow-sensors-plastic-version-vvx15-vvx20-vvx25/",
+      "prefixedId": "HOME-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Huba Control Vortex Flow Sensor 200",
+      "url": "https://www.hubacontrol.com/en/products/vortex-flow-sensor/vortex-flow-sensor-200",
+      "prefixedId": "HOME-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Huba Control Heat Pump Sensor Solutions",
+      "url": "https://www.hubacontrol.com/en/applications/sensorsolutions-for-heatpumps",
+      "prefixedId": "HOME-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Badger Meter Impeller Flow Sensors",
+      "url": "https://www.badgermeter.com/products/meters/impeller-flow-products/hot-tap-flow-sensors---series-225--226-47691dfe/",
+      "prefixedId": "HOME-S06"
+    },
+    {
+      "id": "S07",
+      "label": "WCP Online: Impeller Flow Sensor Instrumentation",
+      "url": "https://wcponline.com/2002/06/19/instrumentation-flow-measurement-impeller-flow-sensor/",
+      "prefixedId": "HOME-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Turbines Inc: Flow Meter Types",
+      "url": "https://www.turbinesincorporated.com/news-resources/understanding-different-types-of-flow-meters/",
+      "prefixedId": "HOME-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Grand View Research: Flow Meter Market",
+      "url": "https://www.grandviewresearch.com/industry-analysis/flow-meters-market",
+      "prefixedId": "HOME-S09"
+    },
+    {
+      "id": "S10",
+      "label": "GM Insights: Magnetic Flowmeter Market",
+      "url": "https://www.gminsights.com/industry-analysis/magnetic-flowmeter-market",
+      "prefixedId": "HOME-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Grundfos: Differential Pressure Regulation",
+      "url": "https://www.grundfos.com/us/support/faq/how-is-a-circulator-pump-regulated-using-differential-pressure-regulation",
+      "prefixedId": "HOME-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Grundfos: Direct Sensors",
+      "url": "https://www.grundfos.com/about-us/cases/Direct-Sensors-and-SINGLE-Temperature-Control-Systems",
+      "prefixedId": "HOME-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Allengra: Heat Metering Regulations in Heat Pumps",
+      "url": "https://allengra.eu/news/heat-metering-regulations-heat-pumps",
+      "prefixedId": "HOME-S13"
+    },
+    {
+      "id": "S14",
+      "label": "Danfoss: Manual Balancing Valves",
+      "url": "https://www.danfoss.com/en/products/dhs/valves/hydronic-balancing-and-control/manual-balancing-valves/",
+      "prefixedId": "HOME-S14"
+    },
+    {
+      "id": "S15",
+      "label": "Deppmann: HVAC Hydronic Flow Measurement",
+      "url": "https://www.deppmann.com/blog/monday-morning-minutes/hvac-hydronic-systems-flow-measurement-balance-valves/",
+      "prefixedId": "HOME-S15"
+    },
+    {
+      "id": "S16",
+      "label": "Comdronic: Balancing Basics",
+      "url": "https://www.comdronic.co.uk/support/balancing-basics",
+      "prefixedId": "HOME-S16"
+    },
+    {
+      "id": "S17",
+      "label": "ONICON: Boiler Flow Measurement",
+      "url": "https://www.onicon.com/application/st-boiler",
+      "prefixedId": "HOME-S17"
+    },
+    {
+      "id": "S18",
+      "label": "ISA: Flowmeters for Boiler Efficiency",
+      "url": "https://www.isa.org/intech-home/2022/june-2022/departments/using-flowmeters-to-improve-boiler-efficiency",
+      "prefixedId": "HOME-S18"
+    },
+    {
+      "id": "S19",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "HOME-S19"
+    },
+    {
+      "id": "S20",
+      "label": "01_product_decomposition.md — technology classification, features, constraints",
+      "prefixedId": "HOME-S20"
+    },
+    {
+      "id": "S21",
+      "label": "02_functional_promise.md — commodity functional promise, complements",
+      "prefixedId": "HOME-S21"
+    }
+  ]
+}

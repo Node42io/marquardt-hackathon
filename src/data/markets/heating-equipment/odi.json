@@ -1,0 +1,845 @@
+{
+  "naicsCode": "333414",
+  "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "slug": "heating-equipment",
+  "summary": {
+    "totalNeeds": 41,
+    "underservedCount": 0,
+    "overservedCount": 0,
+    "avgOpportunityScore": 0
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "",
+      "statement": "",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 2,
+      "needId": "",
+      "statement": "",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 3,
+      "needId": "",
+      "statement": "",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 4,
+      "needId": "",
+      "statement": "",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 5,
+      "needId": "",
+      "statement": "",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "zone": "Underserved"
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected system faults (blocked filter, stuck valve) that DP estimation cannot sense because it has no direct flow measurement",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "DP estimation infers flow from pump speed and curve data, making it blind to flow-reducing faults that occur downstream of the pump. Blocked magnetic filters and stuck zone valves are the most common hydronic system failures, and undetected they cause overheating, comfort loss, and accelerated component wear.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than ±3% from true value across the 5–50 l/min operating range",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Thermal energy output (Q = flow × Cp × ΔT) scales linearly with measured flow, so a ±3% error produces a ±3% energy error that propagates to burner modulation control and EcoDesign efficiency labels. At importance 9/10, OEM engineers treat accuracy as a non-negotiable design requirement for product certification.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize time to detect a complete flow stoppage event (circulator failure or valve closure) to less than 2 seconds",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Loss of flow in an active boiler circuit causes rapid heat exchanger overshoot; EN 15502 Category III appliances require flow-proving before and during burner operation. A 2-second detection threshold limits thermal stress to the primary HX and prevents safety valve actuation that would require manual reset.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected air entrainment events exceeding 2% volume that silently degrade measurement accuracy",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Air in hydronic circuits is a chronic issue, especially in retrofit systems where flushing is incomplete. Above 2% void fraction, turbine sensors slow and ultrasonic sensors lose signal, both without flagging the cause — so the control system interprets measurement error as valid data rather than an alarm condition.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of turbine rotor seizure from magnetite accumulation requiring unplanned sensor replacement within 3 years of installation",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Magnetite (Fe₃O₄) and paramagnetic MnO₂ preferentially deposit on magnetized turbine rotors in hard-water hydronic circuits. Field data indicates 5–15% turbine replacement within 3 years in circuits without magnetic filtration, driving significant OEM warranty costs and installer callbacks.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize calibration drift exceeding ±5% over 12 months caused by bearing wear and blade erosion in hard-water circuits",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Continuous rotation erodes turbine blade edges and wears bearing surfaces; mineral scale deposits progressively change blade geometry. The combined drift shifts the K-factor (pulses per litre) by 3–8% per year in hard-water areas, causing the boiler to under-measure flow and over-fire at low loads.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine zero-flow conditions from ultrasonic signal loss caused by transient medium anomalies (bubbles, empty pipe)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Ultrasonic sensors report zero flow both when flow is genuinely absent and when the acoustic path is interrupted by air pockets. Without diagnostic flags to disambiguate signal-loss causes, the controller either triggers unnecessary safety shutdowns or ignores a real dry-fire condition.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the field failure rate of the flow sensing subsystem to below 0.1% within the 15-year appliance design life",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 5,
+      "opportunity": 13,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Boiler OEMs target <0.1% component failure rate over the appliance warranty period. Flow sensor failure triggers loss of modulation control, safety shutdown, or comfort complaint — each costing €200–500 in warranty service, with disproportionate brand reputation damage relative to component cost.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to document measured seasonal efficiency per EU EcoDesign Lot 1/2 using onboard flow + temperature data rather than laboratory-only test results",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EU EcoDesign revisions (consultation closed Jan 2026) are moving toward requiring heaters to measure and display real-world consumption. Onboard flow + temperature enables field-verified efficiency certification, giving OEMs a regulatory advantage over competitors relying solely on lab-test results.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "OEM procurement manager / HVAC wholesaler buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement degradation when medium temperature shifts by more than 20°C within a single heating cycle",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Hydronic heating circuits undergo rapid temperature transients from cold-start (15°C) to operating temperature (75°C). Speed of sound in water changes ~2.4 m/s per °C, accumulating ~1.5% measurement error per 20°C swing in sensors without real-time compensation.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of specifying a sensor whose flow range does not cover the circuit's minimum-modulation flow rate, causing dead zones in low-load operation",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Modern condensing boilers modulate 1:5 to 1:10. A sensor under-specified for minimum flow creates a measurement dead zone precisely at low-modulation points where condensing efficiency gains are highest, forcing the OEM to either accept blind operation or oversize the sensor.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "OEM procurement manager / HVAC wholesaler buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement failure rate when medium contains glycol concentrations up to 50% by volume",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Frost-protection glycol blends are standard in heat-pump hybrid and outdoor-circuit applications. Speed-of-sound changes by ~8% per 10% glycol increment, causing ultrasonic transit-time sensors to mis-measure unless the fluid-type compensation is accurate across the full 0–50% mix range.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of flow estimate error exceeding ±15% due to pump curve deviation from catalog values at part-load conditions",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 2,
+      "opportunity": 12,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "DP-based flow estimation relies on the pump's H-Q curve being stable, but impeller wear, air ingestion, and voltage variation all shift the actual curve away from catalog values. At part-load, where most heating operation occurs, these deviations can compound to 15%+ error, invalidating efficiency calculations.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to simultaneously provide flow rate AND medium temperature from a single measurement point, eliminating separate probe installation",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Thermal energy metering (Q = flow × Cp × ΔT) requires co-located flow and temperature data. Two separate sensors introduce installation complexity, additional sealing points, wiring cost, and time-alignment errors; a combined device eliminates all four issues and is a direct OEM BOM simplification.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the variation in thermal energy calculation (Q = flow × Cp × ΔT) caused by flow measurement noise at low modulation rates (<25% burner output)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "At 25% burner output, flow velocities are near sensor detection limits and small absolute errors translate to large percentage errors in thermal energy totals. Noisy energy readings prevent the boiler controller from accurately charging heat batteries or logging ErP performance, both of which are increasingly mandatory.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of commissioning sign-off with hydraulic imbalance exceeding ±10% of design flow rate per zone",
+      "jobStep": "CONFIRM",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Hydraulic imbalance beyond ±10% causes zone overheating, pump noise, and inefficient heat distribution. Commissioning technicians who sign off without verifiable flow data expose themselves to warranty liability; real-time sensor readout during balancing eliminates guesswork and creates an auditable commissioning record.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to achieve A-rated energy label classification on the first certification submission by providing measurement accuracy that matches laboratory reference within ±2%",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EU ErP A-rated label certification requires lab-verified seasonal efficiency measurements. If the in-product flow sensor diverges from the reference lab instrument by more than ±2%, the OEM must re-run the full certification cycle — costing 6–12 weeks and €15K–€30K per submission failure.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "OEM procurement manager / HVAC wholesaler buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement dead zones during low-modulation boiler operation where flow rates drop below the minimum detectable threshold (4.2 l/min DN20) at 20-25% burner output",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Condensing boilers spend the majority of their annual runtime at 20–40% burner output for weather-compensated operation. If the sensor goes blind below 4.2 l/min, the controller loses thermal feedback exactly when efficiency optimisation matters most, causing unnecessary cycling and ErP performance shortfalls.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the installation footprint penalty from the 5-10× DN straight-pipe requirement that competes for space within compact boiler enclosures and wall-hung appliance housings",
+      "jobStep": "LOCATE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Wall-hung condensing boiler enclosures have shrunk to 400×700×280mm to meet kitchen aesthetics. A 10×DN straight-pipe run on a DN20 sensor demands 200mm of unobstructed pipe — often longer than available — forcing redesign of the appliance's hydraulic manifold block.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the annual maintenance effort required to inspect and clean mechanical flow sensor internals to prevent calibration drift from particulate fouling",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Mechanical turbine sensors accumulate magnetite and scale particles on rotor bearings, causing progressive under-reading. Annual service calls to inspect and clean flow sensors add ~€60–€90 in labour per boiler visit — a recurring cost that service contracts increasingly prohibit.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to maintain accurate readings across the full flow range without mechanical-inertia dead band at low flow rates (<3 l/min) where turbine rotors stall",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Turbine rotors require a minimum kinetic energy threshold to overcome bearing friction and begin rotating. Below 3 l/min, many mechanical sensors read zero while flow continues, preventing the boiler controller from distinguishing true no-flow from low-load trickle flow — a critical distinction for modulating heat exchangers.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to detect incipient circulator pump degradation via flow-rate trend analysis before complete pump failure causes comfort loss",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Circulator pump failure is the leading cause of no-heat service calls. A gradual 10–15% flow reduction over weeks signals bearing wear or impeller cavitation, but most boilers have no instrument to detect this trend — leaving the first symptom as a comfort complaint and emergency call-out.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to provide installer-visible flow data (display or diagnostic output) that demonstrates measured — not estimated — system performance during commissioning and service visits",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Heating regulations (BS 7593, CIBSE guides) require documented commissioning records. If the only flow data available is an estimate from pump speed, the installer cannot provide evidence-based sign-off, increasing legal exposure when performance disputes arise after handover.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "OEM procurement manager / HVAC wholesaler buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of receiving a customer callback within 30 days of installation due to an undetected hydraulic imbalance that the sensor could have flagged during commissioning",
+      "jobStep": "CONFIRM",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Industry data shows 30–40% of first-year heating complaints stem from hydraulic imbalance set during commissioning. Each call-back costs the installer 2–3 hours unbillable time; flow measurement during commissioning directly prevents the most common post-installation deficiency.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement error caused by micro-bubble entrainment exceeding 2% by volume during system filling, de-aeration, and cold-start operations that temporarily aerate the hydronic medium",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Every new hydronic installation and annual refill introduces dissolved air that takes 20–60 minutes to de-aerate. Ultrasonic sensors scatter on micro-bubbles, producing wildly inflated or zero readings during this window, which forces installers to ignore sensor data during start-up — undermining confidence in the measurement.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize variability of flow readings between successive measurement cycles under identical steady-state conditions (repeatability >±0.5%)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 6,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Boiler PID controllers use flow rate as the primary feedback signal for burner modulation. If the sensor reading varies >±0.5% cycle-to-cycle under steady-state conditions, the controller interprets noise as real load changes and hunts, increasing cycling frequency and reducing combustion efficiency.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize systematic measurement error caused by non-ideal flow profiles (swirl, asymmetry) from upstream pipe fittings",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Real boiler installations place elbows, tees, and valves within 1–3 DN of the sensor — far below the 5–10DN straight-pipe specification. The resulting swirl and asymmetric profiles introduce systematic bias of 2–8%, which compounds with other tolerances to push total measurement error beyond ±10%.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of complete signal loss when transient air pockets pass through the sensor during system filling or de-aeration",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Ultrasonic transit-time sensors lose coupling when an air slug passes through the measurement section, producing a zero or error output for 1–30 seconds. The boiler controller interprets signal loss as no-flow and may trip a safety lockout, requiring manual reset — a call-out that is both avoidable and frustrating to end users.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of mounting the sensor at a location where turbulence from upstream fittings causes >2% systematic reading bias",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Heating installations often lack the straight-pipe runs assumed in sensor specifications. If the installer places the sensor immediately downstream of a fitting without knowing it introduces >2% bias, the subsequent calibration certificate and ErP documentation are compromised without any obvious indicator.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the turndown ratio (max/min measurable flow) to cover both full-load and minimum-modulation operating points in a single device",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "A boiler running at 100% produces 6–8× the flow of the same boiler at 15% modulation. A sensor with a 1:5 turndown cannot cover both extremes from a single calibration, forcing OEMs to choose between over-ranging at high load (inaccurate) or dead-band at low load (blind) — both of which undermine certification.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the installation footprint (physical length and required straight-pipe run) to enable placement in space-constrained boiler enclosures",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Boiler enclosures are sized for household aesthetics, not sensor geometry. OEM mechanical engineers must fit all hydraulic components — pump, heat exchanger, expansion vessel, sensor — within a predefined envelope; a shorter sensor with relaxed upstream requirements enables placement without redesigning the manifold.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total OEM integration time from unpacking to first valid reading, including mechanical fitting, electrical connection, and protocol handshake",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "OEM production lines run on takt times of 4–8 minutes per appliance. Sensor integration that requires three-step commissioning (mechanical, electrical, firmware configuration) is a bottleneck; any reduction in integration steps directly improves assembly throughput and reduces the risk of misconfiguration.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of polymer housing seal degradation when boiler circuits operate at sustained supply temperatures of 80-90°C near the sensor's material service limit",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "High-temperature zones in floor-heating and buffer-tank topologies regularly sustain 80–90°C supply temperatures. Polymer sensor housings with 90°C rated seals operate at their material margin, and thermal cycling accelerates O-ring compression set, increasing the likelihood of micro-leaks that the OEM is liable for under 2-year product warranty.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the residual transit-time measurement error during rapid cold-start temperature ramps (15°C to 75°C in <10 minutes) where speed-of-sound changes temporarily outpace the NTC compensation algorithm's response",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Speed-of-sound in water changes by approximately 3 m/s per °C. During a cold-start ramp, the bulk fluid temperature seen by the NTC lags the measurement section by 15–30 seconds; the resulting compensation lag introduces a transient over-read that can reach 5–8%, causing the controller to under-fire the burner during warm-up.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the OEM qualification cost for validating acoustic performance across the full DN range and glycol concentration matrix",
+      "jobStep": "PREPARE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Qualifying an ultrasonic sensor across DN15, DN20, DN25 at 0%, 25%, and 50% glycol concentrations requires a test matrix of 9+ flow-lab configurations. Each lab run costs €5K–€15K and 2–4 weeks; OEMs with tight product launch schedules rate qualification cost reduction as a high-priority procurement criterion.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of sensor variants an OEM must qualify and stock to cover its full boiler product range (DN15–DN25)",
+      "jobStep": "DEFINE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "A boiler OEM with 8–15 product models spanning DN15–DN25 must maintain a separate qualified sensor SKU for each size. Multi-DN adapter or software-configurable sensors reduce the qualification burden from 3+ SKUs to 1, with corresponding reductions in safety stock, supplier management, and BOM complexity.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "stakeholderIds": [
+        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "OEM procurement manager / HVAC wholesaler buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of acoustic coupling degradation when glycol concentration changes between seasonal fill operations shift the speed-of-sound calibration baseline beyond the pre-configured fluid-type setting",
+      "jobStep": "EXECUTE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Service engineers top up glycol circuits without recalibrating the sensor's fluid-type setting. If the refill changes the concentration by >10%, the speed-of-sound offset shifts enough to cause silent measurement drift that persists until the next service visit, producing inaccurate thermal energy totals without any alarm.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the commissioning time required to configure fluid-type parameters and verify acoustic coupling after installation",
+      "jobStep": "PREPARE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Ultrasonic sensors require fluid-type configuration and coupling verification before first valid output. On a condensing boiler production line, any additional commissioning step that is not automated adds takt-time and creates an error mode; sensors that self-detect fluid type eliminate a manual step and a source of mis-commissioning.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of an installer failing to detect incorrect sensor orientation (forward/reverse) before system start-up",
+      "jobStep": "CONFIRM",
+      "importance": 6,
+      "satisfaction": 6,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Reverse-mounted flow sensors report inverted or zero readings. In a condensing boiler, this prevents accurate thermal energy logging and can cause the boiler controller to run pump protection cycles unnecessarily. Sensors without clear reverse-orientation detection force re-inspection during call-outs that are entirely preventable.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the duration of invalid measurement during system drain-down events in solar-hybrid heating circuits with drain-back designs that periodically empty the sensor's measurement section",
+      "jobStep": "EXECUTE",
+      "importance": 5,
+      "satisfaction": 4,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Drain-back solar systems deliberately empty collector circuits at dusk or frost events. When the sensor section empties and refills, sensors without empty-pipe detection log false flow data or error codes during the transition. This corrupts daily energy harvest logs and triggers unnecessary service alerts.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement failure when hydronic circuit additives (corrosion inhibitors, anti-scale agents, biocides) shift the medium's acoustic impedance beyond the piezoelectric transducer's coupling range",
+      "jobStep": "EXECUTE",
+      "importance": 5,
+      "satisfaction": 6,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Corrosion inhibitors (e.g., Sentinel X100, Fernox F1) contain surfactants and polymers that slightly alter the acoustic impedance and viscosity of the hydronic medium. While most sensors tolerate standard concentrations, field over-dosing or mixing of inhibitor products occasionally causes signal attenuation that manifests as unexplained zero-flow errors.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 0,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] — 33 error statements (N01-N28), 5 alternatives with market share and trade-offs",
+      "prefixedId": "ODI-HEATING-EQUIPMENT-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: FIT_heating_equipment_except_warm_air_furnac] — Step 10 product-related needs (8), Step 09 technology feature fit scores (7 features), Step 11 vendor feature fit (6 features)",
+      "prefixedId": "ODI-HEATING-EQUIPMENT-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 01_product_decomposition] — Product constraints driving Step 10 needs",
+      "prefixedId": "ODI-HEATING-EQUIPMENT-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: 02_functional_promise] — Commodity FP and differentiators informing recalibration",
+      "prefixedId": "ODI-HEATING-EQUIPMENT-S04"
+    }
+  ]
+}

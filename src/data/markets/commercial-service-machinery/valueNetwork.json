@@ -1,0 +1,376 @@
+{
+  "naicsCode": "333318",
+  "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+  "slug": "commercial-service-machinery",
+  "coreJobStatement": "Manufacture and deploy water-using commercial machinery that cleans, treats, purifies, or dispenses aqueous fluids for commercial and institutional operations",
+  "outputTypes": [
+    "Commercial washer-extractor",
+    "Continuous tunnel washer",
+    "Commercial dryer / ironer",
+    "Tunnel car wash system",
+    "In-bay automatic car wash",
+    "Self-service car wash bay",
+    "Commercial water purification system (RO/UV)",
+    "Commercial water softener",
+    "Commercial ice machine",
+    "Beverage vending / dispensing machine"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what subsystems compose commercial water-using machinery and their deployment ecosystem",
+  "architectureDistance": 3,
+  "marketSize": "~$15–20B globally (commercial laundry ~$5–10B, car wash equipment ~$2B, commercial water treatment ~$5–8B) [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Water Supply & Pre-Treatment",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Fluid Circuit & Distribution",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Thermal Management",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Chemical Dosing & Application",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Core Process Execution",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Drainage, Recovery & Recycling",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Control, Automation & Payment",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Safety, Compliance & Service",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Water Inlet Assembly",
+      "functionalJob": "Solenoid-controlled inlet connecting the machine to building water supply. Typically DN15–DN25 cold and hot connections.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Water Softener",
+      "functionalJob": "Ion-exchange system removing calcium and magnesium hardness. Critical for commercial laundry (hard water reduces detergent effectiveness 30–50%) and water treatment (protects RO membranes). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Pre-Filtration System",
+      "functionalJob": "Multi-stage filtration removing sediment, chlorine, and organics before the machine process. Essential for water purification (protects RO membranes) and beverage equipment (taste/quality).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Circulation Pump",
+      "functionalJob": "Moves water through internal circuits (wash circuits, rinse circuits, recirculation loops). Low-to-medium pressure, high reliability required.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "High-Pressure Pump",
+      "functionalJob": "Generates 50–150 bar for car wash spray systems. The primary energy-consuming component in car wash equipment.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Valve Manifold & Distribution",
+      "functionalJob": "Routes water to different machine zones/stages in the correct sequence. Solenoid valves dominate; proportional valves growing for precision dosing.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.4",
+      "name": "Flow Sensing & Measurement",
+      "functionalJob": "Instruments measuring volumetric flow rate, consumption totals, and flow anomalies in the machine's water circuits. Flow data feeds controller logic for fill verification, dosing accuracy, water-use reporting, and leak detection. [SRC: web_search, ICON Process Controls]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.5",
+      "name": "Piping & Hose Network",
+      "functionalJob": "Physical conduit connecting all fluid-handling components. Material selected for chemical compatibility and pressure rating.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Water Heater / Heating Element",
+      "functionalJob": "Primary heat input to the machine's water circuit. Electric immersion dominant in washer-extractors; gas burner in large tunnel washers; steam in industrial laundry.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Heat Recovery Unit",
+      "functionalJob": "Captures thermal energy from drain water or exhaust air to pre-heat incoming cold water. ROI typically 1–3 years in high-volume operations. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Temperature Sensing & Control",
+      "functionalJob": "Ensures water reaches and maintains target temperature for each cycle step.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Chemical Dispensing System",
+      "functionalJob": "Metered injection of liquid chemicals into the wash/rinse water. Peristaltic and diaphragm pumps dominate. Key vendors: Hydro Systems, Ecolab, Diversey, SEKO. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Rinse & Sanitiser Injection",
+      "functionalJob": "Final-stage injection ensuring residual chemical removal and microbiological safety.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Wash Drum Assembly (Laundry)",
+      "functionalJob": "Rotating cylinder performing mechanical wash action. Drum diameter and speed determine mechanical action (G-force). Commercial drums: 60–250 kg capacity.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Spray Arch & Wash Assembly (Car Wash)",
+      "functionalJob": "High-pressure spray systems and mechanical wash elements in tunnel, in-bay, and self-service configurations. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Membrane Filtration Module (Water Treatment)",
+      "functionalJob": "Core separation technology in commercial water purification and treatment systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.4",
+      "name": "Conveyor & Material Handling",
+      "functionalJob": "Transport systems moving vehicles (car wash tunnel) or linen (tunnel washer) through sequential process stations.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Drain Pump & Discharge",
+      "functionalJob": "Removes used water from machine sump to building drain or recycling system.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Water Recycling System",
+      "functionalJob": "Treats and reclaims wastewater for reuse in subsequent wash cycles. Mandatory in many car wash jurisdictions; growing in commercial laundry. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Effluent Monitoring & Compliance",
+      "functionalJob": "Instrumentation ensuring discharged water meets local environmental standards.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Machine Controller / PLC",
+      "functionalJob": "Central logic unit managing cycle sequencing, sensor inputs, valve/pump outputs, and fault handling.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Human-Machine Interface (HMI)",
+      "functionalJob": "Operator/customer-facing display and controls. Ranges from simple push-button (self-service car wash) to full touchscreen (tunnel washer, water treatment).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.3",
+      "name": "IoT & Connectivity",
+      "functionalJob": "Remote monitoring, fleet management, and data analytics platform. Enables predictive maintenance and water-use optimisation. [SRC: web_search, Sierra Wireless]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.4",
+      "name": "Payment & Vending System",
+      "functionalJob": "Revenue collection for vended/self-service equipment. Coin-op declining; card/mobile growing at ~15% CAGR.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Machine Safety Systems",
+      "functionalJob": "Interlocks and protection devices preventing injury and property damage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Regulatory Compliance",
+      "functionalJob": "Certification, testing, and water efficiency rating programmes.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.3",
+      "name": "Preventive Maintenance & Aftermarket",
+      "functionalJob": "Ongoing service, spare parts, and predictive analytics. Service revenue is 20–30% of OEM revenue for mature equipment categories.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt sits here.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333318 — U.S. Census Bureau",
+      "url": "https://www.census.gov/naics/?input=333318&year=2022&details=333318",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Car Wash Instrumentation: Designing Reliable Systems — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/car-wash-instrumentation-designing-reliable-systems-for-modern-car-wash-manufacturers/",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Commercial Laundry Equipment Market — Fortune Business Insights",
+      "url": "https://www.fortunebusinessinsights.com/commercial-laundry-market-103905",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Car Wash Service Market — Grand View Research",
+      "url": "https://www.grandviewresearch.com/industry-analysis/car-wash-service-market",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Alliance Reports Full Year 2025 Results — Alliance Laundry Systems",
+      "url": "https://ir.alliancelaundry.com/news-events/press-releases/detail/138/alliance-reports-fourth-quarter-and-full-year-2025-results",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S05"
+    },
+    {
+      "id": "S06",
+      "label": "WaterSense at Work Section 3.5: Laundry Equipment — EPA",
+      "url": "https://www.epa.gov/system/files/documents/2023-06/ws-commercial-watersense-at-work_Section_3.5_Laundry_Equipment.pdf",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Commercial Laundry Wastewater Monitoring — Keco Engineered Controls",
+      "url": "https://kecocontrols.com/applications/commercial-laundry-wastewater-monitoring-system/",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S07"
+    },
+    {
+      "id": "S08",
+      "label": "IoT-Enabled Smart Washing Machine — Sierra Wireless",
+      "url": "https://www.sierrawireless.com/industries/industrial/iot-enabled-washing-machines/",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S08"
+    },
+    {
+      "id": "S09",
+      "label": "SEKO WashDose Tunnel System — Fluid Handling Pro",
+      "url": "https://fluidhandlingpro.com/fluid-process-technology/pumps-pumping-systems/seko-launches-tunnel-laundry-iot-pump-system/",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Commercial Reverse Osmosis Systems — Applied Membranes",
+      "url": "https://www.appliedmembranes.com/pages/commercial-industrial-ro",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S10"
+    },
+    {
+      "id": "S11",
+      "label": "05_market_discovery.md — Architecture distance scoring for NAICS 333318",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S12"
+    },
+    {
+      "id": "S13",
+      "label": "--",
+      "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S13"
+    }
+  ]
+}

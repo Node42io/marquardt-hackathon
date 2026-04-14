@@ -1,0 +1,32 @@
+{
+  "naicsCode": "333318",
+  "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+  "slug": "commercial-service-machinery",
+  "alternatives": [
+    {
+      "name": "Turbine / Paddle-Wheel Flow Sensor (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving rotor clogs from lint, detergent residue, and mineral scale in commercial wash water; bearing wear causes calibration drift ±5%/year; requires periodic manual cleaning; $5–15 unit cost but 1–3 year effective life in harsh media [SRC: web_search — KEYENCE, ICON Process Controls]"
+    },
+    {
+      "name": "Ultrasonic Flow Sensor (transit-time)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment by volume (detergent foam, recycled water aeration); requires pipe-full condition; higher unit cost vs turbine (3–5x at OEM volume); requires fluid-type configuration at commissioning [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Electromagnetic Flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Highest accuracy (±0.5%) but 5–10x cost vs turbine; requires power supply (no battery mode); larger installation footprint; conductive fluid required (water qualifies); over-specified for most commercial equipment applications [SRC: web_search — Lanry Instruments]"
+    },
+    {
+      "name": "Solenoid-Valve Volumetric Dosing (timed fill)",
+      "unspsc": "—",
+      "tradeoffs": "Zero sensor hardware cost; accuracy only ±10–20%; degrades with supply pressure variation; cannot detect leaks, blockages, or anomalies; no consumption data for billing or reporting; budget fallback in price-sensitive equipment [SRC: VN_other_commercial_and_service_industry_ma]"
+    },
+    {
+      "name": "Do nothing / no measurement [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero P1 lifecycle burden; water consumption unknown; cannot support pay-per-use billing; cannot meet WaterSense/Energy Star water efficiency reporting; faults and leaks undetectable; water waste invisible"
+    }
+  ]
+}

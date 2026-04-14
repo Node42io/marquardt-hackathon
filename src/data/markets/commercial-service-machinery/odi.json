@@ -1,0 +1,767 @@
+{
+  "naicsCode": "333318",
+  "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+  "slug": "commercial-service-machinery",
+  "summary": {
+    "totalNeeds": 41,
+    "underservedCount": 14,
+    "overservedCount": 0,
+    "avgOpportunityScore": 10.98
+  },
+  "top5Opportunities": [],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize time to detect a water supply failure or pipe-empty condition to less than 5 seconds to prevent dry-run damage to pumps and heating elements",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Dry-run conditions destroy pump seals and heating elements in under 30 seconds. In commercial laundry, dishwasher, and car wash equipment, a supply interruption without rapid flow detection leads to component failures costing €500–€2,000 per incident, plus unplanned downtime during peak service hours.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than plus-or-minus 3 percent from true value when measuring detergent-laden or chemically treated water across the 0.5-50 l/min operating range",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Water dosing accuracy directly governs chemical consumption and rinse effectiveness in commercial dishwashers and laundry machines. A ±3% flow error compounds over thousands of cycles, producing systematic under- or overdosing that either increases chemical cost or compromises hygiene certification (NSF, HACCP compliance).",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of flow sensor rotor clogging from lint, detergent residue, or mineral scale within 12 months of installation in commercial laundry or car wash equipment",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Commercial laundry machines process 50–200 kg of textiles daily, generating continuous lint and fibre contamination in wash water. Mechanical paddle-wheel sensors experience rotor clogging within 6–12 months, requiring service calls at €150–€300 each; clogged sensors silently under-report flow, causing overdosing and wash failures.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected water circuit faults (partial blockage, stuck valve, internal leak) that timed-fill dosing cannot sense because it lacks direct flow measurement",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Timed-fill systems assume a constant supply pressure; any fault that reduces actual flow (partial blockage, solenoid fouling, limescale buildup) goes undetected because volume is inferred from time rather than measured. A direct flow sensor reveals these faults in real time, preventing cycles completing with insufficient water.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the field failure rate of the flow sensing subsystem to below 0.2 percent within the 10-year commercial machine design life",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Commercial machines are sold under 3–5 year warranties and deployed for 10+ years. A flow sensor failure rate above 0.2% generates hundreds of warranty replacements per 100,000 units deployed, each carrying a technician dispatch cost of €200–€400; OEMs track sensor MTBF as a key procurement criterion.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement degradation when water contains suspended detergent residues, lint particles, or chemical dosing additives at concentrations typical of commercial wash cycles",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Commercial wash water is significantly more contaminated than clean tap water — suspended solids, surfactants, and biological matter all affect acoustic transit-time and optical flow sensing. Sensors characterised only in clean water will drift unpredictably in real-world contaminated wash cycles, producing unreliable dosing and compliance data.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected water leaks within the machine's internal fluid circuit that waste more than 50 litres per day",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Water utility costs in commercial laundry and food service environments can reach €10,000–€40,000 per year per machine. A 50 l/day internal leak is invisible to operators without flow monitoring and adds €150–€500 annually in pure water waste, not counting floor damage or mould remediation from slow seeping leaks.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to measure water consumption per cycle with sufficient accuracy (plus-or-minus 2 percent) to support pay-per-use billing models and per-machine water-use reporting",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Pay-per-use laundry and dishwashing equipment deployed in hospitality and healthcare requires per-cycle water metering accurate enough for revenue billing. Without ±2% accuracy, billing disputes arise and water-use sustainability reports required by corporate ESG programmes cannot be substantiated.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize calibration drift exceeding plus-or-minus 5 percent per year caused by mechanical wear of paddle-wheel bearings and blade erosion in detergent-laden water",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Detergent surfactants act as mild lubricants but also carry abrasive micro-particles that erode paddle-wheel blades and bearings over time. A ±5%/year drift rate means a sensor accurate at commissioning delivers readings 20–25% off-true after 5 years without re-calibration, systematically biasing all dosing and water-efficiency records.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine zero-flow conditions from ultrasonic signal loss caused by detergent foam or entrained air from recycled water systems",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Commercial car wash and dishwasher circuits generate heavy foam during wash cycles; ultrasonic sensors experiencing foam-induced signal loss report zero flow, which the machine controller may misinterpret as a supply failure and trigger an alarm or safe-stop. Distinguishing foam-induced signal loss from a real fault prevents false downtime events.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to provide real-time per-cycle water consumption data to the machine controller for IoT dashboard reporting and water-efficiency compliance documentation",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Hospitality and healthcare operators increasingly require equipment manufacturers to provide machine-level water consumption APIs for ESG and ISO 14001 reporting. Without real-time per-cycle data from an accurate flow sensor, OEMs cannot deliver the connected-equipment features that differentiate their product in a market shifting toward IoT dashboards.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of flow measurement failure when water recycling systems introduce variable water quality (TDS 200-2000 ppm, turbidity, temperature cycling) into the machine supply",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Water recycling (reverse osmosis reject, grey water, condensate recovery) introduces highly variable TDS and turbidity that can shift acoustic propagation characteristics by 5–15%. Sensors validated only on clean mains water fail silently in recycled-water configurations, which represent a growing share of commercial machine installations due to water tariff pressures.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to document measured water consumption per cycle for EPA WaterSense, Energy Star, or EU Ecodesign water efficiency certification using onboard sensor data",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EPA WaterSense and EU Ecodesign certification for commercial washing equipment requires metrologically traceable water consumption data at the per-cycle level. OEMs who can demonstrate on-product sensor measurement rather than lab estimates alone reduce certification round-trip times and achieve the eco-label advantage that commands premium retail pricing.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM procurement manager — selects and sources sensor components for production"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of ultrasonic signal attenuation when detergent agitation or water recycling aeration generates air entrainment exceeding 2 percent by volume during commercial wash and rinse cycles",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Agitated wash cycles in commercial dishwashers and car wash equipment routinely entrain 2–8% air by volume through pump turbulence and detergent foaming. Ultrasonic sensors lose acoustic signal when bubble density exceeds their tolerance, causing controller blackouts during the most active measurement phases of each cycle.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of water fill volume deviating more than plus-or-minus 15 percent from target due to supply pressure variations that invalidate timed-fill calibration",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 2,
+      "opportunity": 12,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Commercial sites experience mains pressure swings of ±20–40% during peak demand periods (breakfast service, morning laundry runs). Timed-fill systems calibrated at nominal pressure will over- or under-fill by 15%+ when pressure deviates, wasting water or producing under-diluted chemical concentrations that compromise hygiene standards.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize variability of water consumption readings between identical wash/rinse cycles under the same programme settings (repeatability better than plus-or-minus 1 percent)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Machine controllers use per-cycle water consumption baselines to flag abnormal consumption. If the sensor's cycle-to-cycle repeatability exceeds ±1%, the fault-detection threshold must be widened to avoid false alarms, reducing sensitivity to genuine leaks or valve failures that cause <5% incremental consumption increase.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the frequency of manual sensor disassembly and cleaning required to prevent accumulated debris from degrading flow measurement accuracy below plus-or-minus 5 percent",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Commercial machine service intervals are typically 6–12 months, but mechanical sensor fouling in high-contamination environments (car wash, food processing) can degrade accuracy to ±10% within 3–4 months. Frequent out-of-cycle service calls for sensor cleaning represent unbillable labour and reduce operator confidence in the equipment.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to maintain accurate readings at low flow rates below 2 l/min where turbine/paddle-wheel rotors stall due to insufficient fluid momentum",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Pre-rinse and trickle-fill stages in dishwashers and car wash equipment operate at 0.5–2 l/min — below the stall threshold of most mechanical sensors. Missing these low-flow phases means the machine cannot accurately track total cycle consumption, invalidating per-cycle water efficiency records submitted for certification.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of releasing a machine from end-of-line testing with a flow sensor calibration error exceeding plus-or-minus 3 percent that goes undetected during the automated test cycle",
+      "jobStep": "CONFIRM",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "End-of-line test cycles in commercial appliance factories run 30–90 seconds using clean water at ambient temperature — conditions quite different from production use with hot, chemically loaded water. Sensors that pass end-of-line test but fail in the field generate warranty replacements that cost 5–10× more than factory rework.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to detect abnormal water consumption patterns (e.g., more than 20 percent above baseline for the same cycle programme) indicating component degradation, valve failure, or internal leak",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Early-stage valve wear, limescale buildup, or solenoid degradation increases per-cycle water use by 10–30% before any visible symptom appears. Operators with per-cycle flow monitoring can identify the trend and schedule preventive maintenance, avoiding the €1,000–€5,000 cost of emergency repair following a complete component failure.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to demonstrate measured water efficiency data that qualifies the equipment for WaterSense or equivalent eco-labels on the first certification submission",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "WaterSense certification for commercial dishwashers and food service equipment requires documented per-cycle water consumption below defined thresholds. First-submission failures add 3–6 months to product launch timelines and €20,000–€50,000 in re-test fees; sensor accuracy that matches test-lab reference instruments is the critical dependency.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to provide per-cycle water usage data visible on the machine HMI or IoT dashboard that commercial customers can include in sustainability reporting",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Hotel chains, hospital groups, and restaurant franchises face mandatory water reporting under ISO 14001 and GRI Standards. Machine manufacturers who can deliver per-cycle water consumption data via HMI or cloud API are increasingly required by procurement specifications; those who cannot are disqualified from institutional tender processes.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of a facility operator receiving an unexpected water utility bill exceeding budget by more than 15 percent due to undetected equipment water waste that the sensor could have flagged",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Water utility bills for commercial laundry or food service facilities commonly run €5,000–€20,000 per month. A 15% over-budget variance from slow leaks or valve inefficiency that was detectable with flow monitoring represents €750–€3,000 in avoidable monthly cost — making flow monitoring ROI easy to justify to facility managers.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to restore valid flow measurement after transient foam or bubble events from detergent injection dissipate from the ultrasonic sensor measurement path",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "In commercial dishwashers, detergent injection produces a foam slug that temporarily blanks the ultrasonic path for 5–20 seconds. If recovery time is excessive, the machine controller accumulates flow data gap errors that compound across hundreds of daily cycles, corrupting the cumulative cycle consumption log used for audit reporting.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of signal loss when air bubbles from detergent agitation or water recycling aeration pass through the sensor during normal operation",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Air bubbles in commercial wash water are not a fault condition — they are an inherent feature of high-flow rinse nozzles, recycled-water inputs, and detergent agitation. A sensor that generates signal-loss errors during normal bubble-laden operation creates spurious fault codes that erode operator trust and increase diagnostic service calls.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of mounting the sensor at a location where turbulence from upstream valves, elbows, or T-junctions causes more than 2 percent systematic reading bias",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Commercial machine hydraulic layouts are designed by mechanical engineers optimising for manufacturing cost and compactness, not sensor placement. Sensors without flow-conditioning tolerance must be placed in the few available straight-pipe sections, which often do not exist, forcing the OEM to either accept bias or redesign the manifold.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the duration of invalid measurement output during machine drain-to-fill transitions when the ultrasonic sensor encounters partial pipe fill that prevents acoustic signal propagation between transducers",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Commercial machines cycle through drain-fill transitions multiple times per wash programme. During these transitions the pipe is only partially filled; sensors without partial-fill detection either produce erroneous readings or error flags, creating gaps in the per-cycle volumetric log that undermine water-consumption compliance documentation.",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement error caused by disturbed flow profiles when the ultrasonic sensor is installed with less than 5xDN straight pipe run in compact commercial machine enclosures with elbows and T-junctions upstream",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement dead zone at trickle-fill and pre-rinse flow rates below 4.2 l/min (DN20) where ultrasonic transit-time difference falls below the signal-to-noise detection threshold",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to measure across the full machine flow range (trickle-fill 0.5 l/min to high-volume rinse 40 l/min) in a single sensor without changing hardware",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM product engineering manager — accountable for machine performance, water efficiency, and certification"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of specifying a sensor whose pressure rating or media compatibility is incompatible with the machine's operating conditions across its full output-type range",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+        "OEM procurement manager — selects and sources sensor components for production"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement failure when water temperature ranges from 5 degrees C (cold fill) to 85 degrees C (hot wash cycle) within a single machine operating envelope",
+      "jobStep": "",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the required installation envelope (sensor body length and straight-pipe clearance) to fit within space-constrained commercial machine enclosures without requiring piping redesign",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
+      "stakeholderIds": [
+        "OEM assembly technician / field service installer — integrates and installs the sensor in the machine"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total OEM assembly-line integration time from unpacking to first valid reading, including mechanical fitting, electrical connection, and protocol handshake",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of a sensor passing end-of-line quality test while having an undetected installation defect (misalignment, air pocket, reversed orientation) that causes field failure",
+      "jobStep": "CONFIRM",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the transient measurement error during rapid temperature cycling between cold fill (5 degrees C) and hot wash (85 degrees C) where ultrasonic speed-of-sound correction lags behind actual medium temperature change rate",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the OEM qualification cost for validating acoustic performance across multiple machine platforms with different pipe diameters (DN14-DN25) and media compositions",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of sensor variants an OEM must qualify and stock to cover its full product range of water-using equipment across DN12-DN25 pipe sizes",
+      "jobStep": "",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the OEM integration time required to configure fluid-type parameters and verify acoustic coupling for each machine variant during assembly-line commissioning",
+      "jobStep": "PREPARE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the risk of polymer housing seal degradation when commercial hot wash cycles operate at 85 degrees C within 5 degrees C of the ultrasonic sensor's 90 degrees C material limit for extended duty cycles",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of acoustic coupling degradation when surfactant concentrations in commercial wash water shift the medium's acoustic impedance outside the ultrasonic transducer's validated operating envelope",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
+      "stakeholderIds": [
+        "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 41,
+  "sources": []
+}

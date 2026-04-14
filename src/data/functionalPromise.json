@@ -1,0 +1,72 @@
+{
+  "productFP": {
+    "statement": "Measure volumetric flow rate and fluid temperature in closed-pipe liquid circuits without mechanical contact, pressure drop, or moving parts",
+    "verb": "Measure",
+    "object": "volumetric flow rate and fluid temperature",
+    "context": "in closed-pipe liquid circuits",
+    "differentiators": [
+      "No mechanical contact with the fluid stream",
+      "Zero pressure drop across the measurement point",
+      "No moving parts — eliminates mechanical wear and maintenance",
+      "Simultaneous flow + temperature in a single sensor body",
+      "Bidirectional flow detection without additional hardware",
+      "Tolerant of glycol mixtures and particulate suspensions"
+    ]
+  },
+  "commodityFP": {
+    "statement": "Quantify the volumetric or mass flow rate of fluids traversing a closed conduit",
+    "commodity": "Flowmeters (UNSPSC 41112501)",
+    "unspscCode": "41112501 [SRC: 01_product_decomposition]",
+    "reasoning": "All flowmeter technologies (ultrasonic, Coriolis, electromagnetic, turbine, vortex, orifice-plate, thermal, differential-pressure) share this fundamental function. Differences are in mechanism, accuracy, media compatibility, and installation constraints — not in function. [SRC: 01_product_decomposition]",
+    "fpExtension": "The underlying transit-time ultrasonic principle also enables: (1) liquid concentration measurement — glycol percentage detection via speed-of-sound shifts; (2) medium anomaly detection — air bubble presence, empty-pipe conditions; (3) fluid temperature monitoring — via integrated thermistor. These cross into UNSPSC classes 41115600 (Liquid analyzers) and 41112201 (Temperature sensors). [ASM: derived from feature set in 01_product_decomposition]",
+    "fpExtensionDomains": [
+      "Liquid composition analysis",
+      "Process anomaly detection",
+      "Thermal monitoring"
+    ]
+  },
+  "bomPosition": {
+    "level": "L5 — Component [ASM]",
+    "position": "Sensor/transducer within a fluid-handling subsystem",
+    "parentSubsystem": "Hydronic circuit, cooling loop, heating circuit, process-fluid loop",
+    "grandparentSystem": "HVAC system, heat pump, boiler, industrial process skid, beverage dispenser"
+  },
+  "complements": [
+    {
+      "name": "Fluid conduit / piping",
+      "criticality": "essential",
+      "description": "Inline pipe of matching diameter (DN12-DN25) for sensor installation"
+    },
+    {
+      "name": "System controller",
+      "criticality": "essential",
+      "description": "Microcontroller, PLC, or BMS to read sensor output (UART/LIN/frequency) and act on data"
+    },
+    {
+      "name": "DC power supply",
+      "criticality": "essential",
+      "description": "5V or 6-30V DC depending on variant; battery mode available at <5 uA"
+    },
+    {
+      "name": "Straight pipe run (upstream)",
+      "criticality": "essential",
+      "description": "5-10x DN of undisturbed straight pipe upstream for specified accuracy"
+    },
+    {
+      "name": "De-aerator",
+      "criticality": "enhancing",
+      "description": "Required in systems with chronic air entrainment >2% vol for reliable measurement"
+    },
+    {
+      "name": "Commissioning / fluid-type configuration",
+      "criticality": "enhancing",
+      "description": "Fluid type must be configured at commissioning for accurate compensation algorithms"
+    },
+    {
+      "name": "Data logging / visualization",
+      "criticality": "optional",
+      "description": "SCADA, HMI, or cloud dashboard for measurement trend storage and display"
+    }
+  ],
+  "sources": []
+}

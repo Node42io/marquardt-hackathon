@@ -1,0 +1,453 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "coreJobStatement": "Transform water, malt, hops, and yeast into packaged beer through controlled biochemical and physical processes",
+  "outputTypes": [
+    "Lager",
+    "Ale",
+    "Stout / Porter",
+    "Wheat beer",
+    "Sour / Wild ale",
+    "Non-alcoholic beer",
+    "Hard seltzer / FMB",
+    "Seasonal / Specialty"
+  ],
+  "hierarchy": "Process VN (L7 through L4) — what process steps and equipment compose the beer manufacturing chain",
+  "architectureDistance": 4,
+  "marketSize": "~$18–23B globally (brewery equipment, 2025); ~$600B global beer market [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Grain Handling & Milling",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Brewhouse",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Fermentation & Conditioning",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Bright Beer Processing",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Packaging",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Glycol Cooling & Refrigeration (H)",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Clean-In-Place & Sanitation (H)",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Water Treatment & Liquor Supply (H)",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.9",
+      "name": "Utilities, CO2 & Quality Assurance (H)",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Grain Silo & Storage",
+      "functionalJob": "Bulk storage of base malt, specialty malts, and adjuncts (rice, corn, wheat). Temperature and moisture monitoring prevents spoilage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Malt Mill",
+      "functionalJob": "Crushes grain into grist, exposing starch granules for enzyme access during mashing. Roller gap setting is critical — too fine clogs the lauter; too coarse reduces yield.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Mash Tun / Mash Mixer",
+      "functionalJob": "Vessel where grist is mixed with hot water (\"liquor\") at controlled temperatures (62–72 °C) to activate enzymes that convert starch to fermentable sugars. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Lauter Tun",
+      "functionalJob": "Separates sweet wort from spent grain. The grain bed acts as a natural filter. Sparging (rinsing) extracts residual sugars. Lauter efficiency determines brewhouse yield (typically 75–85%). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Brew Kettle",
+      "functionalJob": "Boils wort for 60–90 minutes. Purposes: hop isomerization (bitterness), protein coagulation (hot break), sterilization, and dimethyl sulfide (DMS) drive-off. Energy-intensive step (~35% of total brewery energy). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.4",
+      "name": "Whirlpool",
+      "functionalJob": "Separates trub (coagulated protein, hop debris) from clear wort using centrifugal settling. Tangential inlet creates vortex; solids collect in a cone at the centre. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.5",
+      "name": "Wort Heat Exchanger",
+      "functionalJob": "Rapidly cools wort from ~100 °C to fermentation temperature (10–20 °C) in minutes. Speed prevents contamination and DMS formation. Counter-flow plate heat exchanger is standard; cold liquor from CLT absorbs heat and is recovered as hot liquor in the HLT. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Conical Fermenter / Unitank",
+      "functionalJob": "Primary fermentation vessel. Cylindro-conical design (CCT) dominates — cone bottom allows yeast harvesting and CIP without transfer. Unitanks combine fermentation and conditioning in one vessel. Glycol-jacketed for precise temperature control (±0.5 °C). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Yeast Management",
+      "functionalJob": "Propagate, pitch, harvest, and store yeast. Healthy yeast at correct cell count (0.75–1.5 M cells/mL/°P) determines fermentation performance and flavour consistency.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Conditioning / Maturation Tank",
+      "functionalJob": "Secondary maturation for flavour development, haze reduction, and natural carbonation. Lagers may condition 2–6 weeks at 0–2 °C (lagering). Some breweries use unitanks for combined fermentation + conditioning.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Beer Filtration",
+      "functionalJob": "Removes yeast, haze-forming proteins, and particles. Not used for all styles (many craft ales are unfiltered). Technologies: plate-and-frame (DE), candle filter, cross-flow membrane.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Carbonation System",
+      "functionalJob": "Injects CO2 to achieve target carbonation (2.2–2.8 vol for most styles). Inline carbonation stone downstream of filter, upstream of bright tank.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Bright Beer Tank (BBT)",
+      "functionalJob": "Pressure-rated holding tank (0.5–2.0 bar) for filtered, carbonated beer ready for packaging. Buffer between cellar and packaging line.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Bottle Filling Line",
+      "functionalJob": "Rinse, counter-pressure fill, crown, and label glass bottles. Typical speeds: 20–600 bottles/min depending on brewery scale.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Can Filling Line",
+      "functionalJob": "Purge, fill, and seam aluminium cans. Fastest-growing packaging format in craft beer. Typical speeds: 30–2,000 cans/min. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Keg Filling Line",
+      "functionalJob": "Wash, sanitize, fill, and seal stainless steel kegs (1/6 bbl, 1/4 bbl, 1/2 bbl). Keg washing is critical — returning kegs carry residual beer and potential contaminants.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.4",
+      "name": "Pasteurizer",
+      "functionalJob": "Heat-treats packaged beer (62–72 °C for 15–30 s flash; or tunnel at 60 °C for 20 min) for shelf stability. Required for unpasteurized beer destined for warm-chain distribution; most craft draft skips this step.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Glycol Chiller Unit",
+      "functionalJob": "Central refrigeration package cooling the glycol/water reservoir. Compressor types: scroll (small craft), screw (mid-size), centrifugal (large). Sized to total cooling load (typically 5–500 kW). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Glycol Distribution",
+      "functionalJob": "Piping, pumps, and valves distributing glycol from chiller to all consuming vessels and back. Pipe sizing (typically DN20–DN50) must balance flow velocity and pressure drop.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Glycol Sensing & Control",
+      "functionalJob": "Sensors monitoring glycol flow rate, temperature, and pressure at each cooling zone. Flow data enables per-fermenter energy accounting and early detection of jacket blockage or pump degradation. **MARQUARDT PRIMARY POSITION.** [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.4",
+      "name": "Glycol Reservoir",
+      "functionalJob": "Insulated buffer tank holding glycol/water mixture. Provides thermal inertia and decouples chiller operation from instantaneous cooling demand.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "CIP Station / Skid",
+      "functionalJob": "Centralized chemical storage, heating, and pumping unit. Typically 2–4 tanks (caustic, acid, rinse water, recovered rinse) with a supply and return pump. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "CIP Distribution & Spray Devices",
+      "functionalJob": "Piping, valves, and spray devices routing cleaning solution to every vessel, heat exchanger, and pipeline in the brewery.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.3",
+      "name": "CIP Sensing & Control",
+      "functionalJob": "Sensors verifying that each CIP step meets time, temperature, flow rate, and chemical concentration targets. Flow rate verification ensures turbulent flow (Re > 30,000) for effective soil removal. **MARQUARDT SECONDARY POSITION.** [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Water Treatment System",
+      "functionalJob": "Filters and adjusts municipal or well water to target brewing profiles. Technologies: carbon filtration (chlorine removal), reverse osmosis (demineralization), UV sterilization, mineral dosing.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Hot Liquor Tank (HLT)",
+      "functionalJob": "Heated water storage (75–85 °C) for mashing and sparging. Receives pre-heated water recovered from wort cooling, reducing energy consumption. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.3",
+      "name": "Cold Liquor Tank (CLT)",
+      "functionalJob": "Chilled water storage (1–4 °C) for wort cooling via the plate heat exchanger. May be glycol-cooled or filled with pre-chilled municipal water overnight. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.4",
+      "name": "Water Flow Metering",
+      "functionalJob": "Measures water intake (municipal meter), distribution to brewhouse, CIP, and packaging. Data drives water-use efficiency reporting (hL water / hL beer). **MARQUARDT TERTIARY POSITION** — water is the ideal medium for ultrasonic transit-time flow measurement.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.1",
+      "name": "Steam / Hot Water Generation",
+      "functionalJob": "Provides process heat for brewhouse (kettle boil), CIP heating, and pasteurization. Natural gas fire-tube boilers dominate; electric boilers emerging in smaller craft facilities.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.2",
+      "name": "Compressed Air System",
+      "functionalJob": "Plant air for pneumatic valve actuation, packaging equipment, and grain conveying. Sterile-filtered air for wort aeration.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.3",
+      "name": "CO2 Recovery & Distribution",
+      "functionalJob": "Captures CO2 generated during fermentation, purifies, liquefies, and stores for reuse in carbonation, packaging purge, and tank blanketing. Reduces purchased CO2 costs by 50–80% in mid-to-large breweries.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.4",
+      "name": "Quality Assurance Laboratory",
+      "functionalJob": "In-process and finished-product testing ensuring beer meets specifications. Tests: original gravity, alcohol by volume, pH, colour (SRM/EBC), bitterness (IBU), dissolved oxygen, microbiological stability.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.9.5",
+      "name": "Wastewater Treatment",
+      "functionalJob": "Brewery effluent (BOD 2,000–6,000 mg/L) must be treated before municipal discharge. On-site treatment reduces surcharges and environmental impact.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt primary position.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 312120 — U.S. Census Bureau",
+      "url": "https://www.census.gov/naics/?input=312120&year=2022&details=312120",
+      "prefixedId": "VN-BREWERIES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Brewing Process Step-By-Step — Micet Craft",
+      "url": "https://www.micetcraft.com/brewing-process/",
+      "prefixedId": "VN-BREWERIES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Brewery Equipment List — Tiantai",
+      "url": "https://www.craftbreweryequipment.com/brewery-equipment-list-brewery-construction-considerations/",
+      "prefixedId": "VN-BREWERIES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Flow Meters for Brewing Beer — Tameson",
+      "url": "https://tameson.com/pages/beer-flow-meter",
+      "prefixedId": "VN-BREWERIES-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Flow Meters for Craft Beer Brewing — Assured Automation",
+      "url": "https://assuredautomation.com/news-and-training/flow-meter-beer-brewing/",
+      "prefixedId": "VN-BREWERIES-S05"
+    },
+    {
+      "id": "S06",
+      "label": "SU Ultrasonic Flow Meter Sanitary Applications — ifm",
+      "url": "https://www.ifm.com/us/en/us/learn-more/flow/su-puresonic/sanitary-applications",
+      "prefixedId": "VN-BREWERIES-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Glycol Chiller Systems for Breweries — MoreBeer",
+      "url": "https://morebeer.com/collections/glycol-systems",
+      "prefixedId": "VN-BREWERIES-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Commercial Brewery Chilling — Paul Mueller Company",
+      "url": "https://www.paulmueller.com/industries/commercial-brewing-equipment/commercial-brewery-chilling-solution",
+      "prefixedId": "VN-BREWERIES-S08"
+    },
+    {
+      "id": "S09",
+      "label": "CIP in Breweries — Portland Kettleworks",
+      "url": "https://www.portlandkettleworks.com/clean-in-place-systems/",
+      "prefixedId": "VN-BREWERIES-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Basics of CIP in a Brewery — Paul Mueller Academy",
+      "url": "https://academy.paulmueller.com/basics-of-clean-in-place-in-brewery",
+      "prefixedId": "VN-BREWERIES-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Cold Liquor Tank for Wort Cooling — Thermaline",
+      "url": "https://www.thermaline.com/content/more-info/recent-news/application-cold-liquor-tanks-beer-wort-cooling/",
+      "prefixedId": "VN-BREWERIES-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Brewery Equipment Market Size — Grand View Research",
+      "url": "https://www.grandviewresearch.com/industry-analysis/brewery-equipment-market",
+      "prefixedId": "VN-BREWERIES-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Brewery Equipment Market — MarketsandMarkets",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/brewery-equipment-market-129804657.html",
+      "prefixedId": "VN-BREWERIES-S13"
+    },
+    {
+      "id": "S14",
+      "label": "Beer Fermentation Tanks — YoLong Brewtech",
+      "url": "https://yolongbrewtech.com/beer-fermentation-tank-20240119/",
+      "prefixedId": "VN-BREWERIES-S14"
+    },
+    {
+      "id": "S15",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "VN-BREWERIES-S15"
+    },
+    {
+      "id": "S16",
+      "label": "05_market_discovery.md — Architecture distance scoring for NAICS 312120",
+      "prefixedId": "VN-BREWERIES-S16"
+    },
+    {
+      "id": "S17",
+      "label": "--",
+      "prefixedId": "VN-BREWERIES-S17"
+    }
+  ]
+}

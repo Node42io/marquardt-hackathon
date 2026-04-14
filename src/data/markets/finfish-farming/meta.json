@@ -1,0 +1,21 @@
+{
+  "slug": "finfish-farming",
+  "name": "Finfish Farming and Fish Hatcheries",
+  "naicsCode": "112511",
+  "isReference": false,
+  "rank": 1,
+  "scores": {
+    "odi": 6.07,
+    "featureFit": 5.89,
+    "constraintCompatibility": 9,
+    "jobCoverage": 6.25,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 8.4,
+    "composite": 6.97
+  },
+  "recommendation": "investigate",
+  "rationale": "Top-ranked on incumbent vulnerability (8.40) because ~80% of RAS installations operate with no real-time flow visibility, and ODI (6.07) reflects life-safety opportunities (Opp=18 for flow-failure detection, Opp=15-18 per-tank visibility). Two low-cost mitigable constraints only.",
+  "entryStrategy": "1) Target 2-3 flagship land-based RAS operators (Atlantic Sapphire, Salmon Evolution, AquaMaof installs). 2) Prove <60s flow-failure detection under 2% bubble load. 3) Publish RAS case study. 4) Partner with RAS integrators (Billund, Krueger Kaldnes, AKVA). 5) Scale via OEM integration.",
+  "estimatedTimeToEntry": "9-15 months",
+  "estimatedInvestment": "$250K-600K"
+}

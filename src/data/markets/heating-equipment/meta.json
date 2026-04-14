@@ -1,0 +1,21 @@
+{
+  "slug": "heating-equipment",
+  "name": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "naicsCode": "333414",
+  "isReference": false,
+  "rank": 4,
+  "scores": {
+    "odi": 5.33,
+    "featureFit": 5.84,
+    "constraintCompatibility": 9.5,
+    "jobCoverage": 5,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 4.9,
+    "composite": 5.96
+  },
+  "recommendation": "investigate",
+  "rationale": "Best fit score of the new markets (5.84) because boiler OEMs already integrate flow sensors; architectural distance=2 makes this the closest adjacency. Incumbent vulnerability only 4.90 since Vortex (SIKA) is entrenched and near-zero-pressure-drop, so differentiation relies on integrated-T and EcoDesign labelling rather than pressure-drop displacement.",
+  "entryStrategy": "1) Target tier-2 European condensing-boiler OEMs (Vaillant sub-brands, BDR Thermea marques, Bosch Junkers private-label). 2) Prove parity with SIKA VVX on pressure-drop and accuracy at equal unit cost. 3) Lead with integrated-T + EcoDesign data-out. 4) Complete 6-12 month supply qualification. 5) Scale via existing Marquardt OEM relationships.",
+  "estimatedTimeToEntry": "12-18 months",
+  "estimatedInvestment": "$400K-900K"
+}

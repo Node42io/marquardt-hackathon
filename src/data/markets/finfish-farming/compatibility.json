@@ -1,0 +1,124 @@
+{
+  "naicsCode": "112511",
+  "marketName": "Finfish Farming and Fish Hatcheries",
+  "slug": "finfish-farming",
+  "operatingMedium": "Fresh or brackish water, 10–30 °C, 0.5–3 bar, DN15–DN50 piping [SRC: VN_finfish_farming]",
+  "architectureDistance": 4,
+  "assessments": [
+    {
+      "constraintName": "Media Limitation",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "RAS circulates water (fresh or brackish) — the sensor's exact design medium. Particulate suspensions (fish waste, biofilm fragments) are acoustically transparent and within tolerance.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "RAS water temperatures (10-30 degC for all species) are 58+ degC below the 90 degC limit. Gap >2.8x — no risk under any operating scenario.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "RAS piping pressures (0.5-3 bar) are 3-20x below the 10 bar limit. Water hammer resistance >16 bar provides additional margin.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Lowest RAS flow (small fingerling tank, ~5 l/min) exceeds the DN20 minimum (4.2 l/min). Main loop flows are 100-12,000 l/min. No measurement gap.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble Tolerance",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "RAS includes active aeration and oxygenation stages that introduce gas into water. Main loop downstream of degassers is bubble-free, but sensor must be positioned correctly. Standard installation guidance resolves this.",
+      "mitigation": "Install sensor downstream of CO2 stripper / degasser where water is bubble-free; Ensure pump suction design prevents vortex air entrainment; Use sensor built-in bubble detection diagnostic as early warning for abnormal air entrainment",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "All closed-pipe sections in the RAS loop are pressurized and fully filled during normal operation. Empty-pipe detection provides additional safety for pump failure events.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "RAS piping layouts vary; compact or containerized systems may have elbows close to measurement points. 100-250 mm straight run is achievable in most layouts. Flow conditioner solves edge cases.",
+      "mitigation": "Include 100-250 mm straight-run requirement in RAS piping design guidelines; For compact or retrofit installations, add vane-type flow conditioner upstream ($20-50 part)",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "RAS temperature is tightly controlled (+-1 degC). Built-in NTC compensation handles this with 0.2% residual error. No extreme thermal transients in aquaculture.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 2,
+    "none": 6,
+    "marketStatus": "SURVIVING — no knockouts; passes all constraints",
+    "totalMitigationCost": "low (<$10K combined)",
+    "totalMitigationTime": "1–2 weeks (installation documentation and design guidelines)"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Constraints, specifications, technology classification",
+      "prefixedId": "COMPAT-FINFISH-FARMING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — Product FP, commodity FP, complements",
+      "prefixedId": "COMPAT-FINFISH-FARMING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md — NAICS 112511 architecture distance scoring (distance: 4)",
+      "prefixedId": "COMPAT-FINFISH-FARMING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "VN_finfish_farming_and_fish_hatcheries.md — Full value network, Marquardt position analysis, operating conditions",
+      "prefixedId": "COMPAT-FINFISH-FARMING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Clayton Docs: components/constraints-analysis.html — Component specification (Steps 07 & 08)",
+      "prefixedId": "COMPAT-FINFISH-FARMING-S05"
+    }
+  ]
+}

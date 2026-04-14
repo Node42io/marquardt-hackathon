@@ -1,0 +1,21 @@
+{
+  "slug": "commercial-service-machinery",
+  "name": "Other Commercial and Service Industry Machinery Manufacturing",
+  "naicsCode": "333318",
+  "isReference": false,
+  "rank": 5,
+  "scores": {
+    "odi": 5.49,
+    "featureFit": 3.78,
+    "constraintCompatibility": 7.5,
+    "jobCoverage": 3.75,
+    "vnHierarchy": 6,
+    "incumbentVulnerability": 8.6,
+    "composite": 5.95
+  },
+  "recommendation": "investigate",
+  "rationale": "Highest incumbent vulnerability (8.60) because turbine and paddle-wheel sensors clog in detergent/lint environments and 20% of machines ship with no measurement at all; fragmentation bonus +2.0. Offset by the weakest fit score (3.78) due to cost-sensitive OEM segment and 4 mitigable constraints, including deferred NSF 61 certification.",
+  "entryStrategy": "1) Target commercial-laundry OEMs (Alliance, Electrolux Professional, Miele Professional) on supply-side warm-wash circuits. 2) Prove zero-clog MTBF over 12 months vs. paddle-wheel baseline. 3) Expand to car-wash OEMs (Istobal, WashTec). 4) Pursue NSF 61 cert. for ice/beverage wave 2. 5) Position as WaterSense/IoT differentiator.",
+  "estimatedTimeToEntry": "9-15 months",
+  "estimatedInvestment": "$300K-800K"
+}

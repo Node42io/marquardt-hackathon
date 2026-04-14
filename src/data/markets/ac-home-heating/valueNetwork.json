@@ -1,0 +1,222 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "coreJobStatement": "Manufacture climate control and thermal management equipment that conditions, heats, cools, or refrigerates enclosed spaces and stored goods to specified temperature and humidity setpoints.",
+  "outputTypes": [
+    "Residential Split/Packaged AC",
+    "Heat Pump (air-source / water-source)",
+    "Warm Air Furnace",
+    "Commercial Rooftop Unit (RTU)",
+    "Chiller (air-cooled / water-cooled)",
+    "Commercial Refrigeration Equipment",
+    "Industrial Refrigeration Equipment"
+  ],
+  "hierarchy": "",
+  "architectureDistance": 0,
+  "marketSize": "",
+  "l6Systems": [
+    {
+      "id": "L6a",
+      "name": "Sheet Metal Fabrication",
+      "type": "Core",
+      "jobFamily": "Cut, form, punch, and bend sheet metal into enclosure and structural components",
+      "scope": "OT-1 through OT-7 (all)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6b",
+      "name": "Heat Exchanger Fabrication",
+      "type": "Core",
+      "jobFamily": "Manufacture coils, condensers, and evaporator assemblies by bending tubing and attaching fins",
+      "scope": "OT-1, OT-2, OT-4, OT-5, OT-6, OT-7",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6c",
+      "name": "Refrigerant Circuit Assembly",
+      "type": "Core",
+      "jobFamily": "Braze/weld tubing connections, mount compressor, expansion device, and reversing valve into integrated refrigerant circuit",
+      "scope": "OT-1, OT-2, OT-4, OT-5, OT-6, OT-7",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6d",
+      "name": "Combustion Assembly",
+      "type": "Core",
+      "jobFamily": "Assemble burner, heat exchanger, gas valve, ignition, and flue components into heating module",
+      "scope": "OT-3 (furnace only)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6e",
+      "name": "Electrical & Controls Integration",
+      "type": "Core",
+      "jobFamily": "Wire motors, contactors, sensors, control boards, and communication interfaces into the unit",
+      "scope": "OT-1 through OT-7 (all)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6f",
+      "name": "Hydronic Circuit Assembly",
+      "type": "Core",
+      "jobFamily": "Assemble water-side piping, circulation pumps, flow sensors, and hydraulic components for water-based heat exchange",
+      "scope": "OT-2 (water-source HP), OT-5 (water-cooled chiller)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6g",
+      "name": "System Evacuation & Refrigerant Charging",
+      "type": "Core",
+      "jobFamily": "Evacuate system to vacuum, leak-test, charge with specified refrigerant mass",
+      "scope": "OT-1, OT-2, OT-4, OT-5, OT-6, OT-7",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6h",
+      "name": "Final Assembly & Enclosure",
+      "type": "Core",
+      "jobFamily": "Mount all sub-assemblies into cabinet, attach panels, insulation, labels, and shipping hardware",
+      "scope": "OT-1 through OT-7 (all)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6i",
+      "name": "Performance Testing & Certification",
+      "type": "Core",
+      "jobFamily": "Run functional test, verify capacity/efficiency against AHRI/UL/CE standards, pass or reject",
+      "scope": "OT-1 through OT-7 (all)",
+      "category": "core",
+      "l5Units": []
+    },
+    {
+      "id": "L6(H1)",
+      "name": "Quality Assurance",
+      "type": "Horizontal",
+      "jobFamily": "Verify dimensional integrity, material compliance, and process adherence at each gate",
+      "scope": "All core steps",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6(H2)",
+      "name": "Maintenance & Engineering",
+      "type": "Horizontal",
+      "jobFamily": "Maintain production equipment uptime, tooling calibration, and process engineering",
+      "scope": "All core steps",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6(H3)",
+      "name": "HSE & Environmental Compliance",
+      "type": "Horizontal",
+      "jobFamily": "Manage refrigerant handling (EPA Section 608), brazing fume extraction, noise, and worker safety",
+      "scope": "All core steps",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6(H4)",
+      "name": "Utilities & Facility Management",
+      "type": "Horizontal",
+      "jobFamily": "Supply compressed air, nitrogen, electrical power, HVAC, and water to production floor",
+      "scope": "All core steps",
+      "category": "horizontal",
+      "l5Units": []
+    },
+    {
+      "id": "L6(H5)",
+      "name": "IT / Operations Technology",
+      "type": "Horizontal",
+      "jobFamily": "Manage MES, ERP, CNC program distribution, test data acquisition, and traceability",
+      "scope": "All core steps",
+      "category": "horizontal",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [],
+  "marquardtPosition": "",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "How Air Conditioner is Made — MadeHow",
+      "url": "https://www.madehow.com/Volume-3/Air-Conditioner.html",
+      "prefixedId": "VN-AC-HOME-HEATING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Pioneer Manufacturing Process — Pioneer HVAC",
+      "url": "https://www.pdhvac.com/about/pioneer-manufacturing-process/",
+      "prefixedId": "VN-AC-HOME-HEATING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Air Conditioning Compressor Market 2025-2035 — Future Market Insights",
+      "url": "https://www.futuremarketinsights.com/reports/air-conditioning-compressor-market",
+      "prefixedId": "VN-AC-HOME-HEATING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "HVAC Compressor Market Size — Fortune Business Insights",
+      "url": "https://www.fortunebusinessinsights.com/hvac-compressor-market-112625",
+      "prefixedId": "VN-AC-HOME-HEATING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Heat Exchanger Market 2025-2033 — Grand View Research",
+      "url": "https://www.grandviewresearch.com/industry-analysis/heat-exchangers-market",
+      "prefixedId": "VN-AC-HOME-HEATING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Electronic Expansion Valves Market — GlobeNewsWire/FMI",
+      "url": "https://www.globenewswire.com/news-release/2024/10/29/2971090/0/en/Global-Electronic-Expansion-Valves-Market-Growing-at-an-8-4-CAGR-to-Reach-USD-1-6-Billion-by-2032-Future-Market-Insights-Inc.html",
+      "prefixedId": "VN-AC-HOME-HEATING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Expansion Valves Market — Credence Research",
+      "url": "https://www.credenceresearch.com/report/expansion-valves-market",
+      "prefixedId": "VN-AC-HOME-HEATING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "NAICS 333415 — SIC Code",
+      "url": "https://siccode.com/naics-code/333415/air-conditioning-warm-air-heating-equipment-commercial-industrial-refrigeration-equipment-manufacturing",
+      "prefixedId": "VN-AC-HOME-HEATING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "NAICS 333415 — LegalClarity",
+      "url": "https://legalclarity.org/naics-code-333415-hvac-and-refrigeration-manufacturing/",
+      "prefixedId": "VN-AC-HOME-HEATING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Brazing Components for Refrigeration — Lucas Milhaupt",
+      "url": "https://blog.lucasmilhaupt.com/en-us/about/blog/brazing-components-refrigeration",
+      "prefixedId": "VN-AC-HOME-HEATING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Refrigeration Compressor Market Trends — Robotics & Automation",
+      "url": "https://roboticsnautomation.wordpress.com/2025/11/27/refrigeration-and-air-conditioning-compressors-market-trends-highlight-shift-toward-scroll-compressors-for-hvac/",
+      "prefixedId": "VN-AC-HOME-HEATING-S11"
+    },
+    {
+      "id": "S12",
+      "label": "--",
+      "prefixedId": "VN-AC-HOME-HEATING-S12"
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "summary": {
+    "totalNeeds": 36,
+    "underservedCount": 15,
+    "overservedCount": 0,
+    "avgOpportunityScore": 11.42
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "N01",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than ±2% from true value across the 0.5-60 l/min operating range per EN 1434 Class 2 requirements",
+      "importance": 10,
+      "satisfaction": 5,
+      "opportunity": 15,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 2,
+      "needId": "N26",
+      "statement": "Increase the ability to deploy MID/EN 1434-certified billing-grade meters at every building connection to achieve full EU EED compliance across the entire district network",
+      "importance": 10,
+      "satisfaction": 5,
+      "opportunity": 15,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 3,
+      "needId": "N07",
+      "statement": "Minimize the number of undetected air entrainment events exceeding 2% volume that silently bias billing-grade energy calculations",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 4,
+      "needId": "N10",
+      "statement": "Increase the ability to accurately calculate thermal energy in district cooling circuits where delta-T is only 3-8 K",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 5,
+      "needId": "N11",
+      "statement": "Minimize the likelihood of impeller rotor seizure from magnetite and calcium scale accumulation in aging district heating networks",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "zone": "Underserved"
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than \u00b12% from true value across the 0.5-60 l/min operating range per EN 1434 Class 2 requirements",
+      "jobStep": "EXECUTE",
+      "importance": 10,
+      "satisfaction": 5,
+      "opportunity": 15,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EN 1434 Class 2 certification is the legal prerequisite for billing-grade heat metering under EU EED; a meter that deviates more than \u00b12% loses its MID certification and renders all historical billing legally disputable, affecting every invoice issued since the last verified calibration.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) hold Class 2 accuracy when new but drift toward Class 3 within 3\u20135 years due to bearing wear and magnetite fouling; Kamstrup MULTICAL ultrasonic (35\u201345%) maintains stable Class 2 accuracy long-term with no moving parts \u2014 the blended market satisfaction of 5 reflects wide variation across the installed base.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize variability of flow readings between successive measurement cycles under pulsating network-pressure conditions (repeatability >\u00b10.5%)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Network pressure pulsations from district heating pumps create cyclic flow variations that, if not damped in the meter, cause erratic energy calculations that fail EN 1434 repeatability requirements and produce billing records with unexplained step-changes that trigger tenant disputes.",
+      "satisfactionRationale": "Both mechanical impellers (which mechanically average pulsation through rotor inertia) and Kamstrup ultrasonic (which applies digital damping filters) achieve adequate pulsation immunity \u2014 neither technology is fundamentally challenged by district heating network pulsation, resulting in a market satisfaction score of 5.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement degradation when supply temperature shifts from 50 \u00b0C (summer DHW) to 120 \u00b0C (winter peak) across seasonal operating modes",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "District heating supply temperatures swing 70\u00b0C between summer domestic hot water operation (50\u00b0C) and winter peak load (120\u00b0C); a meter whose accuracy degrades across this range will produce different billing errors in summer versus winter, making seasonal consumption anomalies difficult to diagnose and correct.",
+      "satisfactionRationale": "Mechanical impellers face bearing-lubrication challenges at 120\u00b0C and polymer seals soften at sustained high temperature, causing accuracy drift; Kamstrup MULTICAL is rated to 130\u00b0C with stable acoustic compensation \u2014 but the dominant mechanical installed base (40\u201350%) performs poorly across the full thermal range, holding market satisfaction to 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize time to detect a complete flow stoppage event (valve failure, pipe freeze, pump trip) to less than 5 seconds for safety interlock and billing integrity",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "An undetected flow stoppage in a district heating substation means heat is not delivered while the meter continues billing estimated consumption; beyond billing integrity, pipe freeze in frost-exposed substations can destroy piping within minutes of flow stoppage, making rapid detection a safety and asset-protection requirement.",
+      "satisfactionRationale": "Mechanical impellers have rotational inertia that adds 5\u201315 seconds of lag in detecting step-change stoppages at low flow rates; Kamstrup ultrasonic detects stoppages in 1\u20132 seconds \u2014 but the dominant mechanical installed base (40\u201350%) cannot meet the 5-second detection target, holding market satisfaction to 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the turndown ratio (max/min measurable flow) to cover both winter peak-load and summer minimum-load operating points in a single meter without range switching",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "District heating substations must meter accurately at both winter peak demand (30\u201360 L/min) and summer DHW circulation (0.5\u20132 L/min) \u2014 a turndown ratio of 60:1 or higher; a meter that misses either extreme creates billing gaps that compound across a full 12-month billing cycle.",
+      "satisfactionRationale": "Mechanical impellers achieve 30:1 turndown at best and stall below 1 L/min, missing the summer low-flow operating point entirely; Kamstrup ultrasonic achieves 100:1 turndown and can measure summer DHW flow \u2014 the dominant mechanical installed base fails to cover the full annual operating range, producing a market satisfaction score of 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of specifying a meter whose flow range does not cover the building's actual demand profile, causing unmeasured energy delivery during low-load hours",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Meter specification errors \u2014 selecting a meter sized for peak load that cannot accurately read partial-load operation \u2014 are pervasive in district energy rollouts; a single undersized meter on a multi-unit residential building creates years of systematic underbilling that are difficult to retroactively correct without a formal billing dispute process.",
+      "satisfactionRationale": "No incumbent meter provides automated demand-profile matching \u2014 specification is done by engineers using rule-of-thumb pipe sizing; mechanical impellers and Kamstrup both require expert sizing input, and the 40\u201350% mechanical installed base is particularly susceptible to misspecification for buildings with highly variable load profiles.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Utility metering procurement manager \u2014 responsible for fleet-wide meter purchasing decisions"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected air entrainment events exceeding 2% volume that silently bias billing-grade energy calculations",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Air entrainment above 2% by volume causes ultrasonic signal loss or significant bias without triggering explicit meter alarms; in a billing-grade context this creates silent, undetected underbilling that accumulates over weeks to months before operators notice anomalies in energy balance reports, with no audit trail to reconstruct accurate consumption.",
+      "satisfactionRationale": "Mechanical impellers are unaffected by air entrainment \u2014 the rotor measures fluid momentum regardless of dissolved or entrained gas; Kamstrup ultrasonic loses acoustic lock above 2% and outputs zero or an alarm, which is detectable but disruptive \u2014 the ultrasonic market share (35\u201345%) means air entrainment is a persistent known gap that drives the low satisfaction score of 3.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize systematic measurement error caused by non-ideal flow profiles from upstream elbows, valves, and tees in compact substation piping layouts",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Compact building substations rarely provide the 5\u201310xDN straight upstream run required for accurate single-chord measurement; asymmetric flow profiles from elbows and tees introduce systematic bias of 2\u20135% that persists for the meter's entire installed life and cannot be corrected without relocating the meter or adding flow conditioning.",
+      "satisfactionRationale": "Mechanical impellers sample cross-sectional average flow momentum and are relatively insensitive to profile distortion, requiring only 3xDN upstream; Kamstrup and other ultrasonic meters require 5\u201310xDN, making mechanical incumbent technology inherently more tolerant of compact substation layouts \u2014 this explains the market satisfaction of 4 rather than lower.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement failure rate when medium contains glycol antifreeze (up to 40% concentration) in district cooling and frost-protected circuits",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "District cooling substations in frost-exposed regions use glycol concentrations up to 40%; a meter that is not factory-calibrated for glycol acoustic properties will have a systematic flow bias that invalidates billing accuracy without triggering any diagnostic alarm, silently understating cooling energy delivery.",
+      "satisfactionRationale": "Kamstrup MULTICAL handles glycol concentrations well with appropriate fluid configuration at commissioning; most district networks use treated water rather than glycol, and ultrasonic incumbents have addressed glycol compatibility through improved compensation algorithms \u2014 hence the recalibrated satisfaction score of 5 (raised from 4).",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to accurately calculate thermal energy (Q = V x rho x Cp x delta-T) in district cooling circuits where delta-T is only 3-8 K, amplifying flow measurement error by 2-3x vs heating circuits",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "In district cooling circuits the supply-to-return temperature differential is only 3\u20138 K versus 20\u201340 K in heating; the thermal energy formula Q = V x rho x Cp x delta-T means a 2% flow error produces a 6\u201315% error in billed energy at low delta-T, turning a metrologically adequate meter into one that dramatically overbills or underbills cooling energy.",
+      "satisfactionRationale": "No incumbent meter addresses the low-delta-T amplification problem at the sensor level \u2014 both mechanical and ultrasonic meters provide a flow reading and leave the delta-T amplification challenge to the energy calculator; the fundamental physics of low-delta-T amplification is an unsolved problem for all incumbent technologies, producing the low satisfaction score of 3.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of impeller rotor seizure from magnetite and calcium scale accumulation in aging district heating networks requiring unplanned meter replacement",
+      "jobStep": "Usage",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Magnetite particles released from corroding steel pipework in aging district heating networks clog impeller bearing gaps, causing rotor seizure that halts measurement entirely; an unplanned meter replacement requires emergency site access, a certified replacement meter, and a billing adjustment for the outage period, costing 500\u20132,000 EUR per incident.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% installed base) are inherently vulnerable to magnetite seizure \u2014 this is the primary failure mode for the dominant incumbent technology; Kamstrup ultrasonic has no moving parts and is completely immune to magnetite fouling, but the large mechanical installed base keeps this a high-frequency problem across European district heating networks.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the fleet-wide maintenance cost of mandatory 5-6 year metrological re-verification and replacement cycles across hundreds of building substations",
+      "jobStep": "Maintenance",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "EU legal metrology requires MID-certified heat meters to undergo re-verification every 5\u20136 years; for a district energy operator with 1,000 substations this means replacing or recertifying approximately 170 meters per year \u2014 at 150\u2013400 EUR per substation for field labor alone, totaling 25,000\u201368,000 EUR annually in recurring replacement costs.",
+      "satisfactionRationale": "Mechanical impellers typically require replacement rather than re-verification at the 5-year mark due to bearing wear that makes factory recalibration uneconomical; Kamstrup MULTICAL with 16-year battery and no moving parts can often pass re-verification without replacement \u2014 but the dominant mechanical installed base drives high fleet-wide replacement costs.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize calibration drift exceeding one EN 1434 accuracy class over the certification period caused by bearing wear and blade erosion in hard-water networks",
+      "jobStep": "Usage",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "A meter that drifts from EN 1434 Class 2 to Class 3 mid-certification-period is providing legally non-compliant billing readings while appearing to function normally; when discovered at re-verification, all billing since the drift event is potentially subject to retrospective correction, creating legal liability for both the district energy operator and end customers.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) are the primary source of mid-period calibration drift \u2014 bearing wear and blade erosion in hard-water networks are documented causes of Class 2 to Class 3 drift within 3 years; Kamstrup ultrasonic has no wear mechanism and maintains accuracy throughout the certification period \u2014 the dominant mechanical technology's known drift problem produces the low satisfaction score of 3.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to maintain accurate readings at low flow rates (<1 l/min) where mechanical impeller rotors stall due to friction, causing unmeasured energy leakage during summer low-load periods",
+      "jobStep": "Usage",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "During summer DHW-only operation substations flow below the mechanical impeller start-up threshold, creating an unmeasured drip of thermal energy that accumulates into billing losses over a 5-month summer season.",
+      "satisfactionRationale": "Mechanical impellers stall below approximately 1 L/min \u2014 the dominant 40\u201350% installed base cannot measure summer DHW standby flow at all; Kamstrup ultrasonic measures down to 0.6 L/min, but the dominant incumbent leaves a significant unmeasured window.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of complete signal loss when transient air pockets pass through the sensor during network venting, seasonal shutdown, or pressure fluctuation events",
+      "jobStep": "Usage",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Network venting and seasonal restarts regularly push air slugs through substation piping; a signal-loss event triggers a billing data gap that must be estimated or flagged for dispute, eroding tenant confidence in the metering system.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) are unaffected by air pockets \u2014 the rotor simply decelerates momentarily without losing measurement; Kamstrup ultrasonic (35\u201345%) loses acoustic path during air passage and must recover lock, giving the mechanical incumbent an inherent advantage during venting events.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the commissioning time required to verify acoustic coupling, configure fluid parameters, and validate communication with the energy calculator per substation",
+      "jobStep": "Preparation",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Each substation commissioning hour costs 80\u2013150 EUR in field-technician time; district energy operators may commission dozens of substations in a single rollout, making per-unit commissioning speed a direct driver of project cost and schedule.",
+      "satisfactionRationale": "Mechanical impellers commission in minutes \u2014 mount and read; Kamstrup MULTICAL requires acoustic verification, fluid parameter entry, and M-Bus handshake that adds 20\u201340 minutes per unit, so ultrasonic incumbents already demonstrate the trade-off between configuration depth and commissioning speed.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine zero-flow conditions from ultrasonic signal loss caused by transient medium anomalies (bubbles, empty pipe, acoustic decoupling)",
+      "jobStep": "Usage",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Misclassifying signal loss as zero-flow causes the energy calculator to accumulate zero-energy readings during actual delivery, creating undetected underbilling that can amount to thousands of euros per substation per year in large heating networks.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) produce a clear physical signal: if the meter reads zero, flow is truly zero \u2014 there is no acoustic ambiguity; ultrasonic meters including Kamstrup cannot distinguish bubble-induced signal loss from genuine no-flow without additional diagnostics, leaving this a known gap in the ultrasonic incumbent.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the per-substation cost premium (3-5x vs ultrasonic) that limits electromagnetic meter deployment to only the largest commercial substations, leaving smaller connections underserved",
+      "jobStep": "Acquisition",
+      "importance": 7,
+      "satisfaction": 2,
+      "opportunity": 12,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "EU EED mandates individual consumption metering at every building connection regardless of substation size; the electromagnetic cost premium means operators must either deploy inferior mechanical meters at small substations or absorb a capital cost 3\u20135x higher than the ultrasonic baseline.",
+      "satisfactionRationale": "Electromagnetic meters (5\u201310% share) cost 500\u20131,500 EUR per unit versus 100\u2013400 EUR for ultrasonic \u2014 no incumbent has resolved this structural cost gap; mechanical and ultrasonic incumbents dominate because electromagnetic remains unaffordable at the residential and small commercial substation scale.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the installation footprint (physical length and required straight-pipe run) to enable placement in space-constrained building substations where piping is tightly packed",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Urban building substations, especially in retrofitted basement plant rooms, frequently lack the 5\u201310xDN straight-pipe run required for accurate ultrasonic measurement, forcing costly pipework modifications or meter relocation that can add 500\u20132,000 EUR per installation.",
+      "satisfactionRationale": "Mechanical impellers require only 3\u20135xDN upstream straight run and have compact body lengths; Kamstrup ultrasonic requires 5\u201310xDN upstream, making incumbents already reasonably matched to typical substation constraints \u2014 the market satisfaction score of 5 reflects this adequate but imperfect fit.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total integration time from unpacking to first valid energy reading, including mechanical fitting, electrical connection, calculator handshake, and MID seal application",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Fleet-wide meter replacement programs affecting hundreds of substations are gated by per-unit installation time; a 30-minute reduction per substation across a 500-unit network translates to 250 fewer field hours and 18,000\u201337,500 EUR in saved labor cost.",
+      "satisfactionRationale": "Mechanical impellers install in 15\u201330 minutes (thread-on body, connect pulse output, seal); Kamstrup and other ultrasonic meters add 20\u201340 minutes for acoustic verification and calculator configuration, so incumbents already demonstrate an acceptable but not optimal integration workflow.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of commissioning sign-off with incorrect sensor orientation (forward/reverse) that inverts flow direction in the energy calculation",
+      "jobStep": "CONFIRM",
+      "importance": 6,
+      "satisfaction": 6,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "A reversed flow sensor silently inverts energy readings, causing underbilling or phantom consumption flags that require a costly return visit (150\u2013400 EUR call-out fee) and a billing correction process that may affect multiple months of invoiced consumption.",
+      "satisfactionRationale": "Most incumbents \u2014 mechanical impellers and Kamstrup ultrasonic \u2014 include directional arrows and positive-stop fittings that make misorientation unlikely during careful installation; this need is adequately addressed by current market practice, explaining the relatively high satisfaction score of 6.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to simultaneously provide flow rate AND medium temperature from a single measurement point, eliminating separate temperature probe installation and reducing substation complexity",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EN 1434 energy metering requires both flow and temperature differential; a combined sensor eliminates a second pipe penetration, reduces leak-point count, and simplifies the energy calculator wiring, yielding material savings in both installation time and ongoing maintenance.",
+      "satisfactionRationale": "Kamstrup MULTICAL (35\u201345% share) integrates flow and temperature in a single body as a standard feature; mechanical impellers require separate PT500 temperature probes, so the ultrasonic segment already addresses this need well \u2014 hence the recalibrated satisfaction score of 5.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to detect incipient heat exchanger fouling via gradual flow-rate reduction trend analysis before thermal performance degrades below billing-relevant thresholds",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "An undetected fouled heat exchanger in a district heating substation causes measurable reduction in delivered thermal power to end-users; catching a 15% flow restriction early avoids emergency HX cleaning (2,000\u20138,000 EUR) and prevents service quality complaints that trigger contractual penalties.",
+      "satisfactionRationale": "No incumbent meter \u2014 mechanical impeller, Kamstrup, or electromagnetic \u2014 provides trend-analysis or fouling-detection as a standard feature; all three technologies deliver a flow rate reading only, leaving fouling detection entirely to offline inspection or manual trend review by operations staff.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of meter variants a district energy operator must qualify, stock, and manage to cover its building portfolio (DN15-DN50 range, heating + cooling)",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Each additional meter variant in a network operator's approved product list requires separate MID qualification, spare-part stocking, technician training, and calibration certification \u2014 a typical European district energy operator managing 1,000+ substations across DN15\u2013DN50 must maintain 4\u20138 variant SKUs per supplier.",
+      "satisfactionRationale": "Incumbents like Kamstrup offer modular platforms (MULTICAL 403/603) that cover multiple DN sizes with a common calculator and communication module, partially addressing variant proliferation; mechanical impeller variants are more fragmented by DN size, resulting in the market-weighted satisfaction score of 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Utility metering procurement manager \u2014 responsible for fleet-wide meter purchasing decisions"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the field failure rate of the flow metering subsystem to below 0.1% annually across the fleet of building substations over a 15-year operating horizon",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EN 1434 and EU EED require continuous billing-grade metering; a failed meter creates a data gap that mandates estimated billing, triggers regulatory non-compliance exposure, and requires an emergency field visit costing 150\u2013400 EUR per substation \u2014 fleet-wide failure rates above 0.1% annually cascade to thousands of annual dispatches.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) exhibit 2\u20135% annual failure rates in aging networks with magnetite-laden water, well above the 0.1% target; Kamstrup ultrasonic achieves closer to 0.5\u20131% annual failure in practice with 16-year battery life, but neither incumbent consistently meets the <0.1% fleet-level target per the recalibrated satisfaction score of 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to deploy MID/EN 1434-certified billing-grade meters at every building connection to achieve full EU EED compliance across the entire district network",
+      "jobStep": "DEFINE",
+      "importance": 10,
+      "satisfaction": 5,
+      "opportunity": 15,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EU Energy Efficiency Directive 2023/1791 mandates individually metered billing for every district energy connection by 2027; non-compliance exposes district energy operators to regulatory fines, forced retrofit programs, and potential loss of operating licenses \u2014 making certified metering a compliance obligation, not an optional upgrade.",
+      "satisfactionRationale": "Both Kamstrup MULTICAL and leading mechanical impeller meters carry MID/EN 1434 Class 2 certification as standard; the dominant incumbents address the certification requirement adequately \u2014 the satisfaction score of 5 reflects that certification itself is achievable but 100% fleet rollout is still incomplete across most European networks.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Utility metering procurement manager \u2014 responsible for fleet-wide meter purchasing decisions"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to demonstrate EU EED-compliant individual consumption metering across 100% of building connections during regulatory audit, with verifiable metrological traceability per EN 1434",
+      "jobStep": "DEFINE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EU EED Article 27 requires that district energy operators present documented proof of individual metering at each connection during national energy authority audits; operators with unmetered connections or traceability gaps face mandatory retrofit orders that can cost millions of euros across a large network.",
+      "satisfactionRationale": "Existing incumbents provide MID-certified meters but do not automatically generate audit-ready compliance documentation covering 100% of connections with metrological traceability chains; operators must manually aggregate meter calibration records, creating gaps that explain the satisfaction score of 4 rather than full satisfaction.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Utility metering procurement manager \u2014 responsible for fleet-wide meter purchasing decisions"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to provide building-owner-accessible consumption data (display, remote reading, or portal) that demonstrates measured \u2014 not estimated \u2014 thermal energy delivery for each billing period",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "EU EED requires that building occupants have access to their individual consumption data in near-real-time; district energy providers who cannot offer transparent measured consumption data face tenant disputes, regulatory complaints, and reputational damage that erodes customer retention.",
+      "satisfactionRationale": "Kamstrup provides M-Bus/wM-Bus remote reading that integrates into AMR head-end systems, but tenant-accessible portals are typically a utility IT project layered on top \u2014 incumbents supply the data feed, not the end-user visibility layer, leaving a gap that explains the satisfaction score of 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of billing disputes exceeding 5% of quarterly energy cost caused by meter inaccuracy or unmeasured consumption periods that erode tenant trust in the district energy provider",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "Each formal billing dispute requires the district energy operator to commission a metrological review (300\u2013800 EUR per substation), issue credit notes, and potentially face contract renegotiation; operators with high dispute rates lose credibility with building owners and face pressure to replace metering equipment at their own cost.",
+      "satisfactionRationale": "Mechanical impellers drift out of EN 1434 Class 2 accuracy in 3\u20135 years due to bearing wear, creating an increasing dispute rate in aging installations; Kamstrup maintains stable accuracy but air-entrainment events create unmeasured periods \u2014 neither incumbent fully eliminates dispute triggers, producing a market satisfaction score of 4.",
+      "needsRationale": true,
+      "primaryStakeholder": "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+      "stakeholderIds": [
+        "District energy field service technician \u2014 installs, commissions, and maintains substation metering equipment",
+        "Network operations manager \u2014 accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the risk of polymer housing and seal degradation when district heating supply temperatures approach the 90\u00b0C material limit during winter peak-load conditions, reducing sensor service life below the 15-year fleet expectation",
+      "jobStep": "product_constraint",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "District heating supply temperatures routinely reach 80\u201395\u00b0C during winter peak-load; a polymer sensor housing rated to 90\u00b0C sits within 5\u00b0C of normal operating conditions, with exceedances that cause seal creep, dimensional distortion, and eventual leak failure that triggers costly emergency replacement well before the 15-year fleet expectation.",
+      "satisfactionRationale": "Mechanical impellers and Kamstrup MULTICAL use brass or stainless steel housings rated to 130\u00b0C \u2014 both dominant incumbents are thermally unconstrained in district heating service; the polymer housing constraint is specific to Marquardt's product and distinguishes it from the metallic incumbents that currently dominate the installed base.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the deployment exclusion at building substations where network operating pressure exceeds the 10-bar polymer housing structural rating during peak demand or water-hammer events",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 3,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "District heating networks in densely built urban areas often operate at 10\u201316 bar to serve high-rise buildings; substations subject to water-hammer transients can briefly spike well above nominal operating pressure, making the 10-bar polymer housing limit a site-qualification gate that excludes a meaningful fraction of the addressable market.",
+      "satisfactionRationale": "Mechanical impeller and electromagnetic incumbents specify brass/stainless housings rated to 16\u201325 bar PN, well above typical district heating operating pressures; the 10-bar pressure constraint is unique to Marquardt's polymer housing and does not affect the performance of the dominant mechanical and electromagnetic incumbents.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the unmeasured energy delivery below the ultrasonic transit-time signal-to-noise detection threshold (4.2 l/min for DN20) during summer domestic hot water standby operation",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "During summer DHW-only operation, substation flow rates frequently drop to 0.5\u20132 l/min as only hot water circulation loads remain active; flow below the 4.2 l/min detection threshold for a DN20 ultrasonic sensor generates unregistered thermal energy deliveries that accumulate into underbilling across a multi-month summer season.",
+      "satisfactionRationale": "Mechanical impellers stall below approximately 1 l/min and thus share the low-flow blindspot; however, Kamstrup MULTICAL ultrasonic achieves a minimum detectable flow of 0.6 l/min for DN20, significantly better than the Marquardt 4.2 l/min threshold \u2014 the dominant ultrasonic incumbent already outperforms this product constraint at the low-flow end.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the cumulative billing error from degraded ultrasonic transit-time accuracy during sub-threshold air entrainment events (1-2% by volume) that do not trigger signal-loss alarms but silently bias flow readings",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "At 1\u20132% air by volume the ultrasonic sensor continues to output a flow reading without triggering an alarm, but acoustic path shortening biases the reading below true flow \u2014 a silent systematic error that, across a district heating billing cycle, accumulates to hundreds of euros of underbilled thermal energy per substation.",
+      "satisfactionRationale": "Mechanical impellers (40\u201350% share) are unaffected by sub-threshold air entrainment \u2014 the rotor integrates actual fluid momentum regardless of micro-bubbles; Kamstrup and other ultrasonic meters share this sub-threshold accuracy degradation characteristic, making it an ultrasonic-technology constraint rather than an isolated product deficiency.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the duration of measurement blackout when ultrasonic signal is lost due to partial pipe fill during network maintenance operations that temporarily drain the pipe section",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 4,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Planned network maintenance requiring partial drain of substation supply piping \u2014 typically 2\u20134 times per year \u2014 causes ultrasonic signal loss during refill; the blackout period, typically 5\u201330 minutes, must be estimated in the billing record or logged as a data gap, adding administrative burden to maintenance windows.",
+      "satisfactionRationale": "Mechanical impellers also stop reading during partial pipe fill (no fluid contact with rotor), so both dominant technology families share this maintenance blackout characteristic; Kamstrup ultrasonic recovers acoustic lock quickly upon full pipe restoration, making maintenance blackout duration a moderate concern addressed similarly across incumbents.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the systematic measurement bias from single-chord acoustic path sampling in asymmetric flow profiles caused by insufficient upstream straight-pipe run (<5x DN) in compact building substations",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "An asymmetric flow profile caused by insufficient upstream straight-pipe run creates a systematic velocity bias of 2\u20135% in a single-chord ultrasonic meter; in a billing-grade EN 1434 Class 2 context where the permissible deviation is \u00b12%, this bias alone can push the meter out of certification, invalidating its legal for trade status.",
+      "satisfactionRationale": "Mechanical impellers sample rotational momentum averaged across the pipe cross-section and are largely insensitive to flow profile asymmetry, requiring only 3xDN upstream; Kamstrup uses multi-chord acoustic paths in higher-tier models that reduce profile sensitivity \u2014 single-chord ultrasonic designs share the straight-run vulnerability, but the market-weighted satisfaction of 5 reflects that adequate-run situations are common enough to achieve moderate performance.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize residual flow measurement error from speed-of-sound variation during rapid supply-temperature transients (>5\u00b0C/min) that outpace the NTC thermistor compensation response time",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "District heating networks experience rapid supply-temperature swings during morning warm-up and demand-response events; a temperature transient of >5\u00b0C/min introduces a speed-of-sound compensation lag that temporarily biases flow readings by 1\u20133%, with errors that are difficult to detect but accumulate over frequent ramp events.",
+      "satisfactionRationale": "Mechanical impellers are immune to speed-of-sound variations because they measure mechanical momentum, not acoustic transit time; Kamstrup and other ultrasonic incumbents include NTC compensation with thermal time constants of 10\u201330 seconds, providing adequate but not perfect compensation during rapid transients \u2014 explaining the market satisfaction score of 5.",
+      "needsRationale": true,
+      "primaryStakeholder": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "stakeholderIds": [
+        "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 36,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "JTBD_steam_and_air_conditioning_supply.md \u2014 Error statements N01-N29, alternatives, incumbent profiles",
+      "prefixedId": "ODI-DISTRICT-ENERGY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "FIT_steam_and_air_conditioning_supply.md \u2014 Product-related needs PRN-01 to PRN-07, technology feature-market fit scores, vendor comparison (Kamstrup MULTICAL)",
+      "prefixedId": "ODI-DISTRICT-ENERGY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "01_product_decomposition.md \u2014 Product constraints, specifications, features",
+      "prefixedId": "ODI-DISTRICT-ENERGY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "02_functional_promise.md \u2014 Commodity FP, FP extension",
+      "prefixedId": "ODI-DISTRICT-ENERGY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "05_market_discovery.md \u2014 NAICS 221330 candidate detail, architecture distance scoring",
+      "prefixedId": "ODI-DISTRICT-ENERGY-S05"
+    }
+  ]
+}

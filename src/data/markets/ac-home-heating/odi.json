@@ -1,0 +1,778 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "summary": {
+    "totalNeeds": 35,
+    "underservedCount": 0,
+    "overservedCount": 0,
+    "avgOpportunityScore": 0
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 14.5,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 2,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 13.5,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 3,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 13,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 4,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 12.5,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 5,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 12,
+      "zone": "Underserved"
+    },
+    {
+      "rank": null,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": null,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 17,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 40,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 43,
+      "zone": ""
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the time to detect an empty-pipe or air-lock condition before enabling the compressor to under 5 seconds",
+      "jobStep": "CONFIRM",
+      "importance": 9,
+      "satisfaction": 3.5,
+      "opportunity": 14.5,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of compressor short-cycling due to undetected low-flow conditions persisting longer than 10 seconds",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4.5,
+      "opportunity": 13.5,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to compute real-time thermal energy output (kW) by combining volumetric flow and temperature delta within a single sensor body",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to maintain measurement accuracy within ±3% of reading over 10,000 operating hours of steady-state operation",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 5.5,
+      "opportunity": 12.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to automatically compensate for glycol concentration variations up to 50% without manual reconfiguration",
+      "jobStep": "PREPARE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to demonstrate EU EcoDesign energy efficiency compliance through traceable, sensor-based flow measurement data",
+      "jobStep": "BRIDGE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of air entrainment exceeding 2% by volume causing complete measurement signal loss during thermal cycling",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4.5,
+      "opportunity": 11.5,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to detect calibration drift exceeding ±0.5% within 30 days of occurrence over 12 months of continuous operation",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 4.5,
+      "opportunity": 11.5,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of field audit findings revealing flow measurement inaccuracy that would cause energy label downgrade",
+      "jobStep": "BRIDGE",
+      "importance": 8,
+      "satisfaction": 4.5,
+      "opportunity": 11.5,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of incorrect sensor orientation during installation causing flow measurement bias exceeding 2% of reading",
+      "jobStep": "PREPARE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to measure flow rate accurately across the full turndown range from minimum to maximum system load",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of acoustic coupling degradation between transducer and fluid causing measurement error exceeding 1% within the first 5 years of operation",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the frequency of warranty callbacks attributed to flow sensor malfunction within the first 24 months of equipment operation",
+      "jobStep": "BRIDGE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of ultrasonic signal attenuation from air entrainment exceeding 2% by volume during thermal cycling or system startup",
+      "jobStep": "product_constraint",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to verify sensor signal integrity through automated self-diagnostics at each system startup",
+      "jobStep": "CONFIRM",
+      "importance": 7,
+      "satisfaction": 3.5,
+      "opportunity": 10.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to detect and report reverse flow direction to the system controller within 1 second of flow reversal",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3.5,
+      "opportunity": 10.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of requiring field recalibration more frequently than once within the rated equipment service life",
+      "jobStep": "MODIFY",
+      "importance": 8,
+      "satisfaction": 5.5,
+      "opportunity": 10.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine process deviations from sensor artifacts with >95% classification accuracy",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to recalibrate or replace a degraded flow sensor without draining the hydronic circuit",
+      "jobStep": "MODIFY",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the sensitivity of transit-time measurement accuracy to asymmetric flow profiles from elbows, valves, or tees in compact equipment enclosures",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4.5,
+      "opportunity": 9.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of scale or sediment buildup degrading measurement accuracy by more than 2% within the sensor's rated service life",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 4.5,
+      "opportunity": 9.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of selecting a flow sensor with insufficient turndown ratio for the system's part-load to full-load operating range",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "OEM Procurement Manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to mechanically integrate the flow sensor into the hydronic circuit during OEM assembly to under 3 minutes per unit",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the commissioning effort required to configure fluid acoustic properties for varying water-glycol concentrations",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of rapid temperature transients exceeding compensation algorithm response, causing measurement error >1% for more than 30 seconds",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the flow sensor's contribution to system pressure drop below 50 mbar at design flow rate",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement signal loss when system flow rate falls below the ultrasonic transit-time noise floor during part-load VFD operation",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to remotely diagnose flow sensor health status via the existing BMS communication bus without physical inspection",
+      "jobStep": "MODIFY",
+      "importance": 6,
+      "satisfaction": 3,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of transit-time measurement error from rapid speed-of-sound changes during heating-cooling mode transitions exceeding compensation algorithm response time",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 5.5,
+      "opportunity": 8.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to specify a single sensor platform across multiple pipe diameters (DN12-DN25) without redesigning the hydraulic assembly",
+      "jobStep": "DEFINE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "OEM Procurement Manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of circulation pump pressure pulsations causing flow reading oscillations exceeding 5% of steady-state value",
+      "jobStep": "EXECUTE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "OEM System Controller (control board)",
+      "stakeholderIds": [
+        "OEM System Controller (control board)",
+        "HVAC OEM System Engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of complete measurement loss from partially filled pipe sections during system charging, maintenance drain-down, or gravity-return operation",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the risk of polymer housing and seal degradation from sustained operation near the 90°C thermal limit in high-temperature heating configurations",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 5,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the risk of sensor housing failure from pressure spikes exceeding 10 bar continuous rating during water hammer or pump surge events",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 6,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement failure from acoustic impedance mismatch when non-aqueous contaminants enter the hydronic circuit",
+      "jobStep": "product_constraint",
+      "importance": 4,
+      "satisfaction": 7,
+      "opportunity": 4,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 35,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] — 27 error statements (Step 06), importance and satisfaction scores, job map",
+      "prefixedId": "ODI-AC-HOME-HEATING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: FIT_air_conditioning_and_warm_air_heating_eq] — 8 product-related needs (Step 10), feature-market fit scores (Step 09)",
+      "prefixedId": "ODI-AC-HOME-HEATING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 04_incumbents_home] — 6 incumbent technology profiles with strengths, weaknesses, market share",
+      "prefixedId": "ODI-AC-HOME-HEATING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: 01_product_decomposition] — Product constraints feeding PRN needs",
+      "prefixedId": "ODI-AC-HOME-HEATING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "[SRC: 02_functional_promise] — Commodity FP, product FP",
+      "prefixedId": "ODI-AC-HOME-HEATING-S05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "naicsCode": "41112501",
+  "marketName": "Flowmeters (home industry reference)",
+  "slug": "flowmeters-reference",
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time inline flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Requires acoustic coupling; air bubbles >2% vol degrade accuracy; needs 5–10× DN straight pipe run; pipe must be fully filled; accuracy depends on correct fluid-type configuration at commissioning [SRC: 01_product_decomposition, web_search]"
+    },
+    {
+      "name": "Electromagnetic (mag) flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Requires conductive fluid >5 μS/cm (excludes deionized water, glycol); higher power (5–20 W vs <1 W); 2–3× unit cost at DN15–DN25; no temperature co-measurement; larger installation footprint [SRC: web_search]"
+    },
+    {
+      "name": "Coriolis mass flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "5–10× unit cost ($200–500 vs $20–60 OEM); significant weight (5–50 kg vs 0.3 kg); inherent pressure drop from bent tube geometry; provides mass flow + density but overkill for volumetric water circuits [SRC: web_search]"
+    },
+    {
+      "name": "Turbine / impeller flowmeter",
+      "unspsc": "41112501",
+      "tradeoffs": "Lowest unit cost ($5–20 OEM); moving parts degrade with glycol/particulates; bearing wear limits life to 2–3 years; creates pressure drop; glycol-intolerant; no bidirectional detection [SRC: web_search]"
+    },
+    {
+      "name": "No measurement / pump-curve inference",
+      "unspsc": "— (Status Quo)",
+      "tradeoffs": "Zero hardware cost; zero installation effort; accuracy ±10–20% at best; no fault detection; no trend data; no regulatory compliance capability [ASM]"
+    }
+  ]
+}

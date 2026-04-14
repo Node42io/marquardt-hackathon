@@ -1,0 +1,157 @@
+{
+  "slug": "breweries",
+  "marketName": "Breweries",
+  "naicsCode": "312120",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "Sensor is NOT a beer BOM constituent — it is process equipment in the VN (glycol cooling, CIP, water treatment). This BOM shows what packaged beer is made of; Marquardt's role is shown in the sensor position note.",
+  "sensorPositionInVN": {
+    "primary": "L6.6 Glycol Cooling — glycol/water mass flow to fermenter jackets and bright tanks",
+    "secondary": "L6.7 CIP & Sanitation — water + caustic + acid flow through vessel circuits",
+    "tertiary": "L6.8 Water Treatment — brewing liquor flow to mash tun and kettle",
+    "failureMode": "Glycol flow loss → temperature excursion during fermentation → off-flavor (diacetyl/esters) → batch loss $15–80k per fermenter"
+  },
+  "outputTypes": [
+    { "id": "OT-1", "name": "Lager / Pilsner", "hydronic": false, "sensorFit": "secondary", "notes": "Sensor measures glycol cooling loops and CIP water." },
+    { "id": "OT-2", "name": "Ale (IPA, Pale, Amber)", "hydronic": false, "sensorFit": "secondary", "notes": "Same process equipment dependency as lager." },
+    { "id": "OT-3", "name": "Stout / Porter", "hydronic": false, "sensorFit": "secondary", "notes": "Heavy glycol temp control for fermentation flavor." },
+    { "id": "OT-4", "name": "Wheat Beer", "hydronic": false, "sensorFit": "secondary", "notes": "Temp-sensitive fermentation profile." },
+    { "id": "OT-5", "name": "Non-Alcoholic Beer", "hydronic": false, "sensorFit": "secondary", "notes": "Dealcoholization process adds additional flow measurement points." },
+    { "id": "OT-6", "name": "Hard Seltzer / FMB", "hydronic": false, "sensorFit": "secondary", "notes": "Similar fermentation temperature controls." }
+  ],
+  "marquardtAnchorIds": [],
+  "l4Subsystems": [
+    {
+      "id": "L4.1",
+      "name": "Fermented Liquid Assembly",
+      "costSharePct": 55,
+      "keyDesignChoice": "Fermentable substrate & yeast strain",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Barley malt (2-row / 6-row base)", "sharePct": 62, "trend": "stable" },
+        { "name": "Corn adjunct", "sharePct": 10, "trend": "stable" },
+        { "name": "Wheat malt", "sharePct": 8, "trend": "growing" },
+        { "name": "Specialty / crystal / roasted malt", "sharePct": 8, "trend": "stable" },
+        { "name": "Rice adjunct", "sharePct": 5, "trend": "stable" },
+        { "name": "Sugar (sucrose / dextrose)", "sharePct": 5, "trend": "growing" },
+        { "name": "Alternative grains (oats, rye, sorghum)", "sharePct": 2, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.2", "name": "Fermentable Substrate", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Barley malt (2-row/6-row base)", "sharePct": 62, "trend": "stable" },
+          { "name": "Corn adjunct", "sharePct": 10, "trend": "stable" },
+          { "name": "Wheat malt", "sharePct": 8, "trend": "growing" },
+          { "name": "Specialty/crystal/roasted malt", "sharePct": 8, "trend": "stable" },
+          { "name": "Rice adjunct", "sharePct": 5, "trend": "stable" },
+          { "name": "Sugar (sucrose/dextrose)", "sharePct": 5, "trend": "growing" },
+          { "name": "Alternative grains (oats, rye, sorghum)", "sharePct": 2, "trend": "growing" }
+        ]},
+        { "id": "L3.3", "name": "Bittering & Aromatic Agent (Hops)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Hop pellets T-90 (compressed whole-leaf)", "sharePct": 55, "trend": "stable" },
+          { "name": "Hop extracts (CO₂ / isomerized alpha-acid)", "sharePct": 28, "trend": "growing" },
+          { "name": "Whole cone hops (fresh/dried)", "sharePct": 10, "trend": "stable" },
+          { "name": "Cryo / LupuLN₂ hop products", "sharePct": 5, "trend": "growing" },
+          { "name": "Non-hop bittering agents (gentian, etc.)", "sharePct": 2, "trend": "stable" }
+        ]},
+        { "id": "L3.4", "name": "Fermentation Agent (Yeast)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Saccharomyces cerevisiae (ale, top-fermenting)", "sharePct": 45, "trend": "stable" },
+          { "name": "Saccharomyces pastorianus (lager, bottom-fermenting)", "sharePct": 45, "trend": "stable" },
+          { "name": "Brettanomyces / mixed culture (sour / wild)", "sharePct": 5, "trend": "growing" },
+          { "name": "Kveik strains (Norwegian farmhouse)", "sharePct": 3, "trend": "growing" },
+          { "name": "Non-Saccharomyces / adjunct yeast blends", "sharePct": 2, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.2",
+      "name": "Carbonation Module",
+      "costSharePct": 8,
+      "keyDesignChoice": "CO₂ source",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Industrial bulk CO₂ (truck delivery)", "sharePct": 50, "trend": "declining" },
+        { "name": "Recovered fermentation CO₂ (on-site capture)", "sharePct": 45, "trend": "growing" },
+        { "name": "Nitrogen blend (stout / widget)", "sharePct": 5, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4.3",
+      "name": "Stabilization & Clarity",
+      "costSharePct": 10,
+      "keyDesignChoice": "Filtration technology",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Kieselguhr (diatomaceous earth) depth filtration", "sharePct": 45, "trend": "declining" },
+        { "name": "Sheet / cartridge filtration (cellulose or perlite)", "sharePct": 25, "trend": "stable" },
+        { "name": "Cross-flow / membrane filtration", "sharePct": 20, "trend": "growing" },
+        { "name": "Centrifugal separation", "sharePct": 8, "trend": "growing" },
+        { "name": "None — hazy / unfiltered (craft segment)", "sharePct": 2, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3.6", "name": "Filtration Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Kieselguhr depth filtration", "sharePct": 45, "trend": "declining" },
+          { "name": "Sheet/cartridge filtration", "sharePct": 25, "trend": "stable" },
+          { "name": "Cross-flow/membrane filtration", "sharePct": 20, "trend": "growing" },
+          { "name": "Centrifugal separation", "sharePct": 8, "trend": "growing" },
+          { "name": "None (hazy/unfiltered)", "sharePct": 2, "trend": "growing" }
+        ]},
+        { "id": "L3.7", "name": "Fining Agent", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Isinglass (fish collagen)", "sharePct": 35, "trend": "stable" },
+          { "name": "Bentonite (montmorillonite clay)", "sharePct": 30, "trend": "stable" },
+          { "name": "Silica gel (kieselsol)", "sharePct": 20, "trend": "stable" },
+          { "name": "Carrageenan / Irish moss", "sharePct": 10, "trend": "stable" },
+          { "name": "None (centrifuge / membrane sufficient)", "sharePct": 5, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.4",
+      "name": "Primary Packaging Assembly",
+      "costSharePct": 22,
+      "keyDesignChoice": "Primary container format",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Aluminum can (12oz / 16oz)", "sharePct": 60, "trend": "growing" },
+        { "name": "Glass bottle (12oz / 22oz)", "sharePct": 25, "trend": "declining" },
+        { "name": "Stainless keg (½-bbl, ¼-bbl, ⅙-bbl)", "sharePct": 13, "trend": "stable" },
+        { "name": "PET bottle (export / single-serve)", "sharePct": 1, "trend": "stable" },
+        { "name": "Bag-in-box / bulk bag", "sharePct": 1, "trend": "stable" }
+      ],
+      "modules": [
+        { "id": "L3.9", "name": "Primary Container", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Aluminum can (12oz/16oz, 2-piece drawn)", "sharePct": 60, "trend": "growing" },
+          { "name": "Glass bottle (12oz long-neck / 22oz)", "sharePct": 25, "trend": "declining" },
+          { "name": "Stainless keg (½-bbl, ¼-bbl)", "sharePct": 13, "trend": "stable" },
+          { "name": "PET bottle", "sharePct": 1, "trend": "stable" },
+          { "name": "Bag-in-box / bulk bag", "sharePct": 1, "trend": "stable" }
+        ]},
+        { "id": "L3.10", "name": "Closure / Seal", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Aluminum can lid with pull-tab (B64/CDL)", "sharePct": 60, "trend": "growing" },
+          { "name": "Crown cap (26/29mm, tin-coated steel)", "sharePct": 25, "trend": "declining" },
+          { "name": "Keg spear + coupler port (D-type / S-type)", "sharePct": 13, "trend": "stable" },
+          { "name": "Swing-top / Bügelverschluss (specialty)", "sharePct": 1, "trend": "stable" },
+          { "name": "Screw cap (PET)", "sharePct": 1, "trend": "stable" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4.5",
+      "name": "Label & Secondary Packaging",
+      "costSharePct": 5,
+      "keyDesignChoice": "Label format",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "Paper / pressure-sensitive film label", "sharePct": 60, "trend": "stable" },
+        { "name": "Shrink sleeve (PET film)", "sharePct": 25, "trend": "growing" },
+        { "name": "Corrugated cardboard 4/6-pack carrier", "sharePct": 15, "trend": "stable" }
+      ],
+      "modules": []
+    }
+  ]
+}

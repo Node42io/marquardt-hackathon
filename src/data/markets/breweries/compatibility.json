@@ -1,0 +1,164 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Media Limitation",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "All three Marquardt positions use water-based media. Glycol/water mixtures (30-35% propylene glycol) explicitly supported. CIP uses dilute aqueous solutions. Water lines are the ideal medium.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Glycol: -5 to +5C. CIP caustic peak: 75-85C (within 90C limit; short 15-30 min cycles). Water/HLT: up to 85C. Sensor not in brewhouse wort path (100C).",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Glycol 2-4 bar, CIP 2-4 bar, water supply 3-6 bar, BBT 0.5-2 bar. No brewery circuit approaches 10 bar.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble Tolerance",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "All target circuits are closed, pressurized loops with negligible chronic air entrainment. Sensor anomaly detection provides diagnostic value during commissioning.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Glycol circuits have stable temperatures. CIP has step transitions but built-in NTC compensation reduces error to 0.2%, adequate for flow verification.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Caustic/Acid Compatibility",
+      "constraintType": "chemical",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "CIP circuits expose wetted parts to 2-3% NaOH at 75-85C and 1% phosphoric acid at 50-60C. Polymer housing designed for water/glycol needs material verification for repeated hot-caustic cycles. Does not affect primary glycol position.",
+      "mitigation": "Verify housing polymer (PP/PPS/PEEK) compatibility with dilute caustic (2-3% NaOH) at 85C via immersion testing; Deploy CIP sensor on return line where temperature and concentration are lower; Limit initial market entry to glycol-only position, deferring CIP deployment",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Glycol: 10-50 l/min per zone. CIP: 50-200 l/min per circuit. Water: >5 l/min. All well above DN20/DN25 detection thresholds (4.2 l/min).",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Glycol and water circuits are pressurized closed loops (always full). CIP sensor reads during active cleaning cycles when pipes are full. Empty-pipe detection flags fault state.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Compact craft brewery glycol manifolds may have limited straight runs at distribution branch points. Large/mid-size breweries have adequate layout. Standard flow conditioners solve the issue.",
+      "mitigation": "Install after glycol manifold header or at chiller outlet where straight runs are available; Add inline vane-type flow conditioner ($50-100) at constrained locations; Specify minimum installation clearance in OEM integration documentation",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Unit Cost vs Mechanical Alternatives",
+      "constraintType": "economic",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Ultrasonic ($200-600) costs more upfront than paddle-wheel ($50-200) but delivers zero maintenance in glycol service where mechanical sensors suffer bearing wear. ROI positive within 12-18 months.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Food-Contact Material Certification",
+      "constraintType": "regulatory",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "FDA 21 CFR 177 / EC 1935:2004 required for sensors in food-contact lines. Primary position (glycol) and tertiary (utility water) are NOT food-contact. CIP return lines may require certification. KTW/WRAS provides baseline.",
+      "mitigation": "Enter market via glycol-only position (non-food-contact, no certification needed); Pursue EC 1935:2004 / FDA 21 CFR 177 for wetted materials to unlock CIP position; Leverage existing KTW/WRAS drinking water approval as certification baseline",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Ambient Operating Temperature",
+      "constraintType": "environmental",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Brewery environments: cold rooms -2 to +4C, cellar 10-15C, brewhouse area up to 40C. All within standard electronics operating range.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 3,
+    "none": 9,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Constraints, specifications, features, technology classification",
+      "prefixedId": "COMPAT-BREWERIES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — Functional promise, complements, BOM position",
+      "prefixedId": "COMPAT-BREWERIES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md — Breweries (NAICS 312120) market candidate details",
+      "prefixedId": "COMPAT-BREWERIES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "VN_breweries.md — Brewery value network, Marquardt positions, operating conditions",
+      "prefixedId": "COMPAT-BREWERIES-S04"
+    },
+    {
+      "id": "S05",
+      "label": "--",
+      "prefixedId": "COMPAT-BREWERIES-S05"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "naicsCode": "112511",
+  "marketName": "Finfish Farming and Fish Hatcheries",
+  "slug": "finfish-farming",
+  "coreJobStatement": "Cultivate finfish from egg or fingerling to market-size harvest in a controlled aquatic environment",
+  "productJobStatement": "Help Flow Measurement to quantify water circulation rate across rearing and treatment loops in recirculating aquaculture systems without obstructing flow or clogging from biofilm",
+  "anchorLevel": "L4 — Component",
+  "lPath": "L7 Finfish Aquaculture Ecosystem > L6.10 Water Quality Monitoring & Control > L5.10.1 Flow Measurement > L4.10.1.1 Ultrasonic Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Large-scale commercial RAS (>500 t/yr, salmon focus)",
+      "qualifier": "",
+      "characteristics": "$50M+ capex, 50–200 rearing tanks, full SCADA, 24h staff, biosecurity certification",
+      "isTargetable": true,
+      "targetabilityReason": "demands mag meters or industrial ultrasonic; zero tolerance for measurement gaps",
+      "circumstance": "$50M+ capex, 50–200 rearing tanks, full SCADA, 24h staff, biosecurity certification",
+      "alternativesDiffer": "Yes — demands mag meters or industrial ultrasonic; zero tolerance for measurement gaps"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Mid-scale RAS farm (50–500 t/yr, tilapia/trout/barramundi)",
+      "qualifier": "",
+      "characteristics": "$2–15M capex, 10–50 tanks, semi-automated PLC, part-time night coverage",
+      "isTargetable": true,
+      "targetabilityReason": "cost-sensitive but high mortality risk; open to ultrasonic upgrade from paddle-wheel",
+      "circumstance": "$2–15M capex, 10–50 tanks, semi-automated PLC, part-time night coverage",
+      "alternativesDiffer": "Yes — cost-sensitive but high mortality risk; open to ultrasonic upgrade from paddle-wheel"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Hatchery / fingerling producer",
+      "qualifier": "",
+      "characteristics": "Juvenile stock worth $0.50–5.00/fry, extremely sensitive to DO and temperature swings, small pipe diameters (DN15–DN25)",
+      "isTargetable": true,
+      "targetabilityReason": "precision required but budgets tight; paddle-wheel or no measurement common",
+      "circumstance": "Juvenile stock worth $0.50–5.00/fry, extremely sensitive to DO and temperature swings, small pipe diameters (DN15–DN25)",
+      "alternativesDiffer": "Yes — precision required but budgets tight; paddle-wheel or no measurement common"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Flow-through / raceway operator",
+      "qualifier": "",
+      "characteristics": "Continuous water exchange, no recirculation loop, high flow volumes, gravity-fed typical",
+      "isTargetable": true,
+      "targetabilityReason": "flow monitoring optional (water replaces itself); sensor value is intake metering",
+      "circumstance": "Continuous water exchange, no recirculation loop, high flow volumes, gravity-fed typical",
+      "alternativesDiffer": "Yes — flow monitoring optional (water replaces itself); sensor value is intake metering"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Emerging / startup RAS (<50 t/yr, first-generation facility)",
+      "qualifier": "",
+      "characteristics": "Limited operations expertise, capital-constrained, often university spin-out or investor-backed",
+      "isTargetable": true,
+      "targetabilityReason": "needs lowest total cost of ownership; paddle-wheel or manual observation dominant",
+      "circumstance": "Limited operations expertise, capital-constrained, often university spin-out or investor-backed",
+      "alternativesDiffer": "Yes — needs lowest total cost of ownership; paddle-wheel or manual observation dominant"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "±1–3% accuracy (vs ±0.5% mag); degrades with air bubbles >2% vol; requires 5–10×DN straight pipe run; needs fluid-type configuration at commissioning; emerging awareness in aquaculture [SRC: web_search]"
+    },
+    {
+      "name": "Electromagnetic (mag) flowmeter",
+      "unspsc": "41112502",
+      "tradeoffs": "5–10× cost ($500–2,000+ vs $100–300 for inline ultrasonic); higher accuracy (±0.5%) but overkill for most farm-scale monitoring; larger footprint; higher power consumption (10–20 W); requires conductive liquid (met by default in freshwater RAS) [SRC: web_search]"
+    },
+    {
+      "name": "Paddle-wheel / turbine flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "Very low cost ($20–80); BUT clogs with biofilm in 2–6 weeks in RAS water; moving parts wear in particulate-laden water; contamination risk from bearing lubricant; no anomaly detection; ±2–5% accuracy drift; 45–55% incumbent share [SRC: VN_finfish_farming, web_search]"
+    },
+    {
+      "name": "Differential-pressure measurement (orifice/venturi)",
+      "unspsc": "41113201",
+      "tradeoffs": "Permanent pressure drop wastes pump energy (critical in energy-intensive RAS); fouling of sensing ports by biofilm; limited turndown ratio (3:1); requires DP transmitter; rarely used in aquaculture [SRC: web_search]"
+    },
+    {
+      "name": "Do nothing / manual observation [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost — 15–25% of farms; completely blind to flow failure; relies on downstream DO alarm or fish behavioral change; by the time operators notice, mortality may already be underway; historically acceptable on small ponds, catastrophic in RAS [SRC: VN_finfish_farming]"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required water flow rate per rearing tank and treatment loop based on stocking density, species, and water treatment capacity",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor range must match the required flow window; over/under-specification has biological consequences",
+      "rawStatement": "Define the required water flow rate per rearing tank and treatment loop based on stocking density, species, and water treatment capacity",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor range must match the required flow window; over/under-specification has biological consequences"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Install, commission, and configure the flow sensor for the specific water conditions (freshwater, brackish, or recirculated)",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Commissioning procedure and medium configuration are sensor-dependent",
+      "rawStatement": "Install, commission, and configure the flow sensor for the specific water conditions (freshwater, brackish, or recirculated)",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Commissioning procedure and medium configuration are sensor-dependent"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify the sensor is reading within specified accuracy before stocking fish or after system maintenance",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-stocking verification is critical; flow sensor failure after stocking = mortality risk",
+      "rawStatement": "Verify the sensor is reading within specified accuracy before stocking fish or after system maintenance",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-stocking verification is critical; flow sensor failure after stocking = mortality risk"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Measure water circulation rate continuously across all rearing tanks and treatment stages 24/7/365",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core measurement function — the primary value-creating and LIFE-SAFETY action in RAS",
+      "rawStatement": "Measure water circulation rate continuously across all rearing tanks and treatment stages 24/7/365",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Core measurement function — the primary value-creating and LIFE-SAFETY action in RAS"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "flow readings for drift, anomalies, pump degradation, or pipe blockage; trigger alarms on flow failure",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Flow failure alarm is the most critical safety trigger in RAS — DO crash follows within minutes",
+      "rawStatement": "Monitor flow readings for drift, anomalies, pump degradation, or pipe blockage; trigger alarms on flow failure",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Flow failure alarm is the most critical safety trigger in RAS — DO crash follows within minutes"
+    },
+    {
+      "stepNumber": 7,
+      "verb": "Modify",
+      "description": "Adjust water distribution, redirect flow, or troubleshoot when flow readings deviate from expected values",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor data quality determines troubleshooting speed in a life-threatening situation",
+      "rawStatement": "Adjust water distribution, redirect flow, or troubleshoot when flow readings deviate from expected values",
+      "jobStep": "MODIFY",
+      "relevant": true,
+      "rationale": "Sensor data quality determines troubleshooting speed in a life-threatening situation"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "RAS operations technician / farm manager",
+      "pyramidLevels": "P1 ALL, P2 ALL, P3, P4, P5"
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Production manager / facility owner",
+      "pyramidLevels": "P1 own, P2 own, P4, P3*"
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "The fish (biological outcome) / end consumer (food safety, indirect)",
+      "pyramidLevels": "P1, P2, P5"
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Maintenance technician / system integrator",
+      "pyramidLevels": "P1 own (install, calibrate, service)"
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "Farm owner / equipment procurement manager",
+      "pyramidLevels": "P1 Acquisition"
+    },
+    {
+      "role": "Purchase Influencer",
+      "who": "RAS system OEM (AKVA, AquaMaof, Innovasea) / aquaculture consultant / veterinarian",
+      "pyramidLevels": "P2 own, P4"
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Recent Developments in RAS: A Review — Gupta 2024, Wiley",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/are/6096671",
+      "prefixedId": "JTBD-FINFISH-FARMING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "IoT-Based RAS Monitoring System — MDPI Sensors 2025",
+      "url": "https://www.mdpi.com/1424-8220/25/21/6692",
+      "prefixedId": "JTBD-FINFISH-FARMING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Water Quality Monitoring in RAS — Lindholm-Lehto 2023, Wiley",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/aff2.102",
+      "prefixedId": "JTBD-FINFISH-FARMING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Benefits and Challenges of RAS for Atlantic Salmon — Taylor & Francis 2024",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/23308249.2024.2433581",
+      "prefixedId": "JTBD-FINFISH-FARMING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Aquaculture Sensors for Fish Hatcheries — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/aquaculture-sensors-reliable-monitoring-for-fish-hatcheries-and-commercial-aquatic-operations/",
+      "prefixedId": "JTBD-FINFISH-FARMING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Aquaculture Flow Meter Solutions — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/advanced-and-reliable-aquaculture-flow-meter-solutions-from-icon-process-controls/",
+      "prefixedId": "JTBD-FINFISH-FARMING-S06"
+    },
+    {
+      "id": "S07",
+      "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture — pflowmeters.com",
+      "url": "https://www.pflowmeters.com/info/how-ultrasonic-flow-meters-are-transforming-aq-101928732.html",
+      "prefixedId": "JTBD-FINFISH-FARMING-S07"
+    },
+    {
+      "id": "S08",
+      "label": "The $1 Billion RAS Collapse: Atlantic Sapphire Lessons — Alan W Cook",
+      "url": "https://www.alanwcook.com/blog/atlantic-sapphire-lessons-for-investors-from-the-1-billion-ras-experiment",
+      "prefixedId": "JTBD-FINFISH-FARMING-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Atlantic Sapphire USD 3M Hit After 400 Tons Lost — SeafoodSource",
+      "url": "https://www.seafoodsource.com/news/business-finance/atlantic-sapphire-expects-usd-3-million-hit-after-losing-400-tons-of-salmon",
+      "prefixedId": "JTBD-FINFISH-FARMING-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Atlantic Sapphire Blames Design Weakness — Fish Farming Expert",
+      "url": "https://www.fishfarmingexpert.com/atlantic-sapphire-filter-failure-miami/atlantic-sapphire-blames-ras-design-weakness-for-us-fish-die-off/1159525",
+      "prefixedId": "JTBD-FINFISH-FARMING-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Effect of Flow Rate and DO Distribution on RAS Aeration — ScienceDirect 2025",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168169925003965",
+      "prefixedId": "JTBD-FINFISH-FARMING-S11"
+    },
+    {
+      "id": "S12",
+      "label": "DO Prediction Model for Aquaculture — Frontiers Marine Science 2024",
+      "url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2024.1365047/full",
+      "prefixedId": "JTBD-FINFISH-FARMING-S12"
+    },
+    {
+      "id": "S13",
+      "label": "In-Line Ultrasonic Flow Meters — Global Aquaculture Supply",
+      "url": "https://globalaquaculturesupply.com/uf4000-in-line-ultrasonic-flow-meters/",
+      "prefixedId": "JTBD-FINFISH-FARMING-S13"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "naicsCode": "333414",
+  "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "slug": "heating-equipment",
+  "coreJobStatement": "Generate and deliver thermal energy to occupied spaces and domestic hot-water systems via heated-water circuits",
+  "outputTypes": [
+    "Gas condensing boiler",
+    "Gas non-condensing boiler",
+    "Oil-fired boiler",
+    "Electric hydronic boiler",
+    "Hydronic baseboard heater",
+    "Radiant floor heating system",
+    "Solar water heating system",
+    "Pool/spa heater"
+  ],
+  "hierarchy": "Product VN (L7 through L4) — what subsystems compose hydronic heating appliances and their installation ecosystem",
+  "architectureDistance": 2,
+  "marketSize": "~$8–12B globally (hydronic heating equipment); North America residential boiler market led by Bosch Thermotechnology (~11.5% share) [SRC: web_search]",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Heat Generation",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "Hydraulic Distribution",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Heat Emission",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Control & Regulation",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Domestic Hot Water (DHW)",
+      "type": "Core",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Installation, Commissioning & Aftermarket",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Energy Monitoring & Compliance",
+      "type": "Horizontal",
+      "jobFamily": "",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Gas Burner Assembly",
+      "functionalJob": "Premix or atmospheric burner converting natural gas or propane into thermal energy. Modulating premix burners with 1:5 to 1:10 turndown dominate condensing boilers. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Primary Heat Exchanger",
+      "functionalJob": "Transfers combustion energy to hydronic water. Condensing boilers use stainless steel (316L) or aluminium-silicon alloy to withstand acidic condensate (pH 3–5). The single most expensive component in a condensing boiler. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Oil Burner Assembly",
+      "functionalJob": "Pressure-atomising or rotary-cup oil burner for oil-fired boilers. Declining market share in North America/EU but significant installed base.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.4",
+      "name": "Electric Heating Element",
+      "functionalJob": "Immersion or flanged resistance heating element for electric hydronic boilers. Simpler construction than combustion; no flue required.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.5",
+      "name": "Solar Thermal Collector",
+      "functionalJob": "Flat-plate or evacuated-tube solar collector for solar water heating systems. Pre-heats hydronic circuit or DHW storage.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.6",
+      "name": "Flue Gas System",
+      "functionalJob": "Exhaust path from combustion chamber to atmosphere. Concentric (room-sealed) flues dominate modern installations.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Circulator Pump",
+      "functionalJob": "Prime mover of the hydronic loop. Modern systems use high-efficiency EC circulators (Wilo, Grundfos ~70% combined EU share) with integrated differential-pressure control. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Hydraulic Separator",
+      "functionalJob": "Decouples primary (heat-source) circuit from secondary (distribution) circuit. Essential in multi-zone systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.3",
+      "name": "Distribution Manifold",
+      "functionalJob": "Multi-port header splitting primary supply into individual zone circuits. Particularly important for radiant floor heating.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.4",
+      "name": "Piping Network",
+      "functionalJob": "Physical conduit for heated water. Material depends on application: copper for primary, PEX/PE-RT for radiant loops, multilayer composite for risers.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.5",
+      "name": "Flow Sensing & Measurement",
+      "functionalJob": "Instruments measuring volumetric flow rate, flow direction, medium temperature, and medium condition within the hydronic loop. The flow signal feeds appliance controllers for safety interlocks, circulator modulation, thermal energy calculation (Q = m-dot x cp x delta-T), and anomaly detection. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.6",
+      "name": "Expansion & Safety Devices",
+      "functionalJob": "Pressure management and safety relief protecting the closed hydronic loop.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.7",
+      "name": "Water Treatment & Filtration",
+      "functionalJob": "Protects hydronic loop from corrosion, scaling, and sludge. Critical in retrofit installations.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Hydronic Baseboard Heater",
+      "functionalJob": "Finned-tube convector in painted steel housing. Cooler air enters bottom, warms over fins, rises from top — primarily convective heat transfer. Hydronic baseboard holds ~46% of the baseboard heater market. Key manufacturers: Slant/Fin, Runtal, Marley (Regal Beloit). [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Panel Radiator",
+      "functionalJob": "Steel panel radiators with convector fins. Dominant emitter in European retrofit markets. Types 11 through 33. Manufacturers: Stelrad, Purmo, Kermi, Myson.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Radiant Floor Heating",
+      "functionalJob": "PEX/PE-RT pipe loops embedded in screed or dry-plate. Preferred for new-build with condensing boilers due to low-temperature compatibility. Market growing at ~6% CAGR to $8.9B by 2036. [SRC: web_search]",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.4",
+      "name": "Fan Coil Unit (Hydronic)",
+      "functionalJob": "Forced-convection emitter using water-to-air heat exchanger with EC fan. Used where rapid heat-up needed or space constrained.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Appliance Controller / PCB",
+      "functionalJob": "Main control board running combustion management, safety interlocks, pump sequencing, and diagnostics.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Room Thermostat / User Interface",
+      "functionalJob": "Occupant-facing control: simple programmable through smart/connected (Nest, Ecobee, Honeywell Home).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Weather Compensation Module",
+      "functionalJob": "Outdoor sensor + reset-curve logic adjusting supply water temperature to heating load. Prerequisite for high-efficiency condensing operation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.4",
+      "name": "BUS Communication & Gateway",
+      "functionalJob": "Data backbone connecting controller, thermostats, zone controllers, and external systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "DHW Storage Cylinder",
+      "functionalJob": "Insulated vessel (150–300 L residential) heated by internal coil from boiler circuit.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Instantaneous DHW Heat Exchanger",
+      "functionalJob": "Secondary plate heat exchanger in combi boilers heating potable water on demand.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Legionella Protection",
+      "functionalJob": "Periodic thermal disinfection raising cylinder to >60 °C.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Installation Tooling",
+      "functionalJob": "Specialised tools for system installation: pipe preparation, flue fitting, system flushing.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Commissioning & Start-Up",
+      "functionalJob": "Verification, parameterisation, and performance validation before occupant handover.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Aftermarket Service & Spare Parts",
+      "functionalJob": "Ongoing maintenance, warranty, and spare parts.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Thermal Energy Meter (Heat Meter)",
+      "functionalJob": "MID-certified instrument measuring delivered thermal energy: Q = integral(flow x density x cp x delta-T) dt.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Efficiency Verification",
+      "functionalJob": "Monitoring and reporting systems for regulatory compliance.",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt sits here.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "NAICS 333414 — U.S. Census Bureau",
+      "url": "https://www.census.gov/naics/?input=333414&year=2022&details=333414",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Hydronic Heating — AHRI",
+      "url": "https://www.ahrinet.org/scholarships-education/education/contractors-and-specifiers/hvacr-equipmentcomponents/hydronic-heating",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Ultrasonic Flow Meters in Hydronic HVAC — Pumps & Systems",
+      "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S03"
+    },
+    {
+      "id": "S04",
+      "label": "8 Hydronic Applications Improved by Ultrasonic Meters — Badger Meter",
+      "url": "https://www.badgermeter.com/blog/8-hydronic-applications-improved-with-ultrasonic-meters/",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Residential Boiler Market — GMInsights",
+      "url": "https://www.gminsights.com/industry-analysis/residential-boiler-market",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Heat Exchanger Fabrication Process — Altex",
+      "url": "https://www.altexinc.com/case-studies/shell-tube-heat-exchangers/the-process-of-manufacturing-heat-exchangers-design-fabrication-and-testing/",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Condensing Boiler Heat Exchanger Construction — JMPCO",
+      "url": "https://jmpcoblog.com/hvac-blog/energy-efficient-hot-water-boiler-plant-design-part-3-condensing-boiler-heat-exchanger-construction-considerations",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Hydronic Underfloor Heating Market — Future Market Insights",
+      "url": "https://www.futuremarketinsights.com/reports/hydronic-underfloor-heating-market",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Baseboard Heater Market — 360 Research Reports",
+      "url": "https://www.360researchreports.com/market-reports/baseboard-heater-market-205646",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S10"
+    },
+    {
+      "id": "S11",
+      "label": "05_market_discovery.md — Architecture distance scoring for NAICS 333414",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S11"
+    },
+    {
+      "id": "S12",
+      "label": "--",
+      "prefixedId": "VN-HEATING-EQUIPMENT-S12"
+    }
+  ]
+}

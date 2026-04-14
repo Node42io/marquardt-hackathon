@@ -1,0 +1,265 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "coreJobStatement": "Generate, distribute, and meter thermal energy (heating and cooling) from centralised plants to multiple buildings via closed-pipe networks [SRC: VN_steam_and_air_conditioning_supply]",
+  "productJobStatement": "",
+  "anchorLevel": "L4 (component/subsystem)",
+  "lPath": "L7 District Energy Ecosystem > L6.3 Building Substation & Energy Transfer > L5.3.3 Substation Flow & Temperature Measurement > L4.3.3.1 Ultrasonic Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Residential building connection",
+      "qualifier": "",
+      "characteristics": "Individual apartment building on district network; low-load, highly variable demand profile; EU EED mandates individual metering for billing",
+      "isTargetable": true,
+      "targetabilityReason": "billing-grade accuracy required, cost sensitivity high",
+      "circumstance": "Individual apartment building on district network; low-load, highly variable demand profile; EU EED mandates individual metering for billing",
+      "alternativesDiffer": "Yes — billing-grade accuracy required, cost sensitivity high"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Commercial / institutional building",
+      "qualifier": "",
+      "characteristics": "Office, hospital, university on district network; higher loads, multi-zone, BMS integration; energy reporting mandated",
+      "isTargetable": true,
+      "targetabilityReason": "larger pipe sizes, SCADA integration, higher accuracy expectation",
+      "circumstance": "Office, hospital, university on district network; higher loads, multi-zone, BMS integration; energy reporting mandated",
+      "alternativesDiffer": "Yes — larger pipe sizes, SCADA integration, higher accuracy expectation"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Industrial thermal offtake",
+      "qualifier": "",
+      "characteristics": "Factory or process facility drawing process heat from district network; continuous high-load, tighter temperature control",
+      "isTargetable": true,
+      "targetabilityReason": "higher temperatures/pressures, flow rates may exceed sensor range",
+      "circumstance": "Factory or process facility drawing process heat from district network; continuous high-load, tighter temperature control",
+      "alternativesDiffer": "Yes — higher temperatures/pressures, flow rates may exceed sensor range"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "District cooling consumer",
+      "qualifier": "",
+      "characteristics": "Data centre, shopping mall, or office in warm climate; chilled water at 5–7 °C; narrow delta-T (3–8 K) challenges meter accuracy",
+      "isTargetable": true,
+      "targetabilityReason": "low delta-T amplifies flow measurement error in energy calculation",
+      "circumstance": "Data centre, shopping mall, or office in warm climate; chilled water at 5–7 °C; narrow delta-T (3–8 K) challenges meter accuracy",
+      "alternativesDiffer": "Yes — low delta-T amplifies flow measurement error in energy calculation"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Legacy steam-to-hot-water conversion",
+      "qualifier": "",
+      "characteristics": "Building previously served by steam, now converting to hot-water district network; retrofit constraints, existing pipe routing",
+      "isTargetable": true,
+      "targetabilityReason": "retrofit installation space constraints, mixed-age infrastructure",
+      "circumstance": "Building previously served by steam, now converting to hot-water district network; retrofit constraints, existing pipe routing",
+      "alternativesDiffer": "Yes — retrofit installation space constraints, mixed-age infrastructure"
+    },
+    {
+      "segmentNumber": 6,
+      "name": "4th/5th generation low-temperature network",
+      "qualifier": "",
+      "characteristics": "New low-temperature network (50–70 °C supply); prosumer buildings injecting excess heat back; bidirectional flow",
+      "isTargetable": true,
+      "targetabilityReason": "bidirectional flow detection essential; lower delta-T",
+      "circumstance": "New low-temperature network (50–70 °C supply); prosumer buildings injecting excess heat back; bidirectional flow",
+      "alternativesDiffer": "Yes — bidirectional flow detection essential; lower delta-T"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Mechanical Impeller / Turbine Meter (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts subject to magnetite fouling and bearing wear; accuracy degrades from Class 2 to Class 3 within 3–5 years in hard-water networks; mandatory 5–6 year metrological re-verification cycle; pressure drop across impeller; low-flow dead band where rotor stalls [SRC: web_search — Kamstrup, KROHNE]"
+    },
+    {
+      "name": "Ultrasonic Transit-Time Flow Sensor (growing)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment; requires pipe-full condition; higher unit cost vs mechanical (1.5–2.5x); signal loss during transient air pockets; requires acoustic coupling verification at commissioning [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Electromagnetic Flow Meter (premium)",
+      "unspsc": "41112501",
+      "tradeoffs": "3–5x cost of ultrasonic; requires minimum electrical conductivity (~5 μS/cm); heavier and larger footprint; higher power consumption; typically reserved for large commercial/industrial substations (DN50+) [SRC: VN_steam_and_air_conditioning_supply]"
+    },
+    {
+      "name": "Coriolis Flow Meter (custody transfer)",
+      "unspsc": "41112501",
+      "tradeoffs": "10–20x cost of ultrasonic; heavy (vibrating tubes); large footprint; overkill accuracy for building-level billing; used only in high-value custody transfer points at plant level [SRC: web_search]"
+    },
+    {
+      "name": "Do nothing / estimated allocation [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero lifecycle burden; thermal energy allocated by heated floor area or fixed percentage; cross-subsidisation between buildings; non-compliant with EU EED individual metering mandate; no fault detection; no incentive for energy saving"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required flow range, pipe diameter, medium type (hot/chilled water), temperature envelope, accuracy class (EN 1434), and communication protocol for the building substation",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor specifications must match substation design and regulatory requirements",
+      "rawStatement": "Define the required flow range, pipe diameter, medium type (hot/chilled water), temperature envelope, accuracy class (EN 1434), and communication protocol for the building substation",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor specifications must match substation design and regulatory requirements"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "the optimal measurement point in the substation piping where straight-run requirements are met and maintenance access is possible",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Compact substation enclosures constrain installation; position affects accuracy",
+      "rawStatement": "Locate the optimal measurement point in the substation piping where straight-run requirements are met and maintenance access is possible",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Compact substation enclosures constrain installation; position affects accuracy"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "piping section, electrical connections, and integration with energy calculator/integrator and BMS gateway",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Mechanical and electrical integration across hundreds of substations",
+      "rawStatement": "Prepare piping section, electrical connections, and integration with energy calculator/integrator and BMS gateway",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Mechanical and electrical integration across hundreds of substations"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "readiness: pipe-full condition, absence of air locks, correct orientation, communication handshake with energy calculator, MID seal integrity",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-operation verification critical for billing-grade measurement",
+      "rawStatement": "Confirm readiness: pipe-full condition, absence of air locks, correct orientation, communication handshake with energy calculator, MID seal integrity",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-operation verification critical for billing-grade measurement"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "continuous flow measurement feeding real-time volumetric flow rate and temperature to the energy calculator for thermal energy integration (Q = flow × Cp × ΔT)",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core value-creating action; drives billing accuracy and network control",
+      "rawStatement": "Execute continuous flow measurement feeding real-time volumetric flow rate and temperature to the energy calculator for thermal energy integration (Q = flow × Cp × ΔT)",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Core value-creating action; drives billing accuracy and network control"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "measurement quality: signal strength, air bubble events, empty-pipe alarms, long-term calibration drift, battery status",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Fleet-wide measurement integrity affects billing revenue and compliance",
+      "rawStatement": "Monitor measurement quality: signal strength, air bubble events, empty-pipe alarms, long-term calibration drift, battery status",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Fleet-wide measurement integrity affects billing revenue and compliance"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "District energy field service technician — installs, commissions, and maintains substation metering equipment",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Network operations manager — accountable for billing accuracy, EU EED compliance, and network efficiency across hundreds/thousands of substations",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Building occupant / facility manager — receives thermal comfort and pays consumption-based energy bill",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Meter specifier (district energy design engineer), installer, commissioning tech, calibration/verification service, disposer",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "Utility metering procurement manager — responsible for fleet-wide meter purchasing decisions",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Influencer",
+      "who": "National metrology authority (PTB, LNMC), energy regulator, building code inspector, energy auditor",
+      "pyramidLevels": ""
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "EU Energy Efficiency Directive (EED 2023/1791)",
+      "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive_en",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "EN 1434 Heat Meter Accuracy — Kamstrup",
+      "url": "https://www.kamstrup.com/en-en/insights/blog-series-part-2-a-thermal-energy-meter-you-can-trust",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Ultrasonic Flow Measurement in District Heating — KROHNE",
+      "url": "https://www.krohne.com/en-us/applications/ultrasonic-flow-measurement-district-heating-network",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Installation Effects on Ultrasonic Flow Meters — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0955598600000054",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Ultrasonic Flow Metering Errors Due to Pulsating Flow — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0955598603000852",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S05"
+    },
+    {
+      "id": "S06",
+      "label": "District Energy Efficiency Through Flow Metering — Baker Hughes",
+      "url": "https://dam.bakerhughes.com/m/110b7c0f5c53abf5/original/District-Energy-Efficiency-through-Flow-Metering-Whitepaper.pdf",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Improving Heat Energy Measurement in District Heating Substations — Linköping University",
+      "url": "https://www.diva-portal.org/smash/get/diva2:1003877/FULLTEXT01.pdf",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Heat Meter Market to $3.24B by 2035 — SNS Insider",
+      "url": "https://www.globenewswire.com/news-release/2026/03/27/3263591/0/en/Heat-Meter-Market-Size-to-Surpass-USD-3-24-Billion-by-2035-Research-by-SNS-Insider.html",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S08"
+    },
+    {
+      "id": "S09",
+      "label": "MID Class 2 & EN 1434 Heat Meters — ZPMeter",
+      "url": "https://www.zpmeter.com/blog/which-heat-meters-meet-centralized-heating-acceptance-standards",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Marquardt/HS Albstadt-Sigmaringen Project Briefing (19.02.2026)",
+      "prefixedId": "JTBD-DISTRICT-ENERGY-S11"
+    }
+  ]
+}

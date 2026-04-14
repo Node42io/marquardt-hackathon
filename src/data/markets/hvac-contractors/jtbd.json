@@ -1,0 +1,271 @@
+{
+  "naicsCode": "238220",
+  "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+  "slug": "hvac-contractors",
+  "coreJobStatement": "Install, commission, and maintain plumbing, heating, ventilation, and air-conditioning systems in buildings to deliver thermal comfort, indoor air quality, potable water, and sanitary drainage [SRC: VN_plumbing_heating_and_air_conditioning_co]",
+  "productJobStatement": "",
+  "anchorLevel": "L4 (Component)",
+  "lPath": "L7 > L6.5 Testing & Commissioning > L5.5.2 Hydraulic Balancing & Flow Measurement > L4.5.2.1 Ultrasonic Inline Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "Residential new-build hydronic",
+      "qualifier": "",
+      "characteristics": "New home with radiant floor / baseboard heating requiring first-time commissioning",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "New home with radiant floor / baseboard heating requiring first-time commissioning",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Residential heat-pump retrofit",
+      "qualifier": "",
+      "characteristics": "Existing home switching from gas to heat pump, requiring hydronic rebalancing",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Existing home switching from gas to heat pump, requiring hydronic rebalancing",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Commercial new-construction HVAC",
+      "qualifier": "",
+      "characteristics": "New commercial building with zoned hydronic heating/cooling requiring code-compliant commissioning",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "New commercial building with zoned hydronic heating/cooling requiring code-compliant commissioning",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Commercial retrofit / energy upgrade",
+      "qualifier": "",
+      "characteristics": "Existing commercial building replacing generator or upgrading for energy performance certification",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Existing commercial building replacing generator or upgrading for energy performance certification",
+      "alternativesDiffer": ""
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Ongoing service / preventive maintenance",
+      "qualifier": "",
+      "characteristics": "Operating building requiring periodic flow-performance verification and fault diagnosis",
+      "isTargetable": false,
+      "targetabilityReason": "",
+      "circumstance": "Operating building requiring periodic flow-performance verification and fault diagnosis",
+      "alternativesDiffer": ""
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Portable Ultrasonic Clamp-On Meter",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Hydronic Manometer / dP Meter via Balancing Valve",
+      "unspsc": "41112504",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Permanent Inline Ultrasonic Sensor (Marquardt)",
+      "unspsc": "41112501",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Manual Pressure-Drop Estimation",
+      "unspsc": "—",
+      "tradeoffs": ""
+    },
+    {
+      "name": "Do nothing / Accept risk (Status Quo)",
+      "unspsc": "—",
+      "tradeoffs": ""
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required hydronic flow rates per zone from load calculations and equipment specs",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor must be matched to pipe size, flow range, medium type",
+      "rawStatement": "Define the required hydronic flow rates per zone from load calculations and equipment specs",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor must be matched to pipe size, flow range, medium type"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Install the flow measurement device, establish pipe connections, configure communication protocol",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core installation and setup task",
+      "rawStatement": "Install the flow measurement device, establish pipe connections, configure communication protocol",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Core installation and setup task"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "the measurement system is operational and producing valid readings before commissioning",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor self-diagnostics and readiness verification",
+      "rawStatement": "Confirm the measurement system is operational and producing valid readings before commissioning",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Sensor self-diagnostics and readiness verification"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Measure actual flow rates per zone and compare against design specifications",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "This IS the sensor's core function",
+      "rawStatement": "Measure actual flow rates per zone and compare against design specifications",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "This IS the sensor's core function"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "flow stability, detect drift, anomalies, or degradation during and after commissioning",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Continuous monitoring is the key permanent-sensor differentiator",
+      "rawStatement": "Monitor flow stability, detect drift, anomalies, or degradation during and after commissioning",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Continuous monitoring is the key permanent-sensor differentiator"
+    },
+    {
+      "stepNumber": 7,
+      "verb": "Modify",
+      "description": "Adjust balancing valves based on measured flow deviations, re-verify after adjustment",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor provides the real-time feedback loop for adjustment",
+      "rawStatement": "Adjust balancing valves based on measured flow deviations, re-verify after adjustment",
+      "jobStep": "MODIFY",
+      "relevant": true,
+      "rationale": "Sensor provides the real-time feedback loop for adjustment"
+    },
+    {
+      "stepNumber": 8,
+      "verb": "Conclude",
+      "description": "Document measured flow rates, generate commissioning report, verify all zones within tolerance",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor data feeds regulatory documentation",
+      "rawStatement": "Document measured flow rates, generate commissioning report, verify all zones within tolerance",
+      "jobStep": "CONCLUDE",
+      "relevant": true,
+      "rationale": "Sensor data feeds regulatory documentation"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "HVAC commissioning technician / service tech",
+      "pyramidLevels": "P1 (all), P2, P3, P4, P5"
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Lead technician / project manager",
+      "pyramidLevels": "P1 (own), P2 (own), P4, P5 (rarely)"
+    },
+    {
+      "role": "Product Lifecycle Support — Specifier",
+      "who": "System designer / engineer (L6.2)",
+      "pyramidLevels": "P1 (Acq)"
+    },
+    {
+      "role": "Product Lifecycle Support — Installer",
+      "who": "Pipe fitter / HVAC installer (L6.3-L6.4)",
+      "pyramidLevels": "P1 (Prep)"
+    },
+    {
+      "role": "Product Lifecycle Support — Maintainer",
+      "who": "Service technician (L6.6)",
+      "pyramidLevels": "P1 (Maint)"
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "Contractor owner / purchasing manager",
+      "pyramidLevels": "P1 (Acq)"
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Building owner / occupant",
+      "pyramidLevels": "P2, P5"
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "ASHRAE Chapter 38: Testing, Adjusting, and Balancing",
+      "url": "https://thermairsystems.com/wp-content/uploads/2011/10/ASHRAE-HANDBOOK-Test-Adjust-and-Balance.pdf",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "ANSI/ASHRAE 111-2024",
+      "url": "https://webstore.ansi.org/standards/ashrae/ansiashrae1112024",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Hydronic Balancing Standards — jmpcoblog",
+      "url": "https://jmpcoblog.com/hvac-blog/hydronic-balancing-part-1-the-standards-and-driving-force-behind-the-new-requirements",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S03"
+    },
+    {
+      "id": "S04",
+      "label": "EPBD 2024 Recast — EUR-Lex",
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/1275/oj/eng",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S04"
+    },
+    {
+      "id": "S05",
+      "label": "EPBD Overview — Danfoss",
+      "url": "https://www.danfoss.com/en/industries/buildings-commercial/dhs/commercial-buildings-retrofitting/energy-performance-of-buildings-directive-epbd-everything-you-need-to-know/",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Hydronic Balancing Precision — TSI",
+      "url": "https://tsi.com/hvac-consultant/learn/hydronic-system-balancing-precision-that-powers-performance",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S06"
+    },
+    {
+      "id": "S07",
+      "label": "5 Hidden Costs of Poor HVAC Balance — SITA",
+      "url": "https://sita-tab.com/energy-efficiency/5-ways-poor-hvac-balance-is-secretly-draining-your-operating-budget/",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Belimo Ultrasonic Flow Sensor",
+      "url": "https://www.belimo.com/us/en_US/flowsensor",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Balancing HVAC Hydronic Systems: Flow Tolerance — Deppmann",
+      "url": "https://www.deppmann.com/blog/monday-morning-minutes/hvac-hydronic-systems-flow-tolerance/",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Marquardt/HS Albstadt-Sigmaringen Project Briefing (19.02.2026)",
+      "prefixedId": "JTBD-HVAC-CONTRACTORS-S11"
+    }
+  ]
+}

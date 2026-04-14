@@ -1,0 +1,11 @@
+{
+  "slug": "hvac-contractors",
+  "marketName": "Plumbing, Heating, and Air-Conditioning Contractors",
+  "naicsCode": "238220",
+  "confidence": "low",
+  "dataPending": true,
+  "sensorNote": "BOM markdown not yet generated. HVAC contractors install rather than manufacture — the Marquardt sensor appears as a purchased component in their installed systems. DN20 (serial production) is the primary variant for commercial HVAC.",
+  "outputTypes": [],
+  "marquardtAnchorIds": [],
+  "l4Subsystems": []
+}

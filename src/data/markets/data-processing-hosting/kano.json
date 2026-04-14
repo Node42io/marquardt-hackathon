@@ -1,0 +1,296 @@
+{
+  "naicsCode": "518210",
+  "marketName": "Data Processing, Hosting, and Related Services",
+  "slug": "data-processing-hosting",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 6,
+        "cost": 6,
+        "safety": 8,
+        "reliability": 8,
+        "skill": 4,
+        "stress": 6,
+        "pain": 5,
+        "confidence": 8,
+        "delight": 3,
+        "overall": 6
+      },
+      "rationale": "(must_be, 6.00): Commodity baseline — every flow alternative in JTBD-2.4 delivers flow quantification. Must_be because a CDU without flow telemetry cannot safely gate GPU load. Primary drivers: Reliability (8) and Confidence (8) — OCP 1.5 L/min/kW threshold (ES-08, imp=9) enforcement; Safety (8) — loss-of-flow detection <2s (ES-11, opp=16). [SRC: JTBD_dph ES-08, ES-11; OCP guidance]"
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 7,
+        "cost": 8,
+        "safety": 6,
+        "reliability": 7,
+        "skill": 6,
+        "stress": 5,
+        "pain": 7,
+        "confidence": 7,
+        "delight": 6,
+        "overall": 6.56
+      },
+      "rationale": "(attractive, 6.56): Directly addresses ES-12 (sub-second thermal duty kW = flow × ΔT from a single body, imp=8, opp=12, prod_related). Eliminates separate temperature probe and synchronization error between two sensors feeding the DCIM PUE calculation. Primary drivers: Cost (8) — removes second sensor BOM and wiring; Pain (7) — single commissioning touchpoint; Delight (6) — \"kW out of one can\" is genuinely surprising to CDU integrators. [SRC: JTBD_dph ES-12, ES-18]"
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 6,
+        "safety": 3,
+        "reliability": 4,
+        "skill": 3,
+        "stress": 3,
+        "pain": 3,
+        "confidence": 4,
+        "delight": 3,
+        "overall": 3.56
+      },
+      "rationale": "(one_dimensional, 3.56): CDU secondary-loop pressure drop is dominated by the brazed-plate HX, cold-plate manifolds, and hoses — sensor contribution <50 mbar is marginal at 30 L/min (ES-13, imp=7, opp=8). Linear benefit to pump energy / PUE, but small magnitude. Primary driver: Cost (6) — pump energy savings. [SRC: 01_product_decomposition, JTBD_dph ES-13]"
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 4,
+        "cost": 8,
+        "safety": 7,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 7,
+        "pain": 8,
+        "confidence": 8,
+        "delight": 5,
+        "overall": 6.78
+      },
+      "rationale": "(one_dimensional, 6.78): High-value differentiator vs turbine/impeller incumbents (15% share) in 24×7 GPU fleet. Addresses ES-09 (±2% over 40,000 h, imp=9, opp=13). Bearing wear in turbine sensors silently degrades the flow reading that gates the OCP safety threshold. Primary drivers: Reliability (9) — eliminates mechanical failure modes in the loop that protects GPU thermal envelope; Pain (8) and Cost (8) — removes periodic replacement of in-loop sensors across hundreds of rack CDUs; Confidence (8) — stable calibration reduces false-throttle events (ES-16). [SRC: JTBD_dph ES-09, ES-16]"
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 4,
+        "cost": 5,
+        "safety": 7,
+        "reliability": 5,
+        "skill": 4,
+        "stress": 5,
+        "pain": 4,
+        "confidence": 6,
+        "delight": 5,
+        "overall": 5
+      },
+      "rationale": "(attractive, 5.00): Addresses ES-15 (reverse-flow detection within 1s, imp=7, opp=10, prod_related) — detects bypass-valve misoperation, mis-piped commissioning, or pump-failure siphon. Turbine and thermal-dispersion alternatives cannot resolve direction. Primary drivers: Safety (7) — detects anti-flow condition before GPU load energizes; Confidence (6) — unambiguous direction signal in the OCP safety interlock chain. [SRC: JTBD_dph ES-15]"
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 8,
+        "cost": 7,
+        "safety": 9,
+        "reliability": 7,
+        "skill": 7,
+        "stress": 8,
+        "pain": 6,
+        "confidence": 9,
+        "delight": 7,
+        "overall": 7.56
+      },
+      "rationale": "(attractive, 7.56): **Highest-scoring feature.** Directly serves the top of the opportunity stack: empty-pipe pre-IT-power-on (ES-06, opp=15, prod_related), air entrainment after glycol top-up (ES-10, opp=12, prod_related), incipient leak signatures (ES-20, opp=14, prod_related). Traditional mechanical meters provide zero diagnostics. Primary drivers: Safety (9) — the empty-pipe and sub-threshold-leak signals are the gate and early-warning layer that prevent GPU thermal runaway; Confidence (9) — controller knows when a zero-flow reading is real vs diagnostic; Stress (8) — reduces operator anxiety during workload ramps. [SRC: JTBD_dph ES-06, ES-10, ES-20]"
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 3,
+        "cost": 5,
+        "safety": 5,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 4,
+        "pain": 4,
+        "confidence": 6,
+        "delight": 3,
+        "overall": 4.67
+      },
+      "rationale": "(must_be, 4.67): Must_be because CDU secondary loops run water, PG25, or EG25 blends configured at commissioning (ES-03, prod_related). Without speed-of-sound compensation, a glycol-concentration change silently biases kW duty and PUE telemetry. Primary driver: Reliability (7) — reduces fluid-property-induced error from ~1.5% to ~0.2%. [SRC: 01_product_decomposition; JTBD_dph ES-03]\n\n### 09b — Validation Summary\n\n| Check | Result |\n|---|---|\n| Kano cross-market consistency | N/A — single market |\n| safety >= 7 AND confidence <= 3 | PASS — Digital Anomaly Detection: safety=9, confidence=9 (consistent) |\n| skill >= 7 AND stress <= 3 | PASS — no violations |\n| overall_fit arithmetic | PASS — all recomputed |\n| No feature scores 10 on all dimensions | PASS |\n| Feature names comply with 1.pdf rules | PASS — spec-visible noun phrases, no brands, no outcome claims |\n| Safety-critical coherence | PASS — Transit-Time, No Moving Parts, and Digital Anomaly all score safety >= 7, aligned with market's top 5 needs being safety-driven |\n\n---"
+    },
+    {
+      "featureName": "Check",
+      "kanoClassification": "Result",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Kano cross-market consistency",
+      "kanoClassification": "N/A — single market",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "safety >= 7 AND confidence <= 3",
+      "kanoClassification": "PASS — Digital Anomaly Detection: safety=9, confidence=9 (consistent)",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "skill >= 7 AND stress <= 3",
+      "kanoClassification": "PASS — no violations",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "overall_fit arithmetic",
+      "kanoClassification": "PASS — all recomputed",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "No feature scores 10 on all dimensions",
+      "kanoClassification": "PASS",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Feature names comply with 1.pdf rules",
+      "kanoClassification": "PASS — spec-visible noun phrases, no brands, no outcome claims",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "Safety-critical coherence",
+      "kanoClassification": "PASS — Transit-Time, No Moving Parts, and Digital Anomaly all score safety >= 7, aligned with market's top 5 needs being safety-driven",
+      "scores": {
+        "time": 0,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.68,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Features, constraints, specifications, UNSPSC classification",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "JTBD_data_processing_hosting.md — CFJ, job map, alternatives, error statements (ES-01..ES-26)",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "VN_data_processing_hosting.md — Process VN, CDU parent L5, flow-sensor anchor",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Marquardt Customer Presentation: \"US Flow Sensor\" (03.12.2025, CONFIDENTIAL)",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "OCP liquid-cooling guidance: 1.5 L/min/kW [via JTBD_dph]",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Mass Flow Online, IoThrifty — magnetic vs ultrasonic share in DLC/CDU",
+      "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S06"
+    }
+  ]
+}

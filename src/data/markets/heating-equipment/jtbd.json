@@ -1,0 +1,281 @@
+{
+  "naicsCode": "333414",
+  "marketName": "Heating Equipment (except Warm-Air Furnaces) Manufacturing",
+  "slug": "heating-equipment",
+  "coreJobStatement": "Generate and deliver thermal energy to occupied spaces and domestic hot-water systems via heated-water circuits [SRC: VN_heating_equipment]",
+  "productJobStatement": "",
+  "anchorLevel": "L4 (component/subsystem)",
+  "lPath": "L7 Hydronic Heating Equipment Ecosystem > L6.2 Hydraulic Distribution > L5.2.5 Flow Sensing & Measurement > L4.2.5.1 Ultrasonic Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "New-build residential",
+      "qualifier": "",
+      "characteristics": "Greenfield installation with design freedom; low-temperature emitters preferred (radiant floor); condensing boiler mandated by regulation",
+      "isTargetable": true,
+      "targetabilityReason": "system design starts from scratch",
+      "circumstance": "Greenfield installation with design freedom; low-temperature emitters preferred (radiant floor); condensing boiler mandated by regulation",
+      "alternativesDiffer": "Yes — system design starts from scratch"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Retrofit residential",
+      "qualifier": "",
+      "characteristics": "Replacing existing boiler in occupied dwelling; constrained pipe routing, existing radiators, limited space; must maintain comfort during swap",
+      "isTargetable": true,
+      "targetabilityReason": "high-temp emitters constrain boiler selection",
+      "circumstance": "Replacing existing boiler in occupied dwelling; constrained pipe routing, existing radiators, limited space; must maintain comfort during swap",
+      "alternativesDiffer": "Yes — high-temp emitters constrain boiler selection"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Light commercial (office, retail, hospitality)",
+      "qualifier": "",
+      "characteristics": "Multi-zone buildings with diverse occupancy profiles; BMS integration expected; energy audit/reporting mandated",
+      "isTargetable": true,
+      "targetabilityReason": "zone balancing complexity, regulatory reporting",
+      "circumstance": "Multi-zone buildings with diverse occupancy profiles; BMS integration expected; energy audit/reporting mandated",
+      "alternativesDiffer": "Yes — zone balancing complexity, regulatory reporting"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Multi-family / social housing",
+      "qualifier": "",
+      "characteristics": "Centralized plant with per-unit metering; tenant billing requires measured energy; compliance with EU EED individual metering mandate",
+      "isTargetable": true,
+      "targetabilityReason": "metering-grade accuracy required",
+      "circumstance": "Centralized plant with per-unit metering; tenant billing requires measured energy; compliance with EU EED individual metering mandate",
+      "alternativesDiffer": "Yes — metering-grade accuracy required"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Industrial process heating",
+      "qualifier": "",
+      "characteristics": "Hydronic circuits for process heat (not space heating); tighter temperature control, higher duty cycles, harsher media conditions",
+      "isTargetable": true,
+      "targetabilityReason": "duty cycle and media constraints differ",
+      "circumstance": "Hydronic circuits for process heat (not space heating); tighter temperature control, higher duty cycles, harsher media conditions",
+      "alternativesDiffer": "Yes — duty cycle and media constraints differ"
+    },
+    {
+      "segmentNumber": 6,
+      "name": "Solar-hybrid / renewable integration",
+      "qualifier": "",
+      "characteristics": "Combining solar thermal with boiler backup; variable source temperatures; storage management; maximizing solar fraction",
+      "isTargetable": true,
+      "targetabilityReason": "multi-source orchestration, low delta-T operation",
+      "circumstance": "Combining solar thermal with boiler backup; variable source temperatures; storage management; maximizing solar fraction",
+      "alternativesDiffer": "Yes — multi-source orchestration, low delta-T operation"
+    },
+    {
+      "segmentNumber": 7,
+      "name": "Pool/spa",
+      "qualifier": "",
+      "characteristics": "Outdoor or indoor pool heating; large water volumes, chemical treatment, seasonal operation",
+      "isTargetable": true,
+      "targetabilityReason": "different media chemistry and volume scale",
+      "circumstance": "Outdoor or indoor pool heating; large water volumes, chemical treatment, seasonal operation",
+      "alternativesDiffer": "Yes — different media chemistry and volume scale"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Impeller / Turbine Flow Sensor (incumbent)",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts subject to magnetite fouling, bearing wear, and particulate jamming; paramagnetic MnO₂ attracted to magnetized rotor; calibration drift from blade erosion; 3–5 year service life in hard-water areas [SRC: web_search — HeatingHelp, BoilerMag]"
+    },
+    {
+      "name": "Ultrasonic Flow Sensor (transit-time)",
+      "unspsc": "41112501",
+      "tradeoffs": "Accuracy degrades with >2% air entrainment; requires pipe-full condition; higher unit cost vs turbine; signal loss in partially filled pipes [SRC: 01_product_decomposition]"
+    },
+    {
+      "name": "Vortex Flow Sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "Introduces pressure drop (bluff body obstructs flow); limited accuracy at low flow rates below Reynolds threshold; vibration-sensitive [SRC: VN_heating_equipment]"
+    },
+    {
+      "name": "Differential Pressure Estimation (from pump curve)",
+      "unspsc": "—",
+      "tradeoffs": "Zero hardware cost; accuracy ±15–20%; no direct measurement; depends on pump curve validity; cannot detect anomalies [SRC: VN_heating_equipment]"
+    },
+    {
+      "name": "Do nothing / accept risk [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero cost, zero lifecycle burden; thermal output unverified; no fault detection; cannot comply with EU EcoDesign measured-efficiency requirements; energy waste undetectable"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required flow rate range, pipe diameter, medium type, temperature envelope, and communication protocol for the hydronic circuit",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor specifications must match circuit design parameters",
+      "rawStatement": "Define the required flow rate range, pipe diameter, medium type, temperature envelope, and communication protocol for the hydronic circuit",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor specifications must match circuit design parameters"
+    },
+    {
+      "stepNumber": 2,
+      "verb": "Locate",
+      "description": "and access the optimal insertion point in the hydronic piping where flow profile is developed and straight-run requirements are met",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Physical installation position directly affects measurement accuracy",
+      "rawStatement": "Locate and access the optimal insertion point in the hydronic piping where flow profile is developed and straight-run requirements are met",
+      "jobStep": "LOCATE",
+      "relevant": true,
+      "rationale": "Physical installation position directly affects measurement accuracy"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "the piping section, electrical connections, and controller interface for sensor integration",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Mechanical and electrical integration is core to product installation",
+      "rawStatement": "Prepare the piping section, electrical connections, and controller interface for sensor integration",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Mechanical and electrical integration is core to product installation"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "sensor readiness: verify pipe-full condition, absence of air locks, correct wiring, and communication handshake with controller",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-operation verification critical for measurement validity",
+      "rawStatement": "Confirm sensor readiness: verify pipe-full condition, absence of air locks, correct wiring, and communication handshake with controller",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-operation verification critical for measurement validity"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "continuous flow measurement, providing real-time volumetric flow rate, temperature, and diagnostic data to the system controller",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "This IS the core value-creating action of the product",
+      "rawStatement": "Execute continuous flow measurement, providing real-time volumetric flow rate, temperature, and diagnostic data to the system controller",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "This IS the core value-creating action of the product"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "measurement quality indicators: signal strength, air bubble events, empty-pipe alarms, calibration drift flags",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Ongoing measurement integrity affects system performance",
+      "rawStatement": "Monitor measurement quality indicators: signal strength, air bubble events, empty-pipe alarms, calibration drift flags",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Ongoing measurement integrity affects system performance"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Boiler OEM engineering manager — accountable for appliance performance and certification",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "Building occupant / facility manager — receives thermal comfort",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "OEM procurement manager / HVAC wholesaler buyer",
+      "pyramidLevels": ""
+    },
+    {
+      "role": "Purchase Influencer",
+      "who": "Building regulations inspector, energy auditor, consulting engineer",
+      "pyramidLevels": ""
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications — Pumps & Systems",
+      "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S01"
+    },
+    {
+      "id": "S02",
+      "label": "8 Hydronic Applications Improved by Ultrasonic Meters — Badger Meter",
+      "url": "https://www.badgermeter.com/blog/8-hydronic-applications-improved-with-ultrasonic-meters/",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Tankless Water Heater Flow Sensor Fouling — HeatingHelp",
+      "url": "https://forum.heatinghelp.com/discussion/187878/tankless-water-heater-flow-sensor-fouling",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S03"
+    },
+    {
+      "id": "S04",
+      "label": "The Dirt on Modern Hydronic Systems — BoilerMag",
+      "url": "https://www.boilermag.com/na/the-dirt-on-modern-hydronic-systems/",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Rinnai Flow Sensor Problems — HVAC Laboratory",
+      "url": "https://hvaclaboratory.com/rinnai-flow-sensor-problems/",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S05"
+    },
+    {
+      "id": "S06",
+      "label": "EcoDesign and Energy Labelling Consultation — EU Commission",
+      "url": "https://energy.ec.europa.eu/news/ecodesign-and-energy-labelling-commission-consults-revised-rules-space-and-water-heaters-2025-12-01_en",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S06"
+    },
+    {
+      "id": "S07",
+      "label": "New EcoDesign Requirements for Boilers — REHVA Journal",
+      "url": "https://www.rehva.eu/rehva-journal/chapter/new-regulation-sets-demanding-ecodesign-requirements-for-boilers",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Condensing Boilers — Control Strategies for Optimizing — NREL",
+      "url": "https://docs.nrel.gov/docs/fy13osti/57826.pdf",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Balancing Protocol — IMI Hydronic",
+      "url": "https://www.imi-hydronic.com/en-us/hydronic-theory/balancing-protocol",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Hydronic Balancing — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hydronic_balancing",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S10"
+    },
+    {
+      "id": "S11",
+      "label": "01_product_decomposition.md, 02_functional_promise.md, 05_market_discovery.md, VN_heating_equipment_except_warm_air_furnac.md",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S11"
+    },
+    {
+      "id": "S12",
+      "label": "--",
+      "prefixedId": "JTBD-HEATING-EQUIPMENT-S12"
+    }
+  ]
+}

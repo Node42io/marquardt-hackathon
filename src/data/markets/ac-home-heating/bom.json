@@ -1,0 +1,168 @@
+{
+  "slug": "ac-home-heating",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "naicsCode": "333415",
+  "confidence": "high",
+  "dataPending": false,
+  "sensorNote": "Sensor is a BOM constituent (L2-C2a) inside OT-2 / OT-5 products via the Hydronic Circuit subsystem.",
+  "outputTypes": [
+    { "id": "OT-1", "name": "Residential Split/Packaged AC", "hydronic": false, "sensorFit": "none", "notes": "Refrigerant-only circuit; no water loop." },
+    { "id": "OT-2", "name": "Water-Source Heat Pump", "hydronic": true, "sensorFit": "primary", "notes": "Water loop flow measurement — primary Marquardt DN20 fit." },
+    { "id": "OT-3", "name": "Warm Air Furnace", "hydronic": false, "sensorFit": "none", "notes": "No hydronic loop." },
+    { "id": "OT-4", "name": "Commercial Rooftop Unit", "hydronic": false, "sensorFit": "none", "notes": "Air-side system." },
+    { "id": "OT-5", "name": "Water-Cooled Chiller", "hydronic": true, "sensorFit": "primary", "notes": "Chilled water + condenser water loops — primary fit." },
+    { "id": "OT-6", "name": "Commercial Refrigeration", "hydronic": false, "sensorFit": "none", "notes": "Refrigerant-only." },
+    { "id": "OT-7", "name": "Industrial Refrigeration", "hydronic": true, "sensorFit": "secondary", "notes": "Glycol loop ≤50%; secondary fit." }
+  ],
+  "marquardtAnchorIds": ["L4-C", "L3-C2", "L2-C2a", "L1-C2a-1", "L1-C2a-2", "L1-C2a-3"],
+  "l4Subsystems": [
+    {
+      "id": "L4-A",
+      "name": "Refrigerant Circuit",
+      "costSharePct": 35,
+      "keyDesignChoice": "Compression technology",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Scroll compressor", "sharePct": 48, "trend": "stable" },
+        { "name": "Rotary compressor", "sharePct": 25, "trend": "stable" },
+        { "name": "Screw compressor", "sharePct": 15, "trend": "stable" },
+        { "name": "Centrifugal compressor", "sharePct": 8, "trend": "growing" },
+        { "name": "Reciprocating compressor", "sharePct": 4, "trend": "declining" }
+      ],
+      "modules": [
+        { "id": "L3-A1", "name": "Compressor Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Inverter-scroll (dominant)", "sharePct": 55, "trend": "growing" },
+          { "name": "Fixed-scroll", "sharePct": 20, "trend": "declining" },
+          { "name": "Twin-rotary", "sharePct": 15, "trend": "stable" },
+          { "name": "Screw", "sharePct": 10, "trend": "stable" }
+        ]},
+        { "id": "L3-A2", "name": "Expansion Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "EEV / electronic expansion valve", "sharePct": 70, "trend": "growing" },
+          { "name": "TXV (thermostatic expansion valve)", "sharePct": 30, "trend": "declining" }
+        ]},
+        { "id": "L3-A3", "name": "Four-Way Reversing Valve (OT-2)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Solenoid-actuated spool valve", "sharePct": 100, "trend": "stable" }
+        ]},
+        { "id": "L3-A4", "name": "Refrigerant Piping", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Brazed copper piping", "sharePct": 85, "trend": "stable" },
+          { "name": "Stainless flex", "sharePct": 15, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4-B",
+      "name": "Heat Exchanger",
+      "costSharePct": 25,
+      "keyDesignChoice": "HX geometry",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Brazed-plate HX", "sharePct": 55, "trend": "growing" },
+        { "name": "Shell-and-tube HX", "sharePct": 30, "trend": "declining" },
+        { "name": "Microchannel HX", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3-B1", "name": "Evaporator (water-side)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Brazed-plate (OT-2/OT-5 dominant)", "sharePct": 55, "trend": "growing" },
+          { "name": "DX coil (OT-1/OT-4)", "sharePct": 45, "trend": "stable" }
+        ]},
+        { "id": "L3-B2", "name": "Condenser (water-side)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Shell-and-tube", "sharePct": 40, "trend": "stable" },
+          { "name": "Brazed-plate", "sharePct": 35, "trend": "growing" },
+          { "name": "Tube-and-fin", "sharePct": 25, "trend": "declining" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4-C",
+      "name": "Hydronic Circuit",
+      "costSharePct": 12,
+      "keyDesignChoice": "Piping & instrumentation",
+      "isMarquardtAnchor": true,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Copper piping", "sharePct": 60, "trend": "stable" },
+        { "name": "Stainless steel piping", "sharePct": 25, "trend": "growing" },
+        { "name": "CPVC / PEX piping", "sharePct": 15, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3-C1", "name": "Circulation Pump Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Wet-rotor ECM pump", "sharePct": 60, "trend": "growing" },
+          { "name": "Dry-rotor centrifugal pump", "sharePct": 40, "trend": "declining" }
+        ]},
+        { "id": "L3-C2", "name": "Flow & Temperature Measurement Assembly", "isMarquardtAnchor": true, "sensorNote": "Marquardt DN20 lives here", "alternatives": [
+          { "name": "Ultrasonic transit-time (Marquardt)", "sharePct": 45, "trend": "growing", "isMarquardt": true },
+          { "name": "Vortex flowmeter", "sharePct": 25, "trend": "stable" },
+          { "name": "Electromagnetic flowmeter", "sharePct": 20, "trend": "stable" },
+          { "name": "Turbine flowmeter", "sharePct": 10, "trend": "declining" }
+        ]},
+        { "id": "L3-C3", "name": "Pressure & Safety Valve Assembly", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Spring-loaded PRV + pressure transducer", "sharePct": 100, "trend": "stable" }
+        ]},
+        { "id": "L3-C4", "name": "Hydronic Manifold & Balancing Valves", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Cast iron manifold", "sharePct": 55, "trend": "stable" },
+          { "name": "Brass manifold", "sharePct": 35, "trend": "stable" },
+          { "name": "Stainless steel manifold", "sharePct": 10, "trend": "growing" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4-D",
+      "name": "Controls & Electrical",
+      "costSharePct": 15,
+      "keyDesignChoice": "Controller platform",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "Proprietary ECU", "sharePct": 65, "trend": "stable" },
+        { "name": "Third-party BMS gateway", "sharePct": 35, "trend": "growing" }
+      ],
+      "modules": [
+        { "id": "L3-D1", "name": "Main Control Board (ECU)", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "Proprietary MCU", "sharePct": 65, "trend": "stable" },
+          { "name": "Third-party PLC", "sharePct": 35, "trend": "growing" }
+        ]},
+        { "id": "L3-D2", "name": "Power Electronics & Inverter Drive", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "IGBT-based VFD (dominant)", "sharePct": 85, "trend": "stable" },
+          { "name": "SiC-based drive (emerging)", "sharePct": 15, "trend": "growing" }
+        ]},
+        { "id": "L3-D4", "name": "Communication Interface Module", "isMarquardtAnchor": false, "alternatives": [
+          { "name": "BACnet / Modbus", "sharePct": 60, "trend": "growing" },
+          { "name": "LonWorks", "sharePct": 20, "trend": "declining" },
+          { "name": "Proprietary protocol", "sharePct": 20, "trend": "declining" }
+        ]}
+      ]
+    },
+    {
+      "id": "L4-E",
+      "name": "Enclosure & Structure",
+      "costSharePct": 8,
+      "keyDesignChoice": "Sheet metal material",
+      "isMarquardtAnchor": false,
+      "confidence": "medium",
+      "alternatives": [
+        { "name": "G90 galvanised steel", "sharePct": 70, "trend": "stable" },
+        { "name": "Powder-coat aluminium", "sharePct": 20, "trend": "growing" },
+        { "name": "Stainless steel", "sharePct": 10, "trend": "stable" }
+      ],
+      "modules": []
+    },
+    {
+      "id": "L4-F",
+      "name": "Refrigerant Charge",
+      "costSharePct": 5,
+      "keyDesignChoice": "Refrigerant fluid",
+      "isMarquardtAnchor": false,
+      "confidence": "high",
+      "alternatives": [
+        { "name": "R-410A (phase-out began Jan 2025)", "sharePct": 64, "trend": "declining" },
+        { "name": "R-32", "sharePct": 18, "trend": "growing" },
+        { "name": "R-454B (shortage 2025)", "sharePct": 12, "trend": "growing" },
+        { "name": "R-407C", "sharePct": 4, "trend": "declining" },
+        { "name": "CO₂ (R-744)", "sharePct": 2, "trend": "growing" }
+      ],
+      "modules": []
+    }
+  ]
+}

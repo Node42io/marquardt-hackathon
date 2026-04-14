@@ -1,0 +1,98 @@
+{
+  "naicsCode": "221330",
+  "marketName": "Steam and Air-Conditioning Supply",
+  "slug": "district-energy",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Media Limitation",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Hot-water and chilled-water networks circulate treated water (direct match). Steam networks carry vapour on primary side (incompatible), but sensor is deployed on secondary water side or condensate return.",
+      "mitigation": "Install sensor on secondary (hot-water) side of steam substation heat exchanger; Use for condensate return metering in steam substations; Focus go-to-market on hot-water and chilled-water networks (dominant segments)",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "4th gen (50-70 degC) and chilled-water (4-15 degC) fully within 90 degC limit. 3rd gen supply (80-120 degC) may exceed limit, but return side (40-60 degC) is within spec. Gap at worst 1.3x (120/90).",
+      "mitigation": "Target 4th generation low-temperature networks (50-70 degC supply, fastest-growing segment); Install on return pipe side of 3rd gen substations (40-60 degC return); Serve all district chilled-water cooling substations directly (4-15 degC)",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Building substations operate at 2-6 bar after network pressure reduction. Differential pressure controllers maintain controlled conditions. Well within 10 bar limit.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Residential substation flow rates 5-40 l/min at DN20/DN25. Above minimum detection (4.2 l/min DN20). Substations modulate via control valve, not near-zero flow.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble Tolerance",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Closed, pressurised, chemically treated network. Water treatment with dosing and filtration maintains well below 2% air content.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Closed-loop, continuously pressurised network. Pressurisation units maintain static pressure. Partially filled pipe is a major failure event, not routine.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Building substations are compact but already accommodate inline energy meters per EN 1434. Standard substation design consideration, not a novel barrier.",
+      "mitigation": "Specify sensor mounting position in substation piping design for 5-10x DN straight run; Use flow straightener vane upstream if space constrained (<$5/unit in volume); Coordinate with substation OEMs for integrated placement in standard packages",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "District substations operate at 4-90 degC across heating and cooling. Gradual seasonal/daily temperature changes. NTC compensation to ~0.2% adequate for energy calculation.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 0,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

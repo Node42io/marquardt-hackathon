@@ -1,0 +1,30 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "features": [],
+  "avgOverallFit": 0,
+  "productRelatedNeeds": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md (features, constraints, specifications, UNSPSC)",
+      "prefixedId": "FIT-BREWERIES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md (commodity FP, product FP, differentiators, complements)",
+      "prefixedId": "FIT-BREWERIES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md (Breweries NAICS 312120 — market context, alternatives, job)",
+      "prefixedId": "FIT-BREWERIES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "JTBD_breweries.md (24 error statements, job map, segments, alternatives, incumbent anchors)",
+      "prefixedId": "FIT-BREWERIES-S04"
+    }
+  ]
+}

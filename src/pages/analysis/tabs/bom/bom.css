@@ -1,0 +1,467 @@
+/* =========================================================================
+   BOM Tab — Bill of Materials component styles
+   Prefix: .bom-*
+   Dark theme, matches report.css design tokens.
+   ========================================================================= */
+
+/* ── Variant chip row (top of page) ─────────────────────────────────────── */
+.bom-variant-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.bom-variant-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-gray-light);
+  cursor: pointer;
+  transition: background 0.13s ease, border-color 0.13s ease, color 0.13s ease;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.bom-variant-chip:hover {
+  background: var(--surface-dark-hover);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text-white);
+}
+
+.bom-variant-chip.is-active {
+  background: rgba(253, 255, 152, 0.1);
+  border-color: rgba(253, 255, 152, 0.35);
+  color: var(--accent-yellow);
+}
+
+.bom-variant-chip__status {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 2px 6px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-gray-dark);
+}
+
+.bom-variant-chip.is-active .bom-variant-chip__status {
+  background: rgba(253, 255, 152, 0.15);
+  color: rgba(253, 255, 152, 0.7);
+}
+
+/* ── Category row header ─────────────────────────────────────────────────── */
+.bom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+/* ── L6.N category row ───────────────────────────────────────────────────── */
+.bom-category-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.bom-category-row:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.bom-category-row__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: 0;
+  cursor: pointer;
+  min-height: 72px;
+}
+
+/* Collapse/expand chevron cell */
+.bom-category-row__caret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  flex-shrink: 0;
+  padding-top: 8px;
+  align-self: flex-start;
+  padding-top: 26px;
+}
+
+.bom-category-row__caret svg {
+  transition: transform 0.18s ease;
+  color: var(--text-gray);
+}
+
+.bom-category-row__caret.is-open svg {
+  transform: rotate(180deg);
+}
+
+/* L6.N identifier cell */
+.bom-category-row__id-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80px;
+  flex-shrink: 0;
+  padding: 16px 8px;
+  position: relative;
+}
+
+.bom-category-row__id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-gray-dark);
+  letter-spacing: 0.04em;
+  background: var(--bg-card-inner);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 3px 7px;
+  white-space: nowrap;
+}
+
+/* Connector line below the ID (for sub-rows) */
+.bom-category-row__id-cell::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50%;
+  background: var(--border-subtle);
+  display: none;
+}
+
+/* Text cell (label + badge + variant chips) */
+.bom-category-row__text-cell {
+  flex: 1;
+  padding: 8px 16px 8px 8px;
+  min-width: 0;
+}
+
+.bom-category-row__label-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.bom-category-row__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-white);
+  letter-spacing: -0.01em;
+}
+
+/* ── Confidence badge ────────────────────────────────────────────────────── */
+.bom-conf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.bom-conf-badge--high {
+  background: rgba(111, 213, 155, 0.13);
+  color: var(--status-high);
+  border: 1px solid rgba(111, 213, 155, 0.22);
+}
+
+.bom-conf-badge--medium {
+  background: rgba(213, 169, 111, 0.13);
+  color: var(--status-medium);
+  border: 1px solid rgba(213, 169, 111, 0.22);
+}
+
+.bom-conf-badge--low {
+  background: rgba(213, 111, 111, 0.13);
+  color: var(--status-low);
+  border: 1px solid rgba(213, 111, 111, 0.22);
+}
+
+.bom-conf-badge__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bom-conf-badge--high .bom-conf-badge__dot { background: var(--status-high); }
+.bom-conf-badge--medium .bom-conf-badge__dot { background: var(--status-medium); }
+.bom-conf-badge--low .bom-conf-badge__dot { background: var(--status-low); }
+
+/* ── Inline variant chips (inside each row) ─────────────────────────────── */
+.bom-inline-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0 6px 0;
+}
+
+/* ── Individual variant card ─────────────────────────────────────────────── */
+.bom-variant-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 6px 10px 8px;
+  background: var(--bg-card-inner);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  min-width: 100px;
+  max-width: 160px;
+  cursor: pointer;
+  transition: border-color 0.13s ease, background 0.13s ease;
+  position: relative;
+}
+
+.bom-variant-card:hover {
+  background: var(--surface-dark);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.bom-variant-card--high {
+  border-left: 2px solid var(--status-high);
+}
+
+.bom-variant-card--medium {
+  border-left: 2px solid var(--status-medium);
+}
+
+.bom-variant-card--low {
+  border-left: 2px solid var(--status-low);
+}
+
+.bom-variant-card__name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-white);
+  line-height: 1.3;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Percentage + progress bar row */
+.bom-variant-card__bar-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.bom-variant-card__pct {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-gray-dark);
+  flex-shrink: 0;
+  width: 26px;
+  text-align: right;
+}
+
+.bom-variant-card__bar-track {
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bom-variant-card__bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.bom-variant-card__bar-fill--high { background: var(--status-high); }
+.bom-variant-card__bar-fill--medium { background: var(--status-medium); }
+.bom-variant-card__bar-fill--low { background: var(--status-low); }
+
+/* ── Expand/collapse content panel ──────────────────────────────────────── */
+.bom-category-row__detail {
+  padding: 12px 16px 16px 124px;
+  border-top: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.bom-category-row__detail-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-gray-dark);
+  margin-bottom: 6px;
+}
+
+.bom-category-row__detail-text {
+  font-size: 13px;
+  color: var(--text-gray-light);
+  line-height: 1.55;
+}
+
+.bom-category-row__detail-attrs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.bom-attr-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-gray);
+  white-space: nowrap;
+}
+
+.bom-attr-chip__key {
+  color: var(--text-gray-dark);
+}
+
+/* ── Popover detail panel ────────────────────────────────────────────────── */
+.bom-detail-popover {
+  min-width: 260px;
+  max-width: 360px;
+}
+
+.bom-detail-popover__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 6px;
+}
+
+.bom-detail-popover__function {
+  font-size: 12px;
+  color: var(--text-gray-light);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.bom-detail-popover__attr {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.bom-detail-popover__attr-key {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-gray-dark);
+}
+
+.bom-detail-popover__attr-val {
+  font-size: 12px;
+  color: var(--text-gray-light);
+}
+
+/* ── Sub-tab row (Market Structure | Bill of Materials) ──────────────────── */
+.bom-subtabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 20px;
+}
+
+.bom-subtab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-gray);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 0.13s ease;
+  user-select: none;
+  margin-bottom: -1px;
+}
+
+.bom-subtab:hover {
+  color: var(--text-white);
+}
+
+.bom-subtab.is-active {
+  color: var(--text-white);
+  border-bottom-color: var(--accent-yellow);
+}
+
+.bom-subtab svg {
+  opacity: 0.6;
+}
+
+.bom-subtab.is-active svg {
+  opacity: 1;
+}
+
+/* ── Filter / selector row ───────────────────────────────────────────────── */
+.bom-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bom-filter-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-gray-dark);
+  margin-bottom: 6px;
+}
+
+/* ── Market relevance badge ──────────────────────────────────────────────── */
+.bom-market-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(253, 255, 152, 0.65);
+  background: rgba(253, 255, 152, 0.08);
+  border: 1px solid rgba(253, 255, 152, 0.15);
+  border-radius: 3px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}

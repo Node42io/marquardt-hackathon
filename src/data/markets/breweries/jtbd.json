@@ -1,0 +1,291 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "coreJobStatement": "Transform water, malt, hops, and yeast into packaged beer through controlled biochemical and physical processes",
+  "productJobStatement": "Help Glycol Sensing & Control to measure volumetric flow rate of glycol/water coolant per cooling zone in brewery fermentation and conditioning systems without obstructing flow or requiring mechanical maintenance",
+  "anchorLevel": "L4 — Component",
+  "lPath": "L7 Beer Manufacturing Ecosystem > L6.6 Glycol Cooling & Refrigeration > L5.6.3 Glycol Sensing & Control > L4.6.3.1 Ultrasonic Flow Sensor",
+  "segments": [
+    {
+      "segmentNumber": 1,
+      "name": "High-volume production brewery (>100K bbl/yr)",
+      "qualifier": "",
+      "characteristics": "50+ tanks, fully automated glycol PLC, continuous production, food-safety audit requirements",
+      "isTargetable": true,
+      "targetabilityReason": "demands mag meters or high-end ultrasonic; rejects manual",
+      "circumstance": "50+ tanks, fully automated glycol PLC, continuous production, food-safety audit requirements",
+      "alternativesDiffer": "Yes — demands mag meters or high-end ultrasonic; rejects manual"
+    },
+    {
+      "segmentNumber": 2,
+      "name": "Mid-size regional craft brewery (10K–100K bbl/yr)",
+      "qualifier": "",
+      "characteristics": "10–50 tanks, semi-automated glycol, batch production, growing quality pressure",
+      "isTargetable": true,
+      "targetabilityReason": "cost-sensitive but quality-driven; open to ultrasonic upgrade from paddle-wheel",
+      "circumstance": "10–50 tanks, semi-automated glycol, batch production, growing quality pressure",
+      "alternativesDiffer": "Yes — cost-sensitive but quality-driven; open to ultrasonic upgrade from paddle-wheel"
+    },
+    {
+      "segmentNumber": 3,
+      "name": "Small/taproom craft brewery (<10K bbl/yr)",
+      "qualifier": "",
+      "characteristics": "3–10 tanks, basic thermostat + solenoid control, manual glycol monitoring",
+      "isTargetable": true,
+      "targetabilityReason": "price-dominant; paddle-wheel or no measurement incumbent",
+      "circumstance": "3–10 tanks, basic thermostat + solenoid control, manual glycol monitoring",
+      "alternativesDiffer": "Yes — price-dominant; paddle-wheel or no measurement incumbent"
+    },
+    {
+      "segmentNumber": 4,
+      "name": "Contract/co-packing brewery",
+      "qualifier": "",
+      "characteristics": "Frequent recipe changes, strict batch traceability, diverse beer styles per week",
+      "isTargetable": true,
+      "targetabilityReason": "needs rapid reconfiguration and per-batch logging",
+      "circumstance": "Frequent recipe changes, strict batch traceability, diverse beer styles per week",
+      "alternativesDiffer": "Yes — needs rapid reconfiguration and per-batch logging"
+    },
+    {
+      "segmentNumber": 5,
+      "name": "Non-alcoholic/specialty brewery",
+      "qualifier": "",
+      "characteristics": "Tighter temperature control (±0.2°C), dealcoholization processes, higher process complexity",
+      "isTargetable": true,
+      "targetabilityReason": "precision demands exceed standard craft; mag meter or ultrasonic required",
+      "circumstance": "Tighter temperature control (±0.2°C), dealcoholization processes, higher process complexity",
+      "alternativesDiffer": "Yes — precision demands exceed standard craft; mag meter or ultrasonic required"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "Ultrasonic transit-time flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "±1–3% accuracy (vs ±0.5% mag); degrades with air bubbles >2% vol; requires straight pipe run 5–10×DN; needs fluid-type configuration at commissioning [SRC: web_search]"
+    },
+    {
+      "name": "Electromagnetic (mag) flowmeter",
+      "unspsc": "41112502",
+      "tradeoffs": "3–5× cost ($800–2,000 vs $150–400); requires conductive liquid; larger footprint; higher power consumption (10–20 W vs <0.1 W); overkill accuracy for glycol monitoring [SRC: web_search]"
+    },
+    {
+      "name": "Paddle-wheel / turbine flow sensor",
+      "unspsc": "41112501",
+      "tradeoffs": "Moving parts wear in glycol service (bearing degradation in 6–18 months); particle jamming; contamination risk from internals; requires periodic replacement; ±2–5% accuracy drift over life [SRC: web_search]"
+    },
+    {
+      "name": "Differential-pressure measurement (orifice/venturi)",
+      "unspsc": "41113201",
+      "tradeoffs": "Permanent pressure drop (wastes pump energy); fouling of sensing ports in glycol; limited turndown ratio (3:1 vs 10:1+ for ultrasonic); requires differential pressure transmitter [SRC: web_search]"
+    },
+    {
+      "name": "Do nothing / manual inspection [Status Quo]",
+      "unspsc": "—",
+      "tradeoffs": "Zero measurement cost — but no flow visibility, no automated fault detection, manual temperature checks only; temperature excursion discovered only after batch damage"
+    }
+  ],
+  "jobSteps": [
+    {
+      "stepNumber": 1,
+      "verb": "Define",
+      "description": "the required glycol flow rate per cooling zone based on fermenter size, beer style, and target temperature",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor range and accuracy must match the required measurement window",
+      "rawStatement": "Define the required glycol flow rate per cooling zone based on fermenter size, beer style, and target temperature",
+      "jobStep": "DEFINE",
+      "relevant": true,
+      "rationale": "Sensor range and accuracy must match the required measurement window"
+    },
+    {
+      "stepNumber": 3,
+      "verb": "Prepare",
+      "description": "Install, commission, and configure the flow sensor for the specific glycol/water mixture concentration",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Commissioning procedure and fluid configuration are sensor-dependent",
+      "rawStatement": "Install, commission, and configure the flow sensor for the specific glycol/water mixture concentration",
+      "jobStep": "PREPARE",
+      "relevant": true,
+      "rationale": "Commissioning procedure and fluid configuration are sensor-dependent"
+    },
+    {
+      "stepNumber": 4,
+      "verb": "Confirm",
+      "description": "Verify the sensor is reading within specified accuracy before starting a fermentation batch",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Pre-batch verification depends on sensor diagnostics capability",
+      "rawStatement": "Verify the sensor is reading within specified accuracy before starting a fermentation batch",
+      "jobStep": "CONFIRM",
+      "relevant": true,
+      "rationale": "Pre-batch verification depends on sensor diagnostics capability"
+    },
+    {
+      "stepNumber": 5,
+      "verb": "Execute",
+      "description": "Measure glycol flow rate continuously across all cooling zones during fermentation and conditioning",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Core measurement function — the primary value-creating action",
+      "rawStatement": "Measure glycol flow rate continuously across all cooling zones during fermentation and conditioning",
+      "jobStep": "EXECUTE",
+      "relevant": true,
+      "rationale": "Core measurement function — the primary value-creating action"
+    },
+    {
+      "stepNumber": 6,
+      "verb": "Monitor",
+      "description": "flow readings for drift, anomalies, or deviation from setpoint; detect jacket blockage or pump degradation",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Anomaly detection and signal quality are sensor-dependent",
+      "rawStatement": "Monitor flow readings for drift, anomalies, or deviation from setpoint; detect jacket blockage or pump degradation",
+      "jobStep": "MONITOR",
+      "relevant": true,
+      "rationale": "Anomaly detection and signal quality are sensor-dependent"
+    },
+    {
+      "stepNumber": 7,
+      "verb": "Modify",
+      "description": "Adjust glycol distribution or troubleshoot when flow readings deviate from expected values",
+      "isSensorRelevant": true,
+      "sensorDependencyRationale": "Sensor data quality determines troubleshooting speed",
+      "rawStatement": "Adjust glycol distribution or troubleshoot when flow readings deviate from expected values",
+      "jobStep": "MODIFY",
+      "relevant": true,
+      "rationale": "Sensor data quality determines troubleshooting speed"
+    }
+  ],
+  "stakeholders": [
+    {
+      "role": "Job Executor",
+      "who": "Cellarman / brewery operations engineer",
+      "pyramidLevels": "P1 ALL, P2 ALL, P3, P4, P5"
+    },
+    {
+      "role": "Job Overseer",
+      "who": "Head brewer / operations manager",
+      "pyramidLevels": "P1 own, P2 own, P4, P3*"
+    },
+    {
+      "role": "Job Beneficiary",
+      "who": "The beer (quality outcome) / end consumer (indirect)",
+      "pyramidLevels": "P1, P2, P5"
+    },
+    {
+      "role": "Product Lifecycle Support",
+      "who": "Maintenance technician",
+      "pyramidLevels": "P1 own (install, calibrate, service)"
+    },
+    {
+      "role": "Purchase Executor",
+      "who": "Brewery owner / capital equipment buyer",
+      "pyramidLevels": "P1 Acquisition"
+    },
+    {
+      "role": "Purchase Influencer",
+      "who": "Brewery equipment OEM / consultant / head brewer (small craft)",
+      "pyramidLevels": "P2 own, P4"
+    }
+  ],
+  "needs": [],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Glycol Systems in Breweries — ProBrewer",
+      "url": "https://probrewer.com/library/refrigeration/everything-you-wanted-to-know-about-glycol/",
+      "prefixedId": "JTBD-BREWERIES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Cooling and Glycol Systems in Craft Breweries — Micet Craft",
+      "url": "https://www.micetcraft.com/the-importance-of-cooling-and-glycol-systems/",
+      "prefixedId": "JTBD-BREWERIES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Temperature Control in Beer Fermentation — Micet Group",
+      "url": "https://www.micetgroup.com/the-critical-role-of-temperature-control-systems-in-beer-fermentation/",
+      "prefixedId": "JTBD-BREWERIES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "CIP in the Brewery — Alfa Laval",
+      "url": "https://www.alfalaval.com/globalassets/images/industries/food-and-water/food-and-water-webinars/alfa-laval_principles-of-cleaning-and-cip.pdf",
+      "prefixedId": "JTBD-BREWERIES-S04"
+    },
+    {
+      "id": "S05",
+      "label": "CIP Optimization for Cleanliness — White Labs",
+      "url": "https://blog.whitelabs.com/is-your-cip-optimized-for-cleanliness",
+      "prefixedId": "JTBD-BREWERIES-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Importance of Flow in CIP — Food Safety Magazine",
+      "url": "https://www.food-safety.com/articles/4268-may-the-force-and-flow-be-with-you-importance-of-flow-in-cip",
+      "prefixedId": "JTBD-BREWERIES-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Fermentation Data Curves: Fermenter Failures — Precision Fermentation",
+      "url": "https://www.precisionfermentation.com/blog/brewmonitor-a-look-at-fermentation-data-curves-fermenter-failures/",
+      "prefixedId": "JTBD-BREWERIES-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Control of Off-Flavors From Fermentation — Brewing Science",
+      "url": "https://brewingscience.com/wp-content/uploads/2019/06/Control-Off-Flavors.pdf",
+      "prefixedId": "JTBD-BREWERIES-S08"
+    },
+    {
+      "id": "S09",
+      "label": "Brewery Batch Cost Estimation — BusinessDojo",
+      "url": "https://dojobusiness.com/blogs/news/craft-brewery-cost-estimation",
+      "prefixedId": "JTBD-BREWERIES-S09"
+    },
+    {
+      "id": "S10",
+      "label": "How Much Does It Cost to Brew Beer — BeerCPA",
+      "url": "https://beercpa.com/how-much-does-it-really-cost-to-brew-beer-a-brewers-perspective-on-production-economics/",
+      "prefixedId": "JTBD-BREWERIES-S10"
+    },
+    {
+      "id": "S11",
+      "label": "Ultrasonic vs Magnetic Flow Meters — Fuji Electric",
+      "url": "https://www.fujielectric.fr/en/blog/ultrasonic-flow-meter-advantages-and-disadvantages-vs-magmeter/",
+      "prefixedId": "JTBD-BREWERIES-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Comparing Flow Meters — ICON Process Controls",
+      "url": "https://iconprocon.com/blog-post/comparing-flow-meters-features-benefits-and-applications-of-paddle-wheel-ultrasonic-turbine-and-electromagnetic-flow-meters/",
+      "prefixedId": "JTBD-BREWERIES-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Glycol Chiller Brewing Guide — Arctic-Tek",
+      "url": "https://www.arctic-tek.com/blog/glycol-chiller-brewing-fermentation-temperature-control",
+      "prefixedId": "JTBD-BREWERIES-S13"
+    },
+    {
+      "id": "S14",
+      "label": "Beer Flow Meters — Tameson",
+      "url": "https://tameson.com/pages/beer-flow-meter",
+      "prefixedId": "JTBD-BREWERIES-S14"
+    },
+    {
+      "id": "S15",
+      "label": "Flow Meters for Craft Beer Brewing — Assured Automation",
+      "url": "https://assuredautomation.com/news-and-training/flow-meter-beer-brewing/",
+      "prefixedId": "JTBD-BREWERIES-S15"
+    },
+    {
+      "id": "S16",
+      "label": "01_product_decomposition.md, 02_functional_promise.md, 05_market_discovery.md, VN_breweries.md (upstream sections)",
+      "prefixedId": "JTBD-BREWERIES-S16"
+    },
+    {
+      "id": "S17",
+      "label": "--",
+      "prefixedId": "JTBD-BREWERIES-S17"
+    }
+  ]
+}

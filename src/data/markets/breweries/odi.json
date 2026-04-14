@@ -1,0 +1,701 @@
+{
+  "naicsCode": "312120",
+  "marketName": "Breweries",
+  "slug": "breweries",
+  "summary": {
+    "totalNeeds": 31,
+    "underservedCount": 0,
+    "overservedCount": 0,
+    "avgOpportunityScore": 0
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "5",
+      "statement": "Minimize the time to detect a glycol jacket blockage or partial restriction before fermenter temperature deviates >0.5°C from setpoint",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 2,
+      "needId": "14",
+      "statement": "Minimize the likelihood of accepting a false-normal flow reading that masks a partially blocked glycol jacket",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 3,
+      "needId": "24",
+      "statement": "Minimize the likelihood of discovering a fermentation temperature excursion only after the 2–4 week fermentation cycle has completed, when correction is no longer possible",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "zone": "Highly Underserved"
+    },
+    {
+      "rank": 4,
+      "needId": "21",
+      "statement": "Minimize batch-to-batch variation in fermentation temperature profile caused by uneven glycol distribution across cooling zones (target: <±0.5°C)",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "zone": "Underserved"
+    },
+    {
+      "rank": 5,
+      "needId": "6",
+      "statement": "Minimize the number of undetected glycol pump degradation events that reduce per-zone cooling capacity by >15%",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "zone": "Underserved"
+    },
+    {
+      "rank": null,
+      "needId": "Score Range",
+      "statement": "Count",
+      "importance": null,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "> 15",
+      "statement": "3",
+      "importance": 9.7,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "12–15",
+      "statement": "8",
+      "importance": 25.8,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "10–12",
+      "statement": "11",
+      "importance": 35.5,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    },
+    {
+      "rank": null,
+      "needId": "< 10",
+      "statement": "9",
+      "importance": 29,
+      "satisfaction": 0,
+      "opportunity": 0,
+      "zone": ""
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of undetected calibration drift exceeding ±0.5% of reading over a 12-month service period",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW drifts 2–5% over life (dominant 50–60%); mag stable but minority; manual = zero measurement",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize variation in flow measurement accuracy caused by glycol concentration fluctuations between 25% and 40% propylene glycol",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent compensates for glycol concentration changes",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to measure flow rate across the full operating range (0.5–50 L/min) without sensor reconfiguration",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "Mag handles full range (100:1 turndown); PW limited but functional",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of false flow readings caused by air bubble entrainment during glycol system refill or maintenance events",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW jams/stalls with air; mag less affected but still errors",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to detect a glycol jacket blockage or partial restriction before fermenter temperature deviates >0.5°C from setpoint",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent provides glycol jacket flow monitoring; manual inspection only",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected glycol pump degradation events that reduce per-zone cooling capacity by >15%",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent trends pump degradation; manual checks only",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to distinguish genuine process flow deviations from sensor measurement noise with >95% classification accuracy",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW has poor S/N (dominant); mag better but no classification logic",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to detect a glycol leak in the distribution system before coolant volume loss exceeds 5% of reservoir capacity",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 2,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No automated leak detection in incumbent brewery glycol setups",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Head brewer / operations manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to determine the correct glycol flow rate setpoint within ±10% of actual cooling load for each fermenter size and beer style",
+      "jobStep": "DEFINE",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Knowledge/engineering need; sensor-independent",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Brewery owner / capital equipment buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to calculate required glycol flow rates for different beer styles and fermenter sizes from a single sensor configuration",
+      "jobStep": "DEFINE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Knowledge need; sensor-independent",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer",
+        "Brewery owner / capital equipment buyer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to install and commission a flow sensor on an existing glycol line without draining the system",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "All inline sensors require system drain for installation",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of systematic measurement error >1% caused by incorrect fluid-type configuration at commissioning",
+      "jobStep": "PREPARE",
+      "importance": 8,
+      "satisfaction": 6,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW needs no fluid config (zero error risk); mag minimal config",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to verify sensor accuracy within 5 minutes before starting a fermentation batch",
+      "jobStep": "CONFIRM",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW has no self-diagnostics; mag basic only; mostly skipped in practice",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of accepting a false-normal flow reading that masks a partially blocked glycol jacket",
+      "jobStep": "CONFIRM",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent detects partial jacket blockage — completely unaddressed",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to isolate flow anomaly root cause (sensor vs glycol pump vs zone valve) within 5 minutes",
+      "jobStep": "MODIFY",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No incumbent provides diagnostic data for root cause isolation",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the operator expertise required to interpret flow anomaly data and determine the correct corrective action",
+      "jobStep": "MODIFY",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: no diagnostics; mag: complex outputs requiring training",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the sensor service life achievable without scheduled maintenance interventions affecting measurement accuracy (target: >3 years)",
+      "jobStep": "P1_MAINTENANCE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW bearing life 6–18 mo in glycol dominates; mag >10yr but minority",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total installed cost per glycol flow measurement point including sensor, wiring, and power supply (target: <$500)",
+      "jobStep": "P1_ACQUISITION",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW at $50–150 well under target; mag at $800–2,000 exceeds it",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of sensor-induced flow path contamination requiring line flushing after sensor installation or replacement",
+      "jobStep": "P1_MAINTENANCE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: some debris risk; mag: clean. Mixed",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the permanent pressure drop across the measurement point that increases glycol pump energy consumption",
+      "jobStep": "P1_USAGE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW/mag: minimal drop; orifice: high. Mixed",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize batch-to-batch variation in fermentation temperature profile caused by uneven glycol distribution across cooling zones (target: <±0.5°C)",
+      "jobStep": "P2_CORE_JOB",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "Without per-zone flow monitoring, glycol distribution is uncontrolled",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to cool multiple fermenters simultaneously without flow starvation to any individual cooling zone",
+      "jobStep": "P2_CORE_JOB",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No per-zone flow visibility → starvation undetected until temp drifts",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to present quantitative cooling system performance data to brewery ownership and quality assurance teams",
+      "jobStep": "P3_ROLE_IDENTITY",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "PW: basic pulse only; mag: better data but too expensive to deploy at every point",
+      "needsRationale": false,
+      "primaryStakeholder": "Cellarman / brewery operations engineer",
+      "stakeholderIds": [
+        "Cellarman / brewery operations engineer"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of discovering a fermentation temperature excursion only after the 2–4 week fermentation cycle has completed, when correction is no longer possible",
+      "jobStep": "",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "No flow-based early warning exists; relies on slow-response fermenter temp probe",
+      "needsRationale": false,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of false flow readings when air entrainment exceeds 2% volume during glycol system refill or valve-switching events",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to recover valid flow measurement after transient air entrainment events dissipate from the glycol circuit",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 3,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement accuracy degradation from insufficient straight pipe run in space-constrained brewery glycol manifolds with elbows and T-junctions within 5–10 DN upstream",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the duration of measurement blackout caused by partial pipe drainage during glycol circuit maintenance",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 3,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the transient measurement error during crash-cooling sequences where glycol temperature changes exceed the compensation algorithm response rate at >2°C/min",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 6,
+      "opportunity": 6,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of signal-to-noise degradation below the transit-time detection threshold during low-demand glycol flow in small cooling zones",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 5,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the risk of acoustic coupling failure when glycol-to-water ratio shifts outside the validated acoustic impedance range due to uncontrolled top-up or evaporation",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 6,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Maintenance technician",
+      "stakeholderIds": [
+        "Maintenance technician"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 31,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "JTBD_breweries.md (24 error statements, incumbent anchors, alternatives, ODI pre-scores)",
+      "prefixedId": "ODI-BREWERIES-S01"
+    },
+    {
+      "id": "S02",
+      "label": "FIT_breweries.md (7 product-related needs from Step 10, 7 tech feature-market fit scores from Step 09)",
+      "prefixedId": "ODI-BREWERIES-S02"
+    },
+    {
+      "id": "S03",
+      "label": "01_product_decomposition.md (constraints generating product-related needs)",
+      "prefixedId": "ODI-BREWERIES-S03"
+    },
+    {
+      "id": "S04",
+      "label": "02_functional_promise.md (commodity FP baseline)",
+      "prefixedId": "ODI-BREWERIES-S04"
+    },
+    {
+      "id": "S05",
+      "label": "05_market_discovery.md (Breweries NAICS 312120 — market context, alternatives)",
+      "prefixedId": "ODI-BREWERIES-S05"
+    }
+  ]
+}

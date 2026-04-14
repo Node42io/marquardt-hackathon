@@ -1,0 +1,365 @@
+{
+  "naicsCode": "238220",
+  "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+  "slug": "hvac-contractors",
+  "coreJobStatement": "Install, commission, and maintain plumbing, heating, ventilation, and air-conditioning systems in buildings to deliver thermal comfort, indoor air quality, potable water, and sanitary drainage",
+  "outputTypes": [],
+  "hierarchy": "Process VN (L7 through L4) — the sequential service-delivery process a contractor executes, and the equipment/tools deployed at each step",
+  "architectureDistance": 0,
+  "marketSize": "",
+  "l6Systems": [
+    {
+      "id": "L6.1",
+      "name": "Assessment & Load Calculation",
+      "type": "Core",
+      "jobFamily": "Evaluate building conditions and calculate thermal, hydraulic, and plumbing loads",
+      "l5Units": []
+    },
+    {
+      "id": "L6.2",
+      "name": "System Design & Specification",
+      "type": "Core",
+      "jobFamily": "Design mechanical layouts and specify equipment, materials, and controls",
+      "l5Units": []
+    },
+    {
+      "id": "L6.3",
+      "name": "Rough-In & Distribution Installation",
+      "type": "Core",
+      "jobFamily": "Install piping, ductwork, drainage, and infrastructure before enclosure",
+      "l5Units": []
+    },
+    {
+      "id": "L6.4",
+      "name": "Equipment Setting & Connection",
+      "type": "Core",
+      "jobFamily": "Install, mount, connect, and wire major mechanical equipment and plumbing fixtures",
+      "l5Units": []
+    },
+    {
+      "id": "L6.5",
+      "name": "Testing & Commissioning",
+      "type": "Core",
+      "jobFamily": "Verify system integrity, balance flows/airflows, and commission controls to design spec",
+      "l5Units": []
+    },
+    {
+      "id": "L6.6",
+      "name": "Service, Maintenance & Repair",
+      "type": "Core",
+      "jobFamily": "Diagnose, maintain, and repair installed mechanical systems throughout their lifecycle",
+      "l5Units": []
+    },
+    {
+      "id": "L6.7",
+      "name": "Quality Assurance & Code Compliance (H)",
+      "type": "Horizontal",
+      "jobFamily": "Ensure all work meets applicable building codes, permits, and quality standards",
+      "l5Units": []
+    },
+    {
+      "id": "L6.8",
+      "name": "Health, Safety & Environmental (H)",
+      "type": "Horizontal",
+      "jobFamily": "Protect workers, occupants, and the environment throughout all project phases",
+      "l5Units": []
+    }
+  ],
+  "vnUnits": [
+    {
+      "level": "L5",
+      "id": "L5.1.1",
+      "name": "Building Survey Instruments",
+      "functionalJob": "Tools for physical measurement of the building envelope and existing mechanical infrastructure.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.2",
+      "name": "Load Calculation Software",
+      "functionalJob": "Digital tools for HVAC load calculation per ACCA Manual J (residential) or ASHRAE methods (commercial).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.1.3",
+      "name": "Indoor Environment Testing",
+      "functionalJob": "Instruments to characterize existing indoor conditions and identify deficiencies.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.1",
+      "name": "Design & Drafting Software",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.2.2",
+      "name": "Estimating & Project Management",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.1",
+      "name": "Pipe Fabrication & Joining",
+      "functionalJob": "Tools for cutting, joining, and assembling piping networks across all media types.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.2",
+      "name": "Ductwork Fabrication & Installation",
+      "functionalJob": "Equipment for fabricating and installing sheet-metal and flexible ductwork.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.3",
+      "name": "Drain-Waste-Vent (DWV) Installation",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.3.4",
+      "name": "Mounting & Support Hardware",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.1",
+      "name": "Rigging & Material Handling",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.2",
+      "name": "Refrigerant-Side Installation Tools",
+      "functionalJob": "Required for all systems with refrigerant circuits (split AC, heat pumps, VRF).",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.3",
+      "name": "Electrical Connection",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.4.4",
+      "name": "Plumbing Fixture Installation",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.1",
+      "name": "Pressure Testing Equipment",
+      "functionalJob": "Verifies pipe and duct system integrity before operation.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.2",
+      "name": "Hydraulic Balancing & Flow Measurement",
+      "functionalJob": "Instruments for measuring and setting hydronic flow rates per zone to achieve design heat delivery. This is the primary insertion point for the Marquardt ultrasonic flow sensor in the HVAC contractor workflow.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.3",
+      "name": "Airflow Measurement & Balancing",
+      "functionalJob": "Tools for verifying and adjusting air distribution in ducted HVAC systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.4",
+      "name": "Combustion Analysis",
+      "functionalJob": "Required for gas-fired equipment commissioning and annual service.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.5.5",
+      "name": "Controls Commissioning",
+      "functionalJob": "Verifying and programming building automation and HVAC control systems.",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.1",
+      "name": "Diagnostic Instruments",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.2",
+      "name": "Refrigerant Service Equipment",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.3",
+      "name": "Preventive Maintenance Tools",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.6.4",
+      "name": "Plumbing Repair & Drain Service",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.1",
+      "name": "Inspection & Code Reference",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.7.2",
+      "name": "Compliance Testing Equipment",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.1",
+      "name": "Personal Protective Equipment",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    },
+    {
+      "level": "L5",
+      "id": "L5.8.2",
+      "name": "Environmental Compliance",
+      "functionalJob": "| L4 Subsystem | Description |",
+      "description": "",
+      "dependencies": []
+    }
+  ],
+  "marquardtPosition": "Marquardt's ultrasonic flow sensor sits at L4 within this domain.",
+  "strategicPosition": null,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "BLS OES May 2023 — NAICS 238220 Employment Data",
+      "url": "https://www.bls.gov/oes/2023/may/naics5_238220.htm",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "NAICS Code 238220 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/238220/plumbing-heating-and-air-conditioning-contractors/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Commercial HVAC Construction Process — United Mechanical",
+      "url": "https://www.unitedmech.com/blog/commercial-hvac-construction",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Commercial HVAC Installation Process — Thelen",
+      "url": "https://callthelen.com/blog/commercial-hvac-installation/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Hydronic System Balancing — TSI",
+      "url": "https://tsi.com/hvac-consultant/applications/hydronic-system-balancing",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Hydronic Balancing — IMI Climate Control",
+      "url": "https://climatecontrol.imiplc.com/solutions/hydronic-balancing",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Balancing HVAC Hydronic Systems: Flow Measurement — Deppmann",
+      "url": "https://www.deppmann.com/blog/monday-morning-minutes/hvac-hydronic-systems-flow-measurement-balance-valves/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S07"
+    },
+    {
+      "id": "S08",
+      "label": "Essential HVAC Toolkit 2025 — Optsy",
+      "url": "https://www.optsy.com/technicians-hvac-toolkit/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S08"
+    },
+    {
+      "id": "S09",
+      "label": "50 Essential HVAC Tools for Service Techs 2026 — ServiceTitan",
+      "url": "https://www.servicetitan.com/blog/best-hvac-tools",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S09"
+    },
+    {
+      "id": "S10",
+      "label": "Top HVAC Tools 2025 — HVAC PRO Sales",
+      "url": "https://hvacprosales.com/blog/best-hvac-tools-2025/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S10"
+    },
+    {
+      "id": "S11",
+      "label": "HVAC Tools — Fluke",
+      "url": "https://www.fluke.com/en-us/products/building-infrastructure/hvac-tools",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S11"
+    },
+    {
+      "id": "S12",
+      "label": "Hydronic Control Market — MarketsandMarkets",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/hydronic-control-market-267336799.html",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Dynamic Hydronic Balancing — Siemens",
+      "url": "https://www.siemens.com/en-us/products/hvac/hydronic-balancing/",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S13"
+    },
+    {
+      "id": "S14",
+      "label": "--",
+      "prefixedId": "VN-HVAC-CONTRACTORS-S14"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * report.css (imported before this file in main.tsx) sets the global design system.
+ *
+ * This file harmonizes Tailwind with report.css so:
+ * - .card / .chip / .kicker / .muted / .section-title use report.css variables
+ * - Tailwind utilities remain available for layout/spacing
+ */
+
+@layer base {
+  /* Tailwind base reset — defer global colors to report.css */
+  html, body, #root {
+    height: 100%;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+@layer components {
+  /* Card — matches .bg-card from report.css */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  /* Chip — uses badge style from report.css */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--surface-dark);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-gray-light);
+  }
+
+  /* Kicker — mono eyebrow label */
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-gray);
+  }
+
+  /* Muted text */
+  .muted {
+    color: var(--text-gray);
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-white);
+    letter-spacing: -0.015em;
+  }
+}

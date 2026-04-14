@@ -1,0 +1,11 @@
+{
+  "slug": "finfish-farming",
+  "marketName": "Finfish Farming",
+  "naicsCode": "112511",
+  "confidence": "low",
+  "dataPending": true,
+  "sensorNote": "BOM markdown not yet generated. Marquardt sensor is process equipment in the VN (recirculating aquaculture system water treatment, glycol chiller loops). DN14 Low-flow variant most relevant for smaller RAS pipe sizes.",
+  "outputTypes": [],
+  "marquardtAnchorIds": [],
+  "l4Subsystems": []
+}

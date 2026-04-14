@@ -1,0 +1,98 @@
+{
+  "naicsCode": "333415",
+  "marketName": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+  "slug": "ac-home-heating",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Media Limitation",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Hydronic circuits in heat pumps and chillers use water or water-glycol — exact media match.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Heating mode 35-55 degC (standard) to 65 degC (high-temp HP). Cooling mode 5-12 degC. Well within 90 degC limit.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Hydronic circuits 1-4 bar typical. Safety relief valves cap at 3-6 bar. Well within 10 bar.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Heat pump/chiller hydronic flows 5-40 l/min. Minimum detectable 4.2 l/min (DN20) or 0.25 l/min (DN14) — below operating range.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble Tolerance",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Closed-loop systems de-aerated during factory commissioning. Properly filled: <0.5% air content.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Closed-loop pressurized circuits fully filled during manufacturing. Partially filled = defect caught at performance testing.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "OEM controls internal piping layout. Sensor placement designed into hydraulic module from the start. Solved constraint in OEM-integrated design.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Moderate temperature range (5-65 degC) with gradual changes. NTC compensation reduces error to ~0.2%.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 0,
+    "none": 0,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": []
+}

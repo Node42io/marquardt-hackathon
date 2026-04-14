@@ -1,0 +1,693 @@
+{
+  "naicsCode": "238220",
+  "marketName": "Plumbing, Heating and Air-Conditioning Contractors",
+  "slug": "hvac-contractors",
+  "summary": {
+    "totalNeeds": 33,
+    "underservedCount": 0,
+    "overservedCount": 0,
+    "avgOpportunityScore": 0
+  },
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "needId": "11",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 16,
+      "zone": ""
+    },
+    {
+      "rank": 2,
+      "needId": "19",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 16,
+      "zone": ""
+    },
+    {
+      "rank": 3,
+      "needId": "20",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 15,
+      "zone": ""
+    },
+    {
+      "rank": 4,
+      "needId": "6",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 14,
+      "zone": ""
+    },
+    {
+      "rank": 5,
+      "needId": "18",
+      "statement": "",
+      "importance": 0,
+      "satisfaction": 0,
+      "opportunity": 14,
+      "zone": ""
+    }
+  ],
+  "needs": [
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of selecting a flow measurement method whose accuracy specification is insufficient for the required balancing tolerance",
+      "jobStep": "DEFINE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Contractor owner / purchasing manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to match sensor specifications (DN size, flow range, medium compatibility, communication protocol) to the hydronic system design parameters",
+      "jobStep": "DEFINE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Contractor owner / purchasing manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of pipe modifications and fittings required to install the flow measurement device inline without disrupting existing circuit integrity",
+      "jobStep": "PREPARE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of incorrect installation orientation causing flow reading errors exceeding ±5% of actual flow rate",
+      "jobStep": "PREPARE",
+      "importance": 8,
+      "satisfaction": 6,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to configure the communication interface between the flow sensor and the system controller during commissioning setup",
+      "jobStep": "PREPARE",
+      "importance": 6,
+      "satisfaction": 5,
+      "opportunity": 7,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of flow measurement error exceeding ±3% of reading at design flow rates (5-50 l/min) under steady-state conditions",
+      "jobStep": "EXECUTE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize measurement variability between successive readings at the same flow rate (repeatability drift >1% of reading)",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the number of hydronic zones that can be verified per hour during commissioning without sacrificing measurement accuracy",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement degradation when glycol concentration exceeds 30% by volume in antifreeze-protected circuits",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to detect reverse flow (backflow) conditions indicating check-valve failure or pump malfunction during commissioning",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time to detect hydronic flow degradation below design rate after initial commissioning caused by fouling, pump wear, or valve drift",
+      "jobStep": "MONITOR",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of undetected air entrainment events causing measurement disruption and system air-lock conditions",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement system failure during temperature transients between heating and cooling mode changeover",
+      "jobStep": "MONITOR",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize long-term calibration drift exceeding ±0.5% per year without requiring field recalibration or sensor removal",
+      "jobStep": "MONITOR",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech",
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of measurement-adjust-remeasure iterations needed to bring each zone within ±10% of design flow rate",
+      "jobStep": "MODIFY",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to observe real-time flow-rate response during balancing valve adjustment with response latency under 2 seconds",
+      "jobStep": "MODIFY",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time required to generate a documented commissioning report with per-zone measured flow-rate evidence for regulatory submission",
+      "jobStep": "CONCLUDE",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Lead technician / project manager",
+      "stakeholderIds": [
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of commissioning flow data not meeting regulatory acceptance criteria for EPBD energy performance certification or ASHRAE 90.1 hydronic balancing verification",
+      "jobStep": "CONCLUDE",
+      "importance": 9,
+      "satisfaction": 4,
+      "opportunity": 14,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "Lead technician / project manager",
+      "stakeholderIds": [
+        "Lead technician / project manager"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the number of comfort zones with undetected flow-rate deviation exceeding ±15% of design causing occupant thermal discomfort complaints",
+      "jobStep": "P2_CORE_JOB",
+      "importance": 9,
+      "satisfaction": 2,
+      "opportunity": 16,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the percentage of annual heating/cooling energy wasted due to unmeasured flow imbalance across hydronic circuits (industry baseline: 15-30% excess consumption)",
+      "jobStep": "P2_CORE_JOB",
+      "importance": 9,
+      "satisfaction": 3,
+      "opportunity": 15,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the total cost of ownership per measurement point over 10-year system life including acquisition, installation, calibration, and replacement",
+      "jobStep": "P1_ACQUISITION",
+      "importance": 8,
+      "satisfaction": 4,
+      "opportunity": 12,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the time and cost to replace a failed flow measurement device without draining the hydronic circuit or disrupting other zones",
+      "jobStep": "P1_MAINTENANCE",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to demonstrate verified, data-backed commissioning competence to building owners and code inspectors",
+      "jobStep": "P3_ROLE_IDENTITY",
+      "importance": 8,
+      "satisfaction": 3,
+      "opportunity": 13,
+      "isUnderserved": true,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Increase the ability to present measurable energy performance evidence that differentiates the contractor from competitors relying on estimation methods",
+      "jobStep": "P4_IMAGE_IDENTITY",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the anxiety of signing off on commissioning results when flow verification relies on estimation rather than direct measurement",
+      "jobStep": "P5_EMOTIONAL",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": false,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "HVAC commissioning technician / service tech",
+      "stakeholderIds": [
+        "HVAC commissioning technician / service tech"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of measurement failure when the hydronic circuit medium contains non-aqueous additives (corrosion inhibitors, biocides) exceeding the ultrasonic transducer's acoustic impedance matching range",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 6,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of polymer housing seal degradation when hydronic heating circuits operate continuously above 80 degrees C with occasional thermal spikes approaching the 90 degree C material service limit",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 3,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of losing flow measurement capability at low-flow conditions below 4.2 l/min (DN20) during single-zone partial-load heating operation where only one circuit is active",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement error introduced by transient air entrainment exceeding 2% by volume during hydronic circuit fill, purge, or maintenance drain-and-refill operations that temporarily aerate the medium",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 3,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of complete signal loss during partial pipe drainage events required for circuit modification, sensor replacement, or zone isolation maintenance on hydronic systems",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 2,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the measurement accuracy degradation caused by insufficient upstream straight pipe run in retrofit installations where building constraints prevent the recommended 5-10x DN of undisturbed straight pipe upstream of the sensor",
+      "jobStep": "product_constraint",
+      "importance": 7,
+      "satisfaction": 4,
+      "opportunity": 10,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the residual measurement error during rapid temperature transients between heating and cooling mode changeover that temporarily exceed the NTC compensation algorithm's response time",
+      "jobStep": "product_constraint",
+      "importance": 5,
+      "satisfaction": 5,
+      "opportunity": 5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    },
+    {
+      "id": "",
+      "statement": "Minimize the likelihood of incorrect acoustic coupling between piezoelectric transducer and medium when glycol concentration changes shift the speed-of-sound calibration baseline beyond the pre-configured fluid-type setting",
+      "jobStep": "product_constraint",
+      "importance": 6,
+      "satisfaction": 4,
+      "opportunity": 8,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "",
+      "satisfactionRationale": "",
+      "needsRationale": true,
+      "primaryStakeholder": "System designer / engineer (L6.2)",
+      "stakeholderIds": [
+        "System designer / engineer (L6.2)"
+      ]
+    }
+  ],
+  "flaggedRationalesCount": 33,
+  "sources": [
+    {
+      "id": "S01",
+      "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] — 25 error statements, alternatives, job map, regulatory drivers",
+      "prefixedId": "ODI-HVAC-CONTRACTORS-S01"
+    },
+    {
+      "id": "S02",
+      "label": "[SRC: FIT_plumbing_heating_and_air_conditioning_co] — Step 09 tech feature fit, Step 10 product-related needs, Step 11 vendor feature fit",
+      "prefixedId": "ODI-HVAC-CONTRACTORS-S02"
+    },
+    {
+      "id": "S03",
+      "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications",
+      "prefixedId": "ODI-HVAC-CONTRACTORS-S03"
+    },
+    {
+      "id": "S04",
+      "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, complements",
+      "prefixedId": "ODI-HVAC-CONTRACTORS-S04"
+    },
+    {
+      "id": "S05",
+      "label": "[SRC: 05_market_discovery] — NAICS 238220 candidate details, incumbent alternatives",
+      "prefixedId": "ODI-HVAC-CONTRACTORS-S05"
+    }
+  ]
+}

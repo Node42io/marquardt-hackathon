@@ -1,0 +1,507 @@
+{
+  "commodityFP": "Quantify the volumetric or mass flow rate of fluids traversing a closed conduit [SRC: 02_functional_promise]",
+  "unspscContext": "41112501 — Flowmeters [SRC: 01_product_decomposition]",
+  "fpExtension": "The underlying transit-time ultrasonic principle also enables: (1) liquid concentration measurement — glycol percentage detection via speed-of-sound shifts; (2) medium anomaly detection — air bubble presence, empty-pipe conditions; (3) fluid temperature monitoring — via integrated thermistor [SRC: 02_functional_promise]",
+  "extensionDomains": "Liquid composition analysis, Process anomaly detection, Thermal monitoring",
+  "candidates": [
+    {
+      "naics": "333414",
+      "title": "Heating Equipment (except Warm Air Furnaces) Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.92
+    },
+    {
+      "naics": "238220",
+      "title": "Plumbing, Heating, and Air-Conditioning Contractors",
+      "fpFit": "direct",
+      "adoption": "growing",
+      "discoverySource": "primary_fp",
+      "confidence": 0.88
+    },
+    {
+      "naics": "333318",
+      "title": "Other Commercial and Service Industry Machinery Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "growing",
+      "discoverySource": "primary_fp",
+      "confidence": 0.82
+    },
+    {
+      "naics": "312120",
+      "title": "Breweries",
+      "fpFit": "direct",
+      "adoption": "growing",
+      "discoverySource": "primary_fp",
+      "confidence": 0.85
+    },
+    {
+      "naics": "221330",
+      "title": "Steam and Air-Conditioning Supply",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.9
+    },
+    {
+      "naics": "112511",
+      "title": "Finfish Farming and Fish Hatcheries",
+      "fpFit": "adjacent",
+      "adoption": "emerging",
+      "discoverySource": "fp_extension",
+      "confidence": 0.72
+    },
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "fpFit": "adjacent",
+      "adoption": "growing",
+      "discoverySource": "fp_extension",
+      "confidence": 0.78
+    },
+    {
+      "naics": "312130",
+      "title": "Wineries",
+      "fpFit": "direct",
+      "adoption": "emerging",
+      "discoverySource": "primary_fp",
+      "confidence": 0.75
+    },
+    {
+      "naics": "332410",
+      "title": "Power Boiler and Heat Exchanger Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.88
+    },
+    {
+      "naics": "311511",
+      "title": "Fluid Milk Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.86
+    },
+    {
+      "naics": "312111",
+      "title": "Soft Drink Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.84
+    },
+    {
+      "naics": "221310",
+      "title": "Water Supply and Irrigation Systems",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.8
+    },
+    {
+      "naics": "325412",
+      "title": "Pharmaceutical Preparation Manufacturing",
+      "fpFit": "direct",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.9
+    },
+    {
+      "naics": "221320",
+      "title": "Sewage Treatment Facilities",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.76
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "fpFit": "adjacent",
+      "adoption": "established",
+      "discoverySource": "fp_extension",
+      "confidence": 0.74
+    },
+    {
+      "naics": "325180",
+      "title": "Other Basic Inorganic Chemical Manufacturing",
+      "fpFit": "stretch",
+      "adoption": "established",
+      "discoverySource": "primary_fp",
+      "confidence": 0.7
+    }
+  ],
+  "archDistanceData": [
+    {
+      "naics": "333414",
+      "title": "Heating Equipment Manufacturing",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "333415",
+      "title": "HVAC Equipment Manufacturing (Home Market)",
+      "distance": 0,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "332410",
+      "title": "Power Boiler and Heat Exchanger Manufacturing",
+      "distance": 1,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "238220",
+      "title": "Plumbing, Heating, and Air-Conditioning Contractors",
+      "distance": 2,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "221330",
+      "title": "Steam and Air-Conditioning Supply",
+      "distance": 2,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "HIGH"
+    },
+    {
+      "naics": "312120",
+      "title": "Breweries",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "311511",
+      "title": "Fluid Milk Manufacturing",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "312111",
+      "title": "Soft Drink Manufacturing",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "325412",
+      "title": "Pharmaceutical Preparation Manufacturing",
+      "distance": 3,
+      "usesTech": true,
+      "fpFit": "direct",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "221310",
+      "title": "Water Supply and Irrigation Systems",
+      "distance": 3,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "333318",
+      "title": "Other Commercial and Service Industry Machinery Manufacturing",
+      "distance": 3,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "MEDIUM"
+    },
+    {
+      "naics": "312130",
+      "title": "Wineries",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "direct",
+      "priority": "LOW"
+    },
+    {
+      "naics": "221320",
+      "title": "Sewage Treatment Facilities",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "LOW"
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "distance": 4,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "LOW"
+    },
+    {
+      "naics": "112511",
+      "title": "Finfish Farming and Fish Hatcheries",
+      "distance": 5,
+      "usesTech": false,
+      "fpFit": "adjacent",
+      "priority": "LOW"
+    }
+  ],
+  "candidateDetails": [
+    {
+      "naics": "333414",
+      "title": "Heating Equipment (except Warm Air Furnaces) Manufacturing",
+      "job": "Monitor and control fluid flow rates through hydronic heating circuits to ensure safe, efficient heat transfer",
+      "whyNeeded": "Boiler manufacturers integrate flow sensors directly into hydronic circuits for flow-rate-based modulation of burner output. EN 1434 heat metering compliance requires a dedicated flow measurement instrument. No-moving-parts sensors preferred for 10+ year service life.",
+      "alternatives": "Vortex (SIKA, Huba Control), impeller turbine (SIKA, Badger Meter), DP transmitter (Honeywell, Emerson)",
+      "marketSize": "~$1.2B global heating appliance market (2024); sensor content $15–$40 per unit",
+      "confidence": 0.92
+    },
+    {
+      "naics": "238220",
+      "title": "Plumbing, Heating, and Air-Conditioning Contractors",
+      "job": "Commission and verify hydronic system flow balance across multiple heating/cooling zones during installation",
+      "whyNeeded": "HVAC contractors require portable or permanently-installed flow measurement to balance multi-zone systems. Regulatory pressure (EU Ecodesign) is increasing demand for dedicated sensors over pump estimation methods.",
+      "alternatives": "Balance valve commissioning instruments (Danfoss, IMI), portable ultrasonic clamp-on meters, vortex inline sensors",
+      "marketSize": "~$280B US HVAC contracting market; flow sensor attachment rate growing from ~15% to 35% as heat metering regulations expand",
+      "confidence": 0.88
+    },
+    {
+      "naics": "333318",
+      "title": "Other Commercial and Service Industry Machinery Manufacturing",
+      "job": "Monitor process fluid consumption and flow rates in commercial equipment (coffee machines, ice makers, dishwashers)",
+      "whyNeeded": "Commercial kitchen and beverage equipment requires flow metering for dosing accuracy, descaling cycle triggering, and water consumption reporting. Compact form factors (DN10–DN20) and food-grade materials required.",
+      "alternatives": "Turbine flow sensors (Gems Sensors), oval gear meters, magnetic flow (for conductive fluids)",
+      "marketSize": "~$45B global commercial foodservice equipment; sensor content $8–$25 per unit",
+      "confidence": 0.82
+    },
+    {
+      "naics": "312120",
+      "title": "Breweries",
+      "job": "Measure volumetric flow of water, wort, and beer through process lines for recipe accuracy and yield calculation",
+      "whyNeeded": "Craft and industrial breweries require accurate flow measurement at multiple CIP (clean-in-place) process points. Transit-time ultrasonic is preferred for hygienic applications where no wetted moving parts are acceptable. Glycol chiller circuits also require flow monitoring.",
+      "alternatives": "Electromagnetic flow (E+H Promag, Krohne), Coriolis (Micro Motion), turbine (GF Piping), ultrasonic clamp-on (Endress+Hauser)",
+      "marketSize": "~$26B US craft brewing industry; process instrumentation content ~$2,000–$15,000 per brewery installation",
+      "confidence": 0.85
+    },
+    {
+      "naics": "221330",
+      "title": "Steam and Air-Conditioning Supply",
+      "job": "Meter chilled water and heating water flows for district energy billing and plant efficiency optimization",
+      "whyNeeded": "District energy operators require EN 1434-class heat meters on every building connection for billing accuracy. Compact ultrasonic sensors compatible with DN20–DN50 building interfaces are the preferred technology for new installations.",
+      "alternatives": "Ultrasonic heat meters (Kamstrup, Landis+Gyr, Diehl), electromagnetic (Siemens, ABB), vortex (SIKA)",
+      "marketSize": "~$18B US district energy market; meter replacement cycle 10–15 years, ~$150–$500 per meter point",
+      "confidence": 0.9
+    },
+    {
+      "naics": "112511",
+      "title": "Finfish Farming and Fish Hatcheries",
+      "job": "Monitor oxygenated water flow rates through recirculating aquaculture system (RAS) circuits to maintain dissolved oxygen levels",
+      "whyNeeded": "RAS aquaculture facilities require precise flow control through biofilter and oxygenation stages. Transit-time ultrasonic enables non-intrusive measurement without fouling risk from biofilm — a key constraint for impeller sensors in nutrient-rich water.",
+      "alternatives": "Electromagnetic flow (Krohne, E+H for conductive water), paddle-wheel sensors (Seametrics), ultrasonic clamp-on",
+      "marketSize": "~$3.5B US aquaculture market; RAS instrumentation ~$500–$2,000 per recirculation circuit",
+      "confidence": 0.72
+    },
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "job": "Monitor coolant flow rates through liquid cooling loops in high-density server rack deployments",
+      "whyNeeded": "Hyperscale and colocation data centers deploying direct liquid cooling (DLC) require flow sensors in coolant distribution units (CDUs) to detect coolant loss, balance rack-level flows, and calculate PUE. Glycol concentration detection (FP extension) adds value for freeze protection monitoring.",
+      "alternatives": "Thermal mass flow (Alicat, Sensirion), ultrasonic clamp-on (Endress+Hauser), paddle-wheel (Gems, Omega)",
+      "marketSize": "~$250B global data center market; liquid cooling instrumentation growing at 28% CAGR; $50–$300 per cooling loop",
+      "confidence": 0.78
+    },
+    {
+      "naics": "312130",
+      "title": "Wineries",
+      "job": "Measure must and wine flow through process lines for batch tracking and CIP validation",
+      "whyNeeded": "Wine production requires hygienic flow measurement for must transfer, filtration, and bottling lines. Similar to brewery applications but with higher viscosity variability (must vs. wine). Ultrasonic preferred over turbine for no wetted moving parts.",
+      "alternatives": "Electromagnetic flow (E+H, Krohne for conductive must), Coriolis (for density measurement), turbine (GF Piping)",
+      "marketSize": "~$14B US wine industry; process instrumentation $1,000–$8,000 per winery installation",
+      "confidence": 0.75
+    },
+    {
+      "naics": "332410",
+      "title": "Power Boiler and Heat Exchanger Manufacturing",
+      "job": "Measure feedwater and condensate return flow rates for boiler efficiency calculation and blowdown control",
+      "whyNeeded": "Industrial boiler OEMs integrate flow sensors into packaged boiler skids for efficiency monitoring under ASME and EN standards. Condensate return measurement enables heat recovery optimization. Compact inline sensors preferred over large-bore flanged instruments for packaged units.",
+      "alternatives": "Vortex (Yokogawa, Emerson), differential pressure (Honeywell, ABB), electromagnetic (Siemens, Krohne), turbine (Badger Meter)",
+      "marketSize": "~$5.5B global industrial boiler market; sensor content $30–$150 per packaged unit depending on tier",
+      "confidence": 0.88
+    },
+    {
+      "naics": "311511",
+      "title": "Fluid Milk Manufacturing",
+      "job": "Measure pasteurized milk and cream flow rates through dairy processing lines for batch accounting and CIP validation",
+      "whyNeeded": "Dairy processing requires 3A Sanitary Standards-compliant flow measurement with no wetted moving parts to prevent microbial contamination risk. Transit-time ultrasonic meets this requirement. Accurate volumetric batching is required for product formulation.",
+      "alternatives": "Electromagnetic flow (E+H Promag P, Krohne Optiflux — 3A certified), Coriolis (Micro Motion), turbine (not acceptable in sanitary dairy lines)",
+      "marketSize": "~$22B US fluid milk industry; process instrumentation content $2,000–$20,000 per processing line",
+      "confidence": 0.86
+    },
+    {
+      "naics": "312111",
+      "title": "Soft Drink Manufacturing",
+      "job": "Measure syrup, water, and carbonated beverage flow rates for ratio blending accuracy and waste reduction",
+      "whyNeeded": "Beverage manufacturers require high-accuracy flow measurement at syrup:water ratio blending points. A ±1% flow error in a 5:1 dilution ratio creates perceptible product quality deviation. Ultrasonic sensors handle both water and syrup without moving-part fouling.",
+      "alternatives": "Coriolis (Micro Motion — gold standard for ratio blending), electromagnetic (E+H, Krohne), turbine (limited to clean water streams)",
+      "marketSize": "~$38B US soft drink market; production instrumentation $3,000–$25,000 per blending station",
+      "confidence": 0.84
+    },
+    {
+      "naics": "221310",
+      "title": "Water Supply and Irrigation Systems",
+      "job": "Meter potable water consumption at distribution system branch points for billing and loss detection",
+      "whyNeeded": "Water utilities require accurate, tamper-resistant flow meters for billing and non-revenue water (NRW) reduction programs. Ultrasonic static meters dominate new installations due to no moving parts and AMR/AMI connectivity. Transit-time technology preferred in DN15–DN50 service lines.",
+      "alternatives": "Mechanical positive displacement (Neptune, Sensus, Badger Meter), ultrasonic static meters (Kamstrup, Itron, Sensus), electromagnetic (for larger mains)",
+      "marketSize": "~$2.8B US water meter market; utility replacement programs driven by AMI mandates; $80–$400 per meter",
+      "confidence": 0.8
+    },
+    {
+      "naics": "325412",
+      "title": "Pharmaceutical Preparation Manufacturing",
+      "job": "Measure purified water (PW) and water for injection (WFI) flow rates in process skids under FDA 21 CFR Part 11",
+      "whyNeeded": "Pharmaceutical manufacturing requires validated, audit-trail-capable flow measurement with no wetted moving parts to prevent contamination and enable CIP/SIP (sterilize-in-place) cleaning. Ultrasonic satisfies cleanability requirements and FDA validation protocols.",
+      "alternatives": "Electromagnetic flow (E+H Promag — WFI certified), Coriolis (Micro Motion — for density tracking), turbine (not acceptable for WFI/SIP lines)",
+      "marketSize": "~$550B global pharma market; process instrumentation content $5,000–$50,000 per manufacturing skid",
+      "confidence": 0.9
+    },
+    {
+      "naics": "221320",
+      "title": "Sewage Treatment Facilities",
+      "job": "Measure influent and effluent flow rates for NPDES permit compliance reporting and plant loading calculations",
+      "whyNeeded": "Wastewater treatment plants require continuous flow monitoring at multiple points (headworks, clarifier influent, effluent) for regulatory reporting. Open-channel and full-bore electromagnetic meters dominate large flows; compact ultrasonic sensors address DN50–DN200 branch metering.",
+      "alternatives": "Electromagnetic flow (large bore — E+H, Siemens, Krohne), open-channel (flume + level sensor), ultrasonic clamp-on (Fuji Electric, Siemens)",
+      "marketSize": "~$110B US water/wastewater infrastructure; flow instrumentation ~$3,000–$30,000 per plant depending on measurement points",
+      "confidence": 0.76
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "job": "Monitor ultra-pure water (UPW) and process chemical flow rates in semiconductor wet processing tools",
+      "whyNeeded": "Semiconductor fabs require ultra-precise flow measurement of UPW, acids, and solvents in etch, clean, and CMP processes. Non-contaminating, corrosion-resistant sensors required. Ultrasonic principle avoids wetted metal parts that could introduce metallic contamination.",
+      "alternatives": "Thermal mass flow controllers (MKS, Brooks — for gases), ultrasonic liquid flow (Sensirion, E+H), Coriolis (Micro Motion for chemical delivery)",
+      "marketSize": "~$600B global semiconductor manufacturing equipment market; flow control content $200–$2,000 per tool depending on process",
+      "confidence": 0.74
+    },
+    {
+      "naics": "325180",
+      "title": "Other Basic Inorganic Chemical Manufacturing",
+      "job": "Measure corrosive chemical solution flow rates in continuous process reactors and transfer systems",
+      "whyNeeded": "Chemical processing requires flow measurement of acids, caustics, and solvents where wetted metallic sensor components would corrode. Non-intrusive ultrasonic clamp-on or PVDF-bodied inline sensors address this constraint. Flow measurement supports batch recipe control and yield accounting.",
+      "alternatives": "Electromagnetic flow (lined versions — E+H, Krohne for conductive fluids), Coriolis (for mass balance), ultrasonic clamp-on (Panametrics, Fuji Electric), vortex (limited material options)",
+      "marketSize": "~$85B US basic chemical manufacturing market; flow instrumentation content $500–$5,000 per process line depending on hazard classification",
+      "confidence": 0.7
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Types and Uses of Ultrasonic Flow Meters — IQS Directory",
+      "url": "https://www.iqsdirectory.com/articles/flow-meter/ultrasonic-flow-meters.html",
+      "prefixedId": "DISC-S01"
+    },
+    {
+      "id": "S02",
+      "label": "Ultrasonic Flow Meters: Working Principles, Applications & Benefits — GAIMC",
+      "url": "https://www.gaimc.com/Newsinfo/ultrasonic-flow-meters-working-principles-applications-benefits",
+      "prefixedId": "DISC-S02"
+    },
+    {
+      "id": "S03",
+      "label": "Ultrasonic Flow Meter Technology — Teledyne ISCO",
+      "url": "https://www.teledyneisco.com/en-us/understanding-ultrasonic-flow-meter-technology",
+      "prefixedId": "DISC-S03"
+    },
+    {
+      "id": "S04",
+      "label": "Complete Guide to Ultrasonic Flow Meters — Icon Process Controls",
+      "url": "https://iconprocon.com/blog-post/the-complete-guide-to-ultrasonic-flow-meters-technology-applications-and-products-from-icon-process-controls/",
+      "prefixedId": "DISC-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Non-Intrusive Ultrasonic Flow Meters — Emerson",
+      "url": "https://www.emerson.com/en-us/automation/measurement-instrumentation/flow-measurement/about-non-intrusive-ultrasonic-flow-meters",
+      "prefixedId": "DISC-S05"
+    },
+    {
+      "id": "S06",
+      "label": "Flow Meter Market Size & Forecast — Future Market Insights",
+      "url": "https://www.futuremarketinsights.com/reports/flow-meters-market",
+      "prefixedId": "DISC-S06"
+    },
+    {
+      "id": "S07",
+      "label": "Flow Meter Market Report 2033 — SkyQuest",
+      "url": "https://www.skyquestt.com/report/flow-meter-market",
+      "prefixedId": "DISC-S07"
+    },
+    {
+      "id": "S08",
+      "label": "NAICS 333415 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/333415/",
+      "prefixedId": "DISC-S08"
+    },
+    {
+      "id": "S09",
+      "label": "NAICS 221330 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/221330/",
+      "prefixedId": "DISC-S09"
+    },
+    {
+      "id": "S10",
+      "label": "NAICS 325411 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/325411/",
+      "prefixedId": "DISC-S10"
+    },
+    {
+      "id": "S11",
+      "label": "NAICS 221310 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/221310/",
+      "prefixedId": "DISC-S11"
+    },
+    {
+      "id": "S12",
+      "label": "NAICS 312120 — IBISWorld",
+      "url": "https://www.ibisworld.com/classifications/naics/312120/",
+      "prefixedId": "DISC-S12"
+    },
+    {
+      "id": "S13",
+      "label": "Water and Sewage Utilities (NAICS 2213) — US EPA",
+      "url": "https://www.epa.gov/regulatory-information-sector/water-and-sewage-utilities-sector-naics-2213",
+      "prefixedId": "DISC-S13"
+    },
+    {
+      "id": "S14",
+      "label": "01_product_decomposition.md — technology class, specifications, constraints, UNSPSC classification",
+      "prefixedId": "DISC-S14"
+    },
+    {
+      "id": "S15",
+      "label": "02_functional_promise.md — commodity FP, FP extensions, complements, BOM position",
+      "prefixedId": "DISC-S15"
+    },
+    {
+      "id": "S16",
+      "label": "03_constraints.md — 12 constraints with absolute/conditional classification",
+      "prefixedId": "DISC-S16"
+    }
+  ]
+}

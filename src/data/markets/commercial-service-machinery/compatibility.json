@@ -1,0 +1,164 @@
+{
+  "naicsCode": "333318",
+  "marketName": "Other Commercial and Service Industry Machinery Manufacturing",
+  "slug": "commercial-service-machinery",
+  "operatingMedium": "",
+  "architectureDistance": 0,
+  "assessments": [
+    {
+      "constraintName": "Media Limitation",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "All circuits use water or water-based solutions. Commercial laundry: water + dilute detergent. Car wash: water + dilute soap. Water purification: clean water. No oils, gases, or non-polar liquids in measurement circuits.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Medium Temperature",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Commercial laundry sanitary/heavy-soil wash cycles reach 85-90C, exactly at the sensor limit. Car wash 30-60C and water treatment ambient are well within range. Extended operation at 90C reduces service life. Majority of wash cycles operate at 40-60C.",
+      "mitigation": "Install sensor on water supply inlet or return lines (5-15C cooler than wash sump); Prioritize car wash and water treatment positions (max 60C, well within limit); For laundry, target warm-wash circuits and position upstream of heating element",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Maximum Operating Pressure",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Building water supply 3-6 bar. Laundry circuits 2-5 bar. Car wash HP pumps generate 50-150 bar at nozzle, but sensor sits on supply side (3-6 bar). Water treatment feed 2-8 bar. No measurement circuit approaches 10 bar.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Air Bubble Tolerance",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Sensor positioned in pressurized supply-side piping (L6.2) where chronic air entrainment is negligible. Laundry fill occurs via pressurized inlet. Car wash supply circuits are closed and pressurized. Digital anomaly detection provides diagnostic value for transient events.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Temperature-Dependent Accuracy",
+      "constraintType": "physical",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Supply-side water temperature is stable during fill/wash cycles. Built-in NTC compensation reduces error to 0.2%, adequate for consumption metering and dose verification.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Detergent/Chemical Compatibility",
+      "constraintType": "chemical",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Some circuit configurations expose wetted parts to detergent-laden wash water (laundry recirculation), surfactant solutions (car wash), or anti-scalant-dosed water (RO). Concentrations are dilute (0.5-2% detergent, pH 8-12). Primary supply-side position contacts clean water only.",
+      "mitigation": "Position sensor on supply side upstream of chemical injection (L6.2 before L6.4) for clean-water-only contact; Verify polymer housing compatibility with dilute alkaline detergent (pH 10-12) via immersion testing; For reclaim circuit deployment, validate sensor materials against recycled-water chemistry",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Flow Rate Detection",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Commercial laundry fill: 10-40 l/min. Car wash supply: 15-40 l/min. Water purification feed: 5-20 l/min. All above DN20 threshold (4.2 l/min). DN14 variant available for lower-flow sub-circuits.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Pipe Full Condition",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Supply-side piping is pressurized and always full during measurement. Machine controllers trigger measurement during active fill/wash/rinse cycles. Empty-pipe detection provides fault-state diagnostic during transitions.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Minimum Straight Pipe Run",
+      "constraintType": "operational",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "Commercial machinery is designed for space efficiency. OEM internal plumbing may not have 5-10x DN (100-250 mm for DN20) straight runs. Compact washer-extractors and in-bay car wash systems especially constrained. Solvable during OEM design-in.",
+      "mitigation": "Specify sensor position during OEM machine design phase (not retrofit); Add inline vane-type flow conditioner ($50-100) at space-constrained locations; Provide OEM integration guidelines with minimum installation clearances",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Unit Cost vs Mechanical Alternatives",
+      "constraintType": "economic",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Ultrasonic ($200-600) vs turbine ($5-15) carries 15-40x premium. However, turbine sensors clog in lint-laden laundry water and detergent-rich car wash water — the dominant failure mode. Timed solenoid dosing has +/-10-20% accuracy, insufficient for WaterSense compliance. Zero-maintenance ROI in 100+ cycles/day equipment.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "NSF/Food-Contact Material Certification",
+      "constraintType": "regulatory",
+      "threshold": "",
+      "verdict": "mitigable",
+      "rationale": "VN output types include ice machines and beverage vending — food-contact applications requiring NSF 61 or FDA 21 CFR 177. Primary entry positions (laundry, car wash) do NOT require food-contact certification. KTW/WRAS provides partial baseline.",
+      "mitigation": "Enter market via laundry and car wash positions (no food-contact certification needed); Pursue NSF 61 certification to unlock water purification and ice/beverage output types; Leverage existing KTW/WRAS drinking water approval as certification starting point",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    },
+    {
+      "constraintName": "Ambient Operating Temperature",
+      "constraintType": "environmental",
+      "threshold": "",
+      "verdict": "none",
+      "rationale": "Commercial laundry: indoor (15-35C). Car wash: enclosed/sheltered bays (5-40C). Water treatment: indoor (15-30C). All within electronics range (-20 to +60C). Outdoor self-service car wash is edge case; machines themselves require freeze protection.",
+      "mitigation": "",
+      "mitigationCost": "",
+      "mitigationTime": ""
+    }
+  ],
+  "result": {
+    "knockouts": 0,
+    "mitigable": 4,
+    "none": 8,
+    "marketStatus": "SURVIVING",
+    "totalMitigationCost": "",
+    "totalMitigationTime": ""
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Constraints, specifications, features, technology classification",
+      "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — Functional promise, complements, BOM position",
+      "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md — Other Commercial and Service Industry Machinery Manufacturing (NAICS 333318) market candidate details",
+      "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S03"
+    },
+    {
+      "id": "S04",
+      "label": "VN_other_commercial_and_service_industry_ma.md — Value network, Marquardt position, operating conditions, output types",
+      "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S04"
+    },
+    {
+      "id": "S05",
+      "label": "--",
+      "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S05"
+    }
+  ]
+}

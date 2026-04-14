@@ -1,0 +1,21 @@
+{
+  "slug": "flowmeters-reference",
+  "name": "Flowmeters (home industry reference)",
+  "naicsCode": "41112501",
+  "isReference": true,
+  "rank": 7,
+  "scores": {
+    "odi": 4.65,
+    "featureFit": 5.56,
+    "constraintCompatibility": 10,
+    "jobCoverage": 3.75,
+    "vnHierarchy": 4,
+    "incumbentVulnerability": 5.2,
+    "composite": 5.5
+  },
+  "recommendation": "investigate",
+  "rationale": "Not a market-entry candidate; this NAICS is the product's own industry classification. Deep-component VN (4.00) and low new-ODI (4.65) are expected. Retained for traceability only.",
+  "entryStrategy": "Reference only - exclude from go-to-market allocation.",
+  "estimatedTimeToEntry": "N/A",
+  "estimatedInvestment": "N/A"
+}

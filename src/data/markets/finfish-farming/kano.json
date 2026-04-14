@@ -1,0 +1,405 @@
+{
+  "naicsCode": "112511",
+  "marketName": "Finfish Farming and Fish Hatcheries",
+  "slug": "finfish-farming",
+  "features": [
+    {
+      "featureName": "Transit-Time Flow Measurement",
+      "kanoClassification": "must_be",
+      "scores": {
+        "time": 7,
+        "cost": 5,
+        "safety": 8,
+        "reliability": 7,
+        "skill": 4,
+        "stress": 7,
+        "pain": 5,
+        "confidence": 7,
+        "delight": 3,
+        "overall": 5.89
+      },
+      "rationale": "Kano: `must_be`. All flowmeters measure flow; this is the baseline expectation for any sensor in the market. Primary drivers: Safety (8) — flow measurement is life-safety in RAS where DO crashes within 5–15 min of flow cessation [JTBD #1, Opp 17]; Time (7) — continuous real-time measurement enables sub-60-second flow-failure detection; Confidence (7) — digital calibrated output vs visual/manual observation. Grounded in JTBD #1: \"Minimize the likelihood of undetected flow cessation persisting longer than 60 seconds\" (imp=10, sat=3)."
+    },
+    {
+      "featureName": "Integrated Temperature Sensing",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 5,
+        "cost": 6,
+        "safety": 7,
+        "reliability": 5,
+        "skill": 6,
+        "stress": 5,
+        "pain": 6,
+        "confidence": 6,
+        "delight": 5,
+        "overall": 5.67
+      },
+      "rationale": "Kano: `attractive`. Aquaculture operators expect a flow sensor, not a flow+temperature sensor. Simultaneous temperature from the same body eliminates a separate probe — a genuine surprise for operators upgrading from paddle-wheel. Primary drivers: Safety (7) — temperature critical for species health (coldwater salmonids 10–16°C, warmwater tilapia 26–30°C); Cost (6) — eliminates separate temperature probe ($30–100/point); Skill (6) — one less device to install and configure. No JTBD error statement specifically demands integrated temperature, confirming attractive classification."
+    },
+    {
+      "featureName": "Zero Pressure Drop Flow Path",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 2,
+        "cost": 7,
+        "safety": 3,
+        "reliability": 4,
+        "skill": 3,
+        "stress": 2,
+        "pain": 3,
+        "confidence": 2,
+        "delight": 2,
+        "overall": 3.11
+      },
+      "rationale": "Kano: `one_dimensional`. Lower pressure drop = lower pump energy cost; scales linearly in energy-intensive RAS operating 24/7/365. Primary driver: Cost (7) — RAS pumping energy is a major OPEX; every mbar saved across hundreds of measurement points compounds. All other dimensions score low because zero pressure drop does not directly address the life-safety or reliability needs dominating this market. Grounded in JTBD #20: \"Minimize the permanent pressure drop that increases circulation pump energy consumption\" (imp=7, sat=5)."
+    },
+    {
+      "featureName": "No Moving Parts",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 6,
+        "cost": 8,
+        "safety": 6,
+        "reliability": 9,
+        "skill": 5,
+        "stress": 7,
+        "pain": 8,
+        "confidence": 7,
+        "delight": 6,
+        "overall": 6.89
+      },
+      "rationale": "Kano: `attractive`. The dominant incumbent (paddle-wheel, 45–55% share) clogs with biofilm every 2–6 weeks in RAS water. Discovering a sensor immune to clogging is a genuine delighter. Primary drivers: Reliability (9) — eliminates the primary failure mode in RAS applications [JTBD #17, Opp 16]; Cost (8) — eliminates biweekly maintenance labor and replacement parts; Pain (8) — removes the tedious, repetitive task of cleaning clogged sensors in fish water; Stress (7) — eliminates \"is the paddle wheel still spinning?\" anxiety. Grounded in JTBD #17: \"Sensor service life >5 years with zero clogging events\" (imp=9, sat=2)."
+    },
+    {
+      "featureName": "Bidirectional Flow Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 4,
+        "cost": 3,
+        "safety": 5,
+        "reliability": 4,
+        "skill": 3,
+        "stress": 4,
+        "pain": 3,
+        "confidence": 4,
+        "delight": 3,
+        "overall": 3.67
+      },
+      "rationale": "Kano: `attractive`. Backflow detection in RAS piping during pump switchover or valve malfunction is not currently monitored. Provides early warning of hydraulic anomalies that could bypass treatment stages (UV sterilization, biofilter). Scores are moderate because backflow events are infrequent and secondary to the dominant failure modes (flow cessation, pump degradation). Safety (5) — backflow can bypass treatment, exposing fish to untreated water."
+    },
+    {
+      "featureName": "Digital Anomaly Detection",
+      "kanoClassification": "attractive",
+      "scores": {
+        "time": 7,
+        "cost": 5,
+        "safety": 9,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 8,
+        "pain": 5,
+        "confidence": 8,
+        "delight": 6,
+        "overall": 6.67
+      },
+      "rationale": "Kano: `attractive`. Bubble detection, empty-pipe diagnostics, and glycol presence detection are powerful RAS diagnostics that operators do not expect from a flow sensor. Primary drivers: Safety (9) — directly addresses JTBD #8 \"false flow-normal readings during air-lock events\" (imp=9, Opp 15) and #14 \"false-normal after maintenance\" (imp=9, Opp 15); Stress (8) — reduces overnight anxiety [JTBD #25, Opp 13]; Confidence (8) — multiple diagnostic channels (flow + bubbles + pipe status) increase trust [JTBD #7, Opp 13]. The highest-value differentiator for RAS applications."
+    },
+    {
+      "featureName": "Real-Time Compensation Algorithms",
+      "kanoClassification": "one_dimensional",
+      "scores": {
+        "time": 3,
+        "cost": 3,
+        "safety": 5,
+        "reliability": 7,
+        "skill": 5,
+        "stress": 4,
+        "pain": 4,
+        "confidence": 6,
+        "delight": 2,
+        "overall": 4.33
+      },
+      "rationale": "Kano: `one_dimensional`. Temperature compensation accuracy improves linearly; directly relevant where water temperature varies 2–30°C across species programs. Primary driver: Reliability (7) — directly addresses JTBD #3 \"accuracy variation from temperature fluctuations\" (imp=7, Opp 10); reduces systematic error from ~1.5% to ~0.2%. Transparent to operator — they don't see the compensation working, hence low Delight (2).\n\n### 09b — Validation\n\n| # | Check | Result |\n|---|---|---|\n| 1 | Kano cross-market consistency | N/A — single market assessed |\n| 2 | `safety ≥ 7` but `confidence ≤ 3` | **PASS** — Transit-Time (safety 8, confidence 7); Digital Anomaly (safety 9, confidence 8); no violations |\n| 3 | `skill ≥ 7` but `stress ≤ 3` | **PASS** — no feature has skill ≥ 7 |\n| 4 | `overall_fit` arithmetic verified | **PASS** — all 7 means recomputed |\n| 5 | No feature scores 10 on all dimensions | **PASS** — max single dimension is 9 (No Moving Parts → Reliability; Digital Anomaly → Safety) |\n| 6 | Feature names comply with naming rules | **PASS** — spec-visible noun phrases, 2–6 words, no brand names, no outcome claims |\n| 7 | Indifferent features score 1–3 on all dimensions | **N/A** — no indifferent features |\n| 8 | Measurement accuracy feature scoring 1 on Reliability | **PASS** — Transit-Time scores 7 on Reliability |\n\n---"
+    },
+    {
+      "featureName": "#",
+      "kanoClassification": "Check",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "1",
+      "kanoClassification": "Kano cross-market consistency",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "2",
+      "kanoClassification": "safety ≥ 7 but confidence ≤ 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "3",
+      "kanoClassification": "skill ≥ 7 but stress ≤ 3",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "4",
+      "kanoClassification": "overall_fit arithmetic verified",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "5",
+      "kanoClassification": "No feature scores 10 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "6",
+      "kanoClassification": "Feature names comply with naming rules",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "7",
+      "kanoClassification": "Indifferent features score 1–3 on all dimensions",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    },
+    {
+      "featureName": "8",
+      "kanoClassification": "Measurement accuracy feature scoring 1 on Reliability",
+      "scores": {
+        "time": null,
+        "cost": 0,
+        "safety": 0,
+        "reliability": 0,
+        "skill": 0,
+        "stress": 0,
+        "pain": 0,
+        "confidence": 0,
+        "delight": 0,
+        "overall": 0
+      },
+      "rationale": ""
+    }
+  ],
+  "avgOverallFit": 2.26,
+  "productRelatedNeeds": [
+    {
+      "id": "PRN-1",
+      "statement": "Minimize the likelihood of systematic measurement overestimation caused by air entrainment exceeding 2% by volume in recirculation piping during oxygenation injection or post-maintenance air purging",
+      "sourceConstraint": "Air Bubble Tolerance",
+      "importance": 7,
+      "satisfaction": 4,
+      "rationale": "RAS facilities inject oxygen into water streams; oxygenation equipment, waterfalls, and pump cavitation introduce air into piping. Ultrasonic transit-time measurement attenuates when air content >2% vol — electromagnetic sensors are unaffected. Distinct from JTBD #8 (which addresses false flow-normal during complete air-lock events); this need covers gradual accuracy degradation from moderate aeration. Litmus test: PASS — electromagnetic sensors measure through aerated water without degradation."
+    },
+    {
+      "id": "PRN-2",
+      "statement": "Minimize the duration of total measurement blackout during pipe partially-filled states that occur during RAS circuit re-filling, pump restart sequences, or gravity-drain maintenance events",
+      "sourceConstraint": "Pipe Full Condition",
+      "importance": 6,
+      "satisfaction": 4,
+      "rationale": "Ultrasonic transit-time requires a fully filled pipe for valid measurement. During RAS start-up, pump restart after failure, or maintenance recovery, pipes may not be full for several minutes. Complete measurement loss during these critical periods is a technology-specific limitation. Litmus test: PASS — electromagnetic sensors with empty-pipe detection can provide partial readings; Coriolis meters measure regardless of fill level."
+    },
+    {
+      "id": "PRN-3",
+      "statement": "Minimize the measurement accuracy degradation caused by turbulent flow profiles from elbows, valves, and tee fittings within 5–10 pipe diameters upstream of the sensor in compact RAS pipe layouts",
+      "sourceConstraint": "Minimum Straight Pipe Run",
+      "importance": 6,
+      "satisfaction": 4,
+      "rationale": "Transit-time measurement requires undisturbed flow profiles (5–10×DN = 100–250 mm for DN20). Compact RAS pipe layouts with elbows near tanks and treatment equipment may not provide adequate straight runs, degrading accuracy. Litmus test: PASS — Coriolis meters are insensitive to flow profile; electromagnetic meters need ≤5×DN."
+    },
+    {
+      "id": "PRN-4",
+      "statement": "Minimize the residual flow measurement error during rapid water temperature changes exceeding 5°C/hour that outpace the speed-of-sound compensation algorithm's response rate",
+      "sourceConstraint": "Temperature-Dependent Accuracy",
+      "importance": 5,
+      "satisfaction": 6,
+      "rationale": "Ultrasonic transit-time depends on speed of sound, which varies with temperature. Built-in NTC compensation reduces steady-state error to ~0.2%, but rapid transients (chiller/heater failure, species program switchover) can temporarily exceed compensation response. Litmus test: PASS — electromagnetic measurement is independent of speed of sound; Coriolis measures mass flow directly."
+    },
+    {
+      "id": "PRN-5",
+      "statement": "Minimize the probability of undetected flow reduction events where actual flow rate drops below the sensor's minimum detection threshold in small-diameter nursery and fry-rearing feed lines",
+      "sourceConstraint": "Minimum Flow Rate Detection",
+      "importance": 6,
+      "satisfaction": 5,
+      "rationale": "Transit-time difference becomes indistinguishable from noise at very low flows (DN20 minimum: 4.2 l/min). Small nursery tanks with low stocking densities may require flows of 1–3 l/min through DN20 pipes — below detection. Litmus test: PASS — electromagnetic sensors measure down to 0.01 m/s (≈0.2 l/min at DN20); paddle-wheel sensors detect flows >0.5 l/min.\n\n### 10b — Validation\n\n| # | Check | Result |\n|---|---|---|\n| 1 | Litmus test (disappears with different technology?) | **PASS** — all 5 verified against electromagnetic/Coriolis alternatives |\n| 2 | Source constraint traceability | **PASS** — all 5 constraints exist in Step 01 and logically cause the stated failure mode |\n| 3 | Affected markets plausibility | **PASS** — all 5 constraints manifest in RAS aquaculture conditions |\n| 4 | No duplication with Step 06 | **PASS** — cross-checked against 8 existing product_related=true needs from JTBD |\n| 5 | Completeness | **PASS** — 5 of 8 constraints generate needs; 3 excluded (Media Limitation: freshwater = exact match; Max Temperature: 2–30°C well within 90°C limit; Max Pressure: 1–3 bar well within 10 bar limit) |\n| 6 | Importance < 3 and satisfaction > 7 | **PASS** — no such combination exists |\n\n---"
+    },
+    {
+      "id": "#",
+      "statement": "Check",
+      "sourceConstraint": "Result",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "1",
+      "statement": "Litmus test (disappears with different technology?)",
+      "sourceConstraint": "PASS — all 5 verified against electromagnetic/Coriolis alternatives",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "2",
+      "statement": "Source constraint traceability",
+      "sourceConstraint": "PASS — all 5 constraints exist in Step 01 and logically cause the stated failure mode",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "3",
+      "statement": "Affected markets plausibility",
+      "sourceConstraint": "PASS — all 5 constraints manifest in RAS aquaculture conditions",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "4",
+      "statement": "No duplication with Step 06",
+      "sourceConstraint": "PASS — cross-checked against 8 existing product_related=true needs from JTBD",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "5",
+      "statement": "Completeness",
+      "sourceConstraint": "PASS — 5 of 8 constraints generate needs; 3 excluded (Media Limitation: freshwater = exact match; Max Temperature: 2–30°C well within 90°C limit; Max Pressure: 1–3 bar well within 10 bar limit)",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    },
+    {
+      "id": "6",
+      "statement": "Importance < 3 and satisfaction > 7",
+      "sourceConstraint": "PASS — no such combination exists",
+      "importance": 0,
+      "satisfaction": 0,
+      "rationale": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "01_product_decomposition.md — Technology class, features, constraints, UNSPSC classification",
+      "prefixedId": "FIT-FINFISH-FARMING-S01"
+    },
+    {
+      "id": "S02",
+      "label": "02_functional_promise.md — Product FP, commodity FP, FP extension, complements",
+      "prefixedId": "FIT-FINFISH-FARMING-S02"
+    },
+    {
+      "id": "S03",
+      "label": "05_market_discovery.md — NAICS 112511 candidate details, architecture distance scoring",
+      "prefixedId": "FIT-FINFISH-FARMING-S03"
+    },
+    {
+      "id": "S04",
+      "label": "JTBD_finfish_farming_and_fish_hatcheries.md — Job map, alternatives, segments, 25 error statements",
+      "prefixedId": "FIT-FINFISH-FARMING-S04"
+    },
+    {
+      "id": "S05",
+      "label": "Clayton Docs: components/feature-market-fit.html — Component specification (Steps 09, 10, 11)",
+      "prefixedId": "FIT-FINFISH-FARMING-S05"
+    }
+  ]
+}
