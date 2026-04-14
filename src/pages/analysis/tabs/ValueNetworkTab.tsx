@@ -135,7 +135,7 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
       />
 
       {/* TODO 19: Short description of what a value network is */}
-      <ExecutiveSummary kicker="Framework note">
+      <ExecutiveSummary kicker="What is a value network?">
         <p className="answer">
           <strong>What is a value network?</strong> A value network is the chain of
           organizations, process steps, and enabling systems that together deliver a
@@ -287,8 +287,7 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
           hierarchically: L7 is the full ecosystem, L6 are functional sub-systems
           (e.g., "Mechanical Filtration" or "Gas Management"), and L5 are the specific
           process units within each sub-system (e.g., "Drum Filter" or "UV Sterilizer").
-          This decomposition follows the Adner Wide Lens framework — it forces the team
-          to map all co-innovation dependencies before committing to a market entry
+          This decomposition maps all co-innovation dependencies before committing to a market entry
           strategy.
         </p>
         <p className="answer" style={{ marginTop: 12 }}>

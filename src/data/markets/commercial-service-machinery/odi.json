@@ -8,10 +8,36 @@
     "overservedCount": 0,
     "avgOpportunityScore": 10.98
   },
-  "top5Opportunities": [],
+  "top5Opportunities": [
+    {
+      "rank": 1,
+      "opportunity": 15,
+      "statement": "Minimize time to detect water supply failure or pipe-empty condition to less than 5 seconds to prevent dry-run damage to pumps and heating elements"
+    },
+    {
+      "rank": 2,
+      "opportunity": 14,
+      "statement": "Minimize likelihood of flow reading deviating more than ±3% in detergent-laden water across 0.5–50 l/min"
+    },
+    {
+      "rank": 3,
+      "opportunity": 14,
+      "statement": "Minimize field failure rate of flow sensing subsystem to below 0.2% within 10-year commercial machine design life"
+    },
+    {
+      "rank": 4,
+      "opportunity": 14,
+      "statement": "Minimize likelihood of turbine rotor clogging from lint, detergent, or scale within 12 months"
+    },
+    {
+      "rank": 5,
+      "opportunity": 14,
+      "statement": "Minimize undetected water circuit faults invisible to timed-fill dosing"
+    }
+  ],
   "needs": [
     {
-      "id": "",
+      "id": "N04",
       "statement": "Minimize time to detect a water supply failure or pipe-empty condition to less than 5 seconds to prevent dry-run damage to pumps and heating elements",
       "jobStep": "MONITOR",
       "importance": 9,
@@ -21,7 +47,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Dry-run conditions destroy pump seals and heating elements in under 30 seconds. In commercial laundry, dishwasher, and car wash equipment, a supply interruption without rapid flow detection leads to component failures costing €500–€2,000 per incident, plus unplanned downtime during peak service hours.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Timed-fill systems (30–40% installed base) have zero empty-pipe detection capability — they simply continue their timed fill cycle regardless of actual water delivery. Turbine/paddle-wheel sensors (45–55%) detect zero-flow conditions but lack sub-5-second response times for dry-run protection and do not distinguish empty-pipe from a momentary flow interruption; only electromagnetic meters (3–5%) provide reliable real-time zero-flow detection but are cost-prohibitive for this OEM price point.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -30,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N01",
       "statement": "Minimize the likelihood of volumetric flow reading deviating more than plus-or-minus 3 percent from true value when measuring detergent-laden or chemically treated water across the 0.5-50 l/min operating range",
       "jobStep": "EXECUTE",
       "importance": 9,
@@ -40,7 +66,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Water dosing accuracy directly governs chemical consumption and rinse effectiveness in commercial dishwashers and laundry machines. A ±3% flow error compounds over thousands of cycles, producing systematic under- or overdosing that either increases chemical cost or compromises hygiene certification (NSF, HACCP compliance).",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) exhibit ±5%/yr calibration drift in detergent-laden water from bearing wear and rotor fouling — they routinely exceed ±3% in real-world contaminated media, especially at the low end of the flow range. Timed-fill (30–40%) delivers ±10–20% volume error — an order of magnitude worse. Electromagnetic meters (3–5%) achieve ±0.5% accuracy regardless of media chemistry and are the only incumbents that satisfy this need, but their 5–10× cost premium restricts their adoption.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -48,7 +74,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N10",
       "statement": "Minimize the likelihood of flow sensor rotor clogging from lint, detergent residue, or mineral scale within 12 months of installation in commercial laundry or car wash equipment",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -58,7 +84,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial laundry machines process 50–200 kg of textiles daily, generating continuous lint and fibre contamination in wash water. Mechanical paddle-wheel sensors experience rotor clogging within 6–12 months, requiring service calls at €150–€300 each; clogged sensors silently under-report flow, causing overdosing and wash failures.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are the direct source of this problem — their rotor blades and bearings accumulate lint and scale in contaminated commercial wash water, delivering satisfaction scores of 2; even aggressive OEM maintenance programmes cannot eliminate clogging without switching technology. Solenoid timed-fill (30–40%) has no sensor to clog but also measures nothing. Electromagnetic meters (3–5%) have no moving parts and are immune to clogging, satisfying this need completely, but their price and power requirements exclude them from the volume OEM market.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -67,7 +93,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N15b",
       "statement": "Minimize the number of undetected water circuit faults (partial blockage, stuck valve, internal leak) that timed-fill dosing cannot sense because it lacks direct flow measurement",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -77,7 +103,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Timed-fill systems assume a constant supply pressure; any fault that reduces actual flow (partial blockage, solenoid fouling, limescale buildup) goes undetected because volume is inferred from time rather than measured. A direct flow sensor reveals these faults in real time, preventing cycles completing with insufficient water.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40% installed base) are the incumbent technology for this machine class and have zero fault-detection capability by design — this need exists precisely because timed-fill cannot sense flow circuit faults, giving a satisfaction score of 2. Turbine/paddle-wheel sensors (45–55%) can detect zero-flow gross failures but cannot distinguish partial blockage or slow valve drift from normal operation. Electromagnetic meters (3–5%) provide the continuous flow signal needed for fault detection but are not widely adopted at this price point.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -86,7 +112,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N23",
       "statement": "Minimize the field failure rate of the flow sensing subsystem to below 0.2 percent within the 10-year commercial machine design life",
       "jobStep": "EXECUTE",
       "importance": 9,
@@ -96,7 +122,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial machines are sold under 3–5 year warranties and deployed for 10+ years. A flow sensor failure rate above 0.2% generates hundreds of warranty replacements per 100,000 units deployed, each carrying a technician dispatch cost of €200–€400; OEMs track sensor MTBF as a key procurement criterion.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) have effective service lives of 1–3 years in harsh detergent and scale-laden water, far below the 10-year machine design life — the dominant incumbent technology fundamentally cannot meet this requirement and drives the recalibrated satisfaction score of 4 (originally 5). Solenoid timed-fill (30–40%) has no sensor component to fail but also provides no measurement. Electromagnetic meters (3–5%) achieve 10+ year service life with no moving parts but remain a niche choice due to cost.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -104,7 +130,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N02",
       "statement": "Minimize measurement degradation when water contains suspended detergent residues, lint particles, or chemical dosing additives at concentrations typical of commercial wash cycles",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -114,7 +140,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial wash water is significantly more contaminated than clean tap water — suspended solids, surfactants, and biological matter all affect acoustic transit-time and optical flow sensing. Sensors characterised only in clean water will drift unpredictably in real-world contaminated wash cycles, producing unreliable dosing and compliance data.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) experience progressive fouling from lint and detergent residue that systematically degrades calibration at a rate of ±5%/yr — they are characterised in clean water but perform materially worse in commercial wash media, yielding a satisfaction score of 3. Solenoid timed-fill (30–40%) degrades identically to any pressure-driven estimation as media viscosity or supply pressure varies. Electromagnetic meters (3–5%) measure the induced voltage of the conducting fluid and are insensitive to suspended particles or detergent chemistry, maintaining ±0.5% accuracy in contaminated water.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -123,7 +149,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N06",
       "statement": "Minimize the number of undetected water leaks within the machine's internal fluid circuit that waste more than 50 litres per day",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -133,7 +159,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Water utility costs in commercial laundry and food service environments can reach €10,000–€40,000 per year per machine. A 50 l/day internal leak is invisible to operators without flow monitoring and adds €150–€500 annually in pure water waste, not counting floor damage or mould remediation from slow seeping leaks.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) have zero ability to detect internal leaks — they measure elapsed time, not volume, so a slow leak between fill cycles is completely invisible. Turbine/paddle-wheel sensors (45–55%) log cumulative flow but their ±5%/yr drift means a 50 l/day leak (1–2% of daily throughput) falls within normal measurement noise, making it undetectable in practice. Electromagnetic meters (3–5%), despite their accuracy, are not widely deployed in this market and therefore do not close the detection gap at scale.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -142,7 +168,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N08",
       "statement": "Increase the ability to measure water consumption per cycle with sufficient accuracy (plus-or-minus 2 percent) to support pay-per-use billing models and per-machine water-use reporting",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -152,7 +178,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Pay-per-use laundry and dishwashing equipment deployed in hospitality and healthcare requires per-cycle water metering accurate enough for revenue billing. Without ±2% accuracy, billing disputes arise and water-use sustainability reports required by corporate ESG programmes cannot be substantiated.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) deliver ±10–20% accuracy per cycle — wholly inadequate for revenue billing; any pay-per-use model built on timed-fill immediately generates overcharging or undercharging disputes. Turbine/paddle-wheel sensors (45–55%) achieve ±2–3% at commissioning but drift to ±5–10% within 12–18 months due to bearing wear, disqualifying them for sustained pay-per-use metering. Electromagnetic meters (3–5%) consistently deliver ±0.5% and are the only incumbent technology meeting the ±2% billing threshold over multi-year deployments.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -160,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N12",
       "statement": "Minimize calibration drift exceeding plus-or-minus 5 percent per year caused by mechanical wear of paddle-wheel bearings and blade erosion in detergent-laden water",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -170,7 +196,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Detergent surfactants act as mild lubricants but also carry abrasive micro-particles that erode paddle-wheel blades and bearings over time. A ±5%/year drift rate means a sensor accurate at commissioning delivers readings 20–25% off-true after 5 years without re-calibration, systematically biasing all dosing and water-efficiency records.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are the source of this problem — bearing wear and blade erosion from detergent-laden water causes the ±5%/yr calibration drift that defines this need; the dominant incumbent inherently degrades and no field-deployable mitigation exists short of annual sensor replacement. Solenoid timed-fill (30–40%) has no sensor to drift but also provides no measurement baseline. Electromagnetic meters (3–5%) have no mechanical wear mechanism and maintain initial accuracy indefinitely, but the 5–10× cost premium explains their negligible market share.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -178,7 +204,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N14c",
       "statement": "Increase the ability to distinguish genuine zero-flow conditions from ultrasonic signal loss caused by detergent foam or entrained air from recycled water systems",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -188,7 +214,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial car wash and dishwasher circuits generate heavy foam during wash cycles; ultrasonic sensors experiencing foam-induced signal loss report zero flow, which the machine controller may misinterpret as a supply failure and trigger an alarm or safe-stop. Distinguishing foam-induced signal loss from a real fault prevents false downtime events.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base) inherently cannot distinguish foam-induced signal dropout from genuine zero-flow without secondary diagnostics — the dominant signal-processing architectures in current ultrasonic meters simply report signal loss without contextual discrimination, yielding a satisfaction score of 3. Turbine/paddle-wheel sensors (45–55%) do not experience foam-induced signal loss (they are mechanical) but equally cannot distinguish foam events from zero-flow. Solenoid timed-fill (30–40%) has no measurement capability and cannot contribute to this need.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -197,7 +223,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N19",
       "statement": "Increase the ability to provide real-time per-cycle water consumption data to the machine controller for IoT dashboard reporting and water-efficiency compliance documentation",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -207,7 +233,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Hospitality and healthcare operators increasingly require equipment manufacturers to provide machine-level water consumption APIs for ESG and ISO 14001 reporting. Without real-time per-cycle data from an accurate flow sensor, OEMs cannot deliver the connected-equipment features that differentiate their product in a market shifting toward IoT dashboards.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) produce no flow data whatsoever — the machine controller has no per-cycle consumption signal to publish to an IoT platform. Turbine/paddle-wheel sensors (45–55%) can generate pulse output proportional to flow volume, but their ±5%/yr drift means the per-cycle data degrades in accuracy over time and requires annual re-calibration to remain compliant with ESG reporting standards. Electromagnetic meters (3–5%) provide stable ±0.5% per-cycle data with digital output but are deployed too infrequently in this segment to close the market gap.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -216,7 +242,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N22",
       "statement": "Minimize the likelihood of flow measurement failure when water recycling systems introduce variable water quality (TDS 200-2000 ppm, turbidity, temperature cycling) into the machine supply",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -226,7 +252,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Water recycling (reverse osmosis reject, grey water, condensate recovery) introduces highly variable TDS and turbidity that can shift acoustic propagation characteristics by 5–15%. Sensors validated only on clean mains water fail silently in recycled-water configurations, which represent a growing share of commercial machine installations due to water tariff pressures.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) show increased bearing wear and rotor fouling in high-TDS recycled water (200–2,000 ppm), accelerating their normal ±5%/yr drift to ±8–12%/yr — the dominant incumbent performs worse on recycled water than on mains supply, exacerbating an already unsatisfied need. Solenoid timed-fill (30–40%) is blind to water quality changes; it assumes nominal supply conditions and cannot adapt. Electromagnetic meters (3–5%) are unaffected by TDS or turbidity variations and maintain measurement integrity across the full recycled-water quality range.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -234,7 +260,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N24",
       "statement": "Increase the ability to document measured water consumption per cycle for EPA WaterSense, Energy Star, or EU Ecodesign water efficiency certification using onboard sensor data",
       "jobStep": "DEFINE",
       "importance": 8,
@@ -244,7 +270,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "EPA WaterSense and EU Ecodesign certification for commercial washing equipment requires metrologically traceable water consumption data at the per-cycle level. OEMs who can demonstrate on-product sensor measurement rather than lab estimates alone reduce certification round-trip times and achieve the eco-label advantage that commands premium retail pricing.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) produce no metrologically traceable consumption data — certification bodies require actual measured values, not time-derived estimates, so timed-fill cannot support any direct certification claim. Turbine/paddle-wheel sensors (45–55%) generate pulse-count volume data at commissioning accuracy, but their multi-year drift disqualifies them from certification programmes that require ongoing measurement traceability. Electromagnetic meters (3–5%) meet certification accuracy requirements but their low market penetration means most OEM products in this segment cannot currently document per-cycle metered consumption.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -253,9 +279,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of ultrasonic signal attenuation when detergent agitation or water recycling aeration generates air entrainment exceeding 2 percent by volume during commercial wash and rinse cycles",
-      "jobStep": "EXECUTE",
+      "id": "PR-1",
+      "statement": "Minimize ultrasonic signal attenuation when air entrainment exceeds 2% vol during commercial wash cycles",
+      "jobStep": "product_constraint",
       "importance": 8,
       "satisfaction": 4,
       "opportunity": 12,
@@ -263,7 +289,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Agitated wash cycles in commercial dishwashers and car wash equipment routinely entrain 2–8% air by volume through pump turbulence and detergent foaming. Ultrasonic sensors lose acoustic signal when bubble density exceeds their tolerance, causing controller blackouts during the most active measurement phases of each cycle.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base) — including Marquardt — share the same fundamental vulnerability: air bubble concentrations above 2% attenuate the acoustic path and cause signal dropout; current implementations either report zero-flow or error codes during heavy foam events, with no active compensation mechanism, yielding a satisfaction score of 4. Turbine/paddle-wheel sensors (45–55%) are mechanical and unaffected by air entrainment, but their accuracy and longevity limitations make them unsuitable substitutes. Solenoid timed-fill (30–40%) is also unaffected by air but provides no measurement.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -271,7 +297,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N15",
       "statement": "Minimize the likelihood of water fill volume deviating more than plus-or-minus 15 percent from target due to supply pressure variations that invalidate timed-fill calibration",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -281,7 +307,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial sites experience mains pressure swings of ±20–40% during peak demand periods (breakfast service, morning laundry runs). Timed-fill systems calibrated at nominal pressure will over- or under-fill by 15%+ when pressure deviates, wasting water or producing under-diluted chemical concentrations that compromise hygiene standards.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) are the direct source of this problem — their fill volume is calculated from elapsed time multiplied by calibrated flow rate, and any pressure deviation invalidates that calibration; this need exists specifically because timed-fill is blind to pressure variation, giving satisfaction of 2. Turbine/paddle-wheel sensors (45–55%) measure actual flow regardless of supply pressure and directly solve this need, but their 45–55% penetration in this market means that the 30–40% timed-fill installed base is still fully exposed.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -289,7 +315,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N03",
       "statement": "Minimize variability of water consumption readings between identical wash/rinse cycles under the same programme settings (repeatability better than plus-or-minus 1 percent)",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -299,7 +325,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Machine controllers use per-cycle water consumption baselines to flag abnormal consumption. If the sensor's cycle-to-cycle repeatability exceeds ±1%, the fault-detection threshold must be widened to avoid false alarms, reducing sensitivity to genuine leaks or valve failures that cause <5% incremental consumption increase.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) deliver ±1–2% cycle-to-cycle repeatability in clean water at commissioning, which broadly meets this requirement under stable conditions; the satisfaction score of 5 reflects that the dominant incumbent is adequate for short-term repeatability but degrades over multi-month deployment as bearing wear increases variability. Electromagnetic meters (3–5%) achieve ±0.3% repeatability indefinitely. Solenoid timed-fill (30–40%) cannot achieve ±1% repeatability due to their inherent ±10–20% volume accuracy.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -307,7 +333,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N11",
       "statement": "Minimize the frequency of manual sensor disassembly and cleaning required to prevent accumulated debris from degrading flow measurement accuracy below plus-or-minus 5 percent",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -317,7 +343,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial machine service intervals are typically 6–12 months, but mechanical sensor fouling in high-contamination environments (car wash, food processing) can degrade accuracy to ±10% within 3–4 months. Frequent out-of-cycle service calls for sensor cleaning represent unbillable labour and reduce operator confidence in the equipment.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) require periodic disassembly and cleaning as lint and scale accumulate on the rotor and bearings — service intervals in contaminated commercial water shrink to 3–4 months in high-fouling environments; the dominant incumbent directly creates the maintenance burden this need quantifies, yielding a satisfaction score of 3. Electromagnetic meters (3–5%) have no moving parts, require no scheduled cleaning, and achieve near-zero maintenance cost — satisfying this need completely but at uncompetitive cost. Solenoid timed-fill (30–40%) has nothing to clean but also measures nothing.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -325,7 +351,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N12b",
       "statement": "Increase the ability to maintain accurate readings at low flow rates below 2 l/min where turbine/paddle-wheel rotors stall due to insufficient fluid momentum",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -335,7 +361,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Pre-rinse and trickle-fill stages in dishwashers and car wash equipment operate at 0.5–2 l/min — below the stall threshold of most mechanical sensors. Missing these low-flow phases means the machine cannot accurately track total cycle consumption, invalidating per-cycle water efficiency records submitted for certification.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) have rotor stall thresholds of 1.5–3 l/min in commercial applications — the dominant technology cannot reliably measure below 2 l/min, yielding a satisfaction score of 3 for this specific need; OEMs using turbine sensors simply lose data during trickle-fill phases. Solenoid timed-fill (30–40%) uses a constant-flow assumption that is especially inaccurate at low flow rates where pressure-to-flow nonlinearity is highest. Electromagnetic meters (3–5%) have linear response down to 0.1 l/min with no stall mechanism, fully satisfying this need.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -343,7 +369,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N18b",
       "statement": "Minimize the likelihood of releasing a machine from end-of-line testing with a flow sensor calibration error exceeding plus-or-minus 3 percent that goes undetected during the automated test cycle",
       "jobStep": "CONFIRM",
       "importance": 8,
@@ -353,7 +379,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "End-of-line test cycles in commercial appliance factories run 30–90 seconds using clean water at ambient temperature — conditions quite different from production use with hot, chemically loaded water. Sensors that pass end-of-line test but fail in the field generate warranty replacements that cost 5–10× more than factory rework.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) perform within specification in clean ambient-temperature water but degrade in hot detergent media — an end-of-line test in clean cold water cannot reveal the field failure mode, giving a satisfaction score of 5 (marginal, not excellent) because some calibration defects are caught but media-sensitive failure modes are systematically missed. Electromagnetic meters (3–5%) are insensitive to media composition changes between test and field conditions and provide consistent readings across both environments. Solenoid timed-fill (30–40%) cannot be end-of-line tested for accuracy.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -361,7 +387,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N20",
       "statement": "Increase the ability to detect abnormal water consumption patterns (e.g., more than 20 percent above baseline for the same cycle programme) indicating component degradation, valve failure, or internal leak",
       "jobStep": "MONITOR",
       "importance": 7,
@@ -371,7 +397,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Early-stage valve wear, limescale buildup, or solenoid degradation increases per-cycle water use by 10–30% before any visible symptom appears. Operators with per-cycle flow monitoring can identify the trend and schedule preventive maintenance, avoiding the €1,000–€5,000 cost of emergency repair following a complete component failure.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) cannot detect abnormal consumption patterns because they have no consumption baseline — a 20% water increase from a failing valve is invisible since the timed-fill controller only tracks elapsed cycle time. Turbine/paddle-wheel sensors (45–55%) can log per-cycle volume but their ±5%/yr drift means the detection threshold must be widened beyond 20% to suppress false alarms from calibration drift, making early anomaly detection unreliable. Electromagnetic meters (3–5%) provide the stable long-term baseline accuracy needed for 20%-above-baseline detection, but their 3–5% market share means most machines lack this capability.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -379,7 +405,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N25",
       "statement": "Increase the ability to demonstrate measured water efficiency data that qualifies the equipment for WaterSense or equivalent eco-labels on the first certification submission",
       "jobStep": "DEFINE",
       "importance": 7,
@@ -389,7 +415,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "WaterSense certification for commercial dishwashers and food service equipment requires documented per-cycle water consumption below defined thresholds. First-submission failures add 3–6 months to product launch timelines and €20,000–€50,000 in re-test fees; sensor accuracy that matches test-lab reference instruments is the critical dependency.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) cannot generate metrologically traceable water consumption data for certification bodies — certification submitters using timed-fill must rely exclusively on lab flow rigs, not on-product data. Turbine/paddle-wheel sensors (45–55%) produce volume data that diverges from reference instrument readings by ±5% or more after field deployment, undermining first-submission certification pass rates. Electromagnetic meters (3–5%) consistently match reference instrument accuracy within ±0.5%, enabling first-submission certification pass rates close to 100%.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -398,7 +424,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N26",
       "statement": "Increase the ability to provide per-cycle water usage data visible on the machine HMI or IoT dashboard that commercial customers can include in sustainability reporting",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -408,7 +434,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Hotel chains, hospital groups, and restaurant franchises face mandatory water reporting under ISO 14001 and GRI Standards. Machine manufacturers who can deliver per-cycle water consumption data via HMI or cloud API are increasingly required by procurement specifications; those who cannot are disqualified from institutional tender processes.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) generate no per-cycle water data to display on an HMI or transmit to an IoT platform — OEMs using timed-fill cannot offer any form of machine-level water consumption dashboard. Turbine/paddle-wheel sensors (45–55%) can provide pulse-count volume data to HMI systems, but drifting accuracy means the numbers displayed gradually diverge from actual consumption, creating compliance risk for customers filing ISO 14001 sustainability reports. Electromagnetic meters (3–5%) provide stable ±0.5% data continuously but are too expensive for most OEMs in this segment.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -417,7 +443,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N27",
       "statement": "Minimize the likelihood of a facility operator receiving an unexpected water utility bill exceeding budget by more than 15 percent due to undetected equipment water waste that the sensor could have flagged",
       "jobStep": "MONITOR",
       "importance": 7,
@@ -427,7 +453,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Water utility bills for commercial laundry or food service facilities commonly run €5,000–€20,000 per month. A 15% over-budget variance from slow leaks or valve inefficiency that was detectable with flow monitoring represents €750–€3,000 in avoidable monthly cost — making flow monitoring ROI easy to justify to facility managers.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Solenoid timed-fill systems (30–40%) provide no water waste detection capability — facility operators using timed-fill-equipped machines have no sensor signal to alert them to abnormal consumption between billing cycles. Turbine/paddle-wheel sensors (45–55%) can accumulate volume data but their ±5%/yr drift blurs the consumption trend, meaning a 15% increase in water use may fall within normal calibration drift and go undetected until the bill arrives. Electromagnetic meters (3–5%) maintain the accurate baseline needed to reliably flag 15% over-budget deviations, but their low penetration means this capability is unavailable in the majority of installed machines.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -435,9 +461,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the time to restore valid flow measurement after transient foam or bubble events from detergent injection dissipate from the ultrasonic sensor measurement path",
-      "jobStep": "MONITOR",
+      "id": "PR-2",
+      "statement": "Minimize time to restore valid flow measurement after transient foam/bubble events dissipate",
+      "jobStep": "product_constraint",
       "importance": 7,
       "satisfaction": 3,
       "opportunity": 11,
@@ -445,7 +471,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "In commercial dishwashers, detergent injection produces a foam slug that temporarily blanks the ultrasonic path for 5–20 seconds. If recovery time is excessive, the machine controller accumulates flow data gap errors that compound across hundreds of daily cycles, corrupting the cumulative cycle consumption log used for audit reporting.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base), including Marquardt, experience extended recovery windows after foam events because the signal re-acquisition algorithm must wait for bubble density to fall below the detection threshold before resuming measurement — current implementations provide no accelerated recovery mechanism, yielding a satisfaction score of 3. Turbine/paddle-wheel sensors (45–55%) are mechanical and recover immediately after foam clears (no acoustic path required), but their accuracy and fouling limitations make them unsuitable replacements. Solenoid timed-fill (30–40%) is unaffected by foam but provides no measurement during or after the event.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -453,8 +479,8 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of signal loss when air bubbles from detergent agitation or water recycling aeration pass through the sensor during normal operation",
+      "id": "N14",
+      "statement": "Minimize the likelihood of signal loss from detergent foam or air bubbles during normal operation",
       "jobStep": "EXECUTE",
       "importance": 7,
       "satisfaction": 4,
@@ -463,7 +489,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Air bubbles in commercial wash water are not a fault condition — they are an inherent feature of high-flow rinse nozzles, recycled-water inputs, and detergent agitation. A sensor that generates signal-loss errors during normal bubble-laden operation creates spurious fault codes that erode operator trust and increase diagnostic service calls.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base) share the same fundamental vulnerability to bubble-induced signal loss — all current transit-time designs report signal dropout when bubble concentration rises above 2%, creating controller alarms during normal wash cycles; the satisfaction score of 4 reflects that minor bubble events are tolerated but heavy foam or aeration causes measurement blackouts. Turbine/paddle-wheel sensors (45–55%) have no acoustic path and are unaffected by bubbles or foam, maintaining measurement continuity throughout agitated wash cycles. Solenoid timed-fill (30–40%) is similarly unaffected but cannot measure anything.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -472,8 +498,8 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of mounting the sensor at a location where turbulence from upstream valves, elbows, or T-junctions causes more than 2 percent systematic reading bias",
+      "id": "N16b",
+      "statement": "Minimize mounting-location turbulence causing more than 2 percent systematic reading bias",
       "jobStep": "LOCATE",
       "importance": 7,
       "satisfaction": 4,
@@ -482,7 +508,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial machine hydraulic layouts are designed by mechanical engineers optimising for manufacturing cost and compactness, not sensor placement. Sensors without flow-conditioning tolerance must be placed in the few available straight-pipe sections, which often do not exist, forcing the OEM to either accept bias or redesign the manifold.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) require 3–5×DN upstream straight pipe for accurate measurement; in compact commercial machine enclosures, this requirement is rarely achievable, producing systematic bias of 2–8% from turbulent inlet profiles — the dominant incumbent is moderately sensitive to installation location, yielding a satisfaction score of 4. Electromagnetic meters (3–5%) also require 3–5×DN straight runs but their higher accuracy margin accommodates some turbulence; they remain a minority technology in this market. Solenoid timed-fill (30–40%) has no sensor and is indifferent to installation geometry.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -490,9 +516,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the duration of invalid measurement output during machine drain-to-fill transitions when the ultrasonic sensor encounters partial pipe fill that prevents acoustic signal propagation between transducers",
-      "jobStep": "EXECUTE",
+      "id": "PR-3",
+      "statement": "Minimize invalid output during drain-to-fill transitions (partial pipe fill)",
+      "jobStep": "product_constraint",
       "importance": 7,
       "satisfaction": 4,
       "opportunity": 10,
@@ -500,7 +526,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial machines cycle through drain-fill transitions multiple times per wash programme. During these transitions the pipe is only partially filled; sensors without partial-fill detection either produce erroneous readings or error flags, creating gaps in the per-cycle volumetric log that undermine water-consumption compliance documentation.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base), including Marquardt, report erroneous values or blank output during partial-pipe-fill conditions because the acoustic path is intermittently broken — current ultrasonic implementations have no partial-fill detection mode that suppresses invalid output and substitutes a reliable zero, yielding a satisfaction score of 4. Turbine/paddle-wheel sensors (45–55%) also produce erratic readings during partial-fill transitions as the rotor partially engages with intermittent flow. Solenoid timed-fill (30–40%) is insensitive to partial fill and continues its time-count regardless.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -508,9 +534,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the measurement error caused by disturbed flow profiles when the ultrasonic sensor is installed with less than 5xDN straight pipe run in compact commercial machine enclosures with elbows and T-junctions upstream",
-      "jobStep": "LOCATE",
+      "id": "PR-4",
+      "statement": "Minimize measurement error from less than 5xDN straight pipe run in compact machine enclosures",
+      "jobStep": "product_constraint",
       "importance": 7,
       "satisfaction": 4,
       "opportunity": 10,
@@ -518,7 +544,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Machine designers cannot accommodate a 5×DN straight run for every sensor location; real installations routinely have 0–2×DN available upstream. Without flow-conditioning technology built into the sensor, the OEM must either accept systematic error or add inline flow conditioners that increase cost and pressure drop.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base), including Marquardt's single-chord design, exhibit 2–5% systematic bias when installed with less than 5×DN straight run upstream — the single-chord path samples a narrow velocity profile slice that is highly sensitive to the asymmetric velocity profiles created by elbows and T-junctions, yielding a satisfaction score of 4. Turbine/paddle-wheel sensors (45–55%) also suffer bias from disturbed flow profiles, requiring similar straight-run clearances. Electromagnetic meters (3–5%) with multi-electrode averaging are slightly more tolerant of disturbed flows but also require minimum straight-pipe runs.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -526,9 +552,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the measurement dead zone at trickle-fill and pre-rinse flow rates below 4.2 l/min (DN20) where ultrasonic transit-time difference falls below the signal-to-noise detection threshold",
-      "jobStep": "EXECUTE",
+      "id": "PR-5",
+      "statement": "Minimize measurement dead zone at trickle-fill below 4.2 l/min (DN20)",
+      "jobStep": "product_constraint",
       "importance": 7,
       "satisfaction": 4,
       "opportunity": 10,
@@ -536,7 +562,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial machines use low-flow trickle fills to control detergent concentration precisely; a measurement dead zone below 4.2 l/min means these critical fill phases are not measured. The controller must switch back to timed-fill logic for these phases, undermining the water-accuracy case for the sensor entirely.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Marquardt's DN20 ultrasonic sensor has a minimum detectable flow rate of 4.2 l/min — trickle-fill and pre-rinse phases operating at 0.5–3 l/min fall entirely within the dead zone and generate no valid measurement output; this is a confirmed hardware constraint of the current product generation, yielding a satisfaction score of 4 because mid-range flows are measured but the low-flow trickle phase is consistently missed. Turbine/paddle-wheel sensors (45–55%) have similar or worse low-flow stall thresholds of 1.5–3 l/min in commercial-grade units. Solenoid timed-fill (30–40%) does not have a low-flow detection limit but provides no measurement accuracy.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -544,7 +570,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N05",
       "statement": "Increase the ability to measure across the full machine flow range (trickle-fill 0.5 l/min to high-volume rinse 40 l/min) in a single sensor without changing hardware",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -554,7 +580,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial machines operate across an 80:1 dynamic range (0.5 l/min trickle to 40 l/min full rinse). A single sensor covering this range eliminates the need for multiple sensors on the same manifold, reducing BOM cost, installation complexity, and potential leak points while simplifying controller integration.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) achieve 10:1 to 20:1 turndown in clean water — they cover most of the mid-range but struggle at trickle-fill extremes below 2 l/min, yielding a satisfaction score of 5 (adequate but not excellent). Electromagnetic meters (3–5%) deliver 100:1 turndown from 0.1 l/min with linear accuracy throughout, fully satisfying this need, but their low market share means most OEMs do not benefit. Solenoid timed-fill (30–40%) has no range limitation but provides zero measurement.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -563,7 +589,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N07",
       "statement": "Minimize the likelihood of specifying a sensor whose pressure rating or media compatibility is incompatible with the machine's operating conditions across its full output-type range",
       "jobStep": "DEFINE",
       "importance": 7,
@@ -573,7 +599,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial service machinery spans diverse outputs (laundry, dishwasher, car wash, food processing) with operating pressures from 0.5 to 10 bar and media ranging from tap water to chemical-laden wash water. A specification error on pressure rating or chemical compatibility causes catastrophic in-field failures, not gradual degradation.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are typically rated to 10 bar and specified in PVDF or PTFE-lined bodies — most standard models cover the operating envelope of commercial wash machines and are well understood by OEM procurement teams, yielding a satisfaction score of 5. Electromagnetic meters (3–5%) are similarly well characterised with broad chemical compatibility in lined versions. Solenoid timed-fill (30–40%) eliminates sensor compatibility concerns entirely. The satisfaction score reflects that this is an adequately solved problem for the current incumbent mix.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -582,7 +608,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N09",
       "statement": "Minimize measurement failure when water temperature ranges from 5 degrees C (cold fill) to 85 degrees C (hot wash cycle) within a single machine operating envelope",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -592,7 +618,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial dishwashers sequence cold mains water fill (5°C) directly followed by hot wash at 65–85°C within a single programme cycle. Sensors not validated across this full temperature range exhibit systematic bias at temperature extremes; sensors with poor thermal response time produce transient errors during the cold-to-hot transition.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are typically rated from 0°C to 90°C and the bearing grease is selected for the full operating range — they handle the 5°C to 85°C envelope adequately without systematic failure, yielding a satisfaction score of 5. Electromagnetic meters (3–5%) are similarly tolerant of the full temperature range with negligible temperature coefficient error. The incumbent technology mix generally meets the thermal operating range requirement; the main residual gap is the transient error during rapid temperature transitions (addressed separately as PR-6).",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -600,7 +626,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N16",
       "statement": "Minimize the required installation envelope (sensor body length and straight-pipe clearance) to fit within space-constrained commercial machine enclosures without requiring piping redesign",
       "jobStep": "LOCATE",
       "importance": 7,
@@ -610,7 +636,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Commercial machines are assembled to footprint specifications dictated by kitchen or laundry room standards (e.g., 600mm under-counter slots). Sensors requiring straight-pipe runs of 5–10×DN add 100–250mm to the hydraulic circuit, forcing redesign of compact manifolds that were already optimised for the required footprint.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) have compact body lengths of 50–80mm and require 3–5×DN straight pipe — many OEMs have already integrated these dimensions into their manifold designs, yielding a satisfaction score of 5 (adequately solved). Electromagnetic meters (3–5%) have larger body lengths and similar straight-pipe requirements that are more difficult to accommodate. Solenoid timed-fill (30–40%) requires no sensor body and eliminates the installation envelope problem entirely. The satisfaction score reflects incumbent solutions are broadly adequate for current machine designs.",
       "needsRationale": true,
       "primaryStakeholder": "OEM assembly technician / field service installer — integrates and installs the sensor in the machine",
       "stakeholderIds": [
@@ -618,7 +644,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N17",
       "statement": "Minimize the total OEM assembly-line integration time from unpacking to first valid reading, including mechanical fitting, electrical connection, and protocol handshake",
       "jobStep": "PREPARE",
       "importance": 7,
@@ -628,7 +654,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "High-volume commercial appliance manufacturing runs takt times of 3–8 minutes per unit. Any sensor integration step beyond plug-and-confirm — such as manual fluid-type configuration, coupling verification, or protocol setup — adds takt time variability and creates a category of production defects that only manifest at field commissioning.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) install with simple threaded fittings and generate a pulse output that requires only a wire connection — assembly-line integration is fast and well-understood, yielding a satisfaction score of 5. Solenoid timed-fill (30–40%) integrates even faster with no sensor to configure. Electromagnetic meters (3–5%) require electrical grounding, cable routing, and transmitter configuration — their integration time is longer, though still within takt constraints at most OEM facilities. Overall the incumbent mix adequately meets integration time requirements for current production volumes.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -636,7 +662,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N18",
       "statement": "Minimize the likelihood of a sensor passing end-of-line quality test while having an undetected installation defect (misalignment, air pocket, reversed orientation) that causes field failure",
       "jobStep": "CONFIRM",
       "importance": 7,
@@ -646,7 +672,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Installation defects such as reversed orientation or trapped air pockets can produce readings close enough to nominal to pass a short end-of-line flow test but degrade significantly under prolonged field conditions. These latent defects generate warranty claims 6–24 months post-shipment, making them far more expensive to resolve than factory rejects.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) have orientation-dependent installation (flow arrow must align) but generate a diagnostic pulse immediately on first flow — end-of-line testers readily detect reversed orientation or total misalignment, yielding a satisfaction score of 5. Electromagnetic meters (3–5%) similarly provide immediate directional diagnostic feedback. Solenoid timed-fill (30–40%) has no sensor to misinstall. The main residual gap is partial misalignment or trapped air pockets that produce nominally acceptable readings during the short EOL test but cause chronic accuracy loss in service.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -654,9 +680,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the transient measurement error during rapid temperature cycling between cold fill (5 degrees C) and hot wash (85 degrees C) where ultrasonic speed-of-sound correction lags behind actual medium temperature change rate",
-      "jobStep": "EXECUTE",
+      "id": "PR-6",
+      "statement": "Minimize transient error during rapid temperature cycling (5–85°C)",
+      "jobStep": "product_constraint",
       "importance": 7,
       "satisfaction": 5,
       "opportunity": 9,
@@ -664,7 +690,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "The temperature transition from 5°C cold fill to 85°C hot wash changes the speed of sound in water by approximately 100 m/s. If the NTC compensation algorithm lags by more than 5 seconds, the resulting measurement error during the transition phase inflates cycle volume totals by 3–8%, corrupting the water-efficiency record for each affected cycle.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base), including Marquardt, rely on NTC thermistor compensation for speed-of-sound correction — during rapid temperature ramps (5°C cold fill to 85°C hot wash in 30–60 seconds), the NTC sensor lags behind bulk water temperature, introducing a 3–8% transient error window; current implementations have satisfaction score 5 because the error resolves quickly and most cycle-level totals are not significantly affected. Turbine/paddle-wheel sensors (45–55%) have no acoustic speed-of-sound dependency and are thermally unaffected by temperature ramps. Solenoid timed-fill (30–40%) is similarly unaffected.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -672,7 +698,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N14b",
       "statement": "Minimize the OEM qualification cost for validating acoustic performance across multiple machine platforms with different pipe diameters (DN14-DN25) and media compositions",
       "jobStep": "PREPARE",
       "importance": 6,
@@ -682,7 +708,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "A commercial machinery OEM with 5–10 machine platforms spanning DN14–DN25 and 3–4 media types (clean water, detergent water, sanitiser solution) faces a sensor qualification matrix of 15–40 test configurations. Each flow lab run costs €8K–€20K; platform-agnostic sensors that share calibration coefficients across DN sizes eliminate most of this cost.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are available in multiple DN variants (DN15, DN20, DN25) that each require separate qualification runs — OEMs managing a multi-platform portfolio must qualify each DN size independently, yielding a satisfaction score of 4. Electromagnetic meters (3–5%) have the same multi-variant qualification burden. Ultrasonic sensors (<5%) require acoustic coupling validation per DN size and per media type (clean water vs detergent), creating a larger qualification matrix than mechanical sensors. The satisfaction score of 4 reflects that current incumbents partially address qualification scope through established procedures, but still require significant OEM investment.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -690,7 +716,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N21",
       "statement": "Minimize the number of sensor variants an OEM must qualify and stock to cover its full product range of water-using equipment across DN12-DN25 pipe sizes",
       "jobStep": "DEFINE",
       "importance": 6,
@@ -700,7 +726,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "An OEM managing 8–15 machine models across DN12–DN25 must maintain a qualified sensor part number for each size. Multi-DN sensors with a single qualified part number reduce supplier complexity, safety stock requirements, and the risk of production line stoppages from component substitution errors.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensor suppliers (45–55%) offer product families with separate part numbers per DN size — an OEM covering DN12, DN15, DN20, and DN25 must qualify and stock four separate part numbers, yielding a satisfaction score of 4 (manageable but not ideal). Electromagnetic meter suppliers (3–5%) similarly offer DN-specific variants. No incumbent technology in this market currently offers a single qualified sensor that spans the full DN12–DN25 range with a common calibration, meaning the variant-count problem is broadly unsolved across the installed base.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -708,7 +734,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "N13",
       "statement": "Minimize the OEM integration time required to configure fluid-type parameters and verify acoustic coupling for each machine variant during assembly-line commissioning",
       "jobStep": "PREPARE",
       "importance": 6,
@@ -718,7 +744,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Assembly-line commissioning of a sensor that requires manual fluid-type configuration per machine variant adds 2–5 minutes per unit. At 500 units per day across a multi-platform production line, this represents 20–40 hours of daily direct labour purely for sensor commissioning — a cost that self-configuring sensors eliminate entirely.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/paddle-wheel sensors (45–55%) are plug-and-play — they require no fluid-type configuration and generate pulse output immediately after connection; assembly-line commissioning is a simple fit-and-verify step, yielding a satisfaction score of 5. Solenoid timed-fill (30–40%) requires no sensor commissioning at all. Ultrasonic sensors (<5%), including Marquardt, require acoustic coupling verification and fluid parameter configuration per machine variant — their commissioning burden is higher than mechanical alternatives and is the specific source of this need.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -726,9 +752,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the risk of polymer housing seal degradation when commercial hot wash cycles operate at 85 degrees C within 5 degrees C of the ultrasonic sensor's 90 degrees C material limit for extended duty cycles",
-      "jobStep": "EXECUTE",
+      "id": "PR-7",
+      "statement": "Minimize polymer housing seal degradation at 85°C near 90°C material limit",
+      "jobStep": "product_constraint",
       "importance": 6,
       "satisfaction": 5,
       "opportunity": 7,
@@ -736,7 +762,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial dishwashers operating at 85°C run 300–500 cycles daily, exposing sensor O-rings to 30,000–50,000 thermal cycles per year at near-material-limit temperatures. Seal degradation at these duty cycles is progressive and time-dependent; machines deployed in food service environments cannot tolerate flow sensor leaks given hygiene and water damage risk.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Marquardt's ultrasonic sensor uses a polymer housing rated to 90°C — continuous operation at 85°C creates a 5°C thermal margin that is adequate for intermittent duty but narrows progressively under sustained high-temperature cycles; current polymer O-ring formulations maintain seal integrity at this margin for 2–3 years before elastomer hardening begins, yielding a satisfaction score of 5 (not a near-term failure but a long-term degradation risk). Turbine/paddle-wheel sensors (45–55%) use equivalent polymer bodies with similar temperature limits and face the same degradation trajectory. Metal-bodied electromagnetic meters (3–5%) have superior thermal stability but are overspecified for this need.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [
@@ -744,9 +770,9 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of acoustic coupling degradation when surfactant concentrations in commercial wash water shift the medium's acoustic impedance outside the ultrasonic transducer's validated operating envelope",
-      "jobStep": "EXECUTE",
+      "id": "PR-8",
+      "statement": "Minimize acoustic coupling degradation from surfactant concentration shifts",
+      "jobStep": "product_constraint",
       "importance": 6,
       "satisfaction": 5,
       "opportunity": 7,
@@ -754,7 +780,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commercial detergents contain surfactant concentrations 10–50× higher than domestic products; these reduce surface tension and alter acoustic impedance of the wash water. Sensors validated only in clean water or low-concentration domestic detergent solutions can experience 5–15% coupling loss in concentrated commercial surfactant wash water.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Ultrasonic transit-time sensors (<5% installed base), including Marquardt, are validated in clean water and standard domestic detergent solutions — their transducer coupling is calibrated for the acoustic impedance of water (1.48 MRayl); concentrated commercial surfactants shift impedance by 2–5% and can degrade coupling by 5–15% in worst-case formulations; current implementations tolerate moderate surfactant concentrations adequately, yielding a satisfaction score of 5. Turbine/paddle-wheel sensors (45–55%) have no acoustic coupling dependency and are immune to surfactant-driven acoustic impedance shifts. Solenoid timed-fill (30–40%) is similarly unaffected.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (OEM design engineer), assembler, commissioning tech, field service technician, disposer",
       "stakeholderIds": [

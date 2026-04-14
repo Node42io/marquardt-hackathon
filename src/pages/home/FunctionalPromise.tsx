@@ -52,7 +52,7 @@ export default function FunctionalPromise() {
       <div className="section-meta">
         <span>Step 02</span>
         <span className="sep">/</span>
-        <span>Christensen Capability Abstraction — Two-Level Functional Promise</span>
+        <span>Two-Level Functional Promise</span>
         <span className="sep">/</span>
         <span>New Markets for an Existing Product</span>
       </div>
@@ -77,7 +77,7 @@ export default function FunctionalPromise() {
         {/* Metadata block */}
         <blockquote>
           <p><strong>Component:</strong> Functional Promise (Step 02)</p>
-          <p><strong>Framework:</strong> Christensen Capability Abstraction, Two-Level Functional Promise</p>
+          <p><strong>Approach:</strong> Two-Level Functional Promise (product-level and commodity-level)</p>
           <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
           <p><strong>Vendor:</strong> Marquardt GmbH</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>

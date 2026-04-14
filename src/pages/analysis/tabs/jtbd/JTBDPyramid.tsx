@@ -326,7 +326,7 @@ export default function JTBDPyramid({ jtbd, odi, marketName }: JTBDPyramidProps)
               color: "var(--accent-yellow)",
             }}
           >
-            Framework
+            Customer Needs Pyramid
           </span>
           <span
             style={{
@@ -337,13 +337,13 @@ export default function JTBDPyramid({ jtbd, odi, marketName }: JTBDPyramidProps)
               color: "var(--text-gray-dark)",
             }}
           >
-            Burleson JTBD Pyramid v5
+            5-tier · P1 = core job / P5 = full ownership
           </span>
         </div>
         <p style={{ margin: 0 }}>
           The{" "}
           <strong style={{ color: "var(--text-white)" }}>
-            Burleson Pyramid
+            Customer Needs Pyramid
           </strong>{" "}
           organizes customer needs into 5 layers — from the core job they hire a
           product to do, down to the full ownership experience. Needs{" "}
@@ -353,7 +353,7 @@ export default function JTBDPyramid({ jtbd, odi, marketName }: JTBDPyramidProps)
           (P1–P2) are more strategic and drive purchase decisions; lower layers
           (P3–P5) affect adoption, loyalty, and switching costs. Each layer
           below is populated from the{" "}
-          {rawNeeds.length > 0 ? `${rawNeeds.length} ` : ""}ODI outcomes for{" "}
+          {rawNeeds.length > 0 ? `${rawNeeds.length} ` : ""}customer outcomes for{" "}
           <strong style={{ color: "var(--text-white)" }}>{marketName}</strong>,
           classified by heuristic keyword matching when no explicit level tag is
           present.
@@ -487,7 +487,7 @@ export default function JTBDPyramid({ jtbd, odi, marketName }: JTBDPyramidProps)
               color: "var(--text-gray-dark)",
             }}
           >
-            Burleson v5.1
+            5-tier needs pyramid
           </span>
           <span
             style={{

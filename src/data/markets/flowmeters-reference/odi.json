@@ -66,7 +66,7 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "",
+      "importanceRationale": "Dry-run conditions destroy pumps, seals, and heat exchangers within seconds to minutes. In industrial process and HVAC applications, the flowmeter is the first instrument to detect empty-pipe conditions; detection latency over 5 seconds allows damage to propagate through expensive downstream assets before a protective shutdown activates.",
       "satisfactionRationale": "",
       "needsRationale": true,
       "primaryStakeholder": "",

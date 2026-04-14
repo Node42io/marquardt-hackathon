@@ -50,7 +50,7 @@ function PyramidLegend() {
           marginBottom: 2,
         }}
       >
-        Burleson Pyramid Level Key
+        Customer Needs Pyramid — Level Key
       </span>
       {PYRAMID_LEVELS.map(({ code, label }) => (
         <div key={code} style={{ display: "flex", alignItems: "center", gap: 6 }}>

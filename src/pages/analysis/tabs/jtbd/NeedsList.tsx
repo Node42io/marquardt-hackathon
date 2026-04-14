@@ -139,7 +139,7 @@ export default function NeedsList({ needs, highlightNeed }: NeedsListProps) {
         <span style={{ textAlign: "center" }}>
           <ColumnHeaderTooltip
             label="Opp."
-            tip="Opportunity Score (Ulwick ODI formula) — higher means more market whitespace. = Importance + (Importance − Satisfaction)."
+            tip="Opportunity Score — higher means more market whitespace. Formula: Importance + (Importance − Satisfaction)."
           />
         </span>
         <span style={{ textAlign: "center" }}>Status</span>

@@ -54,7 +54,7 @@ export default function ProductDecomposition() {
       <div className="section-meta">
         <span>Step 01</span>
         <span className="sep">/</span>
-        <span>Christensen Capability Abstraction</span>
+        <span>Product Breakdown</span>
         <span className="sep">/</span>
         <span>New Markets for an Existing Product</span>
       </div>
@@ -66,9 +66,8 @@ export default function ProductDecomposition() {
         <ExecutiveSummary kicker="01 / Executive Summary" title="What you are reading">
           <p className="answer">
             This chapter decomposes the Marquardt Ultrasonic Flow Sensor into its underlying
-            mechanism, functional promise, feature set, and physical specifications — following
-            the Christensen Capability Abstraction framework. Understanding what the product
-            actually <em>does</em> at each level of abstraction (mechanism → function → outcome)
+            mechanism, functional promise, feature set, and physical specifications. Understanding what the product
+            actually <em>does</em> at each level (mechanism → function → outcome)
             is the foundation for every market-entry decision that follows: it tells us which
             markets are structurally compatible, which features differentiate, and which
             constraints limit entry. The next chapter (02 Functional Promise) uses this
@@ -79,7 +78,7 @@ export default function ProductDecomposition() {
         {/* Metadata block */}
         <blockquote>
           <p><strong>Component:</strong> Product Decomposition (Step 01)</p>
-          <p><strong>Framework:</strong> Christensen Capability Abstraction</p>
+          <p><strong>Approach:</strong> Three-level product breakdown (mechanism → function → outcome)</p>
           <p><strong>Product:</strong> {product.productName}</p>
           <p><strong>Vendor:</strong> {product.vendorName}</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>
@@ -87,8 +86,8 @@ export default function ProductDecomposition() {
 
         <hr />
 
-        {/* ── Christensen Abstraction ── */}
-        <h2>Christensen Abstraction</h2>
+        {/* ── Product Breakdown ── */}
+        <h2>What the Sensor Does — Three Levels</h2>
 
         <table>
           <thead>

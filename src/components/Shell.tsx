@@ -56,7 +56,7 @@ export default function Shell() {
           </nav>
         </div>
 
-        {/* Framework footnote at bottom */}
+        {/* Tagline at bottom */}
         <div style={{
           padding: "20px",
           marginTop: "auto",
@@ -72,11 +72,8 @@ export default function Shell() {
           <div style={{ color: "var(--text-gray-light)", fontSize: 11 }}>
             New Markets for Existing Product
           </div>
-          <div style={{ textTransform: "uppercase", letterSpacing: "0.1em", marginTop: 8, marginBottom: 3 }}>
-            Frameworks
-          </div>
-          <div style={{ color: "var(--text-gray-light)", fontSize: 11 }}>
-            Christensen · Ulwick ODI · Kano · Adner VN
+          <div style={{ color: "var(--text-gray-light)", fontSize: 11, marginTop: 8 }}>
+            Data-driven market analysis across product, customer, value network, and competitive landscape
           </div>
         </div>
       </aside>

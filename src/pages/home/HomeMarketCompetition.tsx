@@ -89,7 +89,7 @@ export default function HomeMarketCompetition() {
         {/* Metadata block */}
         <blockquote>
           <p><strong>Component:</strong> Competitive Landscape (Step 03)</p>
-          <p><strong>Framework:</strong> Christensen Disruption Theory, Porter's Five Forces</p>
+          <p><strong>Approach:</strong> Technology-by-technology competitive breakdown with switching cost assessment</p>
           <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
           <p><strong>Vendor:</strong> Marquardt GmbH</p>
           <p><strong>Archetype:</strong> New Markets for an Existing Product</p>

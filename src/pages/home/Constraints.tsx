@@ -146,7 +146,7 @@ export default function Constraints() {
         <span className="sep">/</span>
         <span>Constraints Analysis</span>
         <span className="sep">/</span>
-        <span>Six-Type Constraint Taxonomy</span>
+        <span>Constraints Analysis</span>
       </div>
 
       <div className="md">
@@ -171,8 +171,7 @@ export default function Constraints() {
         <blockquote>
           <p><strong>Component:</strong> Constraints Analysis (Step 07)</p>
           <p>
-            <strong>Framework:</strong> Six-Type Constraint Taxonomy (physical, chemical,
-            operational, economic, regulatory, environmental)
+            <strong>Coverage:</strong> Physical, chemical, operational, economic, regulatory, and environmental limits
           </p>
           <p><strong>Product:</strong> Marquardt Ultrasonic Flow Sensor</p>
           <p><strong>Vendor:</strong> Marquardt GmbH</p>

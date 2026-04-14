@@ -4,15 +4,15 @@
   "slug": "heating-equipment",
   "summary": {
     "totalNeeds": 41,
-    "underservedCount": 0,
+    "underservedCount": 15,
     "overservedCount": 0,
-    "avgOpportunityScore": 0
+    "avgOpportunityScore": 10.85
   },
   "top5Opportunities": [
     {
       "rank": 1,
-      "needId": "",
-      "statement": "",
+      "needId": "N15b",
+      "statement": "Minimize the number of undetected system faults (blocked filter, stuck valve) that DP estimation cannot sense because it has no direct flow measurement",
       "importance": 8,
       "satisfaction": 2,
       "opportunity": 14,
@@ -20,8 +20,8 @@
     },
     {
       "rank": 2,
-      "needId": "",
-      "statement": "",
+      "needId": "N01",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than \u00b13% from true value across the 5\u201350 l/min operating range",
       "importance": 9,
       "satisfaction": 5,
       "opportunity": 13,
@@ -29,8 +29,8 @@
     },
     {
       "rank": 3,
-      "needId": "",
-      "statement": "",
+      "needId": "N04",
+      "statement": "Minimize time to detect a complete flow stoppage event (circulator failure or valve closure) to less than 2 seconds",
       "importance": 9,
       "satisfaction": 5,
       "opportunity": 13,
@@ -38,8 +38,8 @@
     },
     {
       "rank": 4,
-      "needId": "",
-      "statement": "",
+      "needId": "N24",
+      "statement": "Minimize the field failure rate of the flow sensing subsystem to below 0.1% within the 15-year appliance design life",
       "importance": 9,
       "satisfaction": 5,
       "opportunity": 13,
@@ -47,8 +47,8 @@
     },
     {
       "rank": 5,
-      "needId": "",
-      "statement": "",
+      "needId": "N07",
+      "statement": "Minimize the number of undetected air entrainment events exceeding 2% volume that silently degrade measurement accuracy",
       "importance": 8,
       "satisfaction": 3,
       "opportunity": 13,
@@ -67,17 +67,17 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "DP estimation infers flow from pump speed and curve data, making it blind to flow-reducing faults that occur downstream of the pump. Blocked magnetic filters and stuck zone valves are the most common hydronic system failures, and undetected they cause overheating, comfort loss, and accelerated component wear.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "DP estimation (5\u201315% share) provides zero fault visibility \u2014 it has no measurement and cannot detect downstream restrictions; turbine sensors (55\u201365%) stall when blocked but produce a zero reading indistinguishable from genuine zero-flow; no incumbent technology provides active fault discrimination, producing the market satisfaction score of 2.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize the likelihood of volumetric flow reading deviating more than ±3% from true value across the 5–50 l/min operating range",
+      "statement": "Minimize the likelihood of volumetric flow reading deviating more than \u00b13% from true value across the 5\u201350 l/min operating range",
       "jobStep": "EXECUTE",
       "importance": 9,
       "satisfaction": 5,
@@ -85,13 +85,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Thermal energy output (Q = flow × Cp × ΔT) scales linearly with measured flow, so a ±3% error produces a ±3% energy error that propagates to burner modulation control and EcoDesign efficiency labels. At importance 9/10, OEM engineers treat accuracy as a non-negotiable design requirement for product certification.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Thermal energy output (Q = flow \u00d7 Cp \u00d7 \u0394T) scales linearly with measured flow, so a \u00b13% error produces a \u00b13% energy error that propagates to burner modulation control and EcoDesign efficiency labels. At importance 9/10, OEM engineers treat accuracy as a non-negotiable design requirement for product certification.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) achieve \u00b13% accuracy when new in clean water circuits, placing them at the satisfaction threshold; ultrasonic (20\u201330%) maintains \u00b11\u20132% long-term with no mechanical wear; the dominant turbine installed base delivers adequate-but-degrading accuracy, producing the blended market satisfaction score of 5.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -105,12 +105,12 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Loss of flow in an active boiler circuit causes rapid heat exchanger overshoot; EN 15502 Category III appliances require flow-proving before and during burner operation. A 2-second detection threshold limits thermal stress to the primary HX and prevents safety valve actuation that would require manual reset.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) detect flow stoppage as rotor deceleration within 0.5\u20132 seconds at nominal flow, meeting the 2-second target; ultrasonic (20\u201330%) detects step-change stoppages in <1 second \u2014 both dominant incumbent technologies meet this threshold adequately, explaining the market satisfaction score of 5.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -123,13 +123,13 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Air in hydronic circuits is a chronic issue, especially in retrofit systems where flushing is incomplete. Above 2% void fraction, turbine sensors slow and ultrasonic sensors lose signal, both without flagging the cause — so the control system interprets measurement error as valid data rather than an alarm condition.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Air in hydronic circuits is a chronic issue, especially in retrofit systems where flushing is incomplete. Above 2% void fraction, turbine sensors slow and ultrasonic sensors lose signal, both without flagging the cause \u2014 so the control system interprets measurement error as valid data rather than an alarm condition.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) slow or stall on air bubbles without generating any diagnostic output \u2014 the under-read is silent; ultrasonic sensors (20\u201330%) lose acoustic lock but produce a zero or error code rather than identifying the cause; no incumbent technology distinguishes air entrainment from other causes of degraded readings, producing the low satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -142,18 +142,18 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Magnetite (Fe₃O₄) and paramagnetic MnO₂ preferentially deposit on magnetized turbine rotors in hard-water hydronic circuits. Field data indicates 5–15% turbine replacement within 3 years in circuits without magnetic filtration, driving significant OEM warranty costs and installer callbacks.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Magnetite (Fe\u2083O\u2084) and paramagnetic MnO\u2082 preferentially deposit on magnetized turbine rotors in hard-water hydronic circuits. Field data indicates 5\u201315% turbine replacement within 3 years in circuits without magnetic filtration, driving significant OEM warranty costs and installer callbacks.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% dominant share) are the source of this problem \u2014 their magnetized rotors attract magnetite and their bearings clog progressively; the turbine incumbent is inherently vulnerable and no sensor-level mitigation exists; ultrasonic sensors (20\u201330%) are completely immune as they have no moving parts, but the dominant turbine installed base drives the market satisfaction score to 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize calibration drift exceeding ±5% over 12 months caused by bearing wear and blade erosion in hard-water circuits",
+      "statement": "Minimize calibration drift exceeding \u00b15% over 12 months caused by bearing wear and blade erosion in hard-water circuits",
       "jobStep": "EXECUTE",
       "importance": 8,
       "satisfaction": 3,
@@ -161,13 +161,13 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Continuous rotation erodes turbine blade edges and wears bearing surfaces; mineral scale deposits progressively change blade geometry. The combined drift shifts the K-factor (pulses per litre) by 3–8% per year in hard-water areas, causing the boiler to under-measure flow and over-fire at low loads.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Continuous rotation erodes turbine blade edges and wears bearing surfaces; mineral scale deposits progressively change blade geometry. The combined drift shifts the K-factor (pulses per litre) by 3\u20138% per year in hard-water areas, causing the boiler to under-measure flow and over-fire at low loads.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) drift at 3\u20138% annually in hard-water circuits \u2014 the dominant incumbent technology is the root cause of this problem; ultrasonic sensors (20\u201330%) have no mechanical wear and maintain stable calibration for years; the dominant turbine installed base drags market satisfaction to 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -181,12 +181,12 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Ultrasonic sensors report zero flow both when flow is genuinely absent and when the acoustic path is interrupted by air pockets. Without diagnostic flags to disambiguate signal-loss causes, the controller either triggers unnecessary safety shutdowns or ignores a real dry-fire condition.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) provide a definitive zero signal when truly no-flow \u2014 there is no acoustic ambiguity; ultrasonic sensors (20\u201330%) cannot distinguish bubble-induced signal loss from genuine zero-flow without additional diagnostics; the turbine incumbent advantage on this specific point is offset by its other failure modes, producing the satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -199,13 +199,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Boiler OEMs target <0.1% component failure rate over the appliance warranty period. Flow sensor failure triggers loss of modulation control, safety shutdown, or comfort complaint — each costing €200–500 in warranty service, with disproportionate brand reputation damage relative to component cost.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Boiler OEMs target <0.1% component failure rate over the appliance warranty period. Flow sensor failure triggers loss of modulation control, safety shutdown, or comfort complaint \u2014 each costing 200\u2013500 EUR in warranty service, with disproportionate brand reputation damage relative to component cost.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) exhibit field failure rates of 2\u201310% annually in hard-water circuits, far above the 0.1% target; ultrasonic sensors (20\u201330%) achieve <0.5% annual failure with no moving parts \u2014 but neither technology consistently meets 0.1% across 15-year appliance life, producing the blended market satisfaction score of 5.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -219,17 +219,17 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "EU EcoDesign revisions (consultation closed Jan 2026) are moving toward requiring heaters to measure and display real-world consumption. Onboard flow + temperature enables field-verified efficiency certification, giving OEMs a regulatory advantage over competitors relying solely on lab-test results.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) provide a pulse output only \u2014 no integrated temperature, no onboard energy calculation, no EcoDesign-compatible data stream; DP estimation (5\u201315%) cannot provide the metrological traceability required for compliance; no incumbent technology natively supports documented field-measured seasonal efficiency, producing the low satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
         "OEM procurement manager / HVAC wholesaler buyer"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize measurement degradation when medium temperature shifts by more than 20°C within a single heating cycle",
+      "statement": "Minimize measurement degradation when medium temperature shifts by more than 20\u00b0C within a single heating cycle",
       "jobStep": "EXECUTE",
       "importance": 8,
       "satisfaction": 4,
@@ -237,13 +237,13 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Hydronic heating circuits undergo rapid temperature transients from cold-start (15°C) to operating temperature (75°C). Speed of sound in water changes ~2.4 m/s per °C, accumulating ~1.5% measurement error per 20°C swing in sensors without real-time compensation.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Hydronic heating circuits undergo rapid temperature transients from cold-start (15\u00b0C) to operating temperature (75\u00b0C). Speed of sound in water changes approximately 2.4 m/s per \u00b0C, accumulating approximately 1.5% measurement error per 20\u00b0C swing in sensors without real-time compensation.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are largely insensitive to temperature-related measurement changes \u2014 mechanical rotation is not affected by fluid acoustic properties; ultrasonic sensors (20\u201330%) require NTC compensation to maintain accuracy during temperature swings; the turbine incumbent advantage on temperature independence partially offsets ultrasonic's accuracy advantage, producing the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -257,11 +257,11 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Modern condensing boilers modulate 1:5 to 1:10. A sensor under-specified for minimum flow creates a measurement dead zone precisely at low-modulation points where condensing efficiency gains are highest, forcing the OEM to either accept blind operation or oversize the sensor.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) stall below 3 l/min, creating dead zones at minimum modulation for a typical DN20 boiler; ultrasonic sensors (20\u201330%) have better low-flow resolution but still have a detection threshold; the dominant turbine incumbent creates significant specification dead zones at low load, producing the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
         "OEM procurement manager / HVAC wholesaler buyer"
       ]
     },
@@ -275,18 +275,18 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Frost-protection glycol blends are standard in heat-pump hybrid and outdoor-circuit applications. Speed-of-sound changes by ~8% per 10% glycol increment, causing ultrasonic transit-time sensors to mis-measure unless the fluid-type compensation is accurate across the full 0–50% mix range.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Frost-protection glycol blends are standard in heat-pump hybrid and outdoor-circuit applications. Speed-of-sound changes by approximately 8% per 10% glycol increment, causing ultrasonic transit-time sensors to mis-measure unless the fluid-type compensation is accurate across the full 0\u201350% mix range.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are minimally affected by glycol concentration \u2014 mechanical rotation is fluid-property-independent \u2014 making them the incumbent choice for glycol circuits; ultrasonic sensors (20\u201330%) require factory-calibrated glycol compensation tables that may not cover all site-specific concentrations; the turbine advantage for glycol circuits partially satisfies this need at a score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize the likelihood of flow estimate error exceeding ±15% due to pump curve deviation from catalog values at part-load conditions",
+      "statement": "Minimize the likelihood of flow estimate error exceeding \u00b115% due to pump curve deviation from catalog values at part-load conditions",
       "jobStep": "EXECUTE",
       "importance": 7,
       "satisfaction": 2,
@@ -295,12 +295,12 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "DP-based flow estimation relies on the pump's H-Q curve being stable, but impeller wear, air ingestion, and voltage variation all shift the actual curve away from catalog values. At part-load, where most heating operation occurs, these deviations can compound to 15%+ error, invalidating efficiency calculations.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "DP estimation (5\u201315% share) is the technology that generates this failure mode and cannot self-correct it \u2014 the error is structural; turbine sensors (55\u201365%) provide direct measurement that is immune to pump curve deviation; the DP segment's fundamental inability to address its own accuracy problem produces the very low satisfaction score of 2.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -313,18 +313,18 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Thermal energy metering (Q = flow × Cp × ΔT) requires co-located flow and temperature data. Two separate sensors introduce installation complexity, additional sealing points, wiring cost, and time-alignment errors; a combined device eliminates all four issues and is a direct OEM BOM simplification.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Thermal energy metering (Q = flow \u00d7 Cp \u00d7 \u0394T) requires co-located flow and temperature data. Two separate sensors introduce installation complexity, additional sealing points, wiring cost, and time-alignment errors; a combined device eliminates all four issues and is a direct OEM BOM simplification.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) provide pulse output only \u2014 no temperature sensing; they require a separate NTC probe for thermal energy calculation; ultrasonic sensors (20\u201330%) also typically require a separate temperature probe in boiler applications; no dominant incumbent technology integrates flow and temperature in a single body as standard, producing the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize the variation in thermal energy calculation (Q = flow × Cp × ΔT) caused by flow measurement noise at low modulation rates (<25% burner output)",
+      "statement": "Minimize the variation in thermal energy calculation (Q = flow \u00d7 Cp \u00d7 \u0394T) caused by flow measurement noise at low modulation rates (<25% burner output)",
       "jobStep": "EXECUTE",
       "importance": 8,
       "satisfaction": 4,
@@ -333,17 +333,17 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "At 25% burner output, flow velocities are near sensor detection limits and small absolute errors translate to large percentage errors in thermal energy totals. Noisy energy readings prevent the boiler controller from accurately charging heat batteries or logging ErP performance, both of which are increasingly mandatory.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) experience increased noise at low modulation due to rotor flutter near the stall threshold; DP estimation (5\u201315%) is the noisiest at part-load due to pump curve nonlinearity; ultrasonic (20\u201330%) performs better at low flow but still has SNR limitations near the detection floor; the market-blended satisfaction score of 4 reflects that no incumbent reliably handles the low-modulation noise challenge.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Minimize the likelihood of commissioning sign-off with hydraulic imbalance exceeding ±10% of design flow rate per zone",
+      "statement": "Minimize the likelihood of commissioning sign-off with hydraulic imbalance exceeding \u00b110% of design flow rate per zone",
       "jobStep": "CONFIRM",
       "importance": 8,
       "satisfaction": 4,
@@ -351,8 +351,8 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Hydraulic imbalance beyond ±10% causes zone overheating, pump noise, and inefficient heat distribution. Commissioning technicians who sign off without verifiable flow data expose themselves to warranty liability; real-time sensor readout during balancing eliminates guesswork and creates an auditable commissioning record.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Hydraulic imbalance beyond \u00b110% causes zone overheating, pump noise, and inefficient heat distribution. Commissioning technicians who sign off without verifiable flow data expose themselves to warranty liability; real-time sensor readout during balancing eliminates guesswork and creates an auditable commissioning record.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) provide real-time flow readings that support commissioning balancing, but require field instruments to read the pulse output; DP estimation (5\u201315%) cannot be used for commissioning verification at all; ultrasonic (20\u201330%) provides digital output usable with portable readout tools; the incumbent market provides partial commissioning support but no standardized commissioning workflow, producing satisfaction of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -361,7 +361,7 @@
     },
     {
       "id": "",
-      "statement": "Increase the ability to achieve A-rated energy label classification on the first certification submission by providing measurement accuracy that matches laboratory reference within ±2%",
+      "statement": "Increase the ability to achieve A-rated energy label classification on the first certification submission by providing measurement accuracy that matches laboratory reference within \u00b12%",
       "jobStep": "DEFINE",
       "importance": 8,
       "satisfaction": 4,
@@ -369,12 +369,12 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "EU ErP A-rated label certification requires lab-verified seasonal efficiency measurements. If the in-product flow sensor diverges from the reference lab instrument by more than ±2%, the OEM must re-run the full certification cycle — costing 6–12 weeks and €15K–€30K per submission failure.",
-      "satisfactionRationale": "",
+      "importanceRationale": "EU ErP A-rated label certification requires lab-verified seasonal efficiency measurements. If the in-product flow sensor diverges from the reference lab instrument by more than \u00b12%, the OEM must re-run the full certification cycle \u2014 costing 6\u201312 weeks and 15K\u201330K EUR per submission failure.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) achieve \u00b13\u20135% accuracy in lab conditions, borderline for \u00b12% certification tolerance \u2014 OEMs must select high-grade turbines and accept some re-test risk; ultrasonic (20\u201330%) achieves \u00b11\u20132% more reliably; the dominant turbine share creates systemic first-submission risk, explaining the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
         "OEM procurement manager / HVAC wholesaler buyer"
       ]
     },
@@ -388,8 +388,8 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Condensing boilers spend the majority of their annual runtime at 20–40% burner output for weather-compensated operation. If the sensor goes blind below 4.2 l/min, the controller loses thermal feedback exactly when efficiency optimisation matters most, causing unnecessary cycling and ErP performance shortfalls.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Condensing boilers spend the majority of their annual runtime at 20\u201340% burner output for weather-compensated operation. If the sensor goes blind below 4.2 l/min, the controller loses thermal feedback exactly when efficiency optimisation matters most, causing unnecessary cycling and ErP performance shortfalls.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) stall below 3 l/min, creating dead zones similar to the 4.2 l/min ultrasonic detection threshold; DP estimation (5\u201315%) loses accuracy significantly below 30% pump speed; ultrasonic incumbents (20\u201330%) vary in their low-flow detection thresholds \u2014 all incumbents struggle at minimum modulation, explaining the satisfaction score of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -398,7 +398,7 @@
     },
     {
       "id": "",
-      "statement": "Minimize the installation footprint penalty from the 5-10× DN straight-pipe requirement that competes for space within compact boiler enclosures and wall-hung appliance housings",
+      "statement": "Minimize the installation footprint penalty from the 5-10\u00d7 DN straight-pipe requirement that competes for space within compact boiler enclosures and wall-hung appliance housings",
       "jobStep": "LOCATE",
       "importance": 8,
       "satisfaction": 4,
@@ -406,8 +406,8 @@
       "isUnderserved": true,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Wall-hung condensing boiler enclosures have shrunk to 400×700×280mm to meet kitchen aesthetics. A 10×DN straight-pipe run on a DN20 sensor demands 200mm of unobstructed pipe — often longer than available — forcing redesign of the appliance's hydraulic manifold block.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Wall-hung condensing boiler enclosures have shrunk to 400\u00d7700\u00d7280mm to meet kitchen aesthetics. A 10\u00d7DN straight-pipe run on a DN20 sensor demands 200mm of unobstructed pipe \u2014 often longer than available \u2014 forcing redesign of the appliance's hydraulic manifold block.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) require only 3\u00d7DN upstream run and have compact body lengths that fit easily within boiler manifolds \u2014 the dominant incumbent's installation compactness is a key competitive advantage; ultrasonic sensors require 5\u201310\u00d7DN upstream run, requiring more manifold real estate; the turbine advantage partially satisfies this need, explaining the score of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -424,12 +424,12 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Mechanical turbine sensors accumulate magnetite and scale particles on rotor bearings, causing progressive under-reading. Annual service calls to inspect and clean flow sensors add ~€60–€90 in labour per boiler visit — a recurring cost that service contracts increasingly prohibit.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Mechanical turbine sensors accumulate magnetite and scale particles on rotor bearings, causing progressive under-reading. Annual service calls to inspect and clean flow sensors add approximately 60\u201390 EUR in labour per boiler visit \u2014 a recurring cost that service contracts increasingly prohibit.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) require annual cleaning as a known maintenance task \u2014 the dominant incumbent technology is the source of this maintenance burden; ultrasonic sensors (20\u201330%) have no moving parts and require no cleaning; the dominant turbine market share keeps annual cleaning a widespread ongoing cost, producing the satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor"
       ]
     },
     {
@@ -442,13 +442,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Turbine rotors require a minimum kinetic energy threshold to overcome bearing friction and begin rotating. Below 3 l/min, many mechanical sensors read zero while flow continues, preventing the boiler controller from distinguishing true no-flow from low-load trickle flow — a critical distinction for modulating heat exchangers.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Turbine rotors require a minimum kinetic energy threshold to overcome bearing friction and begin rotating. Below 3 l/min, many mechanical sensors read zero while flow continues, preventing the boiler controller from distinguishing true no-flow from low-load trickle flow \u2014 a critical distinction for modulating heat exchangers.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are the source of this problem \u2014 the <3 l/min stall threshold is inherent to their mechanical operating principle; ultrasonic sensors (20\u201330%) measure reliably to 1\u20132 l/min in boiler applications; the dominant turbine installed base makes low-flow dead bands a pervasive market problem, producing the satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -461,18 +461,18 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Circulator pump failure is the leading cause of no-heat service calls. A gradual 10–15% flow reduction over weeks signals bearing wear or impeller cavitation, but most boilers have no instrument to detect this trend — leaving the first symptom as a comfort complaint and emergency call-out.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Circulator pump failure is the leading cause of no-heat service calls. A gradual 10\u201315% flow reduction over weeks signals bearing wear or impeller cavitation, but most boilers have no instrument to detect this trend \u2014 leaving the first symptom as a comfort complaint and emergency call-out.",
+      "satisfactionRationale": "No incumbent technology \u2014 turbine, ultrasonic, or DP estimation \u2014 provides automated pump-degradation trend alerting as a standard feature; all three output instantaneous flow rate without historical trend analysis; the universal absence of proactive degradation monitoring across all incumbent technologies produces the satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
       "id": "",
-      "statement": "Increase the ability to provide installer-visible flow data (display or diagnostic output) that demonstrates measured — not estimated — system performance during commissioning and service visits",
+      "statement": "Increase the ability to provide installer-visible flow data (display or diagnostic output) that demonstrates measured \u2014 not estimated \u2014 system performance during commissioning and service visits",
       "jobStep": "DEFINE",
       "importance": 7,
       "satisfaction": 3,
@@ -481,11 +481,11 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Heating regulations (BS 7593, CIBSE guides) require documented commissioning records. If the only flow data available is an estimate from pump speed, the installer cannot provide evidence-based sign-off, increasing legal exposure when performance disputes arise after handover.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) produce a pulse output that requires a hand-held pulse counter or boiler display to read \u2014 installer-visible data exists but is indirect; DP estimation (5\u201315%) provides no measurable flow output at all; ultrasonic (20\u201330%) provides digital readout accessible via commissioning tools; the incomplete installer-visibility across the dominant turbine segment explains the satisfaction score of 3.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
         "OEM procurement manager / HVAC wholesaler buyer"
       ]
     },
@@ -499,8 +499,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Industry data shows 30–40% of first-year heating complaints stem from hydraulic imbalance set during commissioning. Each call-back costs the installer 2–3 hours unbillable time; flow measurement during commissioning directly prevents the most common post-installation deficiency.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Industry data shows 30\u201340% of first-year heating complaints stem from hydraulic imbalance set during commissioning. Each call-back costs the installer 2\u20133 hours unbillable time; flow measurement during commissioning directly prevents the most common post-installation deficiency.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) provide flow readings during commissioning but the installer must use a separate pulse counter or rely on boiler display \u2014 no incumbent provides a commissioning-mode balancing workflow that flags imbalance in real time; the absence of commissioning-specific imbalance detection across all incumbent technologies produces the satisfaction score of 3.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -517,8 +517,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Every new hydronic installation and annual refill introduces dissolved air that takes 20–60 minutes to de-aerate. Ultrasonic sensors scatter on micro-bubbles, producing wildly inflated or zero readings during this window, which forces installers to ignore sensor data during start-up — undermining confidence in the measurement.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Every new hydronic installation and annual refill introduces dissolved air that takes 20\u201360 minutes to de-aerate. Ultrasonic sensors scatter on micro-bubbles, producing wildly inflated or zero readings during this window, which forces installers to ignore sensor data during start-up \u2014 undermining confidence in the measurement.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) degrade or stall on micro-bubbles but do not produce wildly inflated readings \u2014 they simply under-read or stop; ultrasonic sensors (20\u201330%) are more severely affected by micro-bubble scattering and can output large positive errors; both dominant technologies have no bubble-detection flag, producing the low satisfaction score of 3.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -527,7 +527,7 @@
     },
     {
       "id": "",
-      "statement": "Minimize variability of flow readings between successive measurement cycles under identical steady-state conditions (repeatability >±0.5%)",
+      "statement": "Minimize variability of flow readings between successive measurement cycles under identical steady-state conditions (repeatability >\u00b10.5%)",
       "jobStep": "EXECUTE",
       "importance": 8,
       "satisfaction": 6,
@@ -535,13 +535,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Boiler PID controllers use flow rate as the primary feedback signal for burner modulation. If the sensor reading varies >±0.5% cycle-to-cycle under steady-state conditions, the controller interprets noise as real load changes and hunts, increasing cycling frequency and reducing combustion efficiency.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Boiler PID controllers use flow rate as the primary feedback signal for burner modulation. If the sensor reading varies >\u00b10.5% cycle-to-cycle under steady-state conditions, the controller interprets noise as real load changes and hunts, increasing cycling frequency and reducing combustion efficiency.",
+      "satisfactionRationale": "Both turbine sensors (55\u201365%) and ultrasonic sensors (20\u201330%) achieve better than \u00b10.5% cycle-to-cycle repeatability under steady-state conditions at normal operating flow rates \u2014 this need is adequately met by both dominant incumbent technologies, explaining the high satisfaction score of 6.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -554,13 +554,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Real boiler installations place elbows, tees, and valves within 1–3 DN of the sensor — far below the 5–10DN straight-pipe specification. The resulting swirl and asymmetric profiles introduce systematic bias of 2–8%, which compounds with other tolerances to push total measurement error beyond ±10%.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Real boiler installations place elbows, tees, and valves within 1\u20133 DN of the sensor \u2014 far below the 5\u201310DN straight-pipe specification. The resulting swirl and asymmetric profiles introduce systematic bias of 2\u20138%, which compounds with other tolerances to push total measurement error beyond \u00b110%.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are relatively profile-insensitive due to cross-sectional averaging by the rotor; they can tolerate 2\u20133\u00d7DN upstream with less than 2% error; ultrasonic single-chord sensors (20\u201330%) are more sensitive to flow profile asymmetry and require more upstream straight run; the turbine dominant advantage for compact installations explains the moderate satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -573,13 +573,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Ultrasonic transit-time sensors lose coupling when an air slug passes through the measurement section, producing a zero or error output for 1–30 seconds. The boiler controller interprets signal loss as no-flow and may trip a safety lockout, requiring manual reset — a call-out that is both avoidable and frustrating to end users.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Ultrasonic transit-time sensors lose coupling when an air slug passes through the measurement section, producing a zero or error output for 1\u201330 seconds. The boiler controller interprets signal loss as no-flow and may trip a safety lockout, requiring manual reset \u2014 a call-out that is both avoidable and frustrating to end users.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) simply decelerate during air slug passage \u2014 they do not lose signal completely and the rotor resumes rotation when fluid returns, without generating a false alarm or requiring reset; ultrasonic sensors (20\u201330%) lose acoustic lock during air passage and must recover; the turbine incumbent advantage in this specific failure mode explains the moderate satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -593,11 +593,11 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Heating installations often lack the straight-pipe runs assumed in sensor specifications. If the installer places the sensor immediately downstream of a fitting without knowing it introduces >2% bias, the subsequent calibration certificate and ErP documentation are compromised without any obvious indicator.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are marketed with 3\u00d7DN upstream run specifications and are relatively tolerant of short straight-pipe runs; most OEM manifold designs are validated for the turbine sensor's installation requirements; ultrasonic sensors are more sensitive to turbulence; the dominant turbine incumbent provides reasonable location tolerance, explaining the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor"
       ]
     },
     {
@@ -610,13 +610,13 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "A boiler running at 100% produces 6–8× the flow of the same boiler at 15% modulation. A sensor with a 1:5 turndown cannot cover both extremes from a single calibration, forcing OEMs to choose between over-ranging at high load (inaccurate) or dead-band at low load (blind) — both of which undermine certification.",
-      "satisfactionRationale": "",
+      "importanceRationale": "A boiler running at 100% produces 6\u20138\u00d7 the flow of the same boiler at 15% modulation. A sensor with a 1:5 turndown cannot cover both extremes from a single calibration, forcing OEMs to choose between over-ranging at high load (inaccurate) or dead-band at low load (blind) \u2014 both of which undermine certification.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) achieve 20:1 turndown in premium versions, covering most boiler operating ranges; ultrasonic sensors (20\u201330%) achieve 50:1 or better; both dominant incumbent technologies provide adequate turndown for typical 1:5 to 1:8 boiler modulation ranges, explaining the market satisfaction score of 5.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
-        "Boiler OEM engineering manager — accountable for appliance performance and certification"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
+        "Boiler OEM engineering manager \u2014 accountable for appliance performance and certification"
       ]
     },
     {
@@ -629,12 +629,12 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "Boiler enclosures are sized for household aesthetics, not sensor geometry. OEM mechanical engineers must fit all hydraulic components — pump, heat exchanger, expansion vessel, sensor — within a predefined envelope; a shorter sensor with relaxed upstream requirements enables placement without redesigning the manifold.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Boiler enclosures are sized for household aesthetics, not sensor geometry. OEM mechanical engineers must fit all hydraulic components \u2014 pump, heat exchanger, expansion vessel, sensor \u2014 within a predefined envelope; a shorter sensor with relaxed upstream requirements enables placement without redesigning the manifold.",
+      "satisfactionRationale": "Turbine sensors (55\u201365% share) are compact (20\u201350mm body length) with 3\u00d7DN upstream run requirements, fitting comfortably in most boiler manifold designs \u2014 this is a key competitive strength of the dominant incumbent; ultrasonic sensors require 5\u201310\u00d7DN upstream run which limits placement options; the turbine footprint advantage keeps market satisfaction at 5.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor"
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor"
       ]
     },
     {
@@ -647,8 +647,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "OEM production lines run on takt times of 4–8 minutes per appliance. Sensor integration that requires three-step commissioning (mechanical, electrical, firmware configuration) is a bottleneck; any reduction in integration steps directly improves assembly throughput and reduces the risk of misconfiguration.",
-      "satisfactionRationale": "",
+      "importanceRationale": "OEM production lines run on takt times of 4\u20138 minutes per appliance. Sensor integration that requires three-step commissioning (mechanical, electrical, firmware configuration) is a bottleneck; any reduction in integration steps directly improves assembly throughput and reduces the risk of misconfiguration.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) integrate in 2\u20133 steps: thread into manifold, connect 2-wire pulse output, done \u2014 the dominant incumbent has the simplest integration workflow; ultrasonic sensors add fluid configuration and acoustic verification steps; the turbine incumbent's integration simplicity keeps market satisfaction at 5.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -657,7 +657,7 @@
     },
     {
       "id": "",
-      "statement": "Minimize the likelihood of polymer housing seal degradation when boiler circuits operate at sustained supply temperatures of 80-90°C near the sensor's material service limit",
+      "statement": "Minimize the likelihood of polymer housing seal degradation when boiler circuits operate at sustained supply temperatures of 80-90\u00b0C near the sensor's material service limit",
       "jobStep": "EXECUTE",
       "importance": 7,
       "satisfaction": 5,
@@ -665,8 +665,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "High-temperature zones in floor-heating and buffer-tank topologies regularly sustain 80–90°C supply temperatures. Polymer sensor housings with 90°C rated seals operate at their material margin, and thermal cycling accelerates O-ring compression set, increasing the likelihood of micro-leaks that the OEM is liable for under 2-year product warranty.",
-      "satisfactionRationale": "",
+      "importanceRationale": "High-temperature zones in floor-heating and buffer-tank topologies regularly sustain 80\u201390\u00b0C supply temperatures. Polymer sensor housings with 90\u00b0C rated seals operate at their material margin, and thermal cycling accelerates O-ring compression set, increasing the likelihood of micro-leaks that the OEM is liable for under 2-year product warranty.",
+      "satisfactionRationale": "Most turbine sensors used in boiler applications are housed in brass or stainless steel bodies rated to 110\u2013130\u00b0C \u2014 the dominant incumbent technology is thermally unconstrained in the 80\u201390\u00b0C range; ultrasonic sensors with polymer housings share the temperature margin concern; the metal-housed turbine dominant share keeps overall market satisfaction at 5.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -675,7 +675,7 @@
     },
     {
       "id": "",
-      "statement": "Minimize the residual transit-time measurement error during rapid cold-start temperature ramps (15°C to 75°C in <10 minutes) where speed-of-sound changes temporarily outpace the NTC compensation algorithm's response",
+      "statement": "Minimize the residual transit-time measurement error during rapid cold-start temperature ramps (15\u00b0C to 75\u00b0C in <10 minutes) where speed-of-sound changes temporarily outpace the NTC compensation algorithm's response",
       "jobStep": "EXECUTE",
       "importance": 7,
       "satisfaction": 5,
@@ -683,8 +683,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Speed-of-sound in water changes by approximately 3 m/s per °C. During a cold-start ramp, the bulk fluid temperature seen by the NTC lags the measurement section by 15–30 seconds; the resulting compensation lag introduces a transient over-read that can reach 5–8%, causing the controller to under-fire the burner during warm-up.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Speed-of-sound in water changes by approximately 3 m/s per \u00b0C. During a cold-start ramp, the bulk fluid temperature seen by the NTC lags the measurement section by 15\u201330 seconds; the resulting compensation lag introduces a transient over-read that can reach 5\u20138%, causing the controller to under-fire the burner during warm-up.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are immune to speed-of-sound compensation lag \u2014 mechanical rotation is temperature-independent; the dominant incumbent technology has no cold-start accuracy penalty; ultrasonic sensors (20\u201330%) share the NTC compensation lag vulnerability; the turbine incumbent's temperature immunity keeps market satisfaction at 5 despite the ultrasonic limitation.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -701,8 +701,8 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": true,
-      "importanceRationale": "Qualifying an ultrasonic sensor across DN15, DN20, DN25 at 0%, 25%, and 50% glycol concentrations requires a test matrix of 9+ flow-lab configurations. Each lab run costs €5K–€15K and 2–4 weeks; OEMs with tight product launch schedules rate qualification cost reduction as a high-priority procurement criterion.",
-      "satisfactionRationale": "",
+      "importanceRationale": "Qualifying an ultrasonic sensor across DN15, DN20, DN25 at 0%, 25%, and 50% glycol concentrations requires a test matrix of 9+ flow-lab configurations. Each lab run costs 5K\u201315K EUR and 2\u20134 weeks; OEMs with tight product launch schedules rate qualification cost reduction as a high-priority procurement criterion.",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) require minimal glycol qualification \u2014 mechanical rotation is fluid-property-insensitive \u2014 so the dominant incumbent has low OEM qualification overhead; ultrasonic sensors require the full DN\u00d7glycol matrix qualification; the turbine incumbent's qualification simplicity produces the moderate blended market satisfaction of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -711,7 +711,7 @@
     },
     {
       "id": "",
-      "statement": "Minimize the number of sensor variants an OEM must qualify and stock to cover its full boiler product range (DN15–DN25)",
+      "statement": "Minimize the number of sensor variants an OEM must qualify and stock to cover its full boiler product range (DN15\u2013DN25)",
       "jobStep": "DEFINE",
       "importance": 6,
       "satisfaction": 4,
@@ -719,12 +719,12 @@
       "isUnderserved": false,
       "isOverserved": false,
       "productRelated": false,
-      "importanceRationale": "A boiler OEM with 8–15 product models spanning DN15–DN25 must maintain a separate qualified sensor SKU for each size. Multi-DN adapter or software-configurable sensors reduce the qualification burden from 3+ SKUs to 1, with corresponding reductions in safety stock, supplier management, and BOM complexity.",
-      "satisfactionRationale": "",
+      "importanceRationale": "A boiler OEM with 8\u201315 product models spanning DN15\u2013DN25 must maintain a separate qualified sensor SKU for each size. Multi-DN adapter or software-configurable sensors reduce the qualification burden from 3+ SKUs to 1, with corresponding reductions in safety stock, supplier management, and BOM complexity.",
+      "satisfactionRationale": "Turbine sensor suppliers (55\u201365% share) offer modular adapter rings that allow one sensor body to fit DN15, DN20, and DN25 manifolds; some ultrasonic platforms also offer DN-configurable variants \u2014 both dominant incumbent families provide partial variant consolidation, though OEMs still typically maintain 2\u20133 qualified SKUs, producing the satisfaction score of 4.",
       "needsRationale": true,
-      "primaryStakeholder": "HVAC installer / commissioning technician — installs and configures the sensor",
+      "primaryStakeholder": "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
       "stakeholderIds": [
-        "HVAC installer / commissioning technician — installs and configures the sensor",
+        "HVAC installer / commissioning technician \u2014 installs and configures the sensor",
         "OEM procurement manager / HVAC wholesaler buyer"
       ]
     },
@@ -739,7 +739,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Service engineers top up glycol circuits without recalibrating the sensor's fluid-type setting. If the refill changes the concentration by >10%, the speed-of-sound offset shifts enough to cause silent measurement drift that persists until the next service visit, producing inaccurate thermal energy totals without any alarm.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are completely immune to glycol-concentration-induced calibration drift \u2014 no acoustic coupling is involved; the dominant incumbent technology does not experience this failure mode at all; the problem is specific to ultrasonic sensors (20\u201330%), and the turbine-dominated market blends to a satisfaction score of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -757,7 +757,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Ultrasonic sensors require fluid-type configuration and coupling verification before first valid output. On a condensing boiler production line, any additional commissioning step that is not automated adds takt-time and creates an error mode; sensors that self-detect fluid type eliminate a manual step and a source of mis-commissioning.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) require zero fluid configuration \u2014 mount and connect; the dominant incumbent has no commissioning configuration overhead; ultrasonic sensors (20\u201330%) require 10\u201320 minutes of fluid configuration; the turbine incumbent's zero-commissioning-overhead drives the blended market satisfaction to 5.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -775,7 +775,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Reverse-mounted flow sensors report inverted or zero readings. In a condensing boiler, this prevents accurate thermal energy logging and can cause the boiler controller to run pump protection cycles unnecessarily. Sensors without clear reverse-orientation detection force re-inspection during call-outs that are entirely preventable.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Both turbine and ultrasonic incumbent sensors include directional markings, flow-direction arrows, and in some cases asymmetric fitting geometries that physically prevent reverse installation; boiler OEM manifolds are typically designed with keyed sensor mounts; the combined design controls make orientation errors uncommon in the market, explaining the high satisfaction score of 6.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -793,7 +793,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Drain-back solar systems deliberately empty collector circuits at dusk or frost events. When the sensor section empties and refills, sensors without empty-pipe detection log false flow data or error codes during the transition. This corrupts daily energy harvest logs and triggers unnecessary service alerts.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) generate no false readings when dry \u2014 the rotor simply does not spin; they recover instantly when fluid returns without requiring reset; ultrasonic sensors produce error or zero outputs during drain-down but recover on refill; the turbine incumbent's drain-back tolerance provides reasonable but not complete satisfaction, explaining the score of 4.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -811,7 +811,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Corrosion inhibitors (e.g., Sentinel X100, Fernox F1) contain surfactants and polymers that slightly alter the acoustic impedance and viscosity of the hydronic medium. While most sensors tolerate standard concentrations, field over-dosing or mixing of inhibitor products occasionally causes signal attenuation that manifests as unexplained zero-flow errors.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine sensors (55\u201365%) are completely immune to acoustic impedance changes from inhibitor additives \u2014 mechanical rotation is unaffected by surfactant concentrations; the dominant incumbent has no inhibitor compatibility concern; this failure mode is specific to ultrasonic sensors (20\u201330%), and the turbine-dominated market keeps the blended satisfaction score at 6.",
       "needsRationale": true,
       "primaryStakeholder": "Specifier (heating design engineer), installer, commissioning tech, service technician, disposer",
       "stakeholderIds": [
@@ -823,22 +823,22 @@
   "sources": [
     {
       "id": "S01",
-      "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] — 33 error statements (N01-N28), 5 alternatives with market share and trade-offs",
+      "label": "JTBD_heating_equipment_except_warm_air_furnac.md \u2014 33 error statements (N01-N28), 5 alternatives with market share and trade-offs",
       "prefixedId": "ODI-HEATING-EQUIPMENT-S01"
     },
     {
       "id": "S02",
-      "label": "[SRC: FIT_heating_equipment_except_warm_air_furnac] — Step 10 product-related needs (8), Step 09 technology feature fit scores (7 features), Step 11 vendor feature fit (6 features)",
+      "label": "FIT_heating_equipment_except_warm_air_furnac.md \u2014 Step 10 product-related needs (8), Step 09 technology feature fit scores (7 features), Step 11 vendor feature fit (6 features)",
       "prefixedId": "ODI-HEATING-EQUIPMENT-S02"
     },
     {
       "id": "S03",
-      "label": "[SRC: 01_product_decomposition] — Product constraints driving Step 10 needs",
+      "label": "01_product_decomposition.md \u2014 Product constraints driving Step 10 needs",
       "prefixedId": "ODI-HEATING-EQUIPMENT-S03"
     },
     {
       "id": "S04",
-      "label": "[SRC: 02_functional_promise] — Commodity FP and differentiators informing recalibration",
+      "label": "02_functional_promise.md \u2014 Commodity FP and differentiators informing recalibration",
       "prefixedId": "ODI-HEATING-EQUIPMENT-S04"
     }
   ]

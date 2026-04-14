@@ -34,7 +34,7 @@ export default function NoMarketSelected() {
       <div className="section-meta" style={{ marginBottom: 8 }}>
         <span>Step 06</span>
         <span className="sep"> / </span>
-        <span>Ulwick ODI · Kano · Adner VN · JTBD</span>
+        <span>Deep-dive per market</span>
       </div>
       <div className="md" style={{ marginBottom: 6 }}>
         <h1 className="section-title">New Market Analysis</h1>

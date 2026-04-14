@@ -88,13 +88,11 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
       {/* ── Executive summary ───────────────────────────────────────────── */}
       <ExecutiveSummary kicker="Section overview">
         <p style={{ margin: 0, lineHeight: 1.7 }}>
-          We mapped the customer's underlying job using the Burleson Job-to-be-Done
-          framework, then identified unmet outcomes using Outcome-Driven Innovation
-          (ODI) — a structured method developed by Tony Ulwick that scores each
-          customer outcome by how important it is and how poorly current solutions
-          deliver it. The{" "}
+          Below we break down the main job your customer is trying to get done in this
+          market, score how well current solutions deliver it, and pinpoint where the
+          biggest opportunities lie. The{" "}
           <strong>opportunity score</strong> reveals exactly where the market is
-          underserved. Below you will find: (1) the ODI needs matrix ranking all
+          underserved. Below you will find: (1) the customer outcome opportunities matrix ranking all
           {odiNeeds.length > 0 ? ` ${odiNeeds.length}` : ""} identified outcomes,
           (2) the job map showing each step customers execute to complete their core
           job, and (3) the key stakeholders involved in the buying and usage process.
@@ -149,7 +147,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
       </ExecutiveSummary>
 
       {/* ══════════════════════════════════════════════════════════════════
-          Section 1 — ODI Needs Matrix
+          Section 1 — Customer Outcome Opportunities
           ══════════════════════════════════════════════════════════════════ */}
       <div style={{ marginTop: 40 }}>
         <div
@@ -169,7 +167,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
               color: "var(--text-white)",
             }}
           >
-            Outcome-Driven Innovation (ODI) Needs Matrix
+            Customer Outcome Opportunities (ODI Matrix)
           </h3>
           <span
             className="badge badge--neutral"
@@ -187,7 +185,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
             lineHeight: 1.6,
           }}
         >
-          Each outcome is scored using the Ulwick ODI formula:{" "}
+          Each outcome is scored using the opportunity formula:{" "}
           <span
             style={{
               fontFamily: "var(--font-mono)",
@@ -233,12 +231,12 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
         )}
 
         {odiSourceIds.length > 0 && (
-          <SourceList sourceIds={odiSourceIds} title="ODI Sources" />
+          <SourceList sourceIds={odiSourceIds} title="Sources — Customer Outcome Opportunities" />
         )}
       </div>
 
       {/* ══════════════════════════════════════════════════════════════════
-          Section 2 — Burleson JTBD Pyramid
+          Section 2 — Customer Needs Pyramid
           ══════════════════════════════════════════════════════════════════ */}
       <div style={{ marginTop: 56 }}>
         <div
@@ -261,7 +259,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
             Job-to-be-Done Pyramid
           </h3>
           <span className="badge badge--neutral" style={{ fontSize: 10 }}>
-            Burleson 5-tier
+            5-tier customer needs pyramid
           </span>
         </div>
 
@@ -307,7 +305,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
         />
 
         {jtbdSourceIds.length > 0 && (
-          <SourceList sourceIds={jtbdSourceIds} title="JTBD Sources" />
+          <SourceList sourceIds={jtbdSourceIds} title="Sources — Job-to-be-Done Analysis" />
         )}
       </div>
 

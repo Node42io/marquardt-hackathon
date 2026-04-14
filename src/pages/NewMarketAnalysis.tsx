@@ -141,7 +141,7 @@ export default function NewMarketAnalysis() {
     <div>
       {/* ─── Page header ─────────────────────────────────────────────── */}
       <PageHeader
-        kicker="Step 06 / Ulwick ODI · Kano · Adner VN · JTBD"
+        kicker="Page 06 / Deep-dive per market"
         title="New Market Analysis"
         description={ranking.executiveSummary}
       />

@@ -134,7 +134,7 @@ export default function HomeMarketCompetition() {
             The Competition tab maps the incumbent technology landscape here, covering the six
             competing measurement technologies, their market-share tiers, and switching-cost
             dynamics. The remaining tabs — Job-to-be-Done, Value Network, Kano, Compatibility,
-            and Alternatives — apply the same analytical frameworks used throughout New Market
+            and Alternatives — use the same analysis applied throughout New Market
             Analysis, giving a home-market baseline against which every new-market opportunity
             can be directly benchmarked.
           </p>
