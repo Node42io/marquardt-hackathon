@@ -300,7 +300,7 @@ export default function MarketRationaleCard({ market }: Props) {
               gap: 6,
             }}
           >
-            Full analysis: Compatibility · JTBD · ODI · Value Network
+            Full analysis: Compatibility · Job-to-be-Done · Outcomes · Value Network
             <span aria-hidden="true">→</span>
           </Link>
         </div>

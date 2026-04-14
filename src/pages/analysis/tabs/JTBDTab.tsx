@@ -226,7 +226,7 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
               fontStyle: "italic",
             }}
           >
-            ODI needs data pending for this market.
+            Customer outcome data pending for this market.
           </div>
         )}
 

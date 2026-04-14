@@ -320,7 +320,10 @@ export default function FunctionalPromise() {
         <hr />
 
         {/* ── Bill of Materials / Value Network Position ── */}
-        <h2>Bill of Materials Position in the Product Hierarchy</h2>
+        <h2>Bill of Materials (BOM) Position in the Product Hierarchy</h2>
+        <p style={{ color: "var(--text-gray)", fontSize: "0.85rem", marginBottom: "0.5rem" }}>
+          Level notation: L4 = major subsystem · L3 = module · L2 = assembly · L1 = part. The sensor sits at L5 — an individual component within a subsystem.
+        </p>
 
         <table>
           <thead>

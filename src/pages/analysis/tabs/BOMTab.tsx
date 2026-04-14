@@ -58,7 +58,7 @@ function BOMPendingPlaceholder({ bomData }: { bomData: BOMData }) {
       <p style={{ fontSize: 14, color: "var(--text-gray)", lineHeight: 1.6, maxWidth: 520, margin: "0 auto" }}>
         A Bill of Materials breakdown has not yet been generated for{" "}
         <strong style={{ color: "var(--text-white)" }}>{bomData.marketName}</strong>
-        . The BOM sub-agent should emit an L4→L0 decomposition markdown for this market.
+        . A component breakdown has not yet been generated for this market.
       </p>
       {bomData.sensorNote && (
         <p
@@ -228,8 +228,7 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
           glycol cooling in a brewery).
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
-          Each row below is a <strong>L4 subsystem</strong> (the top-level functional block,
-          comparable to "L6.N" in the Figma reference design). Clicking a row expands the
+          Each row below is a <strong>L4 subsystem</strong> (the top-level functional block — L4 = major subsystem, L3 = module, L2 = assembly, L1 = part). Clicking a row expands the
           L3 modules. The variant chips in each row show which technologies compete for that
           slot and their current market-share percentages. Rows with a{" "}
           <span
@@ -283,7 +282,7 @@ export default function BOMTab({ marketSlug }: { marketSlug: string }) {
 
           <ExecutiveSummary kicker="How to read this table">
             <p className="answer">
-              Each row is a top-level subsystem (L4) of the product. The percentage shown
+              Each row is a top-level subsystem (L4 = major subsystem) of the product. The percentage shown
               next to the identifier is the approximate BOM cost share. The colored chips
               show competing technologies for that subsystem — <strong>green = high
               confidence data</strong>, amber = medium confidence, red = low confidence /

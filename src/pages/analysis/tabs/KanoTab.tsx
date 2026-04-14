@@ -438,7 +438,7 @@ export default function KanoTab({ marketSlug }: { marketSlug: string }) {
       </div>
       <h2 className="section__title">Kano Classification</h2>
       <p className="section__sub">
-        Feature-market fit analysis grounded in Kano&apos;s quality model.
+        Kano (which features customers must have, would love, or don&apos;t care about) — feature-market fit analysis.
         Click any feature pill to see its full rationale and fit scores.
       </p>
 

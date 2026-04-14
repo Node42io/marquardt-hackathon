@@ -10,9 +10,9 @@ const CRITERIA = [
   {
     code: "ODI",
     weight: "25%",
-    name: "Outcome-Driven Innovation Opportunity Score",
+    name: "Customer Outcome Opportunity Score",
     description:
-      "Sum of unmet customer-outcome opportunity scores per market (Ulwick formula: Importance + max(Importance − Satisfaction, 0)). Higher = more demand waiting to be satisfied.",
+      "Sum of unmet customer-outcome opportunity scores per market (formula: Importance + max(Importance − Satisfaction, 0)). Higher = more demand waiting to be satisfied.",
   },
   {
     code: "Fit",
@@ -33,7 +33,7 @@ const CRITERIA = [
     weight: "15%",
     name: "Job Coverage",
     description:
-      "Fraction of the 8-step Ulwick job map that the sensor directly serves in each market × 10. HVAC contractors earn 10.00 because the sensor covers all 8 steps; most markets score 7.50 (6/8 steps).",
+      "Fraction of the 8-step job map that the sensor directly serves in each market × 10. HVAC contractors earn 10.00 because the sensor covers all 8 steps; most markets score 7.50 (6/8 steps).",
   },
   {
     code: "VN",

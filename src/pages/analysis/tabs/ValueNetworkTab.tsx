@@ -145,10 +145,10 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
         </p>
         <p className="answer" style={{ marginTop: 12 }}>
           In this section you are seeing the <strong>{vnData.marketName}</strong>{" "}
-          production chain decomposed to the L6 (sub-system) and L5 (process-unit)
+          production chain decomposed to the L6 (functional sub-system) and L5 (specific process step)
           levels. The highlighted rows show where the Marquardt sensor fits as a primary,
           secondary, or tertiary measurement point. Click any row to read the functional
-          job statement and a plain-language description of that process unit.
+          job statement and a plain-language description of that process step.
         </p>
       </ExecutiveSummary>
 
@@ -192,13 +192,13 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
             </div>
           </div>
           <div className="stat-tile">
-            <div className="stat-tile__label">L6 Systems</div>
+            <div className="stat-tile__label">L6 Functional Sub-Systems</div>
             <div className="stat-tile__value">
               <span className="accent">{vnData.l6Systems?.length ?? 0}</span>
             </div>
           </div>
           <div className="stat-tile">
-            <div className="stat-tile__label">L5 Process Units</div>
+            <div className="stat-tile__label">L5 Process Units (specific steps)</div>
             <div className="stat-tile__value">
               <span className="accent">{vnData.vnUnits?.length ?? 0}</span>
             </div>
@@ -285,8 +285,8 @@ export default function ValueNetworkTab({ marketSlug }: { marketSlug: string }) 
         <p className="answer">
           <strong>Why these steps are listed.</strong> The value network is decomposed
           hierarchically: L7 is the full ecosystem, L6 are functional sub-systems
-          (e.g., "Mechanical Filtration" or "Gas Management"), and L5 are the specific
-          process units within each sub-system (e.g., "Drum Filter" or "UV Sterilizer").
+          (e.g., "Mechanical Filtration" or "Gas Management" — the major functional blocks),
+          and L5 are the specific process steps within each sub-system (e.g., "Drum Filter" or "UV Sterilizer").
           This decomposition maps all co-innovation dependencies before committing to a market entry
           strategy.
         </p>

@@ -475,7 +475,7 @@ function DetailPanel({
             letterSpacing: "0.06em",
           }}
         >
-          ODI Formula
+          Opportunity Formula
         </span>
         <span
           style={{
@@ -1349,7 +1349,7 @@ export default function ODIMatrix({
           fontStyle: "italic",
         }}
       >
-        ODI matrix data pending for this market.
+        Customer outcome data pending for this market.
       </div>
     );
   }
@@ -1391,7 +1391,7 @@ export default function ODIMatrix({
               letterSpacing: "0.04em",
             }}
           >
-            ODI Opportunity Matrix
+            Customer Outcome Opportunity Matrix
           </span>
           <span
             style={{

@@ -4,105 +4,60 @@
   "slug": "ac-home-heating",
   "summary": {
     "totalNeeds": 35,
-    "underservedCount": 0,
+    "underservedCount": 8,
     "overservedCount": 0,
-    "avgOpportunityScore": 0
+    "avgOpportunityScore": 9.86
   },
   "top5Opportunities": [
     {
       "rank": 1,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
+      "needId": "ES-07",
+      "statement": "Minimize the time to detect an empty-pipe or air-lock condition before enabling the compressor to under 5 seconds",
+      "importance": 9,
+      "satisfaction": 3.5,
       "opportunity": 14.5,
       "zone": "Underserved"
     },
     {
       "rank": 2,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
+      "needId": "ES-16",
+      "statement": "Minimize the likelihood of compressor short-cycling due to undetected low-flow conditions persisting longer than 10 seconds",
+      "importance": 9,
+      "satisfaction": 4.5,
       "opportunity": 13.5,
       "zone": "Underserved"
     },
     {
       "rank": 3,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
+      "needId": "ES-20",
+      "statement": "Increase the ability to compute real-time thermal energy output (kW) by combining volumetric flow and temperature delta within a single sensor body",
+      "importance": 8,
+      "satisfaction": 3,
       "opportunity": 13,
       "zone": "Underserved"
     },
     {
       "rank": 4,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
+      "needId": "ES-09",
+      "statement": "Increase the ability to maintain measurement accuracy within ±3% of reading over 10,000 operating hours of steady-state operation",
+      "importance": 9,
+      "satisfaction": 5.5,
       "opportunity": 12.5,
       "zone": "Underserved"
     },
     {
       "rank": 5,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
+      "needId": "ES-06",
+      "statement": "Increase the ability to automatically compensate for glycol concentration variations up to 50% without manual reconfiguration",
+      "importance": 8,
+      "satisfaction": 4,
       "opportunity": 12,
       "zone": "Underserved"
-    },
-    {
-      "rank": null,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
-      "opportunity": null,
-      "zone": ""
-    },
-    {
-      "rank": null,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
-      "opportunity": 0,
-      "zone": ""
-    },
-    {
-      "rank": null,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
-      "opportunity": 17,
-      "zone": ""
-    },
-    {
-      "rank": null,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
-      "opportunity": 40,
-      "zone": ""
-    },
-    {
-      "rank": null,
-      "needId": "",
-      "statement": "",
-      "importance": 0,
-      "satisfaction": 0,
-      "opportunity": 43,
-      "zone": ""
     }
   ],
   "needs": [
     {
-      "id": "",
+      "id": "ES-07",
       "statement": "Minimize the time to detect an empty-pipe or air-lock condition before enabling the compressor to under 5 seconds",
       "jobStep": "CONFIRM",
       "importance": 9,
@@ -112,7 +67,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "HVAC compressors operating without refrigerant or hydronic flow suffer catastrophic bearing and valve failure within seconds. A <5-second empty-pipe detection window prevents compressor enable in fault conditions, making the flow sensor a primary safety interlock rather than a measurement-only component.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40% dominant) detect bubble presence through vortex frequency disruption but cannot deliver confirmed empty-pipe detection within 5 seconds because vortex shedding requires minimum flow to generate a measurable frequency; they report ambiguously at true zero flow. Impeller/turbine sensors (15–40%) stall at zero flow and provide no meaningful empty-pipe signal. Pump-integrated estimation (15–40%) has zero detection capability. Electromagnetic meters (5–15%) are the only incumbents that provide immediate zero-conductivity / empty-pipe output, satisfying this need — but their niche share means most installations rely on technologies that cannot reliably meet the <5-second empty-pipe detection threshold.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -120,7 +75,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-16",
       "statement": "Minimize the likelihood of compressor short-cycling due to undetected low-flow conditions persisting longer than 10 seconds",
       "jobStep": "EXECUTE",
       "importance": 9,
@@ -130,7 +85,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Compressor short-cycling degrades SEER ratings, accelerates compressor wear, and voids OEM warranties. Low-flow conditions lasting more than 10 seconds indicate hydronic circulation failure; without flow-based detection, the controller cannot distinguish this from normal low-demand conditions, causing costly compressor trips.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Pump-integrated estimation (15–40%) has ±10–20% accuracy and cannot reliably identify a low-flow condition below 10% of design flow, yielding poor satisfaction; moreover, EU regulators are progressively disqualifying pump estimation for energy certification, further limiting its usefulness. Vortex sensors (>40%) are known for low-flow instability — at part-load conditions their shedding frequency becomes erratic, making it difficult to distinguish a genuine 10-second low-flow condition from sensor noise. Impeller/turbine sensors (15–40%) stall at low flow rates, producing silent zero-output that the controller cannot distinguish from normal low-demand. Electromagnetic meters (5–15%) provide stable, continuous low-flow measurement and directly address this need but remain a niche technology at this price point.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -139,7 +94,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-20",
       "statement": "Increase the ability to compute real-time thermal energy output (kW) by combining volumetric flow and temperature delta within a single sensor body",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -149,7 +104,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "EU ErP and US Energy Star performance ratings for heat pumps require metrologically traceable thermal energy output data (Q = flow × Cp × ΔT). Integrating flow and temperature measurement in a single sensor body eliminates time-alignment errors between separate instruments and reduces BOM cost and seal points.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "No incumbent technology in this market — vortex, turbine, electromagnetic, differential pressure, or pump estimation — offers combined flow and temperature measurement in a single sensor body as a standard product; all current solutions require separate flow and temperature instruments and external computation in the controller, yielding a satisfaction score of 3. This universal gap across all six incumbent categories is the direct market opportunity for integrated transit-time flow-and-temperature sensors. The recalibration from original 4.0 to 3.0 reflects that even niche electromagnetic clamp-on meters do not integrate temperature sensors.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -158,7 +113,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-09",
       "statement": "Increase the ability to maintain measurement accuracy within ±3% of reading over 10,000 operating hours of steady-state operation",
       "jobStep": "EXECUTE",
       "importance": 9,
@@ -168,7 +123,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "10,000 operating hours represent approximately 5 years of residential HVAC use. Accuracy degradation beyond ±3% over this interval causes the control system to systematically mis-size heating and cooling outputs, increasing energy consumption and producing comfort complaints that are difficult to diagnose without reference measurement.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) are the dominant technology and have no mechanical wear mechanism — their accuracy is stable over 10,000 hours in clean hydronic fluid, supporting a satisfaction score of 5.5 for the market as a whole. However, impeller/turbine sensors (15–40%) have well-documented bearing wear and calibration drift at a rate of ±2–5%/year in hydronic media, potentially exceeding ±3% cumulative error within 3–5 years — the turbine installed base significantly drags market satisfaction below what vortex alone would indicate. Pump-integrated estimation (15–40%) has ±10–20% baseline accuracy, fundamentally unable to maintain ±3% at any duration.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -177,7 +132,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-06",
       "statement": "Increase the ability to automatically compensate for glycol concentration variations up to 50% without manual reconfiguration",
       "jobStep": "PREPARE",
       "importance": 8,
@@ -187,7 +142,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Heat pump hydronic circuits in cold climates use 15–50% glycol freeze protection. Speed-of-sound in water-glycol mixtures varies significantly with concentration; sensors requiring manual fluid-type entry are misconfigured when field topping-up changes the actual concentration, causing silent measurement error that persists until next service.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) measure vortex shedding frequency, which is related to fluid density rather than speed of sound — they require manual glycol correction but are less sensitive to concentration shifts than ultrasonic transit-time sensors, and the recalibration correctly adjusted their satisfaction from 4.0 to 5.0. Impeller/turbine sensors (15–40%) are similarly affected by viscosity changes in glycol mixtures, causing systematic under-reading at high glycol concentrations that compounds bearing wear drift. Pump-integrated estimation (15–40%) makes no fluid-property correction whatsoever and simply assumes clean water density. Electromagnetic meters (5–15%) are affected by viscosity changes in glycol but their operating principle does not depend on speed of sound, making them moderately tolerant of glycol concentration variation.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -195,7 +150,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-25",
       "statement": "Increase the ability to demonstrate EU EcoDesign energy efficiency compliance through traceable, sensor-based flow measurement data",
       "jobStep": "DEFINE",
       "importance": 8,
@@ -205,7 +160,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "EU EcoDesign Regulation 2021/341 for space heaters requires documented seasonal energy efficiency (SCOP/SEER) measured with traceable instruments. Regulators are moving toward requiring product-integrated measurement rather than lab-only certification; OEMs who implement this early establish a dossier advantage in future compliance audits.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Pump-integrated estimation (15–40%) is actively being disqualified from EU energy certification calculations as regulators tighten metrological traceability requirements — this incumbent is moving in the wrong direction for compliance purposes. Vortex sensors (>40%) provide traceable volume flow output but without temperature integration they cannot generate the Q = flow × ΔT thermal energy data that EU EcoDesign certification requires. Electromagnetic meters (5–15%) provide the most accurate traceable volumetric flow data, but the combined flow-plus-temperature calculation still requires a separate temperature sensor. No incumbent enables single-sensor thermal energy certification without external computation, explaining the satisfaction score of 4.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -213,7 +168,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-10",
       "statement": "Minimize the likelihood of air entrainment exceeding 2% by volume causing complete measurement signal loss during thermal cycling",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -223,7 +178,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Heat pump and chiller start-up sequences involve thermal cycling that releases dissolved gases from the hydronic medium. Air entrainment above 2% by volume causes ultrasonic signal scatter and complete transit-time measurement failure at precisely the moment the control system is making start-up decisions.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) have a known bubble-detection strength — the irregular vortex shedding pattern caused by air entrainment is detectable, and vortex meters generally tolerate moderate void fractions better than ultrasonic transit-time designs; the recalibration from 4.0 to 4.5 reflects this genuine vortex advantage. Electromagnetic meters (5–15%) are immune to void fractions below ~20% and consistently outperform other technologies on air-entrainment tolerance. Impeller/turbine sensors (15–40%) mechanically respond to the liquid phase and are moderately tolerant of air pockets but produce erratic pulse output during heavy bubble events. Pump-integrated estimation (15–40%) is blind to air entrainment entirely.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -232,7 +187,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-17",
       "statement": "Increase the ability to detect calibration drift exceeding ±0.5% within 30 days of occurrence over 12 months of continuous operation",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -242,7 +197,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Cumulative calibration drift in flow sensors directly degrades SCOP/SEER calculations used for energy label compliance. A ±0.5% drift threshold requires self-diagnostic capability that most current sensors lack; without it, OEMs cannot provide in-service accuracy guarantees and face potential label downgrade during post-market surveillance audits.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "No incumbent technology in this market currently offers automated in-situ drift detection at the ±0.5% threshold — vortex, turbine, electromagnetic, and differential pressure sensors all require external reference calibration to verify drift, which is typically done only at annual service visits; the recalibration from 4.0 to 4.5 reflects that vortex sensors have inherently low drift and thus are less likely to trigger a 30-day detection need, even without active detection capability. Pump-integrated estimation (15–40%) cannot even establish a baseline accuracy to drift from. This need is broadly unsatisfied across all incumbent categories and represents a software and diagnostics gap rather than a measurement physics gap.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -251,7 +206,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-26",
       "statement": "Minimize the likelihood of field audit findings revealing flow measurement inaccuracy that would cause energy label downgrade",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -261,7 +216,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "EU market surveillance authorities conduct post-market field audits of HVAC equipment energy labels. An audit finding that in-product flow measurement diverges from the certification-basis data triggers a mandatory label downgrade and recall notice — a reputational and commercial risk that OEMs mitigate by deploying sensors with proven in-situ accuracy.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Pump-integrated estimation (15–40%) carries the highest audit risk — regulators explicitly identify it as insufficiently traceable, and its ±10–20% accuracy creates near-certain label downgrade risk if audited against a reference meter; the recalibration from 5.0 to 4.5 reflects this known regulatory exposure dragging market satisfaction below what high-quality sensors alone would suggest. Turbine/impeller sensors (15–40%) show drift over time that can push field accuracy outside certification tolerances within 3–5 years. Vortex sensors (>40%) have stable long-term accuracy that largely satisfies audit requirements, and electromagnetic meters (5–15%) are the most audit-resilient, maintaining ±0.2% accuracy indefinitely.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -269,7 +224,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-04",
       "statement": "Minimize the likelihood of incorrect sensor orientation during installation causing flow measurement bias exceeding 2% of reading",
       "jobStep": "PREPARE",
       "importance": 8,
@@ -279,7 +234,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "HVAC assembly technicians install dozens of units per day in constrained spaces. Reversed sensor orientation introduces a systematic 2%+ bias that survives commissioning tests (which rarely use reference-grade meters) and causes accumulated energy measurement errors in the field — errors the OEM is ultimately responsible for under certification guarantees.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) have directional flow arrows and their pulse output inverts with reversed orientation — the installation defect is physically apparent and commissioning tools confirm correct orientation through flow direction indication, yielding adequate satisfaction of 5. Turbine/impeller sensors (15–40%) similarly produce reversed pulse output when installed backwards, which a simple flow test reveals. Electromagnetic meters (5–15%) include bidirectional flow measurement that automatically detects and corrects for orientation during commissioning. Differential pressure sensors (5–15%) require correct high-pressure port orientation but the installation is clearly labeled. The incumbent mix generally handles orientation checks adequately in the current commissioning workflow.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -287,7 +242,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-11",
       "statement": "Increase the ability to measure flow rate accurately across the full turndown range from minimum to maximum system load",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -297,7 +252,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Variable-speed drive HVAC systems modulate load from 10% to 100%, producing a 10:1 flow turndown. Sensors that only meet accuracy specifications at mid-range flows report systematic errors at both ends of the operating range, causing the controller to mismanage part-load efficiency — the operating condition where the most annual energy is consumed.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/impeller sensors (15–40%) claim 30:1 turndown but their low-flow accuracy degrades significantly from bearing friction and stall effects at minimum load, narrowing effective accurate range to 10:1 in practice. Vortex sensors (>40%) have well-documented low-flow instability — their shedding frequency becomes erratic below 15–20% of design flow, making them less suitable for 10:1 turndown applications. Electromagnetic meters (5–15%) maintain ±0.2% accuracy across 100:1 turndown and fully satisfy this need, but their 5–15% penetration limits overall market satisfaction. Differential pressure sensors (5–15%) have inherent 4:1 turndown limits due to the square-root relationship between ΔP and flow, disqualifying them from 10:1 applications. The incumbent mix delivers satisfaction of 5 — adequate but not excellent.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -306,7 +261,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-21",
       "statement": "Minimize the likelihood of acoustic coupling degradation between transducer and fluid causing measurement error exceeding 1% within the first 5 years of operation",
       "jobStep": "MONITOR",
       "importance": 8,
@@ -316,7 +271,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Acoustic coupling between piezoelectric transducers and the pipe wall degrades over time due to thermal cycling, couplant ageing, and micro-corrosion at the interface. A >1% error developing within 5 years falls within most equipment warranty periods, creating potential liability for OEMs who cannot demonstrate sensor accuracy maintenance.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) have no piezoelectric coupling to the fluid — their bluff body is immersed in the flow and requires no acoustic interface maintenance, making them immune to this degradation mode and providing the highest satisfaction for this need. Turbine/impeller sensors (15–40%) similarly have no acoustic coupling requirement. Electromagnetic meters (5–15%) use direct electrode contact with the fluid, not acoustic coupling, and are also immune. The acoustic coupling degradation need is specific to ultrasonic transit-time sensors (<5% of this market) — the dominant incumbents are mechanically immune, explaining the satisfaction score of 5 (adequate because the acoustic coupling problem barely exists in the current installed base).",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -325,7 +280,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-27",
       "statement": "Minimize the frequency of warranty callbacks attributed to flow sensor malfunction within the first 24 months of equipment operation",
       "jobStep": "EXECUTE",
       "importance": 8,
@@ -335,7 +290,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "HVAC OEMs track warranty callback rates as a key supplier performance metric. Flow sensor failures that require technician dispatch within the 24-month warranty window cost €200–€500 per incident in labour and travel; OEMs negotiate clawback provisions against sensor suppliers whose field failure rates exceed agreed thresholds.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) are electronically simple with no moving parts — their 24-month field failure rates are genuinely low and are the main driver behind the market satisfaction score of 5. Turbine/impeller sensors (15–40%) have higher warranty callback rates from bearing failures and clogging in first-year service, particularly in systems without adequate hydronic strainers — they represent the primary source of sensor-related callbacks in this market. Pump-integrated estimation (15–40%) has no sensor component to fail within warranty but faces regulatory callback risk from certification non-compliance. Electromagnetic meters (5–15%) have low failure rates but their higher initial cost leads to more scrutiny of any failure event.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -343,25 +298,7 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of ultrasonic signal attenuation from air entrainment exceeding 2% by volume during thermal cycling or system startup",
-      "jobStep": "EXECUTE",
-      "importance": 8,
-      "satisfaction": 5,
-      "opportunity": 11,
-      "isUnderserved": false,
-      "isOverserved": false,
-      "productRelated": true,
-      "importanceRationale": "Start-up of heat pump systems involves rapid temperature changes that release dissolved gas from the hydronic medium. The resulting micro-bubble cloud attenuates ultrasonic signals above 2% void fraction, causing spurious no-flow readings that trigger protective shutdowns and prevent the system from completing its start-up sequence.",
-      "satisfactionRationale": "",
-      "needsRationale": true,
-      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
-      "stakeholderIds": [
-        "Assembly technician, commissioning tech, service tech"
-      ]
-    },
-    {
-      "id": "",
+      "id": "ES-08",
       "statement": "Increase the ability to verify sensor signal integrity through automated self-diagnostics at each system startup",
       "jobStep": "CONFIRM",
       "importance": 7,
@@ -371,7 +308,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "HVAC systems start up hundreds or thousands of times per year. Automated self-diagnostics at each startup detect coupling failures, signal degradation, or firmware errors that a one-time commissioning check would not catch, enabling the controller to flag sensor faults proactively rather than allowing degraded measurements to propagate silently.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "No incumbent technology in this market — vortex, turbine, electromagnetic, or differential pressure — provides automated startup self-diagnostics as a standard product feature; the recalibration to 3.5 reflects that this capability is uniformly absent across all six incumbent categories. Vortex sensors (>40%) do not perform signal integrity verification at startup. Turbine/impeller sensors (15–40%) generate a pulse only when flow is present — zero diagnostic information is available before flow commences. Electromagnetic meters (5–15%) are the closest to self-diagnostic capability through electrode impedance monitoring, but this is not universally implemented in OEM-integrated versions. This is a broad unmet need across the entire market.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -379,7 +316,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-14",
       "statement": "Increase the ability to detect and report reverse flow direction to the system controller within 1 second of flow reversal",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -389,7 +326,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Reverse flow in HVAC hydronic circuits occurs during check valve failure, pump reversal after trip, or gravity-driven thermosiphon in poorly designed systems. Undetected reverse flow causes heat exchanger temperature inversion that stresses compressor valves and produces comfort failures — detecting it within 1 second enables protective action before damage occurs.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) generate unidirectional vortex shedding that cannot distinguish flow direction — they report the same signal regardless of whether flow is forward or reversed, giving satisfaction of 3.5. Turbine/impeller sensors (15–40%) similarly cannot detect reverse flow with standard unidirectional rotors; bidirectional turbine variants exist but are not standard in this HVAC market segment. Pump-integrated estimation (15–40%) assumes forward flow by design and is completely blind to flow reversal. Only electromagnetic meters (5–15%) provide inherent bidirectional flow measurement with directional sign output, satisfying this need — but their niche share means the vast majority of the market has no reverse flow detection capability.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -398,9 +335,9 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-23",
       "statement": "Minimize the likelihood of requiring field recalibration more frequently than once within the rated equipment service life",
-      "jobStep": "EXECUTE",
+      "jobStep": "MODIFY",
       "importance": 8,
       "satisfaction": 5.5,
       "opportunity": 10.5,
@@ -408,7 +345,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Field recalibration of a flow sensor in a sealed hydronic circuit requires system drain-down, specialist technician attendance, and reference equipment — typically costing €300–€800 per visit. Any sensor requiring recalibration more than once in a 10–15 year service life imposes recurring maintenance costs that OEMs must disclose in lifecycle cost comparisons.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) are genuinely stable over their service life — their shedding geometry is unaffected by fluid contamination or temperature cycling, and they require no periodic recalibration in clean hydronic circuits; the recalibration from 5.0 to 5.5 reflects this genuine vortex strength as the dominant technology. Electromagnetic meters (5–15%) are equally stable and also require no periodic recalibration. Turbine/impeller sensors (15–40%) require recalibration every 2–3 years in hydronic service as bearing wear shifts the K-factor — the turbine installed base is the primary driver of recalibration cost in this market. Pump-integrated estimation (15–40%) has no sensor to recalibrate but degrades in accuracy with pump wear.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -416,7 +353,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-18",
       "statement": "Increase the ability to distinguish genuine process deviations from sensor artifacts with >95% classification accuracy",
       "jobStep": "MONITOR",
       "importance": 7,
@@ -426,7 +363,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "HVAC controllers use flow anomaly detection to identify refrigerant charge loss, pump degradation, and heat exchanger fouling. If the sensor produces artifacts (foam-induced spikes, temperature-compensation glitches) that the controller misclassifies as genuine faults, it generates false alarm call-outs and desensitises operators to real alarms.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) produce well-characterised frequency spectra where bubble-induced signal disruption has a different statistical signature than genuine flow changes — experienced HVAC control firmware can distinguish the two with ~80–85% accuracy, giving moderate satisfaction of 4. Turbine/impeller sensors (15–40%) produce pulse jitter during bubble events and bearing wear noise that can mimic flow fluctuations, making artifact classification unreliable. Pump-integrated estimation (15–40%) uses current and motor speed signals that conflate pump degradation with flow change — process deviation vs. sensor artifact is inherently indistinguishable. Electromagnetic meters (5–15%) produce the cleanest signal with fewest artifacts, enabling >95% classification accuracy when paired with suitable signal processing.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -435,7 +372,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-22",
       "statement": "Minimize the time required to recalibrate or replace a degraded flow sensor without draining the hydronic circuit",
       "jobStep": "MODIFY",
       "importance": 7,
@@ -445,7 +382,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Draining a hydronic circuit for sensor replacement requires flushing, refilling, and re-dosing inhibitors — a 3–6 hour job that forces complete system shutdown. Hot-swap-capable sensors that allow in-situ replacement under pressure eliminate system downtime and reduce service cost to under 1 hour, which is especially valued in commercial and hospitality deployments.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) with flange or threaded connection require system isolation and partial drain-down for replacement — the dominant technology does not support in-circuit hot-swap replacement without valve isolation kits, yielding a satisfaction score of 4 (manageable but requiring planned downtime). Turbine/impeller sensors (15–40%) similarly require isolation for replacement. Electromagnetic meters (5–15%) in insertion variants can be replaced with flow isolated via shut-off valves, but full-bore electromagnetic meters require pipe-section isolation. No incumbent technology in this market enables true zero-drain sensor replacement as a standard product feature.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -453,25 +390,7 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the sensitivity of transit-time measurement accuracy to asymmetric flow profiles from elbows, valves, or tees in compact equipment enclosures",
-      "jobStep": "LOCATE",
-      "importance": 7,
-      "satisfaction": 4.5,
-      "opportunity": 9.5,
-      "isUnderserved": false,
-      "isOverserved": false,
-      "productRelated": true,
-      "importanceRationale": "HVAC equipment is designed to tight spatial budgets where pipe runs of 5–10×DN are impractical. Compact rooftop units and split systems place sensors within 0–2 pipe diameters of elbows; sensors with high profile-sensitivity produce readings that vary 3–6% depending on exact mounting position, making certified accuracy claims unenforceable.",
-      "satisfactionRationale": "",
-      "needsRationale": true,
-      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
-      "stakeholderIds": [
-        "Assembly technician, commissioning tech, service tech"
-      ]
-    },
-    {
-      "id": "",
+      "id": "ES-19",
       "statement": "Minimize the likelihood of scale or sediment buildup degrading measurement accuracy by more than 2% within the sensor's rated service life",
       "jobStep": "MONITOR",
       "importance": 7,
@@ -481,7 +400,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Calcium carbonate scale deposits on ultrasonic transducer faces reduce acoustic signal amplitude and alter path length. Even 0.5mm of scale changes transit time sufficiently to cause >2% measurement error. Sensors without scale-detection diagnostics allow this degradation to accumulate undetected until an annual service inspection.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) have a bluff body that can accumulate scale and debris, causing progressive measurement drift — the recalibration from 5.0 to 4.5 reflects that vortex bluff body fouling is a known weakness cited in incumbent profiles. Turbine/impeller sensors (15–40%) clog from scale and sediment, directly causing measurement failure as rotor clearances reduce — their satisfaction for this need is lower than vortex. Electromagnetic meters (5–15%) have smooth-bore lined interiors with no scale accumulation mechanism and are the best-performing incumbent on this need. Differential pressure sensors (5–15%) use primary elements (orifice, venturi) that scale-up and shift the ΔP-to-flow calibration, yielding unsatisfactory performance.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -490,7 +409,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-01",
       "statement": "Minimize the likelihood of selecting a flow sensor with insufficient turndown ratio for the system's part-load to full-load operating range",
       "jobStep": "DEFINE",
       "importance": 7,
@@ -500,7 +419,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "HVAC system designers must specify a sensor at the design phase before the actual operating range is fully characterised. Selecting a sensor with 1:5 turndown for a variable-speed drive system that actually demands 1:10 creates measurement gaps at minimum load — errors that only become apparent after installation and commissioning.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Turbine/impeller sensors (15–40%) are marketed with 30:1 turndown specifications, which often guides OEM sensor selection adequately even if real-world performance falls short; the satisfaction score of 5 reflects that the specification information is available even if actual field performance sometimes underdelivers. Vortex sensors (>40%) are well-characterised with published turndown specifications and OEM selection tools are mature. Electromagnetic meters (5–15%) have turndown specifications well above HVAC requirements. Differential pressure sensors (5–15%) are the exception — their 4:1 turndown is clearly documented, enabling correct specification avoidance. The incumbent market provides adequate specification information to avoid catastrophic turndown mis-specification.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -509,7 +428,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-03",
       "statement": "Minimize the time required to mechanically integrate the flow sensor into the hydronic circuit during OEM assembly to under 3 minutes per unit",
       "jobStep": "PREPARE",
       "importance": 7,
@@ -519,7 +438,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "High-volume HVAC OEM lines produce 200–600 units per day. A sensor integration step that takes over 3 minutes becomes a line bottleneck; push-fit or threaded snap-in connectors reduce integration to under 60 seconds and eliminate the torque tool requirement that adds training burden and the risk of over/under-tightening.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) with compression or push-fit fittings integrate in under 2 minutes in optimised OEM assembly jigs — the dominant technology meets the <3-minute criterion routinely. Turbine/impeller sensors (15–40%) use simple threaded BSP fittings that are equally fast to install. Pump-integrated estimation (15–40%) eliminates sensor integration time entirely. Electromagnetic meters (5–15%) are physically larger and require additional grounding strap installation, pushing integration time toward 4–6 minutes in some assemblies. The overall market satisfaction of 5 reflects that most common incumbent technologies meet the 3-minute requirement, with the electromagnetic minority as an outlier.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -527,7 +446,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-05",
       "statement": "Minimize the commissioning effort required to configure fluid acoustic properties for varying water-glycol concentrations",
       "jobStep": "PREPARE",
       "importance": 7,
@@ -537,7 +456,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Commissioning technicians visit dozens of sites per week and cannot reliably configure fluid-type parameters for each glycol concentration variant. Self-configuring sensors that auto-detect fluid type reduce commissioning error rates and enable non-specialist installers to achieve factory-calibration accuracy without additional training.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) do not rely on speed-of-sound and require no acoustic calibration for glycol — their commissioning involves only flow-direction confirmation and signal level check, which the recalibration from 4.0 to 5.0 correctly reflects as a genuine vortex advantage over ultrasonic alternatives. Turbine/impeller sensors (15–40%) require viscosity correction for glycol concentration but this is typically handled by a lookup table in the commissioning software rather than manual acoustic property entry. Electromagnetic meters (5–15%) similarly use conductivity rather than acoustic properties and require no glycol-specific calibration step. Pump-integrated estimation (15–40%) requires no sensor commissioning at all. This need is therefore broadly satisfied across the dominant incumbent technologies — it is specifically an ultrasonic sensor commissioning burden.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -545,7 +464,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-13",
       "statement": "Minimize the likelihood of rapid temperature transients exceeding compensation algorithm response, causing measurement error >1% for more than 30 seconds",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -555,7 +474,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Heat pumps switching between heating and cooling modes produce rapid temperature transients of 10–30°C in under 60 seconds. If the compensation algorithm's response time is slower than the temperature change rate, the sensor produces a 30-second window of erroneous flow data that the controller uses to make mode-transition decisions.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) use fluid density rather than speed-of-sound for their flow calculation — temperature-dependent density changes affect vortex sensor readings by less than 0.5% across a 30°C transient, making them substantially immune to rapid thermal compensation lag; their satisfaction score of 5 for this need is legitimate. Turbine/impeller sensors (15–40%) measure rotor RPM, which is affected by viscosity change during temperature transients but the effect is typically <1% over 30 seconds of transition. Electromagnetic meters (5–15%) have no speed-of-sound dependency and are thermally robust during transients. The compensation lag issue is specific to ultrasonic transit-time technology and does not meaningfully affect the dominant incumbent technologies.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -564,7 +483,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-15",
       "statement": "Minimize the flow sensor's contribution to system pressure drop below 50 mbar at design flow rate",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -574,7 +493,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Every mbar of pressure drop added by the sensor must be overcome by the circulation pump, increasing pump power consumption and operating noise. A 50mbar budget is tight for compact HVAC equipment; sensors exceeding this require the OEM to up-specify the pump, increasing BOM cost and reducing the system's seasonal efficiency rating.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) introduce moderate pressure drop through their bluff body obstruction — typically 30–80 mbar at design flow rates in HVAC applications; the recalibration from 5.0 to 5.0 (no change needed) reflects that vortex pressure drop is a known weakness but is often within the 50 mbar budget for larger pipe sizes. Turbine/impeller sensors (15–40%) introduce 20–60 mbar depending on rotor design. Electromagnetic meters (5–15%) have smooth-bore construction and near-zero pressure drop — they are the best incumbent technology for this specific requirement. Differential pressure sensors (5–15%) deliberately introduce permanent pressure loss as their measurement mechanism and typically exceed 50 mbar, making them the worst incumbent for this criterion.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -583,25 +502,7 @@
       ]
     },
     {
-      "id": "",
-      "statement": "Minimize the likelihood of measurement signal loss when system flow rate falls below the ultrasonic transit-time noise floor during part-load VFD operation",
-      "jobStep": "EXECUTE",
-      "importance": 7,
-      "satisfaction": 5,
-      "opportunity": 9,
-      "isUnderserved": false,
-      "isOverserved": false,
-      "productRelated": true,
-      "importanceRationale": "VFD-driven HVAC systems spend 70–80% of their runtime at 30–60% speed, where flow rates approach or fall below sensor minimum detection thresholds. Loss of measurement at these operating points prevents the controller from implementing demand-based flow optimisation, eliminating the energy savings that justified the VFD investment.",
-      "satisfactionRationale": "",
-      "needsRationale": true,
-      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
-      "stakeholderIds": [
-        "Assembly technician, commissioning tech, service tech"
-      ]
-    },
-    {
-      "id": "",
+      "id": "ES-24",
       "statement": "Increase the ability to remotely diagnose flow sensor health status via the existing BMS communication bus without physical inspection",
       "jobStep": "MONITOR",
       "importance": 6,
@@ -611,7 +512,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Building Management Systems are the primary interface for facilities managers overseeing dozens of HVAC units. Remote diagnostic capability via Modbus/BACnet allows the BMS to flag flow sensor degradation before it affects system performance, enabling condition-based maintenance rather than calendar-based service visits that miss developing faults.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) with standard 4-20 mA or pulse output do not expose sensor health diagnostics on BMS buses — they report only the flow value, not signal quality or coupling integrity; satisfaction of 3 reflects that no incumbent vortex product provides health diagnostics via BACnet/Modbus as a standard feature. Turbine/impeller sensors (15–40%) similarly transmit only flow pulses with no health status channel. Electromagnetic meters (5–15%) in BMS-integrated versions expose empty-pipe detection and transmitter status via HART or Profibus, providing partial health diagnostic capability — but this represents only 5–15% of the installed base. The remote diagnostic gap is broadly unsatisfied across all incumbent categories.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -619,7 +520,61 @@
       ]
     },
     {
-      "id": "",
+      "id": "PRN-05",
+      "statement": "Minimize the likelihood of ultrasonic signal attenuation from air entrainment exceeding 2% by volume during thermal cycling or system startup",
+      "jobStep": "EXECUTE",
+      "importance": 8,
+      "satisfaction": 5,
+      "opportunity": 11,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "Start-up of heat pump systems involves rapid temperature changes that release dissolved gas from the hydronic medium. The resulting micro-bubble cloud attenuates ultrasonic signals above 2% void fraction, causing spurious no-flow readings that trigger protective shutdowns and prevent the system from completing its start-up sequence.",
+      "satisfactionRationale": "Vortex sensors (>40%) are resistant to moderate air entrainment — vortex shedding frequency is not disrupted by bubble concentrations up to 10–15% void fraction, and the recalibration from 4.0 to 5.0 correctly reflects this vortex advantage over ultrasonic transit-time designs. Electromagnetic meters (5–15%) tolerate void fractions up to 20% without significant measurement error. Turbine/impeller sensors (15–40%) rotate through the liquid phase and are moderately tolerant of intermittent air pockets. The air-entrainment vulnerability is primarily a product-constraint of ultrasonic transit-time sensors, including Marquardt — the dominant incumbents in this market (vortex and EM) are substantially immune.",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "PRN-04",
+      "statement": "Minimize the likelihood of measurement signal loss when system flow rate falls below the ultrasonic transit-time noise floor during part-load VFD operation",
+      "jobStep": "EXECUTE",
+      "importance": 7,
+      "satisfaction": 5,
+      "opportunity": 9,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "VFD-driven HVAC systems spend 70–80% of their runtime at 30–60% speed, where flow rates approach or fall below sensor minimum detection thresholds. Loss of measurement at these operating points prevents the controller from implementing demand-based flow optimisation, eliminating the energy savings that justified the VFD investment.",
+      "satisfactionRationale": "Vortex sensors (>40%) have acknowledged low-flow instability — at part-load VFD speeds the vortex shedding frequency drops below the reliable detection threshold, and the recalibration from 5.0 to 4.5 in the ODI matrix (for ES-16 low-flow) reflects this known vortex weakness. However, for the minimum detection floor specifically, vortex sensors are moderately better than turbine sensors in that they continue to shed at lower velocities before the signal deteriorates completely. Electromagnetic meters (5–15%) have the lowest minimum detectable velocity (<0.01 m/s) of any incumbent technology and fully satisfy part-load detection. Turbine sensors (15–40%) stall at low velocity and produce zero output — the transit-time noise floor issue is analogous to turbine rotor stall for ultrasonic sensors.",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "PRN-07",
+      "statement": "Minimize the sensitivity of transit-time measurement accuracy to asymmetric flow profiles from elbows, valves, or tees in compact equipment enclosures",
+      "jobStep": "LOCATE",
+      "importance": 7,
+      "satisfaction": 4.5,
+      "opportunity": 9.5,
+      "isUnderserved": false,
+      "isOverserved": false,
+      "productRelated": true,
+      "importanceRationale": "HVAC equipment is designed to tight spatial budgets where pipe runs of 5–10×DN are impractical. Compact rooftop units and split systems place sensors within 0–2 pipe diameters of elbows; sensors with high profile-sensitivity produce readings that vary 3–6% depending on exact mounting position, making certified accuracy claims unenforceable.",
+      "satisfactionRationale": "Vortex sensors (>40%) require 10–15×DN upstream straight pipe for accurate measurement — a more demanding requirement than most other technologies; the recalibration from 4.0 to 4.5 reflects that vortex and EM together (the two best-performing incumbents) raise the market average above what vortex alone would suggest. Turbine/impeller sensors (15–40%) require 3–5×DN — physically smaller than vortex, making them easier to accommodate in compact enclosures but still subject to systematic error when straight-pipe requirements are not met. Electromagnetic meters (5–15%) have multi-electrode flow profile averaging and tolerate disturbed flow profiles with only 1–2%×DN straight pipe in some designs. This need is a specific product constraint of single-chord ultrasonic transit-time sensors including Marquardt.",
+      "needsRationale": true,
+      "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
+      "stakeholderIds": [
+        "Assembly technician, commissioning tech, service tech"
+      ]
+    },
+    {
+      "id": "PRN-08",
       "statement": "Minimize the likelihood of transit-time measurement error from rapid speed-of-sound changes during heating-cooling mode transitions exceeding compensation algorithm response time",
       "jobStep": "EXECUTE",
       "importance": 7,
@@ -629,7 +584,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Reversible heat pumps switch between heating and cooling mode multiple times per day in variable-climate regions. Each mode transition changes the fluid temperature by 10–30°C within 30–60 seconds; if the speed-of-sound compensation algorithm cannot track this rate, the sensor produces 30–90 seconds of biased flow data during each transition.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) do not use speed-of-sound and are completely immune to temperature-dependent acoustic property changes — the recalibration from 5.0 to 5.5 correctly reflects that the dominant technology has no speed-of-sound dependency whatsoever. Electromagnetic meters (5–15%) similarly measure independently of acoustic properties and are unaffected by temperature transients. Turbine/impeller sensors (15–40%) experience viscosity-driven changes during thermal transients but this effect is small (<0.5% per 10°C in the range 20–80°C). Speed-of-sound compensation lag is an inherent ultrasonic-only challenge; the dominant incumbents are broadly immune, which drives the market satisfaction score to 5.5.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -637,7 +592,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-02",
       "statement": "Increase the ability to specify a single sensor platform across multiple pipe diameters (DN12-DN25) without redesigning the hydraulic assembly",
       "jobStep": "DEFINE",
       "importance": 6,
@@ -647,7 +602,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "HVAC OEMs with product ranges spanning mono, bi-zone, and tri-zone systems use DN12 through DN25 pipe diameters. A platform-agnostic sensor with adapter sets reduces the number of qualified part numbers from 3–4 to 1, simplifying procurement, reducing safety stock, and eliminating the risk of mis-specification during product variant configuration.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensor suppliers (>40%) offer separate product families per DN size — an OEM covering DN15, DN20, and DN25 must qualify three separate part numbers, each with their own commissioning characteristics; satisfaction of 4 reflects that multi-variant supplier relationships are manageable but not efficient. Turbine/impeller suppliers (15–40%) also offer DN-specific products. Electromagnetic meter suppliers (5–15%) have similar per-DN product structures. No incumbent technology currently offers a single part number with adapter kits spanning DN12–DN25 with a common calibration baseline, meaning the multi-variant qualification burden is uniformly present across all incumbent categories.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -656,7 +611,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ES-12",
       "statement": "Minimize the likelihood of circulation pump pressure pulsations causing flow reading oscillations exceeding 5% of steady-state value",
       "jobStep": "EXECUTE",
       "importance": 6,
@@ -666,7 +621,7 @@
       "isOverserved": false,
       "productRelated": false,
       "importanceRationale": "Wet-rotor circulation pumps generate pressure pulsations at blade-pass frequency (typically 30–150 Hz). Sensors without adequate signal averaging transmit these as flow oscillations to the controller, causing PID hunting. A 5% oscillation threshold prevents unnecessary compressor modulation while ensuring genuine flow changes are still detected promptly.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) average vortex shedding frequency over a configurable window (typically 1–5 seconds) that effectively damps pump pulsation oscillations below 5% — the dominant technology handles this adequately, driving a satisfaction score of 5. Turbine/impeller sensors (15–40%) use pulse counting over a fixed time window that similarly averages out pulsation noise. Electromagnetic meters (5–15%) apply signal conditioning that filters blade-pass frequency pulsations. The 5% oscillation criterion is broadly met by current HVAC incumbent sensor technologies through standard signal averaging firmware, explaining the adequate satisfaction score.",
       "needsRationale": true,
       "primaryStakeholder": "OEM System Controller (control board)",
       "stakeholderIds": [
@@ -675,7 +630,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "PRN-06",
       "statement": "Minimize the likelihood of complete measurement loss from partially filled pipe sections during system charging, maintenance drain-down, or gravity-return operation",
       "jobStep": "EXECUTE",
       "importance": 6,
@@ -685,7 +640,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "System charging, annual maintenance drain-downs, and gravity-return operation all create partially filled pipe conditions in which ultrasonic transit-time sensors produce false readings or total signal loss. Sensors with empty-pipe detection can report a verified no-measurement state rather than erroneous data, preventing spurious controller actions during these maintenance windows.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) report erratic or zero output during partial-fill — their bluff body generates no consistent shedding pattern when the pipe is not full, but this is a transient condition and vortex sensors resume normal operation immediately when the pipe fills; satisfaction of 5 reflects that partial-fill events are infrequent and self-resolving with vortex technology. Turbine/impeller sensors (15–40%) similarly produce erratic pulse output during partial fill but resume normal operation on re-fill. Electromagnetic meters (5–15%) include empty-pipe detection via conductivity monitoring and can flag the partial-fill state explicitly rather than outputting erroneous data. This need is most acute for ultrasonic transit-time sensors that cannot distinguish partial fill from total signal loss.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -693,7 +648,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "PRN-02",
       "statement": "Minimize the risk of polymer housing and seal degradation from sustained operation near the 90°C thermal limit in high-temperature heating configurations",
       "jobStep": "EXECUTE",
       "importance": 5,
@@ -703,7 +658,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "High-temperature condensing boilers used in retrofit applications with older radiator systems operate at 80–85°C flow temperature. Sustained operation within 5–10°C of the polymer housing's 90°C limit accelerates seal compression set and material embrittlement, creating a long-term leak risk that the OEM carries under their product warranty.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) designed for HVAC service are typically rated to 120–150°C with metal or high-temperature polymer bodies — they are not operating near a material limit at 85°C and provide adequate thermal margin, consistent with the satisfaction score of 5. Turbine/impeller sensors (15–40%) similarly have metal body variants rated well above 90°C for high-temperature boiler applications. Electromagnetic meters (5–15%) use PTFE-lined stainless steel bodies with ratings of 120°C+. The polymer housing thermal limit is a specific constraint of Marquardt's current ultrasonic product generation; most incumbent HVAC flow sensors in the 85°C service class use higher-rated materials.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -711,7 +666,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "PRN-03",
       "statement": "Minimize the risk of sensor housing failure from pressure spikes exceeding 10 bar continuous rating during water hammer or pump surge events",
       "jobStep": "EXECUTE",
       "importance": 5,
@@ -721,7 +676,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Water hammer events from fast-closing solenoid valves generate pressure spikes of 15–30 bar in 10 bar-rated systems. These transient overpressures propagate through the hydraulic circuit and can fatigue sensor housings over hundreds of cycles. The OEM bears failure liability even though the cause is a system-level event outside the sensor's operating envelope.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) in HVAC service are typically pressure-rated to 16 or 25 bar — their bodies have inherent overpressure margin above the 10 bar continuous rating, and metal body designs withstand water hammer spikes with no fatigue risk over normal HVAC system lifetimes; satisfaction of 6 reflects that the dominant technology genuinely exceeds the need. Turbine/impeller sensors (15–40%) in metal body variants are similarly rated to 16–25 bar. Electromagnetic meters (5–15%) with stainless steel bodies are rated to 16 bar+. The 10 bar continuous rating limit is a constraint primarily of polymer-bodied compact sensors including current Marquardt ultrasonic designs; metal incumbent sensors provide the overpressure margin the market currently expects.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -729,7 +684,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "PRN-01",
       "statement": "Minimize the likelihood of measurement failure from acoustic impedance mismatch when non-aqueous contaminants enter the hydronic circuit",
       "jobStep": "EXECUTE",
       "importance": 4,
@@ -739,7 +694,7 @@
       "isOverserved": false,
       "productRelated": true,
       "importanceRationale": "Hydronic circuits can become contaminated with boiler flux residues, pipe sealants, or mineral oil from pump shaft seals. These non-aqueous contaminants alter acoustic impedance at the transducer-fluid interface; sensors without broad impedance tolerance produce measurement failures that are difficult to diagnose without removing and inspecting the sensor.",
-      "satisfactionRationale": "",
+      "satisfactionRationale": "Vortex sensors (>40%) have no acoustic impedance dependency — their bluff body interaction with fluid is driven by fluid density and velocity, not acoustic properties; non-aqueous contaminants at typical hydronic contamination levels do not affect vortex shedding measurements; the recalibration from 6.0 to 7.0 correctly reflects this immunity as the dominant technology broadly satisfies this need. Electromagnetic meters (5–15%) measure electrical conductivity of the fluid, which is unaffected by oil or organic contaminants at typical hydronic concentrations. Turbine/impeller sensors (15–40%) are sensitive to viscosity changes from oil contamination rather than acoustic impedance, producing a different but manageable measurement effect. The acoustic impedance mismatch issue is exclusively an ultrasonic transit-time technology constraint — the incumbent market satisfies this need well precisely because ultrasonic sensors are a minority technology.",
       "needsRationale": true,
       "primaryStakeholder": "Assembly technician, commissioning tech, service tech",
       "stakeholderIds": [
@@ -768,11 +723,6 @@
       "id": "S04",
       "label": "[SRC: 01_product_decomposition] — Product constraints feeding PRN needs",
       "prefixedId": "ODI-AC-HOME-HEATING-S04"
-    },
-    {
-      "id": "S05",
-      "label": "[SRC: 02_functional_promise] — Commodity FP, product FP",
-      "prefixedId": "ODI-AC-HOME-HEATING-S05"
     }
   ]
 }

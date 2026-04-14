@@ -89,7 +89,7 @@ export default function NewMarketDiscovery() {
     <>
       {/* ── Page Header ─────────────────────────────────────────────── */}
       <PageHeader
-        kicker="Step 02a + 02b / UNSPSC-to-NAICS Cross-Classification & Architecture Distance / New Markets for an Existing Product"
+        kicker="Step 02a + 02b / Product-to-Industry Cross-Classification & Architecture Distance / New Markets for an Existing Product"
         title="New Market Discovery"
         description="Candidate markets discovered, scored by architecture distance, and ranked by 6-factor composite scoring for the Marquardt Ultrasonic Flow Sensor."
       />
@@ -110,7 +110,7 @@ export default function NewMarketDiscovery() {
           </p>
           <p className="answer">
             What you learn here: which NAICS industry adjacencies scored
-            best, why they scored the way they did across ODI opportunity,
+            best, why they scored the way they did across customer outcome opportunity,
             feature fit, constraint compatibility, job coverage, value-network
             position, and incumbent vulnerability — and what specific
             go-to-market moves are recommended for each.
@@ -141,7 +141,7 @@ export default function NewMarketDiscovery() {
         <SectionAnchor
           id="discovery-process"
           title="Discovery Process — Phase 02a"
-          kicker="UNSPSC-to-NAICS Cross-Classification"
+          kicker="Product-to-Industry Cross-Classification"
         />
         <div className="md">
           <h3>Search Configuration</h3>
@@ -407,7 +407,7 @@ export default function NewMarketDiscovery() {
               </tr>
               <tr>
                 <td><strong>Scoring Type</strong></td>
-                <td>Hardware components (L1–L4) — criteria U1–U5 + H1–H4</td>
+                <td>Hardware components (L1–L4, where L4 = major subsystem, L3 = module, L2 = assembly, L1 = part) — criteria U1–U5 + H1–H4</td>
               </tr>
               <tr>
                 <td><strong>Tiered Discovery</strong></td>
@@ -572,7 +572,7 @@ export default function NewMarketDiscovery() {
             Each card below details the recommendation rationale, entry
             strategy, time and investment estimates for one candidate market.
             Click the link at the bottom of any card to open the full
-            market-level deep-dive (Compatibility, JTBD, ODI, Value Network)
+            market-level deep-dive (Compatibility, Job-to-be-Done, Outcomes, Value Network)
             on the Analysis page.
           </p>
         </div>
