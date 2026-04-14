@@ -94,7 +94,7 @@ const navItems: NavItem[] = [
       { id: "con-sources",      label: "Sources" },
     ],
   },
-  { to: "/home-market", label: "Market Competition", kicker: "04" },
+  { to: "/home-market", label: "Home Market", kicker: "04" },
   { to: "/discovery", label: "New Market Discovery", kicker: "05" },
   { to: "/analysis", label: "New Market Analysis", kicker: "06" },
 ];
