@@ -69,7 +69,7 @@ export default function HomeMarketCompetition() {
 
       <div className="md">
         {/* Item 25: Renamed heading */}
-        <h1 className="section-title">04 Home Market Competition</h1>
+        <h1 className="section-title">04 Market Competition</h1>
 
         {/* Item 40: Executive Summary */}
         <ExecutiveSummary kicker="04 / Executive Summary" title="What you are reading">
@@ -409,7 +409,7 @@ export default function HomeMarketCompetition() {
         <hr />
 
         {/* Sources — Item 4/26/28/39 */}
-        <SourceList sourceIds={SECTION_SOURCES} title="Sources — 04 Home Market Competition" />
+        <SourceList sourceIds={SECTION_SOURCES} title="Sources — 04 Market Competition" />
       </div>
     </section>
   );

@@ -6,7 +6,7 @@
  *     01  Product Profile       ▶ (expandable section links)
  *     02  Functional Promise    ▶
  *     03  Constraints           ▶
- *     04  Home Market
+ *     04  Market Competition
  *     05  New Market Discovery
  *     06  New Market Analysis    ← tabbed
  */
@@ -94,7 +94,7 @@ const navItems: NavItem[] = [
       { id: "con-sources",      label: "Sources" },
     ],
   },
-  { to: "/home-market", label: "Home Market", kicker: "04" },
+  { to: "/home-market", label: "Market Competition", kicker: "04" },
   { to: "/discovery", label: "New Market Discovery", kicker: "05" },
   { to: "/analysis", label: "New Market Analysis", kicker: "06" },
 ];

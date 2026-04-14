@@ -36,7 +36,7 @@ import AlternativesTab from "@/pages/analysis/tabs/AlternativesTab";
 const HOME_MARKET_SLUG = "ac-home-heating";
 
 const HOME_TABS = [
-  { slug: "competition", label: "Home Market Competition" },
+  { slug: "competition", label: "Market Competition" },
   { slug: "jtbd", label: "Job-to-be-Done Analysis" },
   { slug: "value-network", label: "Value Network" },
   { slug: "bom", label: "Bill of Materials" },
@@ -120,13 +120,13 @@ export default function HomeMarketCompetition() {
     <div>
       {/* ─── Page header ─────────────────────────────────────────────── */}
       <PageHeader
-        kicker="04 · Home Market · NAICS 333415"
-        title="Home Market"
+        kicker="04 · Market Competition · NAICS 333415"
+        title="Market Competition"
       />
 
       {/* ─── Executive summary ────────────────────────────────────────── */}
       <div style={{ padding: "0 56px" }}>
-        <ExecutiveSummary kicker="Home Market / Overview" title="Our current ground">
+        <ExecutiveSummary kicker="Market Competition / Overview" title="Our current ground">
           <p className="answer">
             Air-Conditioning and Warm Air Heating Equipment Manufacturing (NAICS 333415) is the
             Marquardt ultrasonic flow sensor's current, commercialized home market — the OEM

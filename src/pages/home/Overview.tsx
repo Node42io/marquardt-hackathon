@@ -589,7 +589,7 @@ export default function Overview() {
               ["01 Product Profile", "What the sensor does at mechanism, function, and outcome level. Features, specs, UNSPSC classification.", "Foundation for every compatibility check that follows"],
               ["02 Functional Promise", "The two-level functional promise used as the market search query. What the product does independent of technology.", "Commodity-level promise drives the NAICS market discovery in Chapter 05"],
               ["03 Constraints", "12 physical, chemical, and operational limits. 3 are absolute barriers; 9 are conditional.", "Every new market candidate is screened against these — absolute violations eliminate a market"],
-              ["04 Home Market", "Competition, alternatives, and value network position in the existing HVAC manufacturing market.", "Baseline for comparison — the sensor's current home"],
+              ["04 Market Competition", "Competition, alternatives, and value network position in the existing HVAC manufacturing market.", "Baseline for comparison — the sensor's current home"],
               ["05 New Market Discovery", "UNSPSC-to-NAICS cross-classification pipeline. Architecture distance scoring. 6-factor composite ranking.", "The ranked shortlist of markets to enter"],
               ["06 New Market Analysis", "Per-market deep-dive: Job-to-be-Done, ODI matrix, Kano fit, value network, alternatives, compatibility.", "Decision data per market — what to build, who to sell to, what it costs to enter"],
             ].map(([ch, what, output]) => (
