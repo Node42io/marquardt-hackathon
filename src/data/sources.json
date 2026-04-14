@@ -1,37 +1,37 @@
 {
   "PROD-S01": {
     "id": "S01",
-    "label": "Ultrasonic Flow Meters — DwyerOmega",
+    "label": "Ultrasonic Flow Meters \u2014 DwyerOmega",
     "url": "https://www.dwyeromega.com/en-us/resources/ultrasonic-flow-meters",
     "prefixedId": "PROD-S01"
   },
   "PROD-S02": {
     "id": "S02",
-    "label": "Ultrasonic Transit Time Technology Explained — ONICON",
+    "label": "Ultrasonic Transit Time Technology Explained \u2014 ONICON",
     "url": "https://www.onicon.com/education-series/ultrasonic-transit-time-technology-explained-doc-0004240",
     "prefixedId": "PROD-S02"
   },
   "PROD-S03": {
     "id": "S03",
-    "label": "Types and Uses of Ultrasonic Flow Meters — IQS Directory",
+    "label": "Types and Uses of Ultrasonic Flow Meters \u2014 IQS Directory",
     "url": "https://www.iqsdirectory.com/articles/flow-meter/ultrasonic-flow-meters.html",
     "prefixedId": "PROD-S03"
   },
   "PROD-S04": {
     "id": "S04",
-    "label": "Temperature Effects on Ultrasonic Flow Meters — FlowTMeter",
+    "label": "Temperature Effects on Ultrasonic Flow Meters \u2014 FlowTMeter",
     "url": "https://www.flowtmeter.com/blog/how-does-the-temperature-affect-the-performance-of-an-ultrasonic-flow-meter-469567.html",
     "prefixedId": "PROD-S04"
   },
   "PROD-S05": {
     "id": "S05",
-    "label": "Ultrasonic Flowmeter Advantages and Disadvantages — GES Repair",
+    "label": "Ultrasonic Flowmeter Advantages and Disadvantages \u2014 GES Repair",
     "url": "https://gesrepair.com/ultrasonic-flow-meter-advantages-disadvantages/",
     "prefixedId": "PROD-S05"
   },
   "PROD-S06": {
     "id": "S06",
-    "label": "Transit-Time Flow Meters in High Temperature Applications — Soaring Instrument",
+    "label": "Transit-Time Flow Meters in High Temperature Applications \u2014 Soaring Instrument",
     "url": "https://soaringinstrument.com/understanding-transit-time-ultrasonic-flow-meters-in-high-temperature-applications-what-should-you-know/",
     "prefixedId": "PROD-S06"
   },
@@ -47,12 +47,12 @@
   },
   "CONSTR-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — constraints, specifications, features, technology classification",
+    "label": "01_product_decomposition.md \u2014 constraints, specifications, features, technology classification",
     "prefixedId": "CONSTR-S01"
   },
   "CONSTR-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — complements, BOM position, functional promise scope",
+    "label": "02_functional_promise.md \u2014 complements, BOM position, functional promise scope",
     "prefixedId": "CONSTR-S02"
   },
   "HOME-S01": {
@@ -170,182 +170,182 @@
   },
   "HOME-S20": {
     "id": "S20",
-    "label": "01_product_decomposition.md — technology classification, features, constraints",
+    "label": "01_product_decomposition.md \u2014 technology classification, features, constraints",
     "prefixedId": "HOME-S20"
   },
   "HOME-S21": {
     "id": "S21",
-    "label": "02_functional_promise.md — commodity functional promise, complements",
+    "label": "02_functional_promise.md \u2014 commodity functional promise, complements",
     "prefixedId": "HOME-S21"
   },
   "DISC-S01": {
     "id": "S01",
-    "label": "Types and Uses of Ultrasonic Flow Meters — IQS Directory",
+    "label": "Types and Uses of Ultrasonic Flow Meters \u2014 IQS Directory",
     "url": "https://www.iqsdirectory.com/articles/flow-meter/ultrasonic-flow-meters.html",
     "prefixedId": "DISC-S01"
   },
   "DISC-S02": {
     "id": "S02",
-    "label": "Ultrasonic Flow Meters: Working Principles, Applications & Benefits — GAIMC",
+    "label": "Ultrasonic Flow Meters: Working Principles, Applications & Benefits \u2014 GAIMC",
     "url": "https://www.gaimc.com/Newsinfo/ultrasonic-flow-meters-working-principles-applications-benefits",
     "prefixedId": "DISC-S02"
   },
   "DISC-S03": {
     "id": "S03",
-    "label": "Ultrasonic Flow Meter Technology — Teledyne ISCO",
+    "label": "Ultrasonic Flow Meter Technology \u2014 Teledyne ISCO",
     "url": "https://www.teledyneisco.com/en-us/understanding-ultrasonic-flow-meter-technology",
     "prefixedId": "DISC-S03"
   },
   "DISC-S04": {
     "id": "S04",
-    "label": "Complete Guide to Ultrasonic Flow Meters — Icon Process Controls",
+    "label": "Complete Guide to Ultrasonic Flow Meters \u2014 Icon Process Controls",
     "url": "https://iconprocon.com/blog-post/the-complete-guide-to-ultrasonic-flow-meters-technology-applications-and-products-from-icon-process-controls/",
     "prefixedId": "DISC-S04"
   },
   "DISC-S05": {
     "id": "S05",
-    "label": "Non-Intrusive Ultrasonic Flow Meters — Emerson",
+    "label": "Non-Intrusive Ultrasonic Flow Meters \u2014 Emerson",
     "url": "https://www.emerson.com/en-us/automation/measurement-instrumentation/flow-measurement/about-non-intrusive-ultrasonic-flow-meters",
     "prefixedId": "DISC-S05"
   },
   "DISC-S06": {
     "id": "S06",
-    "label": "Flow Meter Market Size & Forecast — Future Market Insights",
+    "label": "Flow Meter Market Size & Forecast \u2014 Future Market Insights",
     "url": "https://www.futuremarketinsights.com/reports/flow-meters-market",
     "prefixedId": "DISC-S06"
   },
   "DISC-S07": {
     "id": "S07",
-    "label": "Flow Meter Market Report 2033 — SkyQuest",
+    "label": "Flow Meter Market Report 2033 \u2014 SkyQuest",
     "url": "https://www.skyquestt.com/report/flow-meter-market",
     "prefixedId": "DISC-S07"
   },
   "DISC-S08": {
     "id": "S08",
-    "label": "NAICS 333415 — IBISWorld",
+    "label": "NAICS 333415 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/333415/",
     "prefixedId": "DISC-S08"
   },
   "DISC-S09": {
     "id": "S09",
-    "label": "NAICS 221330 — IBISWorld",
+    "label": "NAICS 221330 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/221330/",
     "prefixedId": "DISC-S09"
   },
   "DISC-S10": {
     "id": "S10",
-    "label": "NAICS 325411 — IBISWorld",
+    "label": "NAICS 325411 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/325411/",
     "prefixedId": "DISC-S10"
   },
   "DISC-S11": {
     "id": "S11",
-    "label": "NAICS 221310 — IBISWorld",
+    "label": "NAICS 221310 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/221310/",
     "prefixedId": "DISC-S11"
   },
   "DISC-S12": {
     "id": "S12",
-    "label": "NAICS 312120 — IBISWorld",
+    "label": "NAICS 312120 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/312120/",
     "prefixedId": "DISC-S12"
   },
   "DISC-S13": {
     "id": "S13",
-    "label": "Water and Sewage Utilities (NAICS 2213) — US EPA",
+    "label": "Water and Sewage Utilities (NAICS 2213) \u2014 US EPA",
     "url": "https://www.epa.gov/regulatory-information-sector/water-and-sewage-utilities-sector-naics-2213",
     "prefixedId": "DISC-S13"
   },
   "DISC-S14": {
     "id": "S14",
-    "label": "01_product_decomposition.md — technology class, specifications, constraints, UNSPSC classification",
+    "label": "01_product_decomposition.md \u2014 technology class, specifications, constraints, UNSPSC classification",
     "prefixedId": "DISC-S14"
   },
   "DISC-S15": {
     "id": "S15",
-    "label": "02_functional_promise.md — commodity FP, FP extensions, complements, BOM position",
+    "label": "02_functional_promise.md \u2014 commodity FP, FP extensions, complements, BOM position",
     "prefixedId": "DISC-S15"
   },
   "DISC-S16": {
     "id": "S16",
-    "label": "03_constraints.md — 12 constraints with absolute/conditional classification",
+    "label": "03_constraints.md \u2014 12 constraints with absolute/conditional classification",
     "prefixedId": "DISC-S16"
   },
   "JTBD-FINFISH-FARMING-S01": {
     "id": "S01",
-    "label": "Recent Developments in RAS: A Review — Gupta 2024, Wiley",
+    "label": "Recent Developments in RAS: A Review \u2014 Gupta 2024, Wiley",
     "url": "https://onlinelibrary.wiley.com/doi/10.1155/are/6096671",
     "prefixedId": "JTBD-FINFISH-FARMING-S01"
   },
   "JTBD-FINFISH-FARMING-S02": {
     "id": "S02",
-    "label": "IoT-Based RAS Monitoring System — MDPI Sensors 2025",
+    "label": "IoT-Based RAS Monitoring System \u2014 MDPI Sensors 2025",
     "url": "https://www.mdpi.com/1424-8220/25/21/6692",
     "prefixedId": "JTBD-FINFISH-FARMING-S02"
   },
   "JTBD-FINFISH-FARMING-S03": {
     "id": "S03",
-    "label": "Water Quality Monitoring in RAS — Lindholm-Lehto 2023, Wiley",
+    "label": "Water Quality Monitoring in RAS \u2014 Lindholm-Lehto 2023, Wiley",
     "url": "https://onlinelibrary.wiley.com/doi/10.1002/aff2.102",
     "prefixedId": "JTBD-FINFISH-FARMING-S03"
   },
   "JTBD-FINFISH-FARMING-S04": {
     "id": "S04",
-    "label": "Benefits and Challenges of RAS for Atlantic Salmon — Taylor & Francis 2024",
+    "label": "Benefits and Challenges of RAS for Atlantic Salmon \u2014 Taylor & Francis 2024",
     "url": "https://www.tandfonline.com/doi/full/10.1080/23308249.2024.2433581",
     "prefixedId": "JTBD-FINFISH-FARMING-S04"
   },
   "JTBD-FINFISH-FARMING-S05": {
     "id": "S05",
-    "label": "Aquaculture Sensors for Fish Hatcheries — ICON Process Controls",
+    "label": "Aquaculture Sensors for Fish Hatcheries \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/aquaculture-sensors-reliable-monitoring-for-fish-hatcheries-and-commercial-aquatic-operations/",
     "prefixedId": "JTBD-FINFISH-FARMING-S05"
   },
   "JTBD-FINFISH-FARMING-S06": {
     "id": "S06",
-    "label": "Aquaculture Flow Meter Solutions — ICON Process Controls",
+    "label": "Aquaculture Flow Meter Solutions \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/advanced-and-reliable-aquaculture-flow-meter-solutions-from-icon-process-controls/",
     "prefixedId": "JTBD-FINFISH-FARMING-S06"
   },
   "JTBD-FINFISH-FARMING-S07": {
     "id": "S07",
-    "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture — pflowmeters.com",
+    "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture \u2014 pflowmeters.com",
     "url": "https://www.pflowmeters.com/info/how-ultrasonic-flow-meters-are-transforming-aq-101928732.html",
     "prefixedId": "JTBD-FINFISH-FARMING-S07"
   },
   "JTBD-FINFISH-FARMING-S08": {
     "id": "S08",
-    "label": "The $1 Billion RAS Collapse: Atlantic Sapphire Lessons — Alan W Cook",
+    "label": "The $1 Billion RAS Collapse: Atlantic Sapphire Lessons \u2014 Alan W Cook",
     "url": "https://www.alanwcook.com/blog/atlantic-sapphire-lessons-for-investors-from-the-1-billion-ras-experiment",
     "prefixedId": "JTBD-FINFISH-FARMING-S08"
   },
   "JTBD-FINFISH-FARMING-S09": {
     "id": "S09",
-    "label": "Atlantic Sapphire USD 3M Hit After 400 Tons Lost — SeafoodSource",
+    "label": "Atlantic Sapphire USD 3M Hit After 400 Tons Lost \u2014 SeafoodSource",
     "url": "https://www.seafoodsource.com/news/business-finance/atlantic-sapphire-expects-usd-3-million-hit-after-losing-400-tons-of-salmon",
     "prefixedId": "JTBD-FINFISH-FARMING-S09"
   },
   "JTBD-FINFISH-FARMING-S10": {
     "id": "S10",
-    "label": "Atlantic Sapphire Blames Design Weakness — Fish Farming Expert",
+    "label": "Atlantic Sapphire Blames Design Weakness \u2014 Fish Farming Expert",
     "url": "https://www.fishfarmingexpert.com/atlantic-sapphire-filter-failure-miami/atlantic-sapphire-blames-ras-design-weakness-for-us-fish-die-off/1159525",
     "prefixedId": "JTBD-FINFISH-FARMING-S10"
   },
   "JTBD-FINFISH-FARMING-S11": {
     "id": "S11",
-    "label": "Effect of Flow Rate and DO Distribution on RAS Aeration — ScienceDirect 2025",
+    "label": "Effect of Flow Rate and DO Distribution on RAS Aeration \u2014 ScienceDirect 2025",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168169925003965",
     "prefixedId": "JTBD-FINFISH-FARMING-S11"
   },
   "JTBD-FINFISH-FARMING-S12": {
     "id": "S12",
-    "label": "DO Prediction Model for Aquaculture — Frontiers Marine Science 2024",
+    "label": "DO Prediction Model for Aquaculture \u2014 Frontiers Marine Science 2024",
     "url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2024.1365047/full",
     "prefixedId": "JTBD-FINFISH-FARMING-S12"
   },
   "JTBD-FINFISH-FARMING-S13": {
     "id": "S13",
-    "label": "In-Line Ultrasonic Flow Meters — Global Aquaculture Supply",
+    "label": "In-Line Ultrasonic Flow Meters \u2014 Global Aquaculture Supply",
     "url": "https://globalaquaculturesupply.com/uf4000-in-line-ultrasonic-flow-meters/",
     "prefixedId": "JTBD-FINFISH-FARMING-S13"
   },
@@ -376,78 +376,78 @@
   },
   "ODI-FINFISH-FARMING-S06": {
     "id": "S06",
-    "label": "05_market_discovery.md (NAICS 112511 — market context, alternatives)",
+    "label": "05_market_discovery.md (NAICS 112511 \u2014 market context, alternatives)",
     "prefixedId": "ODI-FINFISH-FARMING-S06"
   },
   "VN-FINFISH-FARMING-S01": {
     "id": "S01",
-    "label": "Recirculating Aquaculture System — Wikipedia",
+    "label": "Recirculating Aquaculture System \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Recirculating_aquaculture_system",
     "prefixedId": "VN-FINFISH-FARMING-S01"
   },
   "VN-FINFISH-FARMING-S02": {
     "id": "S02",
-    "label": "Recirculating Aquaculture Systems — AgMRC",
+    "label": "Recirculating Aquaculture Systems \u2014 AgMRC",
     "url": "https://www.agmrc.org/commodities-products/aquaculture/recirculating-aquaculture-systems",
     "prefixedId": "VN-FINFISH-FARMING-S02"
   },
   "VN-FINFISH-FARMING-S03": {
     "id": "S03",
-    "label": "RAS Equipment Categories — CEAUnion",
+    "label": "RAS Equipment Categories \u2014 CEAUnion",
     "url": "https://ceaunion.com/aquaculture-ras-systems",
     "prefixedId": "VN-FINFISH-FARMING-S03"
   },
   "VN-FINFISH-FARMING-S04": {
     "id": "S04",
-    "label": "Complete RAS Skid Filtration — MAT-KULING",
+    "label": "Complete RAS Skid Filtration \u2014 MAT-KULING",
     "url": "https://matkuling.com/equipment/recirculating-aquaculture-skid-filtration/",
     "prefixedId": "VN-FINFISH-FARMING-S04"
   },
   "VN-FINFISH-FARMING-S05": {
     "id": "S05",
-    "label": "RAS Drum Filter Market — MarketIntelo",
+    "label": "RAS Drum Filter Market \u2014 MarketIntelo",
     "url": "https://marketintelo.com/report/aquaculture-drum-filters-market",
     "prefixedId": "VN-FINFISH-FARMING-S05"
   },
   "VN-FINFISH-FARMING-S06": {
     "id": "S06",
-    "label": "Aquaculture Filtration Equipment Market — Valuates Reports",
+    "label": "Aquaculture Filtration Equipment Market \u2014 Valuates Reports",
     "url": "https://reports.valuates.com/market-reports/QYRE-Auto-13K16612/global-aquaculture-filtration-equipment",
     "prefixedId": "VN-FINFISH-FARMING-S06"
   },
   "VN-FINFISH-FARMING-S07": {
     "id": "S07",
-    "label": "Integrated RAS Market Report — TBRC",
+    "label": "Integrated RAS Market Report \u2014 TBRC",
     "url": "https://www.thebusinessresearchcompany.com/report/integrated-recirculating-aquaculture-system-ras-global-market-report",
     "prefixedId": "VN-FINFISH-FARMING-S07"
   },
   "VN-FINFISH-FARMING-S08": {
     "id": "S08",
-    "label": "RAS Aquaculture Systems Trends 2025 — Accio",
+    "label": "RAS Aquaculture Systems Trends 2025 \u2014 Accio",
     "url": "https://www.accio.com/business/ras-aquaculture-systems-trends",
     "prefixedId": "VN-FINFISH-FARMING-S08"
   },
   "VN-FINFISH-FARMING-S09": {
     "id": "S09",
-    "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture — Gentos",
+    "label": "How Ultrasonic Flow Meters Are Transforming Aquaculture \u2014 Gentos",
     "url": "https://www.pflowmeters.com/info/how-ultrasonic-flow-meters-are-transforming-aq-101928732.html",
     "prefixedId": "VN-FINFISH-FARMING-S09"
   },
   "VN-FINFISH-FARMING-S10": {
     "id": "S10",
-    "label": "Aquaculture Sensors for Fish Hatcheries — ICON Process Controls",
+    "label": "Aquaculture Sensors for Fish Hatcheries \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/aquaculture-sensors-reliable-monitoring-for-fish-hatcheries-and-commercial-aquatic-operations/",
     "prefixedId": "VN-FINFISH-FARMING-S10"
   },
   "VN-FINFISH-FARMING-S11": {
     "id": "S11",
-    "label": "Aquaculture Fin Fish Species — AgMRC",
+    "label": "Aquaculture Fin Fish Species \u2014 AgMRC",
     "url": "https://www.agmrc.org/commodities-products/aquaculture/aquaculture-fin-fish-species",
     "prefixedId": "VN-FINFISH-FARMING-S11"
   },
   "VN-FINFISH-FARMING-S12": {
     "id": "S12",
-    "label": "Global Finfish Production Review — Global Seafood Alliance",
+    "label": "Global Finfish Production Review \u2014 Global Seafood Alliance",
     "url": "https://www.globalseafood.org/advocate/global-finfish-production-review-forecast-nearly-doubled-decade/",
     "prefixedId": "VN-FINFISH-FARMING-S12"
   },
@@ -458,7 +458,7 @@
   },
   "VN-FINFISH-FARMING-S14": {
     "id": "S14",
-    "label": "05_market_discovery.md — Architecture distance scoring for NAICS 112511",
+    "label": "05_market_discovery.md \u2014 Architecture distance scoring for NAICS 112511",
     "prefixedId": "VN-FINFISH-FARMING-S14"
   },
   "VN-FINFISH-FARMING-S15": {
@@ -468,52 +468,52 @@
   },
   "FIT-FINFISH-FARMING-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Technology class, features, constraints, UNSPSC classification",
+    "label": "01_product_decomposition.md \u2014 Technology class, features, constraints, UNSPSC classification",
     "prefixedId": "FIT-FINFISH-FARMING-S01"
   },
   "FIT-FINFISH-FARMING-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — Product FP, commodity FP, FP extension, complements",
+    "label": "02_functional_promise.md \u2014 Product FP, commodity FP, FP extension, complements",
     "prefixedId": "FIT-FINFISH-FARMING-S02"
   },
   "FIT-FINFISH-FARMING-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md — NAICS 112511 candidate details, architecture distance scoring",
+    "label": "05_market_discovery.md \u2014 NAICS 112511 candidate details, architecture distance scoring",
     "prefixedId": "FIT-FINFISH-FARMING-S03"
   },
   "FIT-FINFISH-FARMING-S04": {
     "id": "S04",
-    "label": "JTBD_finfish_farming_and_fish_hatcheries.md — Job map, alternatives, segments, 25 error statements",
+    "label": "JTBD_finfish_farming_and_fish_hatcheries.md \u2014 Job map, alternatives, segments, 25 error statements",
     "prefixedId": "FIT-FINFISH-FARMING-S04"
   },
   "FIT-FINFISH-FARMING-S05": {
     "id": "S05",
-    "label": "Clayton Docs: components/feature-market-fit.html — Component specification (Steps 09, 10, 11)",
+    "label": "Clayton Docs: components/feature-market-fit.html \u2014 Component specification (Steps 09, 10, 11)",
     "prefixedId": "FIT-FINFISH-FARMING-S05"
   },
   "COMPAT-FINFISH-FARMING-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Constraints, specifications, technology classification",
+    "label": "01_product_decomposition.md \u2014 Constraints, specifications, technology classification",
     "prefixedId": "COMPAT-FINFISH-FARMING-S01"
   },
   "COMPAT-FINFISH-FARMING-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — Product FP, commodity FP, complements",
+    "label": "02_functional_promise.md \u2014 Product FP, commodity FP, complements",
     "prefixedId": "COMPAT-FINFISH-FARMING-S02"
   },
   "COMPAT-FINFISH-FARMING-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md — NAICS 112511 architecture distance scoring (distance: 4)",
+    "label": "05_market_discovery.md \u2014 NAICS 112511 architecture distance scoring (distance: 4)",
     "prefixedId": "COMPAT-FINFISH-FARMING-S03"
   },
   "COMPAT-FINFISH-FARMING-S04": {
     "id": "S04",
-    "label": "VN_finfish_farming_and_fish_hatcheries.md — Full value network, Marquardt position analysis, operating conditions",
+    "label": "VN_finfish_farming_and_fish_hatcheries.md \u2014 Full value network, Marquardt position analysis, operating conditions",
     "prefixedId": "COMPAT-FINFISH-FARMING-S04"
   },
   "COMPAT-FINFISH-FARMING-S05": {
     "id": "S05",
-    "label": "Clayton Docs: components/constraints-analysis.html — Component specification (Steps 07 & 08)",
+    "label": "Clayton Docs: components/constraints-analysis.html \u2014 Component specification (Steps 07 & 08)",
     "prefixedId": "COMPAT-FINFISH-FARMING-S05"
   },
   "JTBD-HVAC-CONTRACTORS-S01": {
@@ -530,31 +530,31 @@
   },
   "JTBD-HVAC-CONTRACTORS-S03": {
     "id": "S03",
-    "label": "Hydronic Balancing Standards — jmpcoblog",
+    "label": "Hydronic Balancing Standards \u2014 jmpcoblog",
     "url": "https://jmpcoblog.com/hvac-blog/hydronic-balancing-part-1-the-standards-and-driving-force-behind-the-new-requirements",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S03"
   },
   "JTBD-HVAC-CONTRACTORS-S04": {
     "id": "S04",
-    "label": "EPBD 2024 Recast — EUR-Lex",
+    "label": "EPBD 2024 Recast \u2014 EUR-Lex",
     "url": "https://eur-lex.europa.eu/eli/dir/2024/1275/oj/eng",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S04"
   },
   "JTBD-HVAC-CONTRACTORS-S05": {
     "id": "S05",
-    "label": "EPBD Overview — Danfoss",
+    "label": "EPBD Overview \u2014 Danfoss",
     "url": "https://www.danfoss.com/en/industries/buildings-commercial/dhs/commercial-buildings-retrofitting/energy-performance-of-buildings-directive-epbd-everything-you-need-to-know/",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S05"
   },
   "JTBD-HVAC-CONTRACTORS-S06": {
     "id": "S06",
-    "label": "Hydronic Balancing Precision — TSI",
+    "label": "Hydronic Balancing Precision \u2014 TSI",
     "url": "https://tsi.com/hvac-consultant/learn/hydronic-system-balancing-precision-that-powers-performance",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S06"
   },
   "JTBD-HVAC-CONTRACTORS-S07": {
     "id": "S07",
-    "label": "5 Hidden Costs of Poor HVAC Balance — SITA",
+    "label": "5 Hidden Costs of Poor HVAC Balance \u2014 SITA",
     "url": "https://sita-tab.com/energy-efficiency/5-ways-poor-hvac-balance-is-secretly-draining-your-operating-budget/",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S07"
   },
@@ -566,7 +566,7 @@
   },
   "JTBD-HVAC-CONTRACTORS-S09": {
     "id": "S09",
-    "label": "Balancing HVAC Hydronic Systems: Flow Tolerance — Deppmann",
+    "label": "Balancing HVAC Hydronic Systems: Flow Tolerance \u2014 Deppmann",
     "url": "https://www.deppmann.com/blog/monday-morning-minutes/hvac-hydronic-systems-flow-tolerance/",
     "prefixedId": "JTBD-HVAC-CONTRACTORS-S09"
   },
@@ -582,104 +582,104 @@
   },
   "ODI-HVAC-CONTRACTORS-S01": {
     "id": "S01",
-    "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] — 25 error statements, alternatives, job map, regulatory drivers",
+    "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] \u2014 25 error statements, alternatives, job map, regulatory drivers",
     "prefixedId": "ODI-HVAC-CONTRACTORS-S01"
   },
   "ODI-HVAC-CONTRACTORS-S02": {
     "id": "S02",
-    "label": "[SRC: FIT_plumbing_heating_and_air_conditioning_co] — Step 09 tech feature fit, Step 10 product-related needs, Step 11 vendor feature fit",
+    "label": "[SRC: FIT_plumbing_heating_and_air_conditioning_co] \u2014 Step 09 tech feature fit, Step 10 product-related needs, Step 11 vendor feature fit",
     "prefixedId": "ODI-HVAC-CONTRACTORS-S02"
   },
   "ODI-HVAC-CONTRACTORS-S03": {
     "id": "S03",
-    "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications",
+    "label": "[SRC: 01_product_decomposition] \u2014 Product features, constraints, specifications",
     "prefixedId": "ODI-HVAC-CONTRACTORS-S03"
   },
   "ODI-HVAC-CONTRACTORS-S04": {
     "id": "S04",
-    "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, complements",
+    "label": "[SRC: 02_functional_promise] \u2014 Product FP, commodity FP, complements",
     "prefixedId": "ODI-HVAC-CONTRACTORS-S04"
   },
   "ODI-HVAC-CONTRACTORS-S05": {
     "id": "S05",
-    "label": "[SRC: 05_market_discovery] — NAICS 238220 candidate details, incumbent alternatives",
+    "label": "[SRC: 05_market_discovery] \u2014 NAICS 238220 candidate details, incumbent alternatives",
     "prefixedId": "ODI-HVAC-CONTRACTORS-S05"
   },
   "VN-HVAC-CONTRACTORS-S01": {
     "id": "S01",
-    "label": "BLS OES May 2023 — NAICS 238220 Employment Data",
+    "label": "BLS OES May 2023 \u2014 NAICS 238220 Employment Data",
     "url": "https://www.bls.gov/oes/2023/may/naics5_238220.htm",
     "prefixedId": "VN-HVAC-CONTRACTORS-S01"
   },
   "VN-HVAC-CONTRACTORS-S02": {
     "id": "S02",
-    "label": "NAICS Code 238220 — IBISWorld",
+    "label": "NAICS Code 238220 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/238220/plumbing-heating-and-air-conditioning-contractors/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S02"
   },
   "VN-HVAC-CONTRACTORS-S03": {
     "id": "S03",
-    "label": "Commercial HVAC Construction Process — United Mechanical",
+    "label": "Commercial HVAC Construction Process \u2014 United Mechanical",
     "url": "https://www.unitedmech.com/blog/commercial-hvac-construction",
     "prefixedId": "VN-HVAC-CONTRACTORS-S03"
   },
   "VN-HVAC-CONTRACTORS-S04": {
     "id": "S04",
-    "label": "Commercial HVAC Installation Process — Thelen",
+    "label": "Commercial HVAC Installation Process \u2014 Thelen",
     "url": "https://callthelen.com/blog/commercial-hvac-installation/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S04"
   },
   "VN-HVAC-CONTRACTORS-S05": {
     "id": "S05",
-    "label": "Hydronic System Balancing — TSI",
+    "label": "Hydronic System Balancing \u2014 TSI",
     "url": "https://tsi.com/hvac-consultant/applications/hydronic-system-balancing",
     "prefixedId": "VN-HVAC-CONTRACTORS-S05"
   },
   "VN-HVAC-CONTRACTORS-S06": {
     "id": "S06",
-    "label": "Hydronic Balancing — IMI Climate Control",
+    "label": "Hydronic Balancing \u2014 IMI Climate Control",
     "url": "https://climatecontrol.imiplc.com/solutions/hydronic-balancing",
     "prefixedId": "VN-HVAC-CONTRACTORS-S06"
   },
   "VN-HVAC-CONTRACTORS-S07": {
     "id": "S07",
-    "label": "Balancing HVAC Hydronic Systems: Flow Measurement — Deppmann",
+    "label": "Balancing HVAC Hydronic Systems: Flow Measurement \u2014 Deppmann",
     "url": "https://www.deppmann.com/blog/monday-morning-minutes/hvac-hydronic-systems-flow-measurement-balance-valves/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S07"
   },
   "VN-HVAC-CONTRACTORS-S08": {
     "id": "S08",
-    "label": "Essential HVAC Toolkit 2025 — Optsy",
+    "label": "Essential HVAC Toolkit 2025 \u2014 Optsy",
     "url": "https://www.optsy.com/technicians-hvac-toolkit/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S08"
   },
   "VN-HVAC-CONTRACTORS-S09": {
     "id": "S09",
-    "label": "50 Essential HVAC Tools for Service Techs 2026 — ServiceTitan",
+    "label": "50 Essential HVAC Tools for Service Techs 2026 \u2014 ServiceTitan",
     "url": "https://www.servicetitan.com/blog/best-hvac-tools",
     "prefixedId": "VN-HVAC-CONTRACTORS-S09"
   },
   "VN-HVAC-CONTRACTORS-S10": {
     "id": "S10",
-    "label": "Top HVAC Tools 2025 — HVAC PRO Sales",
+    "label": "Top HVAC Tools 2025 \u2014 HVAC PRO Sales",
     "url": "https://hvacprosales.com/blog/best-hvac-tools-2025/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S10"
   },
   "VN-HVAC-CONTRACTORS-S11": {
     "id": "S11",
-    "label": "HVAC Tools — Fluke",
+    "label": "HVAC Tools \u2014 Fluke",
     "url": "https://www.fluke.com/en-us/products/building-infrastructure/hvac-tools",
     "prefixedId": "VN-HVAC-CONTRACTORS-S11"
   },
   "VN-HVAC-CONTRACTORS-S12": {
     "id": "S12",
-    "label": "Hydronic Control Market — MarketsandMarkets",
+    "label": "Hydronic Control Market \u2014 MarketsandMarkets",
     "url": "https://www.marketsandmarkets.com/Market-Reports/hydronic-control-market-267336799.html",
     "prefixedId": "VN-HVAC-CONTRACTORS-S12"
   },
   "VN-HVAC-CONTRACTORS-S13": {
     "id": "S13",
-    "label": "Dynamic Hydronic Balancing — Siemens",
+    "label": "Dynamic Hydronic Balancing \u2014 Siemens",
     "url": "https://www.siemens.com/en-us/products/hvac/hydronic-balancing/",
     "prefixedId": "VN-HVAC-CONTRACTORS-S13"
   },
@@ -690,22 +690,22 @@
   },
   "FIT-HVAC-CONTRACTORS-S01": {
     "id": "S01",
-    "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications, UNSPSC classification",
+    "label": "[SRC: 01_product_decomposition] \u2014 Product features, constraints, specifications, UNSPSC classification",
     "prefixedId": "FIT-HVAC-CONTRACTORS-S01"
   },
   "FIT-HVAC-CONTRACTORS-S02": {
     "id": "S02",
-    "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, FP extension, complements",
+    "label": "[SRC: 02_functional_promise] \u2014 Product FP, commodity FP, FP extension, complements",
     "prefixedId": "FIT-HVAC-CONTRACTORS-S02"
   },
   "FIT-HVAC-CONTRACTORS-S03": {
     "id": "S03",
-    "label": "[SRC: 05_market_discovery] — NAICS 238220 candidate details, architecture distance scoring",
+    "label": "[SRC: 05_market_discovery] \u2014 NAICS 238220 candidate details, architecture distance scoring",
     "prefixedId": "FIT-HVAC-CONTRACTORS-S03"
   },
   "FIT-HVAC-CONTRACTORS-S04": {
     "id": "S04",
-    "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] — 25 error statements, job map, alternatives, segments, regulatory drivers",
+    "label": "[SRC: JTBD_plumbing_heating_and_air_conditioning_co] \u2014 25 error statements, job map, alternatives, segments, regulatory drivers",
     "prefixedId": "FIT-HVAC-CONTRACTORS-S04"
   },
   "JTBD-DISTRICT-ENERGY-S01": {
@@ -716,49 +716,49 @@
   },
   "JTBD-DISTRICT-ENERGY-S02": {
     "id": "S02",
-    "label": "EN 1434 Heat Meter Accuracy — Kamstrup",
+    "label": "EN 1434 Heat Meter Accuracy \u2014 Kamstrup",
     "url": "https://www.kamstrup.com/en-en/insights/blog-series-part-2-a-thermal-energy-meter-you-can-trust",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S02"
   },
   "JTBD-DISTRICT-ENERGY-S03": {
     "id": "S03",
-    "label": "Ultrasonic Flow Measurement in District Heating — KROHNE",
+    "label": "Ultrasonic Flow Measurement in District Heating \u2014 KROHNE",
     "url": "https://www.krohne.com/en-us/applications/ultrasonic-flow-measurement-district-heating-network",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S03"
   },
   "JTBD-DISTRICT-ENERGY-S04": {
     "id": "S04",
-    "label": "Installation Effects on Ultrasonic Flow Meters — ScienceDirect",
+    "label": "Installation Effects on Ultrasonic Flow Meters \u2014 ScienceDirect",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0955598600000054",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S04"
   },
   "JTBD-DISTRICT-ENERGY-S05": {
     "id": "S05",
-    "label": "Ultrasonic Flow Metering Errors Due to Pulsating Flow — ScienceDirect",
+    "label": "Ultrasonic Flow Metering Errors Due to Pulsating Flow \u2014 ScienceDirect",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0955598603000852",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S05"
   },
   "JTBD-DISTRICT-ENERGY-S06": {
     "id": "S06",
-    "label": "District Energy Efficiency Through Flow Metering — Baker Hughes",
+    "label": "District Energy Efficiency Through Flow Metering \u2014 Baker Hughes",
     "url": "https://dam.bakerhughes.com/m/110b7c0f5c53abf5/original/District-Energy-Efficiency-through-Flow-Metering-Whitepaper.pdf",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S06"
   },
   "JTBD-DISTRICT-ENERGY-S07": {
     "id": "S07",
-    "label": "Improving Heat Energy Measurement in District Heating Substations — Linköping University",
+    "label": "Improving Heat Energy Measurement in District Heating Substations \u2014 Link\u00f6ping University",
     "url": "https://www.diva-portal.org/smash/get/diva2:1003877/FULLTEXT01.pdf",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S07"
   },
   "JTBD-DISTRICT-ENERGY-S08": {
     "id": "S08",
-    "label": "Heat Meter Market to $3.24B by 2035 — SNS Insider",
+    "label": "Heat Meter Market to $3.24B by 2035 \u2014 SNS Insider",
     "url": "https://www.globenewswire.com/news-release/2026/03/27/3263591/0/en/Heat-Meter-Market-Size-to-Surpass-USD-3-24-Billion-by-2035-Research-by-SNS-Insider.html",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S08"
   },
   "JTBD-DISTRICT-ENERGY-S09": {
     "id": "S09",
-    "label": "MID Class 2 & EN 1434 Heat Meters — ZPMeter",
+    "label": "MID Class 2 & EN 1434 Heat Meters \u2014 ZPMeter",
     "url": "https://www.zpmeter.com/blog/which-heat-meters-meet-centralized-heating-acceptance-standards",
     "prefixedId": "JTBD-DISTRICT-ENERGY-S09"
   },
@@ -774,116 +774,116 @@
   },
   "ODI-DISTRICT-ENERGY-S01": {
     "id": "S01",
-    "label": "JTBD_steam_and_air_conditioning_supply.md — Error statements N01-N29, alternatives, incumbent profiles",
+    "label": "JTBD_steam_and_air_conditioning_supply.md \u2014 Error statements N01-N29, alternatives, incumbent profiles",
     "prefixedId": "ODI-DISTRICT-ENERGY-S01"
   },
   "ODI-DISTRICT-ENERGY-S02": {
     "id": "S02",
-    "label": "FIT_steam_and_air_conditioning_supply.md — Product-related needs PRN-01 to PRN-07, technology feature-market fit scores, vendor comparison (Kamstrup MULTICAL)",
+    "label": "FIT_steam_and_air_conditioning_supply.md \u2014 Product-related needs PRN-01 to PRN-07, technology feature-market fit scores, vendor comparison (Kamstrup MULTICAL)",
     "prefixedId": "ODI-DISTRICT-ENERGY-S02"
   },
   "ODI-DISTRICT-ENERGY-S03": {
     "id": "S03",
-    "label": "01_product_decomposition.md — Product constraints, specifications, features",
+    "label": "01_product_decomposition.md \u2014 Product constraints, specifications, features",
     "prefixedId": "ODI-DISTRICT-ENERGY-S03"
   },
   "ODI-DISTRICT-ENERGY-S04": {
     "id": "S04",
-    "label": "02_functional_promise.md — Commodity FP, FP extension",
+    "label": "02_functional_promise.md \u2014 Commodity FP, FP extension",
     "prefixedId": "ODI-DISTRICT-ENERGY-S04"
   },
   "ODI-DISTRICT-ENERGY-S05": {
     "id": "S05",
-    "label": "05_market_discovery.md — NAICS 221330 candidate detail, architecture distance scoring",
+    "label": "05_market_discovery.md \u2014 NAICS 221330 candidate detail, architecture distance scoring",
     "prefixedId": "ODI-DISTRICT-ENERGY-S05"
   },
   "VN-DISTRICT-ENERGY-S01": {
     "id": "S01",
-    "label": "District Heating — Wikipedia",
+    "label": "District Heating \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/District_heating",
     "prefixedId": "VN-DISTRICT-ENERGY-S01"
   },
   "VN-DISTRICT-ENERGY-S02": {
     "id": "S02",
-    "label": "District Cooling — Wikipedia",
+    "label": "District Cooling \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/District_cooling",
     "prefixedId": "VN-DISTRICT-ENERGY-S02"
   },
   "VN-DISTRICT-ENERGY-S03": {
     "id": "S03",
-    "label": "District Heating Substation — Wikipedia",
+    "label": "District Heating Substation \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/District_heating_substation",
     "prefixedId": "VN-DISTRICT-ENERGY-S03"
   },
   "VN-DISTRICT-ENERGY-S04": {
     "id": "S04",
-    "label": "Heat Meter — Wikipedia",
+    "label": "Heat Meter \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heat_meter",
     "prefixedId": "VN-DISTRICT-ENERGY-S04"
   },
   "VN-DISTRICT-ENERGY-S05": {
     "id": "S05",
-    "label": "NAICS 221330 — IBISWorld",
+    "label": "NAICS 221330 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/221330/steam-and-air-conditioning-supply/",
     "prefixedId": "VN-DISTRICT-ENERGY-S05"
   },
   "VN-DISTRICT-ENERGY-S06": {
     "id": "S06",
-    "label": "District Heating Market — GlobeNewsWire / The Insight Partners",
+    "label": "District Heating Market \u2014 GlobeNewsWire / The Insight Partners",
     "url": "https://www.globenewswire.com/news-release/2025/05/08/3077412/0/en/District-Heating-Market-Size-Projected-to-Surge-298-73-Billion-Growth-by-2031-With-CAGR-of-4-6-The-Insight-Partners.html",
     "prefixedId": "VN-DISTRICT-ENERGY-S06"
   },
   "VN-DISTRICT-ENERGY-S07": {
     "id": "S07",
-    "label": "Heat Meter Market — SNS Insider",
+    "label": "Heat Meter Market \u2014 SNS Insider",
     "url": "https://www.globenewswire.com/news-release/2026/03/27/3263591/0/en/Heat-Meter-Market-Size-to-Surpass-USD-3-24-Billion-by-2035-Research-by-SNS-Insider.html",
     "prefixedId": "VN-DISTRICT-ENERGY-S07"
   },
   "VN-DISTRICT-ENERGY-S08": {
     "id": "S08",
-    "label": "Ultrasonic Flow Measurement in District Heating — KROHNE",
+    "label": "Ultrasonic Flow Measurement in District Heating \u2014 KROHNE",
     "url": "https://www.krohne.com/en-us/applications/ultrasonic-flow-measurement-district-heating-network",
     "prefixedId": "VN-DISTRICT-ENERGY-S08"
   },
   "VN-DISTRICT-ENERGY-S09": {
     "id": "S09",
-    "label": "Heat Metering at Transfer Station — KROHNE",
+    "label": "Heat Metering at Transfer Station \u2014 KROHNE",
     "url": "https://www.krohne.com/en-us/applications/heat-metering-at-transfer-station-of-district-heating-pipeline",
     "prefixedId": "VN-DISTRICT-ENERGY-S09"
   },
   "VN-DISTRICT-ENERGY-S10": {
     "id": "S10",
-    "label": "Ultrasonic Heat and Cool Meters — Danfoss",
+    "label": "Ultrasonic Heat and Cool Meters \u2014 Danfoss",
     "url": "https://www.danfoss.com/en/products/dhs/energy-metering/energy-metering/",
     "prefixedId": "VN-DISTRICT-ENERGY-S10"
   },
   "VN-DISTRICT-ENERGY-S11": {
     "id": "S11",
-    "label": "Smart Heat Metering Solutions — Landis+Gyr",
+    "label": "Smart Heat Metering Solutions \u2014 Landis+Gyr",
     "url": "https://eu.landisgyr.com/smart-heat-metering-solutions",
     "prefixedId": "VN-DISTRICT-ENERGY-S11"
   },
   "VN-DISTRICT-ENERGY-S12": {
     "id": "S12",
-    "label": "District Energy Efficiency Through Flow Metering — Baker Hughes",
+    "label": "District Energy Efficiency Through Flow Metering \u2014 Baker Hughes",
     "url": "https://dam.bakerhughes.com/m/110b7c0f5c53abf5/original/District-Energy-Efficiency-through-Flow-Metering-Whitepaper.pdf",
     "prefixedId": "VN-DISTRICT-ENERGY-S12"
   },
   "VN-DISTRICT-ENERGY-S13": {
     "id": "S13",
-    "label": "Pre-Insulated Pipes — DBDH",
+    "label": "Pre-Insulated Pipes \u2014 DBDH",
     "url": "https://dbdh.org/all-about-district-energy/technology/supply-network/pre-insulated-pipes/",
     "prefixedId": "VN-DISTRICT-ENERGY-S13"
   },
   "VN-DISTRICT-ENERGY-S14": {
     "id": "S14",
-    "label": "Fifth-Generation District Heating and Cooling Substations — NREL",
+    "label": "Fifth-Generation District Heating and Cooling Substations \u2014 NREL",
     "url": "https://docs.nrel.gov/docs/fy20osti/78014.pdf",
     "prefixedId": "VN-DISTRICT-ENERGY-S14"
   },
   "VN-DISTRICT-ENERGY-S15": {
     "id": "S15",
-    "label": "District Cooling Market — GM Insights",
+    "label": "District Cooling Market \u2014 GM Insights",
     "url": "https://www.gminsights.com/industry-analysis/district-cooling-market",
     "prefixedId": "VN-DISTRICT-ENERGY-S15"
   },
@@ -899,22 +899,22 @@
   },
   "FIT-DISTRICT-ENERGY-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Features, constraints, specifications, UNSPSC classification",
+    "label": "01_product_decomposition.md \u2014 Features, constraints, specifications, UNSPSC classification",
     "prefixedId": "FIT-DISTRICT-ENERGY-S01"
   },
   "FIT-DISTRICT-ENERGY-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — Commodity FP, FP extension, required complements",
+    "label": "02_functional_promise.md \u2014 Commodity FP, FP extension, required complements",
     "prefixedId": "FIT-DISTRICT-ENERGY-S02"
   },
   "FIT-DISTRICT-ENERGY-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md — NAICS 221330 candidate detail, architecture distance scoring",
+    "label": "05_market_discovery.md \u2014 NAICS 221330 candidate detail, architecture distance scoring",
     "prefixedId": "FIT-DISTRICT-ENERGY-S03"
   },
   "FIT-DISTRICT-ENERGY-S04": {
     "id": "S04",
-    "label": "JTBD_steam_and_air_conditioning_supply.md — CFJ, job map, alternatives, error statements (N01-N29)",
+    "label": "JTBD_steam_and_air_conditioning_supply.md \u2014 CFJ, job map, alternatives, error statements (N01-N29)",
     "prefixedId": "FIT-DISTRICT-ENERGY-S04"
   },
   "FIT-DISTRICT-ENERGY-S05": {
@@ -924,61 +924,61 @@
   },
   "JTBD-HEATING-EQUIPMENT-S01": {
     "id": "S01",
-    "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications — Pumps & Systems",
+    "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications \u2014 Pumps & Systems",
     "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S01"
   },
   "JTBD-HEATING-EQUIPMENT-S02": {
     "id": "S02",
-    "label": "8 Hydronic Applications Improved by Ultrasonic Meters — Badger Meter",
+    "label": "8 Hydronic Applications Improved by Ultrasonic Meters \u2014 Badger Meter",
     "url": "https://www.badgermeter.com/blog/8-hydronic-applications-improved-with-ultrasonic-meters/",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S02"
   },
   "JTBD-HEATING-EQUIPMENT-S03": {
     "id": "S03",
-    "label": "Tankless Water Heater Flow Sensor Fouling — HeatingHelp",
+    "label": "Tankless Water Heater Flow Sensor Fouling \u2014 HeatingHelp",
     "url": "https://forum.heatinghelp.com/discussion/187878/tankless-water-heater-flow-sensor-fouling",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S03"
   },
   "JTBD-HEATING-EQUIPMENT-S04": {
     "id": "S04",
-    "label": "The Dirt on Modern Hydronic Systems — BoilerMag",
+    "label": "The Dirt on Modern Hydronic Systems \u2014 BoilerMag",
     "url": "https://www.boilermag.com/na/the-dirt-on-modern-hydronic-systems/",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S04"
   },
   "JTBD-HEATING-EQUIPMENT-S05": {
     "id": "S05",
-    "label": "Rinnai Flow Sensor Problems — HVAC Laboratory",
+    "label": "Rinnai Flow Sensor Problems \u2014 HVAC Laboratory",
     "url": "https://hvaclaboratory.com/rinnai-flow-sensor-problems/",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S05"
   },
   "JTBD-HEATING-EQUIPMENT-S06": {
     "id": "S06",
-    "label": "EcoDesign and Energy Labelling Consultation — EU Commission",
+    "label": "EcoDesign and Energy Labelling Consultation \u2014 EU Commission",
     "url": "https://energy.ec.europa.eu/news/ecodesign-and-energy-labelling-commission-consults-revised-rules-space-and-water-heaters-2025-12-01_en",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S06"
   },
   "JTBD-HEATING-EQUIPMENT-S07": {
     "id": "S07",
-    "label": "New EcoDesign Requirements for Boilers — REHVA Journal",
+    "label": "New EcoDesign Requirements for Boilers \u2014 REHVA Journal",
     "url": "https://www.rehva.eu/rehva-journal/chapter/new-regulation-sets-demanding-ecodesign-requirements-for-boilers",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S07"
   },
   "JTBD-HEATING-EQUIPMENT-S08": {
     "id": "S08",
-    "label": "Condensing Boilers — Control Strategies for Optimizing — NREL",
+    "label": "Condensing Boilers \u2014 Control Strategies for Optimizing \u2014 NREL",
     "url": "https://docs.nrel.gov/docs/fy13osti/57826.pdf",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S08"
   },
   "JTBD-HEATING-EQUIPMENT-S09": {
     "id": "S09",
-    "label": "Balancing Protocol — IMI Hydronic",
+    "label": "Balancing Protocol \u2014 IMI Hydronic",
     "url": "https://www.imi-hydronic.com/en-us/hydronic-theory/balancing-protocol",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S09"
   },
   "JTBD-HEATING-EQUIPMENT-S10": {
     "id": "S10",
-    "label": "Hydronic Balancing — Wikipedia",
+    "label": "Hydronic Balancing \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hydronic_balancing",
     "prefixedId": "JTBD-HEATING-EQUIPMENT-S10"
   },
@@ -994,75 +994,75 @@
   },
   "ODI-HEATING-EQUIPMENT-S01": {
     "id": "S01",
-    "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] — 33 error statements (N01-N28), 5 alternatives with market share and trade-offs",
+    "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] \u2014 33 error statements (N01-N28), 5 alternatives with market share and trade-offs",
     "prefixedId": "ODI-HEATING-EQUIPMENT-S01"
   },
   "ODI-HEATING-EQUIPMENT-S02": {
     "id": "S02",
-    "label": "[SRC: FIT_heating_equipment_except_warm_air_furnac] — Step 10 product-related needs (8), Step 09 technology feature fit scores (7 features), Step 11 vendor feature fit (6 features)",
+    "label": "[SRC: FIT_heating_equipment_except_warm_air_furnac] \u2014 Step 10 product-related needs (8), Step 09 technology feature fit scores (7 features), Step 11 vendor feature fit (6 features)",
     "prefixedId": "ODI-HEATING-EQUIPMENT-S02"
   },
   "ODI-HEATING-EQUIPMENT-S03": {
     "id": "S03",
-    "label": "[SRC: 01_product_decomposition] — Product constraints driving Step 10 needs",
+    "label": "[SRC: 01_product_decomposition] \u2014 Product constraints driving Step 10 needs",
     "prefixedId": "ODI-HEATING-EQUIPMENT-S03"
   },
   "ODI-HEATING-EQUIPMENT-S04": {
     "id": "S04",
-    "label": "[SRC: 02_functional_promise] — Commodity FP and differentiators informing recalibration",
+    "label": "[SRC: 02_functional_promise] \u2014 Commodity FP and differentiators informing recalibration",
     "prefixedId": "ODI-HEATING-EQUIPMENT-S04"
   },
   "VN-HEATING-EQUIPMENT-S01": {
     "id": "S01",
-    "label": "NAICS 333414 — U.S. Census Bureau",
+    "label": "NAICS 333414 \u2014 U.S. Census Bureau",
     "url": "https://www.census.gov/naics/?input=333414&year=2022&details=333414",
     "prefixedId": "VN-HEATING-EQUIPMENT-S01"
   },
   "VN-HEATING-EQUIPMENT-S02": {
     "id": "S02",
-    "label": "Hydronic Heating — AHRI",
+    "label": "Hydronic Heating \u2014 AHRI",
     "url": "https://www.ahrinet.org/scholarships-education/education/contractors-and-specifiers/hvacr-equipmentcomponents/hydronic-heating",
     "prefixedId": "VN-HEATING-EQUIPMENT-S02"
   },
   "VN-HEATING-EQUIPMENT-S03": {
     "id": "S03",
-    "label": "Ultrasonic Flow Meters in Hydronic HVAC — Pumps & Systems",
+    "label": "Ultrasonic Flow Meters in Hydronic HVAC \u2014 Pumps & Systems",
     "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
     "prefixedId": "VN-HEATING-EQUIPMENT-S03"
   },
   "VN-HEATING-EQUIPMENT-S04": {
     "id": "S04",
-    "label": "8 Hydronic Applications Improved by Ultrasonic Meters — Badger Meter",
+    "label": "8 Hydronic Applications Improved by Ultrasonic Meters \u2014 Badger Meter",
     "url": "https://www.badgermeter.com/blog/8-hydronic-applications-improved-with-ultrasonic-meters/",
     "prefixedId": "VN-HEATING-EQUIPMENT-S04"
   },
   "VN-HEATING-EQUIPMENT-S05": {
     "id": "S05",
-    "label": "Residential Boiler Market — GMInsights",
+    "label": "Residential Boiler Market \u2014 GMInsights",
     "url": "https://www.gminsights.com/industry-analysis/residential-boiler-market",
     "prefixedId": "VN-HEATING-EQUIPMENT-S05"
   },
   "VN-HEATING-EQUIPMENT-S06": {
     "id": "S06",
-    "label": "Heat Exchanger Fabrication Process — Altex",
+    "label": "Heat Exchanger Fabrication Process \u2014 Altex",
     "url": "https://www.altexinc.com/case-studies/shell-tube-heat-exchangers/the-process-of-manufacturing-heat-exchangers-design-fabrication-and-testing/",
     "prefixedId": "VN-HEATING-EQUIPMENT-S06"
   },
   "VN-HEATING-EQUIPMENT-S07": {
     "id": "S07",
-    "label": "Condensing Boiler Heat Exchanger Construction — JMPCO",
+    "label": "Condensing Boiler Heat Exchanger Construction \u2014 JMPCO",
     "url": "https://jmpcoblog.com/hvac-blog/energy-efficient-hot-water-boiler-plant-design-part-3-condensing-boiler-heat-exchanger-construction-considerations",
     "prefixedId": "VN-HEATING-EQUIPMENT-S07"
   },
   "VN-HEATING-EQUIPMENT-S08": {
     "id": "S08",
-    "label": "Hydronic Underfloor Heating Market — Future Market Insights",
+    "label": "Hydronic Underfloor Heating Market \u2014 Future Market Insights",
     "url": "https://www.futuremarketinsights.com/reports/hydronic-underfloor-heating-market",
     "prefixedId": "VN-HEATING-EQUIPMENT-S08"
   },
   "VN-HEATING-EQUIPMENT-S09": {
     "id": "S09",
-    "label": "Baseboard Heater Market — 360 Research Reports",
+    "label": "Baseboard Heater Market \u2014 360 Research Reports",
     "url": "https://www.360researchreports.com/market-reports/baseboard-heater-market-205646",
     "prefixedId": "VN-HEATING-EQUIPMENT-S09"
   },
@@ -1073,7 +1073,7 @@
   },
   "VN-HEATING-EQUIPMENT-S11": {
     "id": "S11",
-    "label": "05_market_discovery.md — Architecture distance scoring for NAICS 333414",
+    "label": "05_market_discovery.md \u2014 Architecture distance scoring for NAICS 333414",
     "prefixedId": "VN-HEATING-EQUIPMENT-S11"
   },
   "VN-HEATING-EQUIPMENT-S12": {
@@ -1083,93 +1083,93 @@
   },
   "FIT-HEATING-EQUIPMENT-S01": {
     "id": "S01",
-    "label": "[SRC: 01_product_decomposition] — Product features, constraints, specifications, UNSPSC classification",
+    "label": "[SRC: 01_product_decomposition] \u2014 Product features, constraints, specifications, UNSPSC classification",
     "prefixedId": "FIT-HEATING-EQUIPMENT-S01"
   },
   "FIT-HEATING-EQUIPMENT-S02": {
     "id": "S02",
-    "label": "[SRC: 02_functional_promise] — Product FP, commodity FP, FP extension, complements",
+    "label": "[SRC: 02_functional_promise] \u2014 Product FP, commodity FP, FP extension, complements",
     "prefixedId": "FIT-HEATING-EQUIPMENT-S02"
   },
   "FIT-HEATING-EQUIPMENT-S03": {
     "id": "S03",
-    "label": "[SRC: 05_market_discovery] — NAICS 333414 candidate details, architecture distance scoring (distance=2)",
+    "label": "[SRC: 05_market_discovery] \u2014 NAICS 333414 candidate details, architecture distance scoring (distance=2)",
     "prefixedId": "FIT-HEATING-EQUIPMENT-S03"
   },
   "FIT-HEATING-EQUIPMENT-S04": {
     "id": "S04",
-    "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] — 33 error statements (N01-N28), job map, 5 alternatives, 7 segments, OEM overseer needs",
+    "label": "[SRC: JTBD_heating_equipment_except_warm_air_furnac] \u2014 33 error statements (N01-N28), job map, 5 alternatives, 7 segments, OEM overseer needs",
     "prefixedId": "FIT-HEATING-EQUIPMENT-S04"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S01": {
     "id": "S01",
-    "label": "Water Flow Meter 2025: Top Models & How to Choose — ICON Process Controls",
+    "label": "Water Flow Meter 2025: Top Models & How to Choose \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/water-flow-meter-2025-top-models-how-to-choose/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S01"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S02": {
     "id": "S02",
-    "label": "Sources of Trouble for Flow Meters — KEYENCE",
+    "label": "Sources of Trouble for Flow Meters \u2014 KEYENCE",
     "url": "https://www.keyence.com/ss/products/process/flowknowledge/sources/trouble_01.jsp",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S02"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S03": {
     "id": "S03",
-    "label": "Turbine vs Paddle Wheel Flow Meters — ICON Process Controls",
+    "label": "Turbine vs Paddle Wheel Flow Meters \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/turbine-vs-paddle-wheel-flow-meters-whats-the-difference/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S03"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S04": {
     "id": "S04",
-    "label": "Comparing Turbine and Ultrasonic Flow Meters — Lanry Instruments",
+    "label": "Comparing Turbine and Ultrasonic Flow Meters \u2014 Lanry Instruments",
     "url": "https://www.lanry-instruments.com/support/comparing-turbine-and-ultrasonic-flow-meters-a-complete-overview/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S04"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S05": {
     "id": "S05",
-    "label": "WaterSense at Work Section 5.4: Vehicle Washes — EPA",
+    "label": "WaterSense at Work Section 5.4: Vehicle Washes \u2014 EPA",
     "url": "https://www.epa.gov/system/files/documents/2023-11/ws-commercial-bmp-watersenseatwork_section5.4_vehiclewashes.pdf",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S05"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S06": {
     "id": "S06",
-    "label": "WaterSense at Work Section 3.5: Laundry Equipment — EPA",
+    "label": "WaterSense at Work Section 3.5: Laundry Equipment \u2014 EPA",
     "url": "https://www.epa.gov/system/files/documents/2023-06/ws-commercial-watersense-at-work_Section_3.5_Laundry_Equipment.pdf",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S06"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S07": {
     "id": "S07",
-    "label": "Car Wash Water Recycling System — NCS National Carwash Solutions",
+    "label": "Car Wash Water Recycling System \u2014 NCS National Carwash Solutions",
     "url": "https://ncswash.com/what-is-a-car-wash-water-recycling-system/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S07"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S08": {
     "id": "S08",
-    "label": "Pros and Cons of Recycling Car Wash Water — Sensorex",
+    "label": "Pros and Cons of Recycling Car Wash Water \u2014 Sensorex",
     "url": "https://sensorex.com/pros-cons-recycling-car-wash-water/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S08"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S09": {
     "id": "S09",
-    "label": "Speed Queen Technology Offerings — Alliance Laundry Systems",
+    "label": "Speed Queen Technology Offerings \u2014 Alliance Laundry Systems",
     "url": "https://alliancelaundry.com/news/speed-queens-game-changing-technology-offerings-will-change-the-way-multi-housing-residents-do-laundry/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S09"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S10": {
     "id": "S10",
-    "label": "Maximizing Water Savings in Professional Laundry — Girbau",
+    "label": "Maximizing Water Savings in Professional Laundry \u2014 Girbau",
     "url": "https://www.girbau.com/blog/maximizing-water-savings-in-the-professional-laundry-sector/",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S10"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S11": {
     "id": "S11",
-    "label": "Water & Energy Reduction at a European Commercial Laundry — Ecolab",
+    "label": "Water & Energy Reduction at a European Commercial Laundry \u2014 Ecolab",
     "url": "https://en-uk.ecolab.com/articles/2024/07/water-and-energy-reduction-at-a-european-commercial-laundry",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S11"
   },
   "JTBD-COMMERCIAL-SERVICE-MACHINERY-S12": {
     "id": "S12",
-    "label": "Water Conservation Strategies for Industrial Laundry Plants 2026 — Softrol",
+    "label": "Water Conservation Strategies for Industrial Laundry Plants 2026 \u2014 Softrol",
     "url": "https://softrol.com/feeds/blog/water-conservation-industrial-laundry",
     "prefixedId": "JTBD-COMMERCIAL-SERVICE-MACHINERY-S12"
   },
@@ -1185,67 +1185,67 @@
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S01": {
     "id": "S01",
-    "label": "NAICS 333318 — U.S. Census Bureau",
+    "label": "NAICS 333318 \u2014 U.S. Census Bureau",
     "url": "https://www.census.gov/naics/?input=333318&year=2022&details=333318",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S01"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S02": {
     "id": "S02",
-    "label": "Car Wash Instrumentation: Designing Reliable Systems — ICON Process Controls",
+    "label": "Car Wash Instrumentation: Designing Reliable Systems \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/car-wash-instrumentation-designing-reliable-systems-for-modern-car-wash-manufacturers/",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S02"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S03": {
     "id": "S03",
-    "label": "Commercial Laundry Equipment Market — Fortune Business Insights",
+    "label": "Commercial Laundry Equipment Market \u2014 Fortune Business Insights",
     "url": "https://www.fortunebusinessinsights.com/commercial-laundry-market-103905",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S03"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S04": {
     "id": "S04",
-    "label": "Car Wash Service Market — Grand View Research",
+    "label": "Car Wash Service Market \u2014 Grand View Research",
     "url": "https://www.grandviewresearch.com/industry-analysis/car-wash-service-market",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S04"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S05": {
     "id": "S05",
-    "label": "Alliance Reports Full Year 2025 Results — Alliance Laundry Systems",
+    "label": "Alliance Reports Full Year 2025 Results \u2014 Alliance Laundry Systems",
     "url": "https://ir.alliancelaundry.com/news-events/press-releases/detail/138/alliance-reports-fourth-quarter-and-full-year-2025-results",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S05"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S06": {
     "id": "S06",
-    "label": "WaterSense at Work Section 3.5: Laundry Equipment — EPA",
+    "label": "WaterSense at Work Section 3.5: Laundry Equipment \u2014 EPA",
     "url": "https://www.epa.gov/system/files/documents/2023-06/ws-commercial-watersense-at-work_Section_3.5_Laundry_Equipment.pdf",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S06"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S07": {
     "id": "S07",
-    "label": "Commercial Laundry Wastewater Monitoring — Keco Engineered Controls",
+    "label": "Commercial Laundry Wastewater Monitoring \u2014 Keco Engineered Controls",
     "url": "https://kecocontrols.com/applications/commercial-laundry-wastewater-monitoring-system/",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S07"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S08": {
     "id": "S08",
-    "label": "IoT-Enabled Smart Washing Machine — Sierra Wireless",
+    "label": "IoT-Enabled Smart Washing Machine \u2014 Sierra Wireless",
     "url": "https://www.sierrawireless.com/industries/industrial/iot-enabled-washing-machines/",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S08"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S09": {
     "id": "S09",
-    "label": "SEKO WashDose Tunnel System — Fluid Handling Pro",
+    "label": "SEKO WashDose Tunnel System \u2014 Fluid Handling Pro",
     "url": "https://fluidhandlingpro.com/fluid-process-technology/pumps-pumping-systems/seko-launches-tunnel-laundry-iot-pump-system/",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S09"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S10": {
     "id": "S10",
-    "label": "Commercial Reverse Osmosis Systems — Applied Membranes",
+    "label": "Commercial Reverse Osmosis Systems \u2014 Applied Membranes",
     "url": "https://www.appliedmembranes.com/pages/commercial-industrial-ro",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S10"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S11": {
     "id": "S11",
-    "label": "05_market_discovery.md — Architecture distance scoring for NAICS 333318",
+    "label": "05_market_discovery.md \u2014 Architecture distance scoring for NAICS 333318",
     "prefixedId": "VN-COMMERCIAL-SERVICE-MACHINERY-S11"
   },
   "VN-COMMERCIAL-SERVICE-MACHINERY-S12": {
@@ -1260,22 +1260,22 @@
   },
   "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Constraints, specifications, features, technology classification",
+    "label": "01_product_decomposition.md \u2014 Constraints, specifications, features, technology classification",
     "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S01"
   },
   "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — Functional promise, complements, BOM position",
+    "label": "02_functional_promise.md \u2014 Functional promise, complements, BOM position",
     "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S02"
   },
   "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md — Other Commercial and Service Industry Machinery Manufacturing (NAICS 333318) market candidate details",
+    "label": "05_market_discovery.md \u2014 Other Commercial and Service Industry Machinery Manufacturing (NAICS 333318) market candidate details",
     "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S03"
   },
   "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S04": {
     "id": "S04",
-    "label": "VN_other_commercial_and_service_industry_ma.md — Value network, Marquardt position, operating conditions, output types",
+    "label": "VN_other_commercial_and_service_industry_ma.md \u2014 Value network, Marquardt position, operating conditions, output types",
     "prefixedId": "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S04"
   },
   "COMPAT-COMMERCIAL-SERVICE-MACHINERY-S05": {
@@ -1285,73 +1285,73 @@
   },
   "JTBD-AC-HOME-HEATING-S01": {
     "id": "S01",
-    "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications — Pumps & Systems",
+    "label": "Ultrasonic Flow Meters in Hydronic HVAC Applications \u2014 Pumps & Systems",
     "url": "https://www.pumpsandsystems.com/ultrasonic-flow-meters-hydronic-hvac-applications",
     "prefixedId": "JTBD-AC-HOME-HEATING-S01"
   },
   "JTBD-AC-HOME-HEATING-S02": {
     "id": "S02",
-    "label": "Flow Meter FAQ: Common Problems & Solutions — GAIMC",
+    "label": "Flow Meter FAQ: Common Problems & Solutions \u2014 GAIMC",
     "url": "https://www.gaimc.com/Newsinfo/flow-meter-faq-common-problems-solutions",
     "prefixedId": "JTBD-AC-HOME-HEATING-S02"
   },
   "JTBD-AC-HOME-HEATING-S03": {
     "id": "S03",
-    "label": "Troubleshooting Flow Meters — KLEEV USA",
+    "label": "Troubleshooting Flow Meters \u2014 KLEEV USA",
     "url": "https://www.kleevusa.com/troubleshooting-flow-meters-common-issues-and-effective-solutions/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S03"
   },
   "JTBD-AC-HOME-HEATING-S04": {
     "id": "S04",
-    "label": "Flow Meter Calibration Best Practices — SIMCO",
+    "label": "Flow Meter Calibration Best Practices \u2014 SIMCO",
     "url": "https://www.simco.com/blog/flow-meter-calibration/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S04"
   },
   "JTBD-AC-HOME-HEATING-S05": {
     "id": "S05",
-    "label": "Flow Meter Calibration — Micronics",
+    "label": "Flow Meter Calibration \u2014 Micronics",
     "url": "https://micronicsflowmeters.com/flow-meter-calibration/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S05"
   },
   "JTBD-AC-HOME-HEATING-S06": {
     "id": "S06",
-    "label": "HVAC Ultrasonic Flow Sensor Guide — Tameson",
+    "label": "HVAC Ultrasonic Flow Sensor Guide \u2014 Tameson",
     "url": "https://tameson.com/pages/hvac-flow-sensor",
     "prefixedId": "JTBD-AC-HOME-HEATING-S06"
   },
   "JTBD-AC-HOME-HEATING-S07": {
     "id": "S07",
-    "label": "What is a Flow Meter? — Belimo",
+    "label": "What is a Flow Meter? \u2014 Belimo",
     "url": "https://www.belimo.com/us/en_US/blog/what-is-a-flow-meter",
     "prefixedId": "JTBD-AC-HOME-HEATING-S07"
   },
   "JTBD-AC-HOME-HEATING-S08": {
     "id": "S08",
-    "label": "Heat Pump Short Cycling: Causes, Costs & Cures — MyDadCanDoThat",
+    "label": "Heat Pump Short Cycling: Causes, Costs & Cures \u2014 MyDadCanDoThat",
     "url": "https://mydadcandothat.com/blog/heat-pump-short-cycling-causes-cures/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S08"
   },
   "JTBD-AC-HOME-HEATING-S09": {
     "id": "S09",
-    "label": "HVAC Short-Cycling: 10 Causes — John Henry",
+    "label": "HVAC Short-Cycling: 10 Causes \u2014 John Henry",
     "url": "https://www.jhlincoln.com/hvac-short-cycling-10-causes-and-how-to-prevent-it/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S09"
   },
   "JTBD-AC-HOME-HEATING-S10": {
     "id": "S10",
-    "label": "Ecodesign and Energy Labelling: Revised Rules for Heaters — EC Energy",
+    "label": "Ecodesign and Energy Labelling: Revised Rules for Heaters \u2014 EC Energy",
     "url": "https://energy.ec.europa.eu/news/ecodesign-and-energy-labelling-commission-consults-revised-rules-space-and-water-heaters-2025-12-01_en",
     "prefixedId": "JTBD-AC-HOME-HEATING-S10"
   },
   "JTBD-AC-HOME-HEATING-S11": {
     "id": "S11",
-    "label": "Ecodesign and Energy Labelling — Eurovent",
+    "label": "Ecodesign and Energy Labelling \u2014 Eurovent",
     "url": "https://www.eurovent.eu/issues/ecodesignandenergylabelling/",
     "prefixedId": "JTBD-AC-HOME-HEATING-S11"
   },
   "JTBD-AC-HOME-HEATING-S12": {
     "id": "S12",
-    "label": "EHPA Position Paper on EcoDesign Lots 1–2",
+    "label": "EHPA Position Paper on EcoDesign Lots 1\u20132",
     "url": "https://www.ehpa.org/wp-content/uploads/2023/07/20230623_EHPA-written-comments-on-Lots-1-2.pdf",
     "prefixedId": "JTBD-AC-HOME-HEATING-S12"
   },
@@ -1362,92 +1362,92 @@
   },
   "ODI-AC-HOME-HEATING-S01": {
     "id": "S01",
-    "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] — 27 error statements (Step 06), importance and satisfaction scores, job map",
+    "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] \u2014 27 error statements (Step 06), importance and satisfaction scores, job map",
     "prefixedId": "ODI-AC-HOME-HEATING-S01"
   },
   "ODI-AC-HOME-HEATING-S02": {
     "id": "S02",
-    "label": "[SRC: FIT_air_conditioning_and_warm_air_heating_eq] — 8 product-related needs (Step 10), feature-market fit scores (Step 09)",
+    "label": "[SRC: FIT_air_conditioning_and_warm_air_heating_eq] \u2014 8 product-related needs (Step 10), feature-market fit scores (Step 09)",
     "prefixedId": "ODI-AC-HOME-HEATING-S02"
   },
   "ODI-AC-HOME-HEATING-S03": {
     "id": "S03",
-    "label": "[SRC: 04_incumbents_home] — 6 incumbent technology profiles with strengths, weaknesses, market share",
+    "label": "[SRC: 04_incumbents_home] \u2014 6 incumbent technology profiles with strengths, weaknesses, market share",
     "prefixedId": "ODI-AC-HOME-HEATING-S03"
   },
   "ODI-AC-HOME-HEATING-S04": {
     "id": "S04",
-    "label": "[SRC: 01_product_decomposition] — Product constraints feeding PRN needs",
+    "label": "[SRC: 01_product_decomposition] \u2014 Product constraints feeding PRN needs",
     "prefixedId": "ODI-AC-HOME-HEATING-S04"
   },
   "ODI-AC-HOME-HEATING-S05": {
     "id": "S05",
-    "label": "[SRC: 02_functional_promise] — Commodity FP, product FP",
+    "label": "[SRC: 02_functional_promise] \u2014 Commodity FP, product FP",
     "prefixedId": "ODI-AC-HOME-HEATING-S05"
   },
   "VN-AC-HOME-HEATING-S01": {
     "id": "S01",
-    "label": "How Air Conditioner is Made — MadeHow",
+    "label": "How Air Conditioner is Made \u2014 MadeHow",
     "url": "https://www.madehow.com/Volume-3/Air-Conditioner.html",
     "prefixedId": "VN-AC-HOME-HEATING-S01"
   },
   "VN-AC-HOME-HEATING-S02": {
     "id": "S02",
-    "label": "Pioneer Manufacturing Process — Pioneer HVAC",
+    "label": "Pioneer Manufacturing Process \u2014 Pioneer HVAC",
     "url": "https://www.pdhvac.com/about/pioneer-manufacturing-process/",
     "prefixedId": "VN-AC-HOME-HEATING-S02"
   },
   "VN-AC-HOME-HEATING-S03": {
     "id": "S03",
-    "label": "Air Conditioning Compressor Market 2025-2035 — Future Market Insights",
+    "label": "Air Conditioning Compressor Market 2025-2035 \u2014 Future Market Insights",
     "url": "https://www.futuremarketinsights.com/reports/air-conditioning-compressor-market",
     "prefixedId": "VN-AC-HOME-HEATING-S03"
   },
   "VN-AC-HOME-HEATING-S04": {
     "id": "S04",
-    "label": "HVAC Compressor Market Size — Fortune Business Insights",
+    "label": "HVAC Compressor Market Size \u2014 Fortune Business Insights",
     "url": "https://www.fortunebusinessinsights.com/hvac-compressor-market-112625",
     "prefixedId": "VN-AC-HOME-HEATING-S04"
   },
   "VN-AC-HOME-HEATING-S05": {
     "id": "S05",
-    "label": "Heat Exchanger Market 2025-2033 — Grand View Research",
+    "label": "Heat Exchanger Market 2025-2033 \u2014 Grand View Research",
     "url": "https://www.grandviewresearch.com/industry-analysis/heat-exchangers-market",
     "prefixedId": "VN-AC-HOME-HEATING-S05"
   },
   "VN-AC-HOME-HEATING-S06": {
     "id": "S06",
-    "label": "Electronic Expansion Valves Market — GlobeNewsWire/FMI",
+    "label": "Electronic Expansion Valves Market \u2014 GlobeNewsWire/FMI",
     "url": "https://www.globenewswire.com/news-release/2024/10/29/2971090/0/en/Global-Electronic-Expansion-Valves-Market-Growing-at-an-8-4-CAGR-to-Reach-USD-1-6-Billion-by-2032-Future-Market-Insights-Inc.html",
     "prefixedId": "VN-AC-HOME-HEATING-S06"
   },
   "VN-AC-HOME-HEATING-S07": {
     "id": "S07",
-    "label": "Expansion Valves Market — Credence Research",
+    "label": "Expansion Valves Market \u2014 Credence Research",
     "url": "https://www.credenceresearch.com/report/expansion-valves-market",
     "prefixedId": "VN-AC-HOME-HEATING-S07"
   },
   "VN-AC-HOME-HEATING-S08": {
     "id": "S08",
-    "label": "NAICS 333415 — SIC Code",
+    "label": "NAICS 333415 \u2014 SIC Code",
     "url": "https://siccode.com/naics-code/333415/air-conditioning-warm-air-heating-equipment-commercial-industrial-refrigeration-equipment-manufacturing",
     "prefixedId": "VN-AC-HOME-HEATING-S08"
   },
   "VN-AC-HOME-HEATING-S09": {
     "id": "S09",
-    "label": "NAICS 333415 — LegalClarity",
+    "label": "NAICS 333415 \u2014 LegalClarity",
     "url": "https://legalclarity.org/naics-code-333415-hvac-and-refrigeration-manufacturing/",
     "prefixedId": "VN-AC-HOME-HEATING-S09"
   },
   "VN-AC-HOME-HEATING-S10": {
     "id": "S10",
-    "label": "Brazing Components for Refrigeration — Lucas Milhaupt",
+    "label": "Brazing Components for Refrigeration \u2014 Lucas Milhaupt",
     "url": "https://blog.lucasmilhaupt.com/en-us/about/blog/brazing-components-refrigeration",
     "prefixedId": "VN-AC-HOME-HEATING-S10"
   },
   "VN-AC-HOME-HEATING-S11": {
     "id": "S11",
-    "label": "Refrigeration Compressor Market Trends — Robotics & Automation",
+    "label": "Refrigeration Compressor Market Trends \u2014 Robotics & Automation",
     "url": "https://roboticsnautomation.wordpress.com/2025/11/27/refrigeration-and-air-conditioning-compressors-market-trends-highlight-shift-toward-scroll-compressors-for-hvac/",
     "prefixedId": "VN-AC-HOME-HEATING-S11"
   },
@@ -1458,51 +1458,51 @@
   },
   "FIT-AC-HOME-HEATING-S01": {
     "id": "S01",
-    "label": "[SRC: 01_product_decomposition] — Technology-scope features, vendor-scope features, constraints, UNSPSC classification",
+    "label": "[SRC: 01_product_decomposition] \u2014 Technology-scope features, vendor-scope features, constraints, UNSPSC classification",
     "prefixedId": "FIT-AC-HOME-HEATING-S01"
   },
   "FIT-AC-HOME-HEATING-S02": {
     "id": "S02",
-    "label": "[SRC: 02_functional_promise] — Commodity FP, product FP, FP extension, complements",
+    "label": "[SRC: 02_functional_promise] \u2014 Commodity FP, product FP, FP extension, complements",
     "prefixedId": "FIT-AC-HOME-HEATING-S02"
   },
   "FIT-AC-HOME-HEATING-S03": {
     "id": "S03",
-    "label": "[SRC: 05_market_discovery] — NAICS 333415 excluded as home market; architecture distance scoring criteria",
+    "label": "[SRC: 05_market_discovery] \u2014 NAICS 333415 excluded as home market; architecture distance scoring criteria",
     "prefixedId": "FIT-AC-HOME-HEATING-S03"
   },
   "FIT-AC-HOME-HEATING-S04": {
     "id": "S04",
-    "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] — 27 error statements, alternatives, scenarios, job map",
+    "label": "[SRC: JTBD_air_conditioning_and_warm_air_heating_eq] \u2014 27 error statements, alternatives, scenarios, job map",
     "prefixedId": "FIT-AC-HOME-HEATING-S04"
   },
   "JTBD-FLOWMETERS-REFERENCE-S01": {
     "id": "S01",
-    "label": "Flowmeter Drift Causes and Management — Turbines Inc.",
+    "label": "Flowmeter Drift Causes and Management \u2014 Turbines Inc.",
     "url": "https://www.turbinesincorporated.com/news-resources/what-causes-flow-meter-drift-over-time-and-how-to-manage-it/",
     "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S01"
   },
   "JTBD-FLOWMETERS-REFERENCE-S02": {
     "id": "S02",
-    "label": "Ultrasonic Flow Meter Calibration and Maintenance — Pokcenser",
+    "label": "Ultrasonic Flow Meter Calibration and Maintenance \u2014 Pokcenser",
     "url": "https://pokcensertech.com/ultrasonic-flow-meter-calibration-and-maintenance-excellence-guide/",
     "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S02"
   },
   "JTBD-FLOWMETERS-REFERENCE-S03": {
     "id": "S03",
-    "label": "Common Flowmeter Errors — Processing Magazine",
+    "label": "Common Flowmeter Errors \u2014 Processing Magazine",
     "url": "https://www.processingmagazine.com/process-control-automation/instrumentation/flow-measurement/article/55351639/common-flowmeter-errors-and-how-to-avoid-them",
     "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S03"
   },
   "JTBD-FLOWMETERS-REFERENCE-S04": {
     "id": "S04",
-    "label": "Flow Meter Error — Wikipedia",
+    "label": "Flow Meter Error \u2014 Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Flow_meter_error",
     "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S04"
   },
   "JTBD-FLOWMETERS-REFERENCE-S05": {
     "id": "S05",
-    "label": "Ultrasonic Transit Time Technology — ONICON",
+    "label": "Ultrasonic Transit Time Technology \u2014 ONICON",
     "url": "https://www.onicon.com/education-series/ultrasonic-transit-time-technology-explained-doc-0004240",
     "prefixedId": "JTBD-FLOWMETERS-REFERENCE-S05"
   },
@@ -1572,101 +1572,101 @@
   },
   "VN-FLOWMETERS-REFERENCE-S01": {
     "id": "S01",
-    "label": "NAICS 334513 — US Census Bureau",
+    "label": "NAICS 334513 \u2014 US Census Bureau",
     "url": "https://data.census.gov/profile/334513",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S01"
   },
   "VN-FLOWMETERS-REFERENCE-S02": {
     "id": "S02",
-    "label": "NAICS Code 334513 — IBISWorld",
+    "label": "NAICS Code 334513 \u2014 IBISWorld",
     "url": "https://www.ibisworld.com/classifications/naics/334513/",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S02"
   },
   "VN-FLOWMETERS-REFERENCE-S03": {
     "id": "S03",
-    "label": "Flow Meter Market Size — Fortune Business Insights",
+    "label": "Flow Meter Market Size \u2014 Fortune Business Insights",
     "url": "https://www.fortunebusinessinsights.com/industry-reports/flow-meter-market-101140",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S03"
   },
   "VN-FLOWMETERS-REFERENCE-S04": {
     "id": "S04",
-    "label": "Flow Meters Market Size & Growth — Mordor Intelligence",
+    "label": "Flow Meters Market Size & Growth \u2014 Mordor Intelligence",
     "url": "https://www.mordorintelligence.com/industry-reports/flow-meters-market",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S04"
   },
   "VN-FLOWMETERS-REFERENCE-S05": {
     "id": "S05",
-    "label": "Flow Meters Market Size & Share — Straits Research",
+    "label": "Flow Meters Market Size & Share \u2014 Straits Research",
     "url": "https://straitsresearch.com/report/flow-meters-market",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S05"
   },
   "VN-FLOWMETERS-REFERENCE-S06": {
     "id": "S06",
-    "label": "Ultrasonic Flowmeters Market — Future Market Insights",
+    "label": "Ultrasonic Flowmeters Market \u2014 Future Market Insights",
     "url": "https://www.futuremarketinsights.com/reports/ultrasonic-flowmeters-market",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S06"
   },
   "VN-FLOWMETERS-REFERENCE-S07": {
     "id": "S07",
-    "label": "Ultrasonic Flow Meter Market — MarketsandMarkets",
+    "label": "Ultrasonic Flow Meter Market \u2014 MarketsandMarkets",
     "url": "https://www.marketsandmarkets.com/Market-Reports/ultrasonic-flow-meter-market-168677264.html",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S07"
   },
   "VN-FLOWMETERS-REFERENCE-S08": {
     "id": "S08",
-    "label": "Top 10 Flowmeter Manufacturer Brands — GAIMC",
+    "label": "Top 10 Flowmeter Manufacturer Brands \u2014 GAIMC",
     "url": "https://www.gaimc.com/Newsinfo/top-10-flowmeter-manufacturer-brands-comparison",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S08"
   },
   "VN-FLOWMETERS-REFERENCE-S09": {
     "id": "S09",
-    "label": "Flow Meter Market — Grand View Research",
+    "label": "Flow Meter Market \u2014 Grand View Research",
     "url": "https://www.grandviewresearch.com/industry-analysis/flow-meters-market",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S09"
   },
   "VN-FLOWMETERS-REFERENCE-S10": {
     "id": "S10",
-    "label": "Intelligent Flow Meter Market — Global Growth Insights",
+    "label": "Intelligent Flow Meter Market \u2014 Global Growth Insights",
     "url": "https://www.globalgrowthinsights.com/market-reports/intelligent-flow-meter-market-100221",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S10"
   },
   "VN-FLOWMETERS-REFERENCE-S11": {
     "id": "S11",
-    "label": "Ultrasonic Flow Meter Calibration Process — Nagman",
+    "label": "Ultrasonic Flow Meter Calibration Process \u2014 Nagman",
     "url": "https://www.nagman-calibration.com/ultrasonic-flow-meter-calibration-process-explained/",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S11"
   },
   "VN-FLOWMETERS-REFERENCE-S12": {
     "id": "S12",
-    "label": "Ultrasonic Flow Meters — ASGMT Technical Paper",
+    "label": "Ultrasonic Flow Meters \u2014 ASGMT Technical Paper",
     "url": "https://asgmt.com/wp-content/uploads/2018/10/066.pdf",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S12"
   },
   "VN-FLOWMETERS-REFERENCE-S13": {
     "id": "S13",
-    "label": "Value Added Piezo Assemblies — PI Ceramic",
+    "label": "Value Added Piezo Assemblies \u2014 PI Ceramic",
     "url": "https://www.pi-usa.us/en/products/piezo-actuators-stacks-benders-tubes/piezo-value-added-assemblies",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S13"
   },
   "VN-FLOWMETERS-REFERENCE-S14": {
     "id": "S14",
-    "label": "FRED: NAICS 334513 Industrial Output — Federal Reserve",
+    "label": "FRED: NAICS 334513 Industrial Output \u2014 Federal Reserve",
     "url": "https://fred.stlouisfed.org/series/IPUEN334513T300000000",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S14"
   },
   "VN-FLOWMETERS-REFERENCE-S15": {
     "id": "S15",
-    "label": "01_product_decomposition.md — technology class, specifications, constraints, UNSPSC classification",
+    "label": "01_product_decomposition.md \u2014 technology class, specifications, constraints, UNSPSC classification",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S15"
   },
   "VN-FLOWMETERS-REFERENCE-S16": {
     "id": "S16",
-    "label": "02_functional_promise.md — commodity FP, FP extensions, complements, BOM position",
+    "label": "02_functional_promise.md \u2014 commodity FP, FP extensions, complements, BOM position",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S16"
   },
   "VN-FLOWMETERS-REFERENCE-S17": {
     "id": "S17",
-    "label": "05_market_discovery.md — 16 target markets, architecture distance scoring",
+    "label": "05_market_discovery.md \u2014 16 target markets, architecture distance scoring",
     "prefixedId": "VN-FLOWMETERS-REFERENCE-S17"
   },
   "VN-FLOWMETERS-REFERENCE-S18": {
@@ -1706,91 +1706,91 @@
   },
   "JTBD-BREWERIES-S01": {
     "id": "S01",
-    "label": "Glycol Systems in Breweries — ProBrewer",
+    "label": "Glycol Systems in Breweries \u2014 ProBrewer",
     "url": "https://probrewer.com/library/refrigeration/everything-you-wanted-to-know-about-glycol/",
     "prefixedId": "JTBD-BREWERIES-S01"
   },
   "JTBD-BREWERIES-S02": {
     "id": "S02",
-    "label": "Cooling and Glycol Systems in Craft Breweries — Micet Craft",
+    "label": "Cooling and Glycol Systems in Craft Breweries \u2014 Micet Craft",
     "url": "https://www.micetcraft.com/the-importance-of-cooling-and-glycol-systems/",
     "prefixedId": "JTBD-BREWERIES-S02"
   },
   "JTBD-BREWERIES-S03": {
     "id": "S03",
-    "label": "Temperature Control in Beer Fermentation — Micet Group",
+    "label": "Temperature Control in Beer Fermentation \u2014 Micet Group",
     "url": "https://www.micetgroup.com/the-critical-role-of-temperature-control-systems-in-beer-fermentation/",
     "prefixedId": "JTBD-BREWERIES-S03"
   },
   "JTBD-BREWERIES-S04": {
     "id": "S04",
-    "label": "CIP in the Brewery — Alfa Laval",
+    "label": "CIP in the Brewery \u2014 Alfa Laval",
     "url": "https://www.alfalaval.com/globalassets/images/industries/food-and-water/food-and-water-webinars/alfa-laval_principles-of-cleaning-and-cip.pdf",
     "prefixedId": "JTBD-BREWERIES-S04"
   },
   "JTBD-BREWERIES-S05": {
     "id": "S05",
-    "label": "CIP Optimization for Cleanliness — White Labs",
+    "label": "CIP Optimization for Cleanliness \u2014 White Labs",
     "url": "https://blog.whitelabs.com/is-your-cip-optimized-for-cleanliness",
     "prefixedId": "JTBD-BREWERIES-S05"
   },
   "JTBD-BREWERIES-S06": {
     "id": "S06",
-    "label": "Importance of Flow in CIP — Food Safety Magazine",
+    "label": "Importance of Flow in CIP \u2014 Food Safety Magazine",
     "url": "https://www.food-safety.com/articles/4268-may-the-force-and-flow-be-with-you-importance-of-flow-in-cip",
     "prefixedId": "JTBD-BREWERIES-S06"
   },
   "JTBD-BREWERIES-S07": {
     "id": "S07",
-    "label": "Fermentation Data Curves: Fermenter Failures — Precision Fermentation",
+    "label": "Fermentation Data Curves: Fermenter Failures \u2014 Precision Fermentation",
     "url": "https://www.precisionfermentation.com/blog/brewmonitor-a-look-at-fermentation-data-curves-fermenter-failures/",
     "prefixedId": "JTBD-BREWERIES-S07"
   },
   "JTBD-BREWERIES-S08": {
     "id": "S08",
-    "label": "Control of Off-Flavors From Fermentation — Brewing Science",
+    "label": "Control of Off-Flavors From Fermentation \u2014 Brewing Science",
     "url": "https://brewingscience.com/wp-content/uploads/2019/06/Control-Off-Flavors.pdf",
     "prefixedId": "JTBD-BREWERIES-S08"
   },
   "JTBD-BREWERIES-S09": {
     "id": "S09",
-    "label": "Brewery Batch Cost Estimation — BusinessDojo",
+    "label": "Brewery Batch Cost Estimation \u2014 BusinessDojo",
     "url": "https://dojobusiness.com/blogs/news/craft-brewery-cost-estimation",
     "prefixedId": "JTBD-BREWERIES-S09"
   },
   "JTBD-BREWERIES-S10": {
     "id": "S10",
-    "label": "How Much Does It Cost to Brew Beer — BeerCPA",
+    "label": "How Much Does It Cost to Brew Beer \u2014 BeerCPA",
     "url": "https://beercpa.com/how-much-does-it-really-cost-to-brew-beer-a-brewers-perspective-on-production-economics/",
     "prefixedId": "JTBD-BREWERIES-S10"
   },
   "JTBD-BREWERIES-S11": {
     "id": "S11",
-    "label": "Ultrasonic vs Magnetic Flow Meters — Fuji Electric",
+    "label": "Ultrasonic vs Magnetic Flow Meters \u2014 Fuji Electric",
     "url": "https://www.fujielectric.fr/en/blog/ultrasonic-flow-meter-advantages-and-disadvantages-vs-magmeter/",
     "prefixedId": "JTBD-BREWERIES-S11"
   },
   "JTBD-BREWERIES-S12": {
     "id": "S12",
-    "label": "Comparing Flow Meters — ICON Process Controls",
+    "label": "Comparing Flow Meters \u2014 ICON Process Controls",
     "url": "https://iconprocon.com/blog-post/comparing-flow-meters-features-benefits-and-applications-of-paddle-wheel-ultrasonic-turbine-and-electromagnetic-flow-meters/",
     "prefixedId": "JTBD-BREWERIES-S12"
   },
   "JTBD-BREWERIES-S13": {
     "id": "S13",
-    "label": "Glycol Chiller Brewing Guide — Arctic-Tek",
+    "label": "Glycol Chiller Brewing Guide \u2014 Arctic-Tek",
     "url": "https://www.arctic-tek.com/blog/glycol-chiller-brewing-fermentation-temperature-control",
     "prefixedId": "JTBD-BREWERIES-S13"
   },
   "JTBD-BREWERIES-S14": {
     "id": "S14",
-    "label": "Beer Flow Meters — Tameson",
+    "label": "Beer Flow Meters \u2014 Tameson",
     "url": "https://tameson.com/pages/beer-flow-meter",
     "prefixedId": "JTBD-BREWERIES-S14"
   },
   "JTBD-BREWERIES-S15": {
     "id": "S15",
-    "label": "Flow Meters for Craft Beer Brewing — Assured Automation",
+    "label": "Flow Meters for Craft Beer Brewing \u2014 Assured Automation",
     "url": "https://assuredautomation.com/news-and-training/flow-meter-beer-brewing/",
     "prefixedId": "JTBD-BREWERIES-S15"
   },
@@ -1826,90 +1826,90 @@
   },
   "ODI-BREWERIES-S05": {
     "id": "S05",
-    "label": "05_market_discovery.md (Breweries NAICS 312120 — market context, alternatives)",
+    "label": "05_market_discovery.md (Breweries NAICS 312120 \u2014 market context, alternatives)",
     "prefixedId": "ODI-BREWERIES-S05"
   },
   "VN-BREWERIES-S01": {
     "id": "S01",
-    "label": "NAICS 312120 — U.S. Census Bureau",
+    "label": "NAICS 312120 \u2014 U.S. Census Bureau",
     "url": "https://www.census.gov/naics/?input=312120&year=2022&details=312120",
     "prefixedId": "VN-BREWERIES-S01"
   },
   "VN-BREWERIES-S02": {
     "id": "S02",
-    "label": "Brewing Process Step-By-Step — Micet Craft",
+    "label": "Brewing Process Step-By-Step \u2014 Micet Craft",
     "url": "https://www.micetcraft.com/brewing-process/",
     "prefixedId": "VN-BREWERIES-S02"
   },
   "VN-BREWERIES-S03": {
     "id": "S03",
-    "label": "Brewery Equipment List — Tiantai",
+    "label": "Brewery Equipment List \u2014 Tiantai",
     "url": "https://www.craftbreweryequipment.com/brewery-equipment-list-brewery-construction-considerations/",
     "prefixedId": "VN-BREWERIES-S03"
   },
   "VN-BREWERIES-S04": {
     "id": "S04",
-    "label": "Flow Meters for Brewing Beer — Tameson",
+    "label": "Flow Meters for Brewing Beer \u2014 Tameson",
     "url": "https://tameson.com/pages/beer-flow-meter",
     "prefixedId": "VN-BREWERIES-S04"
   },
   "VN-BREWERIES-S05": {
     "id": "S05",
-    "label": "Flow Meters for Craft Beer Brewing — Assured Automation",
+    "label": "Flow Meters for Craft Beer Brewing \u2014 Assured Automation",
     "url": "https://assuredautomation.com/news-and-training/flow-meter-beer-brewing/",
     "prefixedId": "VN-BREWERIES-S05"
   },
   "VN-BREWERIES-S06": {
     "id": "S06",
-    "label": "SU Ultrasonic Flow Meter Sanitary Applications — ifm",
+    "label": "SU Ultrasonic Flow Meter Sanitary Applications \u2014 ifm",
     "url": "https://www.ifm.com/us/en/us/learn-more/flow/su-puresonic/sanitary-applications",
     "prefixedId": "VN-BREWERIES-S06"
   },
   "VN-BREWERIES-S07": {
     "id": "S07",
-    "label": "Glycol Chiller Systems for Breweries — MoreBeer",
+    "label": "Glycol Chiller Systems for Breweries \u2014 MoreBeer",
     "url": "https://morebeer.com/collections/glycol-systems",
     "prefixedId": "VN-BREWERIES-S07"
   },
   "VN-BREWERIES-S08": {
     "id": "S08",
-    "label": "Commercial Brewery Chilling — Paul Mueller Company",
+    "label": "Commercial Brewery Chilling \u2014 Paul Mueller Company",
     "url": "https://www.paulmueller.com/industries/commercial-brewing-equipment/commercial-brewery-chilling-solution",
     "prefixedId": "VN-BREWERIES-S08"
   },
   "VN-BREWERIES-S09": {
     "id": "S09",
-    "label": "CIP in Breweries — Portland Kettleworks",
+    "label": "CIP in Breweries \u2014 Portland Kettleworks",
     "url": "https://www.portlandkettleworks.com/clean-in-place-systems/",
     "prefixedId": "VN-BREWERIES-S09"
   },
   "VN-BREWERIES-S10": {
     "id": "S10",
-    "label": "Basics of CIP in a Brewery — Paul Mueller Academy",
+    "label": "Basics of CIP in a Brewery \u2014 Paul Mueller Academy",
     "url": "https://academy.paulmueller.com/basics-of-clean-in-place-in-brewery",
     "prefixedId": "VN-BREWERIES-S10"
   },
   "VN-BREWERIES-S11": {
     "id": "S11",
-    "label": "Cold Liquor Tank for Wort Cooling — Thermaline",
+    "label": "Cold Liquor Tank for Wort Cooling \u2014 Thermaline",
     "url": "https://www.thermaline.com/content/more-info/recent-news/application-cold-liquor-tanks-beer-wort-cooling/",
     "prefixedId": "VN-BREWERIES-S11"
   },
   "VN-BREWERIES-S12": {
     "id": "S12",
-    "label": "Brewery Equipment Market Size — Grand View Research",
+    "label": "Brewery Equipment Market Size \u2014 Grand View Research",
     "url": "https://www.grandviewresearch.com/industry-analysis/brewery-equipment-market",
     "prefixedId": "VN-BREWERIES-S12"
   },
   "VN-BREWERIES-S13": {
     "id": "S13",
-    "label": "Brewery Equipment Market — MarketsandMarkets",
+    "label": "Brewery Equipment Market \u2014 MarketsandMarkets",
     "url": "https://www.marketsandmarkets.com/Market-Reports/brewery-equipment-market-129804657.html",
     "prefixedId": "VN-BREWERIES-S13"
   },
   "VN-BREWERIES-S14": {
     "id": "S14",
-    "label": "Beer Fermentation Tanks — YoLong Brewtech",
+    "label": "Beer Fermentation Tanks \u2014 YoLong Brewtech",
     "url": "https://yolongbrewtech.com/beer-fermentation-tank-20240119/",
     "prefixedId": "VN-BREWERIES-S14"
   },
@@ -1920,7 +1920,7 @@
   },
   "VN-BREWERIES-S16": {
     "id": "S16",
-    "label": "05_market_discovery.md — Architecture distance scoring for NAICS 312120",
+    "label": "05_market_discovery.md \u2014 Architecture distance scoring for NAICS 312120",
     "prefixedId": "VN-BREWERIES-S16"
   },
   "VN-BREWERIES-S17": {
@@ -1940,7 +1940,7 @@
   },
   "FIT-BREWERIES-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md (Breweries NAICS 312120 — market context, alternatives, job)",
+    "label": "05_market_discovery.md (Breweries NAICS 312120 \u2014 market context, alternatives, job)",
     "prefixedId": "FIT-BREWERIES-S03"
   },
   "FIT-BREWERIES-S04": {
@@ -1950,22 +1950,22 @@
   },
   "COMPAT-BREWERIES-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Constraints, specifications, features, technology classification",
+    "label": "01_product_decomposition.md \u2014 Constraints, specifications, features, technology classification",
     "prefixedId": "COMPAT-BREWERIES-S01"
   },
   "COMPAT-BREWERIES-S02": {
     "id": "S02",
-    "label": "02_functional_promise.md — Functional promise, complements, BOM position",
+    "label": "02_functional_promise.md \u2014 Functional promise, complements, BOM position",
     "prefixedId": "COMPAT-BREWERIES-S02"
   },
   "COMPAT-BREWERIES-S03": {
     "id": "S03",
-    "label": "05_market_discovery.md — Breweries (NAICS 312120) market candidate details",
+    "label": "05_market_discovery.md \u2014 Breweries (NAICS 312120) market candidate details",
     "prefixedId": "COMPAT-BREWERIES-S03"
   },
   "COMPAT-BREWERIES-S04": {
     "id": "S04",
-    "label": "VN_breweries.md — Brewery value network, Marquardt positions, operating conditions",
+    "label": "VN_breweries.md \u2014 Brewery value network, Marquardt positions, operating conditions",
     "prefixedId": "COMPAT-BREWERIES-S04"
   },
   "COMPAT-BREWERIES-S05": {
@@ -1975,31 +1975,31 @@
   },
   "JTBD-DATA-PROCESSING-HOSTING-S01": {
     "id": "S01",
-    "label": "CDUs: The Brains of Direct Liquid Cooling — DCNN Magazine",
+    "label": "CDUs: The Brains of Direct Liquid Cooling \u2014 DCNN Magazine",
     "url": "https://dcnnmagazine.com/infrastructure/liquid-cooling/cdus-the-brains-of-direct-liquid-cooling/",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S01"
   },
   "JTBD-DATA-PROCESSING-HOSTING-S02": {
     "id": "S02",
-    "label": "Coolant Distribution Units — Vertiv",
+    "label": "Coolant Distribution Units \u2014 Vertiv",
     "url": "https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/understanding-coolant-distribution-units-cdus-for-liquid-cooling/",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S02"
   },
   "JTBD-DATA-PROCESSING-HOSTING-S03": {
     "id": "S03",
-    "label": "Ultimate Guide to CDUs — JetCool",
+    "label": "Ultimate Guide to CDUs \u2014 JetCool",
     "url": "https://jetcool.com/post/the-ultimate-guide-to-coolant-distribution-units-cdus-for-ai-and-hpc-jetcools-smartsense-cdu-completes-in-rack-liquid-cooling-solution/",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S03"
   },
   "JTBD-DATA-PROCESSING-HOSTING-S04": {
     "id": "S04",
-    "label": "Monitoring Coolant Flow in High-Density DCs — IoThrifty",
+    "label": "Monitoring Coolant Flow in High-Density DCs \u2014 IoThrifty",
     "url": "https://www.iothrifty.com/blogs/news/monitoring-coolant-flow-in-high-density-liquid-cooled-data-centers",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S04"
   },
   "JTBD-DATA-PROCESSING-HOSTING-S05": {
     "id": "S05",
-    "label": "Data Center Leak Detection — IoThrifty",
+    "label": "Data Center Leak Detection \u2014 IoThrifty",
     "url": "https://www.iothrifty.com/blogs/news/data-center-leak-detection-and-monitoring-for-liquid-cooled-systems",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S05"
   },
@@ -2011,7 +2011,7 @@
   },
   "JTBD-DATA-PROCESSING-HOSTING-S07": {
     "id": "S07",
-    "label": "NVIDIA Liquid Cooling Analysis: Blackwell to Rubin — Global Semi Research",
+    "label": "NVIDIA Liquid Cooling Analysis: Blackwell to Rubin \u2014 Global Semi Research",
     "url": "https://globalsemiresearch.substack.com/p/nvidia-liquid-cooling-analysis-from",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S07"
   },
@@ -2023,13 +2023,13 @@
   },
   "JTBD-DATA-PROCESSING-HOSTING-S09": {
     "id": "S09",
-    "label": "ASHRAE TC 9.9 Data Center Thermal Guide 2026 — envigilance.com",
+    "label": "ASHRAE TC 9.9 Data Center Thermal Guide 2026 \u2014 envigilance.com",
     "url": "https://envigilance.com/compliance/ashrae-tc-9-9/",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S09"
   },
   "JTBD-DATA-PROCESSING-HOSTING-S10": {
     "id": "S10",
-    "label": "Direct-to-Chip Cooling Flow Meters — Mass Flow Online",
+    "label": "Direct-to-Chip Cooling Flow Meters \u2014 Mass Flow Online",
     "url": "https://www.massflow-online.com/markets_applications/magnetic-flow-meters-for-direct-to-chip-cooling-in-high-performance-ai-servers/",
     "prefixedId": "JTBD-DATA-PROCESSING-HOSTING-S10"
   },
@@ -2055,49 +2055,49 @@
   },
   "VN-DATA-PROCESSING-HOSTING-S01": {
     "id": "S01",
-    "label": "Data Center Cooling State of Play 2025 — Tom's Hardware",
+    "label": "Data Center Cooling State of Play 2025 \u2014 Tom's Hardware",
     "url": "https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise-thermal-density-demands-skyrocket-in-ai-data-centers-and-tsmc-leads-with-direct-to-silicon-solutions",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S01"
   },
   "VN-DATA-PROCESSING-HOSTING-S02": {
     "id": "S02",
-    "label": "Why AI rack densities make liquid cooling nonnegotiable — Network World",
+    "label": "Why AI rack densities make liquid cooling nonnegotiable \u2014 Network World",
     "url": "https://www.networkworld.com/article/4149069/why-ai-rack-densities-make-liquid-cooling-nonnegotiable.html",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S02"
   },
   "VN-DATA-PROCESSING-HOSTING-S03": {
     "id": "S03",
-    "label": "Coolant Distribution Units for Data Center Cooling — nVent",
+    "label": "Coolant Distribution Units for Data Center Cooling \u2014 nVent",
     "url": "https://www.nvent.com/en-us/data-solutions/coolant-distribution-unit",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S03"
   },
   "VN-DATA-PROCESSING-HOSTING-S04": {
     "id": "S04",
-    "label": "Deploying CDUs in Data Centers — Vertiv",
+    "label": "Deploying CDUs in Data Centers \u2014 Vertiv",
     "url": "https://www.vertiv.com/en-us/about/news-and-insights/articles/blog-posts/deploying-liquid-cooling-in-data-centers-installing-and-managing-coolant-distribution-units-cdus/",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S04"
   },
   "VN-DATA-PROCESSING-HOSTING-S05": {
     "id": "S05",
-    "label": "Engineering Liquid Cooling: Direct-to-Chip & Cold Plate — XD Thermal",
+    "label": "Engineering Liquid Cooling: Direct-to-Chip & Cold Plate \u2014 XD Thermal",
     "url": "https://www.xdthermal.com/engineering-liquid-cooling-a-guide-to-direct-to-chip-cold-plate-operations-in-data-centers/",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S05"
   },
   "VN-DATA-PROCESSING-HOSTING-S06": {
     "id": "S06",
-    "label": "Rethinking Data Center Cooling for AI — Schneider Electric blog",
+    "label": "Rethinking Data Center Cooling for AI \u2014 Schneider Electric blog",
     "url": "https://blog.se.com/datacenter/2026/01/16/rethinking-data-center-cooling-ai-direct-to-chip-liquid-cooling/",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S06"
   },
   "VN-DATA-PROCESSING-HOSTING-S07": {
     "id": "S07",
-    "label": "Direct-to-Chip Cooling Flow Meters — Mass Flow Online",
+    "label": "Direct-to-Chip Cooling Flow Meters \u2014 Mass Flow Online",
     "url": "https://www.massflow-online.com/markets_applications/magnetic-flow-meters-for-direct-to-chip-cooling-in-high-performance-ai-servers/",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S07"
   },
   "VN-DATA-PROCESSING-HOSTING-S08": {
     "id": "S08",
-    "label": "Data Center Liquid Cooling — IEEE Spectrum",
+    "label": "Data Center Liquid Cooling \u2014 IEEE Spectrum",
     "url": "https://spectrum.ieee.org/data-center-liquid-cooling",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S08"
   },
@@ -2113,22 +2113,22 @@
   },
   "VN-DATA-PROCESSING-HOSTING-S11": {
     "id": "S11",
-    "label": "05_market_discovery.md (internal) — Rank 6 Data Centers, Distance 4",
+    "label": "05_market_discovery.md (internal) \u2014 Rank 6 Data Centers, Distance 4",
     "prefixedId": "VN-DATA-PROCESSING-HOSTING-S11"
   },
   "FIT-DATA-PROCESSING-HOSTING-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — Features, constraints, specifications, UNSPSC classification",
+    "label": "01_product_decomposition.md \u2014 Features, constraints, specifications, UNSPSC classification",
     "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S01"
   },
   "FIT-DATA-PROCESSING-HOSTING-S02": {
     "id": "S02",
-    "label": "JTBD_data_processing_hosting.md — CFJ, job map, alternatives, error statements (ES-01..ES-26)",
+    "label": "JTBD_data_processing_hosting.md \u2014 CFJ, job map, alternatives, error statements (ES-01..ES-26)",
     "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S02"
   },
   "FIT-DATA-PROCESSING-HOSTING-S03": {
     "id": "S03",
-    "label": "VN_data_processing_hosting.md — Process VN, CDU parent L5, flow-sensor anchor",
+    "label": "VN_data_processing_hosting.md \u2014 Process VN, CDU parent L5, flow-sensor anchor",
     "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S03"
   },
   "FIT-DATA-PROCESSING-HOSTING-S04": {
@@ -2143,27 +2143,27 @@
   },
   "FIT-DATA-PROCESSING-HOSTING-S06": {
     "id": "S06",
-    "label": "Mass Flow Online, IoThrifty — magnetic vs ultrasonic share in DLC/CDU",
+    "label": "Mass Flow Online, IoThrifty \u2014 magnetic vs ultrasonic share in DLC/CDU",
     "prefixedId": "FIT-DATA-PROCESSING-HOSTING-S06"
   },
   "COMPAT-DATA-PROCESSING-HOSTING-S01": {
     "id": "S01",
-    "label": "01_product_decomposition.md — spec envelope (DN20, 4.2–46.6 l/min, 0–6 bar, +2 to 90 °C, 3,000 m³ endurance)",
+    "label": "01_product_decomposition.md \u2014 spec envelope (DN20, 4.2\u201346.6 l/min, 0\u20136 bar, +2 to 90 \u00b0C, 3,000 m\u00b3 endurance)",
     "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S01"
   },
   "COMPAT-DATA-PROCESSING-HOSTING-S02": {
     "id": "S02",
-    "label": "03_constraints.md — 12 constraints with thresholds and absolute/mitigable classification",
+    "label": "03_constraints.md \u2014 12 constraints with thresholds and absolute/mitigable classification",
     "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S02"
   },
   "COMPAT-DATA-PROCESSING-HOSTING-S03": {
     "id": "S03",
-    "label": "VN_data_processing_hosting.md — CDU/RDHx anchor, secondary-loop conditions (20–45 °C, 2–6 bar, 5–30 l/min, water/PG25)",
+    "label": "VN_data_processing_hosting.md \u2014 CDU/RDHx anchor, secondary-loop conditions (20\u201345 \u00b0C, 2\u20136 bar, 5\u201330 l/min, water/PG25)",
     "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S03"
   },
   "COMPAT-DATA-PROCESSING-HOSTING-S04": {
     "id": "S04",
-    "label": "Tom's Hardware, Network World — 2025–26 liquid-cooling trend and Rubin-class supply temperatures",
+    "label": "Tom's Hardware, Network World \u2014 2025\u201326 liquid-cooling trend and Rubin-class supply temperatures",
     "prefixedId": "COMPAT-DATA-PROCESSING-HOSTING-S04"
   },
   "BOM-S01": {
@@ -2180,7 +2180,7 @@
   },
   "BOM-S03": {
     "id": "S03",
-    "label": "Beer Institute: Brewer's Almanac — U.S. Beer Industry Statistics",
+    "label": "Beer Institute: Brewer's Almanac \u2014 U.S. Beer Industry Statistics",
     "url": "https://www.beerinstitute.org/statistics/brewers-almanac/",
     "prefixedId": "BOM-S03"
   },
@@ -2207,5 +2207,41 @@
     "label": "Badger Meter: Ultrasonic Flow Measurement Solutions",
     "url": "https://www.badgermeter.com/products/meters/ultrasonic-flow-meters/",
     "prefixedId": "BOM-S07"
+  },
+  "OVW-S01": {
+    "id": "OVW-S01",
+    "label": "Marquardt GmbH \u2014 Company Profile",
+    "url": "https://www.marquardt.com/en/company.html",
+    "prefixedId": "OVW-S01"
+  },
+  "OVW-S02": {
+    "id": "OVW-S02",
+    "label": "Marquardt Sensor Portfolio \u2014 Customer Presentation (internal)",
+    "url": null,
+    "prefixedId": "OVW-S02"
+  },
+  "OVW-S03": {
+    "id": "OVW-S03",
+    "label": "Marquardt GmbH \u2014 LinkedIn Company Page",
+    "url": "https://www.linkedin.com/company/marquardt-gmbh/",
+    "prefixedId": "OVW-S03"
+  },
+  "OVW-S04": {
+    "id": "OVW-S04",
+    "label": "Marquardt GmbH \u2014 News & Press",
+    "url": "https://www.marquardt.com/en/news-press.html",
+    "prefixedId": "OVW-S04"
+  },
+  "OVW-S05": {
+    "id": "OVW-S05",
+    "label": "Clayton \u2014 00a Portfolio Hierarchy (internal analysis)",
+    "url": null,
+    "prefixedId": "OVW-S05"
+  },
+  "OVW-S06": {
+    "id": "OVW-S06",
+    "label": "Clayton \u2014 00 Executive Summary (internal analysis)",
+    "url": null,
+    "prefixedId": "OVW-S06"
   }
 }

@@ -1,0 +1,300 @@
+{
+  "company": {
+    "name": "Marquardt GmbH",
+    "legalForm": "GmbH (private limited company)",
+    "ownership": "Family-owned (3rd-generation Marquardt family; Marquardt Management SE as holding entity)",
+    "founded": 1925,
+    "hq": "Rietheim-Weilheim, Baden-Württemberg, Germany",
+    "ceo": {
+      "name": "Björn Twiehaus",
+      "since": "January 2025",
+      "note": "Succeeded Dr. Harald Marquardt who led the company for ~29 years (1996–2024)"
+    },
+    "revenue": {
+      "value": "€1.35 billion",
+      "year": 2024,
+      "note": "Down 3.2% vs. 2023 (€1.4B) due to automotive headwinds and slower e-mobility ramp"
+    },
+    "employees": {
+      "value": 9700,
+      "year": 2024,
+      "note": "Approximately 9,700 as of 2024 (official site); some sources cite up to 10,200"
+    },
+    "sites": 22,
+    "countries": 15,
+    "continents": 4,
+    "rdIntensity": "~10% of revenue (~€135M equivalent)",
+    "patentsTotal": 1641,
+    "patentsGranted": 770,
+    "primaryNaics": "335314",
+    "primaryNaicsTitle": "Relay and Industrial Control Manufacturing"
+  },
+  "globalFootprint": {
+    "regions": [
+      {
+        "region": "Germany (HQ)",
+        "sites": ["Rietheim-Weilheim", "Boettingen", "Trossingen", "Harrislee", "Ichtershausen", "Erfurt (BMS plant, opened 2024)"]
+      },
+      {
+        "region": "Western Europe",
+        "sites": ["Lieusaint (France)", "Warwick (UK)", "Turin (Italy)", "Sweden"]
+      },
+      {
+        "region": "Eastern Europe & North Africa",
+        "sites": ["Sibiu (Romania)", "Veles (N. Macedonia)", "El Fejja (Tunisia, opened 2024)"]
+      },
+      {
+        "region": "Americas",
+        "sites": ["Rochester Hills MI (USA)", "Cazenovia NY (USA)", "Irapuato (Mexico)"]
+      },
+      {
+        "region": "Asia-Pacific",
+        "sites": ["Talegaon / Pune (India, opened March 2025)", "Shanghai & Weihai (China)", "Tokyo (Japan)", "Seoul (South Korea)"]
+      }
+    ]
+  },
+  "divisions": [
+    {
+      "name": "Human Machine Interfaces (HMI)",
+      "type": "Automotive",
+      "description": "Highly integrated user interfaces and intelligent lighting systems for premium vehicles — steering wheel modules, touch lighting, seat switches, rotary controls.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Entry and Authorization Systems",
+      "type": "Automotive",
+      "description": "Vehicle access and driver authorization — digital key, ignition start switches, smartphone-based drive authorization, ultra-wideband (UWB) modules.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Power and Energy Solutions",
+      "type": "Automotive / E-Mobility",
+      "description": "Battery management systems (BMS) for EVs, sensors for hydrogen fuel cells, digital vehicle communication components. New Erfurt plant operational since mid-2024.",
+      "isSubjectDivision": false
+    },
+    {
+      "name": "Mechatronic Devices",
+      "type": "Trucks / Industrial / Consumer",
+      "description": "Switches, parking brakes, and drive authorization for trucks and off-highway vehicles. Also covers power tools, household appliances, and heating systems.",
+      "isSubjectDivision": true
+    },
+    {
+      "name": "Home and Industrial Solutions",
+      "type": "Building / HVAC / Industrial",
+      "description": "Newly created business unit (2024) targeting non-automotive markets — building technology, HVAC, smart home, and industrial sensors including the ultrasonic flow sensor family.",
+      "isSubjectDivision": true
+    }
+  ],
+  "productGroup": {
+    "name": "Sensor Solutions",
+    "scope": "Flow sensors (mechanical + contactless), pressure sensors, temperature sensors, proximity, turbidity, infrared spectrum analysis",
+    "families": [
+      {
+        "name": "Mechanical Flow Sensors",
+        "technology": "Turbine / paddle-wheel",
+        "status": "Legacy — being displaced by ultrasonic"
+      },
+      {
+        "name": "Contactless Flow Sensors",
+        "technology": "Ultrasonic transit-time",
+        "status": "Current strategic focus — subject of this report"
+      },
+      {
+        "name": "Pressure Sensors",
+        "technology": "Piezoresistive (2066.21XX series, 0–4.5/10 bar)",
+        "status": "Serial product"
+      },
+      {
+        "name": "Turbidity Sensors",
+        "technology": "Optical turbidity detection",
+        "status": "Serial product"
+      },
+      {
+        "name": "Level Sensors",
+        "technology": "Various",
+        "status": "Serial product"
+      }
+    ]
+  },
+  "product": {
+    "name": "Ultrasonic Flow Sensor",
+    "family": "Ultrasonic Flow Sensor for Heating Technology",
+    "bomLevel": "L5 (sellable product)",
+    "homeMarketNaics": "333415",
+    "homeMarketTitle": "Air-Conditioning and Warm Air Heating Equipment Manufacturing",
+    "whitepaper": "https://page.marquardt.com/en-de/whitepaper-ultrasonic-flow-sensor",
+    "productPage": "https://www.marquardt.com/us/ultrasonic-flow-sensor/",
+    "variants": [
+      {
+        "id": "DN12",
+        "status": "Concept",
+        "innerDiameter": "12 mm",
+        "flowRange": "—",
+        "dimensions": "108 × 73 × 54 mm"
+      },
+      {
+        "id": "DN14",
+        "status": "Development samples",
+        "innerDiameter": "14 mm",
+        "flowRange": "0.25–33.3 l/min",
+        "dimensions": "120 × 75 × 58 mm",
+        "note": "Gas boilers / combi-boiler DHW applications"
+      },
+      {
+        "id": "DN20",
+        "status": "Serial product",
+        "innerDiameter": "20 mm",
+        "flowRange": "4.2–46.6 l/min",
+        "dimensions": "155 × 81 × 64 mm",
+        "isSerial": true,
+        "note": "Air-water heat pumps — current production. Basis for all market analysis in this report."
+      },
+      {
+        "id": "DN25",
+        "status": "Development samples",
+        "innerDiameter": "25 mm",
+        "flowRange": "4.2–60 l/min",
+        "dimensions": "150 × 85 × 68.5 mm",
+        "note": "Large heat pumps / industrial adjacencies"
+      }
+    ]
+  },
+  "studyQuestion": {
+    "q1": {
+      "german": "Welche Anwendungen für diesen Sensor gibt es, wie attraktiv sind diese Markt-Segmente und wie könnte ein passendes Geschäftsmodell aussehen?",
+      "english": "What applications exist for this sensor, how attractive are these market segments, and what business model would fit?",
+      "answer": "Eight serious applications were evaluated; five advance to full analysis. The two highest-attractiveness, lowest-effort segments are Data Center Direct Liquid Cooling (Fit 8.50 STRONG) and Fuel Cell Systems (Fit 7.75) — both require firmware and calibration changes only, no new silicon. The scale play is EV Battery Thermal Management on a 36–48 month automotive platform cycle; the defensive anchor is Residential HVAC. The fitting business model is a dual Business Model Canvas scaled by Razor-and-Blade, Ingredient Branding, and Performance-Based Contracting — progressing from sensor → platform → service."
+    },
+    "q2": {
+      "german": "Wo führt eine unpräzise / nicht vorhandene Durchflusserkennung oder ein Ausfall des Sensors zu den höchsten Kosten?",
+      "english": "Where does imprecise or absent flow detection — or a sensor failure — cause the highest costs?",
+      "answer": "Ranked by leverage ratio (cost-of-failure ÷ sensor price), the highest-cost failure points are Data Center Direct Liquid Cooling (~10³–10⁴×, €1–5M per leak event + €50–200k/hr per AI-rack throttle), EV Battery Thermal (~10³–10⁴×, €500k–5M per thermal runaway), and Fuel Cells (~10²–10³×, €30–80k per silent-stall stack write-off). In every case the dominant failure class is 'missing flow detection' — silent stall, reverse flow, leak signature — exactly what the sensor's bubble/empty-pipe/reverse-flow diagnostic stack catches. Strategic implication: sell on avoided cost, not sensor price."
+    }
+  },
+  "portfolioPriorities": [
+    {
+      "priority": "1a",
+      "market": "Data Center Direct Liquid Cooling",
+      "fitScore": 8.50,
+      "fitLabel": "STRONG",
+      "compositeScore": 7.28,
+      "timeToFirstRevenue": "9–15 months",
+      "hardwareDelta": "Firmware only (leak-anomaly classifier, OCP pressure qualification)",
+      "y5RevenueBaseM": 10.5,
+      "role": "Beachhead — highest leverage"
+    },
+    {
+      "priority": "1b",
+      "market": "Fuel Cell Systems",
+      "fitScore": 7.75,
+      "fitLabel": "MODERATE-top",
+      "compositeScore": 7.25,
+      "timeToFirstRevenue": "6–12 months",
+      "hardwareDelta": "Firmware + calibration (−40°C, H₂ materials, LIN frames)",
+      "y5RevenueBaseM": 4.3,
+      "role": "Beachhead — parallel risk"
+    },
+    {
+      "priority": "2",
+      "market": "EV Battery Thermal Management",
+      "fitScore": 6.75,
+      "fitLabel": "MODERATE",
+      "compositeScore": 6.55,
+      "timeToFirstRevenue": "36–48 months",
+      "hardwareDelta": "Firmware + sub-zero calibration (existing DN20, ASIL B/C)",
+      "y5RevenueBaseM": 28.0,
+      "role": "Scale — largest 5-year revenue stream"
+    },
+    {
+      "priority": "3",
+      "market": "Residential HVAC",
+      "fitScore": 6.65,
+      "fitLabel": "MODERATE",
+      "compositeScore": 6.65,
+      "timeToFirstRevenue": "18–30 months",
+      "hardwareDelta": "DN10/12 variant + KTW/WRAS/NSF-61 certification",
+      "y5RevenueBaseM": 11.2,
+      "role": "Defensive — home market anchor"
+    },
+    {
+      "priority": "4",
+      "market": "Commercial HVAC",
+      "fitScore": 4.75,
+      "fitLabel": "WEAK",
+      "compositeScore": 5.55,
+      "timeToFirstRevenue": "12–18 months (addressable today) / 36–48 months (full range)",
+      "hardwareDelta": "BACnet + MID today; DN50–100 spool-piece roadmap 2028–2029",
+      "y5RevenueBaseM": 4.4,
+      "role": "Roadmap — addressable today, full range gated"
+    }
+  ],
+  "financials": {
+    "y5RevenueBase": "€58 M",
+    "y5RevenueUpside": "€115 M",
+    "y5RevenueDownside": "€27.5 M",
+    "npvBase": "€65 M",
+    "npvUpside": "€160 M",
+    "npvDownside": "€5 M",
+    "irrBase": "38%",
+    "irrUpside": "75%",
+    "irrDownside": "10%",
+    "breakevenBase": "Year 4",
+    "breakevenUpside": "Year 3",
+    "breakevenDownside": "Year 5+",
+    "cumulativeInvestment": "€14 M over 3 years (NRE €9.2M + capex €4.8M)",
+    "discountRate": "10%",
+    "note": "All figures are directional estimates for scenario framing; Phase 3 Business Model workshop refines with real BOM quotes and Marquardt controlling burden rates before any funding decision."
+  },
+  "sources": [
+    {
+      "id": "OVW-S01",
+      "label": "Marquardt GmbH — Worldwide on Site (official)",
+      "url": "https://www.marquardt.com/us/company/worldwide-on-site/"
+    },
+    {
+      "id": "OVW-S02",
+      "label": "Marquardt Business Year 2024 — Newsroom",
+      "url": "https://www.marquardt.com/newsroom/detail/business-year-2024"
+    },
+    {
+      "id": "OVW-S03",
+      "label": "Marquardt Group — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marquardt_Group"
+    },
+    {
+      "id": "OVW-S04",
+      "label": "Marquardt Executive Board / Management Team",
+      "url": "https://marquardt.com/us/company/management"
+    },
+    {
+      "id": "OVW-S05",
+      "label": "Björn Twiehaus Becomes Member of Executive Board — Marquardt Newsroom",
+      "url": "https://www.marquardt.com/newsroom/detail/bjoern-twiehaus-becomes-member-of-executive-board"
+    },
+    {
+      "id": "OVW-S06",
+      "label": "Marquardt Ultrasonic Flow Sensor — Product Page",
+      "url": "https://www.marquardt.com/us/ultrasonic-flow-sensor/"
+    },
+    {
+      "id": "OVW-S07",
+      "label": "Marquardt Building Technology HVAC — Industry Page",
+      "url": "https://marquardt.com/us/industries/building-technology-hvac"
+    },
+    {
+      "id": "OVW-S08",
+      "label": "Marquardt Patent Insights — GreyB / Insights Gate",
+      "url": "https://insights.greyb.com/marquardt-patents/"
+    },
+    {
+      "id": "OVW-S09",
+      "label": "Marquardt Ultrasonic Flow Sensor — Whitepaper",
+      "url": "https://page.marquardt.com/en-de/whitepaper-ultrasonic-flow-sensor"
+    },
+    {
+      "id": "OVW-S10",
+      "label": "New Marquardt Plant in Talegaon, India — Autocar Professional",
+      "url": "https://www.autocarpro.in/news/marquardt-opens-new-production-plant-in-talegaon-india-125258"
+    }
+  ]
+}

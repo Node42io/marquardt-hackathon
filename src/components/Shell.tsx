@@ -29,6 +29,20 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
+    to: "/overview",
+    label: "Overview",
+    kicker: "00",
+    sections: [
+      { id: "ovw-question",   label: "The Question" },
+      { id: "ovw-company",    label: "About Marquardt" },
+      { id: "ovw-hierarchy",  label: "Division → Product" },
+      { id: "ovw-product",    label: "Sensor Variants" },
+      { id: "ovw-portfolio",  label: "Market Priorities" },
+      { id: "ovw-financials", label: "Financial Scenarios" },
+      { id: "ovw-howto",      label: "How to Read" },
+    ],
+  },
+  {
     to: "/product",
     label: "Product Profile",
     kicker: "01",
@@ -101,7 +115,7 @@ export default function Shell() {
     const activeItem = navItems.find((item) =>
       location.pathname === item.to ||
       location.pathname.startsWith(item.to + "/") ||
-      (item.to === "/product" && location.pathname === "/")
+      (item.to === "/overview" && location.pathname === "/")
     );
     if (activeItem?.sections) {
       setExpanded((prev) => ({ ...prev, [activeItem.to]: true }));
@@ -139,7 +153,7 @@ export default function Shell() {
                   <div style={{ display: "flex", alignItems: "stretch" }}>
                     <NavLink
                       to={item.to}
-                      end={item.to === "/product"}
+                      end={item.to === "/overview" || item.to === "/product"}
                       className={({ isActive }) =>
                         ["app-nav-link", isActive ? "is-active" : ""].filter(Boolean).join(" ")
                       }
