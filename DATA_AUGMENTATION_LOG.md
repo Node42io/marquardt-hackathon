@@ -212,6 +212,37 @@ Legend for **Source**:
 - **Source**: `extractor-fix` (data was correct in JSON; only the UI component needed updating to match the actual shape).
 - **Upstream fix (recommended)**: Option A (preferred) — enrich the JTBD alternatives markdown §2.4 table with additional columns matching the home-market incumbent richness: `Mechanism`, `Market Share`, `Key Vendors`, `Strengths`, `Weaknesses`, `Switching Cost Level`, `Switching Cost Narrative`. This lets the extractor populate a fuller `alternatives.json` and the tab can eventually match the richness of the HomeMarketCompetition Competing Technologies view. Option B (minimal) — keep the current 3-column shape and accept that the Alternatives tab renders less detail than the home-market tab. The current fix implements Option B while keeping Option A straightforward to add later.
 
+## 19. Home Market VN — L5 vnUnits unpopulated (ac-home-heating)
+
+- **What**: `src/data/markets/ac-home-heating/valueNetwork.json` had `l6Systems` populated but `vnUnits: []`, causing the Value Network tab to render "no units" for the home-market (NAICS 333415) even though the markdown had full L5 data.
+- **Gap (extraction)**: The extractor's L5 parsing looks for tabular L5 sections (`## L5 — …` with a markdown table). The `ac-home-heating` VN markdown stores its L5 units inside a `## Structured Data` embedded JSON block rather than a table — so the extractor never found them.
+- **Gap (ID format)**: L6 IDs in this markdown are letter-based (`L6a`–`L6i`) instead of the dot-notation (`L6.1`–`L6.9`) expected by `groupUnitsByL6()` in `helpers.ts`. The helper was calling `parseInt("L6a", 10) = NaN`, silently dropping all units into an unmatched fallback bucket.
+- **Fix applied**:
+  1. Python script extracted L5 units from the `## Structured Data` JSON block in `sections/VN_air_conditioning_and_warm_air_heating_eq.md` and wrote them into `valueNetwork.json`.
+  2. ID mapping applied at extraction time: `L6a→L6.1`, `L6b→L6.2`, `L6c→L6.3`, `L6d→L6.4`, `L6e→L6.5`, `L6f→L6.6` (Hydronic Circuit Assembly — Marquardt PRIMARY position), horizontal steps → `L6.H1`–`L6.H5`.
+  3. `groupUnitsByL6()` in `src/pages/analysis/tabs/valuenetwork/helpers.ts` fixed to use the raw string section (`parts[1]`) rather than `parseInt()`, so `L5.H1.1` → section `H1` → `L6.H1` resolves correctly. NaN guard left in for the ordinal fallback only.
+- **Source**: `markdown-reparse` + `extractor-fix`.
+- **Upstream fix**: Two standardisation actions needed:
+  1. VN sub-agent should always use dot-notation L6 IDs (`L6.1`, `L6.H1`) — never letter-suffix notation. Lock this in Clayton docs VN table schema.
+  2. L5 units should always be in a `## L5 — Production Units` markdown table (Format A), never only inside a `## Structured Data` JSON block. The JSON block is fine as a redundant machine-readable representation, but the table is what the extractor reads. Require both.
+
+## 20. New file: overview.json — company profile, portfolio priorities, financial scenarios
+
+- **What**: Created `src/data/overview.json` to power the new `00 Overview` page (`/overview`). This file did not exist — the app had no top-level company-context page.
+- **Gap**: No equivalent JSON existed. Overview-level data (CEO, revenue, employees, sites, divisions, patents, product variants, portfolio ranking summary, 5-year financial scenarios) was only in internal markdown sections (`00_executive_summary.md`, `00a_portfolio_hierarchy.md`), not extracted to JSON.
+- **Source**: `web-research` — all company-profile fields verified against external, URL-verifiable sources:
+  - Revenue €1.35B (2024, −3.2% vs 2023): Marquardt newsroom `business-year-2024`
+  - Employees ~9,700: Marquardt `worldwide-on-site` official page
+  - CEO Björn Twiehaus (since January 2025): Marquardt management page + newsroom announcement
+  - 22 sites, 15 countries, 4 continents: worldwide-on-site page
+  - Patent portfolio (1,641 total, 770 granted): GreyB / Insights Gate patent analytics
+  - Divisions (5, including new "Home and Industrial Solutions" created 2024): worldwide-on-site + newsroom
+  - Product variants (DN12/14/20/25): Marquardt product page + whitepaper
+- **Source restriction**: Internal Clayton analysis markdown (`00_executive_summary.md`, `00a_portfolio_hierarchy.md`) was used to understand the portfolio scoring logic and financial scenarios but is NOT cited as a source in the UI. Only external, clickable URLs are listed in the `sources[]` array (OVW-S01 through OVW-S10). Internal docs (OVW-S11/S12) were added then removed before commit.
+- **Portfolio and financials**: These sections derive from the internal analysis work — no external URL can be cited for the composite fit scores or NPV/IRR estimates. `<SourceFootnote>` is intentionally absent from those sections.
+- **TypeScript interface**: `OverviewData` in `src/pages/home/Overview.tsx` written to match the JSON exactly: `divisions: Division[]` (array, not single object), `company.ceo: { name, since, note }`, `company.patentsTotal / patentsGranted` (not `patentsPerYear`), `financials.npvDownside / irrDownside / breakevenDownside` added.
+- **Upstream fix**: The orchestrator should emit `overview.json` as a first-class output alongside product/market JSONs. Required fields: `company` (profile block), `divisions[]`, `productGroup`, `product` (variants), `studyQuestion` (Q1 + Q2 with German originals + English + answer), `portfolioPriorities[]`, `financials` (three-scenario block), `sources[]`. Internal analysis outputs (composite scores, NPV/IRR) are legitimate content but must be flagged `internal: true` so the UI can suppress source footnotes for them.
+
 ---
 
 ## Template for adding a new entry

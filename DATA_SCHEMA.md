@@ -10,6 +10,7 @@ See `DATA_AUGMENTATION_LOG.md` for each specific gap we had to fix after extract
 
 ```
 app/src/data/
+├── overview.json                    OverviewData          ← company profile, portfolio summary (NEW)
 ├── product.json                     ProductDecomposition
 ├── functionalPromise.json           FunctionalPromiseData
 ├── constraints.json                 ConstraintsData
@@ -76,6 +77,128 @@ Record<string, Source>
 ---
 
 ## Home-market files (root of `app/src/data/`)
+
+### `overview.json` ← NEW (AUG-LOG #20)
+
+Powers the `00 Overview` page (`/overview` — default landing route). All company-profile fields must be verified against external URLs before emitting. Internal analysis outputs (composite scores, NPV/IRR estimates) are allowed but must be flagged `internal: true` so the UI can suppress source footnotes for them.
+
+```ts
+{
+  company: {
+    name: string;                        // legal name e.g. "Marquardt GmbH"
+    legalForm: string;                   // "GmbH (private limited company)"
+    ownership: string;                   // ownership structure description
+    founded: number;                     // founding year
+    hq: string;                          // city, region, country
+    ceo: {
+      name: string;
+      since: string;                     // "Month YYYY" e.g. "January 2025"
+      note: string;                      // 1-sentence successor context
+    };
+    revenue: {
+      value: string;                     // "€1.35 billion" — never a raw number
+      year: number;
+      note: string;                      // YoY context
+    };
+    employees: { value: number; year: number; note: string };
+    sites: number;
+    countries: number;
+    continents: number;
+    rdIntensity: string;                 // "~10% of revenue (~€135M equivalent)"
+    patentsTotal: number;                // total portfolio (active + expired)
+    patentsGranted: number;              // granted subset
+    primaryNaics: string;                // string — leading zeros matter
+    primaryNaicsTitle: string;
+  };
+
+  globalFootprint: {
+    regions: { region: string; sites: string[] }[];
+  };
+
+  divisions: [
+    {
+      name: string;
+      type: string;                      // "Automotive" | "Automotive / E-Mobility" | ...
+      description: string;
+      isSubjectDivision: boolean;        // true = the division that owns the product
+    }
+  ];
+
+  productGroup: {
+    name: string;                        // e.g. "Sensor Solutions"
+    scope: string;                       // comma-joined technology types
+    families: [
+      { name: string; technology: string; status: string }
+    ];
+  };
+
+  product: {
+    name: string;
+    family: string;
+    bomLevel: string;                    // "L5 (sellable product)"
+    homeMarketNaics: string;
+    homeMarketTitle: string;
+    whitepaper?: string;                 // URL
+    productPage?: string;                // URL
+    variants: [
+      {
+        id: string;                      // "DN12" | "DN14" | "DN20" | "DN25"
+        status: string;                  // "Concept" | "Development samples" | "Serial product"
+        innerDiameter: string;           // "20 mm"
+        flowRange: string;               // "4.2–46.6 l/min" or "—" if not yet defined
+        dimensions: string;              // "L×W×H mm"
+        note?: string;                   // application context
+        isSerial?: boolean;              // true for the currently manufactured variant
+      }
+    ];
+  };
+
+  studyQuestion: {
+    q1: { german: string; english: string; answer: string };
+    q2: { german: string; english: string; answer: string };
+  };
+
+  portfolioPriorities: [
+    {
+      priority: string;                  // "1a" | "1b" | "2" | "3" | "4"
+      market: string;
+      fitScore: number;                  // architecture + JTBD composite
+      fitLabel: string;                  // "STRONG" | "MODERATE-top" | "MODERATE" | "WEAK"
+      compositeScore: number;
+      timeToFirstRevenue: string;        // "9–15 months"
+      hardwareDelta: string;             // "Firmware only" | "Firmware + calibration (…)"
+      y5RevenueBaseM: number;            // €M, base scenario
+      role: string;                      // "Beachhead" | "Scale" | "Defensive" | "Roadmap"
+    }
+  ];
+
+  financials: {
+    y5RevenueBase: string;               // "€58 M"
+    y5RevenueUpside: string;
+    y5RevenueDownside: string;
+    npvBase: string;                     // "€65 M"
+    npvUpside: string;
+    npvDownside: string;
+    irrBase: string;                     // "38%"
+    irrUpside: string;
+    irrDownside: string;
+    breakevenBase: string;               // "Year 4"
+    breakevenUpside: string;
+    breakevenDownside: string;
+    cumulativeInvestment: string;        // "€14 M over 3 years (NRE €9.2M + capex €4.8M)"
+    discountRate: string;                // "10%"
+    note: string;                        // caveat on directional nature
+  };
+
+  sources: Source[];                     // OVW-prefixed IDs; external URLs only — no internal docs
+}
+```
+
+**Source restriction**: `sources[]` must contain only entries with real, clickable `url` values. Internal analysis outputs (portfolio scores, NPV/IRR) have no citable external URL — emit them without source IDs rather than fabricating a reference.
+
+**L6 ID format note** (see AUG-LOG #19): all VN IDs in this file and in VN JSONs must use dot-notation (`L6.1`, `L6.H1`), never letter-suffix (`L6a`, `L6(H1)`). The `groupUnitsByL6()` helper in `helpers.ts` was fixed to handle non-numeric section codes, but canonical IDs should be dot-notation upstream.
+
+---
 
 ### `product.json`
 
