@@ -26,7 +26,6 @@ import NeedsList from "./jtbd/NeedsList";
 import JobMap from "./jtbd/JobMap";
 import StakeholderMap from "./jtbd/StakeholderMap";
 import ODIMatrix from "./jtbd/ODIMatrix";
-import JTBDPyramid from "./jtbd/JTBDPyramid";
 import { loadMarketData } from "./jtbd/loadMarketData";
 import type { ODINeed } from "@/types";
 
@@ -233,37 +232,6 @@ export default function JTBDTab({ marketSlug }: { marketSlug: string }) {
         {odiSourceIds.length > 0 && (
           <SourceList sourceIds={odiSourceIds} title="Sources — Customer Outcome Opportunities" />
         )}
-      </div>
-
-      {/* ══════════════════════════════════════════════════════════════════
-          Section 2 — Customer Needs Pyramid
-          ══════════════════════════════════════════════════════════════════ */}
-      <div style={{ marginTop: 56 }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            gap: 12,
-            marginBottom: 16,
-            flexWrap: "wrap",
-          }}
-        >
-          <h3
-            style={{
-              margin: 0,
-              fontSize: 16,
-              fontWeight: 600,
-              color: "var(--text-white)",
-            }}
-          >
-            Job-to-be-Done Pyramid
-          </h3>
-          <span className="badge badge--neutral" style={{ fontSize: 10 }}>
-            5-tier customer needs pyramid
-          </span>
-        </div>
-
-        <JTBDPyramid jtbd={jtbd} odi={odi} marketName={marketName} />
       </div>
 
       {/* ══════════════════════════════════════════════════════════════════
